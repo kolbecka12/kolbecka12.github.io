@@ -1,37 +1,96 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Portfolio | Andie Kolbeck</title>
-  </head>
-  <body>
-    <header>
-        <h1>Andie Kolbeck</h1>
-        <p class="slogan">UX + Visual Designer from Oakland, CA</p>
-    </header>
+ <head>
+   <meta charset="utf-8">
+   <title>Portfolio | Andie Kolbeck</title>
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.1.0/css/line-awesome.min.css">
+ </head>
+ <body>
+   <!-- exterior edge of grids to follow -->
+   <div class="container">
+     <!--Header Section-->
+     <header>
+         <nav>
+           <img src="images/logo-1x.png" alt="andie kolbeck logo">
+           <ul>
+            <li><a href="#work-section">Work</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/resume.pdf">Resume</a></li>
+            <li><a href="mailto:kolbecka@gmail.com">Contact</a></li>
+        </nav>
+      </header>
     <main>
-      <div class="project featured-project">
-        <img src="http://lorempixel.com/350/260/abstract/placeholder-1" alt="project screenshot"/>
-        <h2>Featured Project name</h2>
-        <p>Project description text</p>
-      </div>
-      <div class="project">
-        <img src="http://lorempixel.com/350/260/abstract/placeholder-2" alt="project screenshot"/>
-        <h2>Project Name</h2>
-        <p>Project Description Text</p>
-      </div>
-      <div class="project">
-        <img src="http://lorempixel.com/350/260/abstract/placeholder-3" alt="project screenshot"/>
-        <h2>Project Name</h2>
-        <p>Project description text</p>
-      </div>
+      <!-- Hero Section -->
+      <section class="hero-gradient">
+          <article>
+            <h2>Hello!</h2>
+            <h1 class="x-large">I'm Andie.</h1>
+            <h2>A people-first UX designer based in Berlin.</h2>
+            <h3>With one foot in the digital art world</h3>
+            <h3>and the other in human behavior,</h3>
+            <h3>I design friendly and inclusive digital experiences</h3>
+            <h3>grounded in the stories of the people they serve.</h3>
+            <button><a href="#work-section">See My Latest Work</a></button>
+            <button><a href="mailto:kolbecka@gmail.com">Contact Me</a></button>
+          </article>
+      </section>
+      <!-- Case Study Section -->
+      <section class="case-study">
+          <image src="images/Chroma-mobile-flat-layout-1x.jpg" alt="view of colorful app screens">
+          <article>
+            <h6>Chroma</h6>
+            <h2>Cloud Storage for Digital Creatives</h2>
+            <p class="category-tag">User Research</p>
+            <p class="category-tag">UX Design</p>
+            <p class="category-tag">Visual Design</p>
+            <p class="category-tag">Brand Identity</p>
+            <p>A responsive design for web and mobile. Cloud storage designed for digital creatives and teams.</p>
+            <button><a href="/chroma-cloud-storage">View Case Study</a></button>
+          </article>
+      </section>
+      <!-- Skills Section -->
+      <section class="skills">
+          <h2>Full Stack Designer</h2>
+          <h4>I can take your project from wild idea to live code.</h4>
+          <article>
+            <i class="la la-search"></i>
+            <h3>Research</h3>
+            <p>Define the problem, create a strategy, collect user research, and analyze the competitive marketplace</p>
+          </article>
+          <article>
+            <i class="las la-sitemap"></i>
+            <h3>Information Architechture</h3>
+            <p>Create user stories and flows, outline content, build wireframes, perform usability tests</p>
+          </article>
+          <article>
+            <i class="las la-palette"></i>
+              <h3>Design</h3>
+              <p>Create the visual direction, develop branding & style guides, build high fidelity mockups</p>
+          </article>
+          <article>
+            <i class="las la-laptop-code"></i>
+            <h3>Develop</h3>
+            <p>Develop functional prototype with HTML/CSS/javascript, deploy into test environment for review and user testing</p>
+          </article>
+      </section>
+
+   <!-- Footer Section -->
+       <footer>
+         <h2>Let’s Build Something Incredible.</h2>
+         <p>Get in touch and say hello! Like my work, or just want to grab a cup of coffee and talk UX? Let’s connect!</p>
+         <button><a href="mailto:kolbecka@gmail.com">Contact Me</a></button>
+         <ul>
+           <li><a href="mailto:kolbecka@gmail.com"><i class="la la-envelope"></i></a> </li>
+           <li><a href="https://www.linkedin.com/in/andiekolbeck/"><i class="lab la-linkedin-in"></i></a></li>
+           <li><a href="https://github.com/kolbecka12"><i class="la la-github"></i></a></li>
+           <li><a href="https://twitter.com/the___andiest"><i class="la la-twitter"></i></a></li>
+           <li><a href="https://unsplash.io"><i class="la la-camera"></i></a></li>
+         </ul>
+         <small>©2019 Andie Kolbeck | Designed & Developed by Andie Kolbeck</small>
+       </footer>
     </main>
-    <footer>
-      <ul>
-        <li> <a href="https://www.linkedin.com/in/andiekolbeck/">LinkedIn</a></li>
-        <li> <a href="https://github.com/kolbecka12">GitHub</a> </li>
-        <li> <a href="https://twitter.com/the___andiest">Twitter</a></li>
-        <li> <a href="mailto:kolbecka@gmail.com">Email</a> </li>
-      </ul>
-    </footer>
-  </body>
+   </div>
+ </body>
 </html>
