@@ -18,10 +18,11 @@
           <li><a href="/about">About</a></li>
           <li><a href="/resume.pdf">Resume</a></li>
           <li><a href="mailto:kolbecka@gmail.com">Contact</a></li>
+        </ul>
       </nav>
      </header>
      <main>
-       <section>
+       <section class="case-study-title">
          <img src="images/chroma-logo-1x.png" alt="chroma cloud storage logo">
          <h2>Cloud Storage for Digital Creatives</h2>
          <h3>A responsive design for web and mobile. Cloud storage designed for digital creatives and teams.</h3>
@@ -29,7 +30,7 @@
          <button><a href="">View Desktop Prototype</a></button>
          <button><a href="">View Mobile Prototype</a></button>
        </section>
-       <section class="chroma-roles">
+       <section id="chroma-roles">
          <h6>My Roles:</h6>
          <p>User Research, UX Design, Visual Design, Brand Identity</p>
          <h6>Deliverables</h6>
@@ -41,56 +42,56 @@
          <h6>Duration:</h6>
          <p>5 weeks</p>
        </section>
-       <section class="chroma-problem">
-         <div>
+       <section id="chroma-problem">
+         <article>
            <h3>The Problem</h3>
            <h4>Unconventional creatives are stuck with conventional tools.</h4>
            <p>The cloud storage marketplace is dominated by one-size-fits-all solutions that lack features which are critical to digital creatives.</p>
-         </div>
-         <div>
+         </article>
+         <figure>
            <img src="images/color-splash-1x.png" alt="annoyed lightbulb icon over splash of orange paint">
-         </div>
+         </figure>
       </section>
-      <section class="chroma-solution">
-        <div>
+      <section id="chroma-solution">
+        <article>
           <h3>The Solution</h3>
           <h4>Give the user more control.</h4>
           <p>Chroma was developed to give designers, marketers, and social media managers a better way to organize their files: a customizable tagging system. With user-generated tags, files can be discovered more easily through search, and organization is no longer limited to the traditional file folder system.</p>
-        <div>
-        <div>
+        </article>
+        <figure>
           <img src="images/chroma-color-splash-1x.png" alt="chroma app displayed on mobile and desktop screens">
-        </div>
+        </figure>
       </section>
-      <section class="design-process">
+      <section id="design-process">
         <h3>The Design Process</h3>
         <p>The challenge with this project was to imagine how cloud storage could better serve groups with specific needs. Rather than create a solution that worked well enough for everybody, I set out to build a product that worked amazingly for a key demographic of users.</p>
-      <section>
+      </section>
       <section id="chroma-pt1">
         <h5>Part One</h5>
         <h3>User Research</h3>
-        <p>I kicked off this project with a user survey, to get a sense of how digital creatives were using cloud storage now, as well as what they did and didn’t like about these services. 20 product designers, marketers, social media managers, and graphic artists participated.
-        <div id="research-container">
-          <article>
+        <p>I kicked off this project with a user survey, to get a sense of how digital creatives were using cloud storage now, as well as what they did and didn’t like about these services. 20 product designers, marketers, social media managers, and graphic artists participated.</p>
+        <article id="chroma-user-research">
+          <figure>
             <img src="images/chroma-chart1.png" alt="bar graph with 3 and 4 as highest values">
             <p><strong>Most respondants</strong> used 3 to 4 different cloud storage services.</p>
-          </article>
-          <article>
+          </figure>
+          <figure>
             <img src="images/chroma-chart2.png" alt="bar graph showing results">
             <p><strong>All respondants</strong>used Google Drive, and most used Dropbox. A variety of other services were used less frequently.</p>
-          </article>
-          <article>
+          </figure>
+          <figure>
             <img src="images/chroma-chart3.png" alt="pie chart with two thirds darkened">
             <p><strong>67%</strong> accessed their cloud storage using a mobile app, while 100% used desktop</p>
-          </article>
-          <article>
-            <p><strong>Biggest pain points</strong><p>
+          </figure>
+          <figure>
+            <p><strong>Biggest pain points</strong></p>
             <ul>
                 <li>Confusing organization</li>
                 <li>Lack of custom organization options</li>
                 <li>Syncing doesn't work as expected</li>
             </ul>
-          </article>
-          <article>
+          </figure>
+          <figure>
             <p><strong>Most frequently used features:</strong></p>
             <ul>
               <li>Storing content</li>
@@ -98,21 +99,21 @@
               <li>Organizing files</li>
               <li>Collaboration</li>
             </ul>
-          </article>
-<!-- graders: is the <uL> necessary below? used it to be consistent with divs above, but it's prob not necessary otherwise -->
-          <article>
+          </figure>
+          <figure>
             <p><strong>Rarely used features:</strong></p>
             <ul>
               <li>Backing up devices</li>
-            <ul>
-          </article>
+            </ul>
+          </figure>
+        </article>
       </section>
       <section id="chroma-pt2">
         <h5>Part Two</h5>
         <h3>Investigating the Competition</h3>
         <p>With nearly everyone in the survey group using Google Drive and Dropbox,  I decided to investigate how these major players were succeeding – and where they fell short. I also took a close look at Notion, a new player on the cloud storage market that combines elements of storage apps like Google Drive and note-taking apps like Evernote. </p>
-        <section id="competitors-container">
-          <article>
+        <article id="chroma-competitors">
+          <figure>
             <img src="images/google-drive.png" alt="google drive logo">
             <h5>Google Drive</h5>
             <ul>
@@ -127,8 +128,8 @@
             <ul>
               <li>Limited search/organization features</li>
             </ul>
-          </article>
-          <article>
+          </figure>
+          <figure>
             <img src="images/dropbox.png" alt="dropbox logo">
             <h5>Dropbox</h5>
             <ul>
@@ -143,8 +144,8 @@
             <ul>
               <li>Limited search/organization features</li>
             </ul>
-          </article>
-          <article>
+          </figure>
+          <figure>
             <img src="images/notion.png" alt="notion logo">
             <h5>Notion</h5>
             <ul>
@@ -159,8 +160,8 @@
             <ul>
               <li>Doesn't work for most file types</li>
             </ul>
-          </article>
-        </section>
+          </figure>
+        </article>
         <p>While Google Drive offers basic collaboration features and a robust suite of document creation options, it limits users to a traditional file navigation system when it comes to organizing content. Dropbox suffers from this same limitation of folders and sub-folders, and also comes with a slow and clunky desktop navigation interface. Notion does have a tagging feature, allowing you a unique way to search for files you’ve created on the platform. But Notion doesn’t extend this option to other file types, such as images.</p>
         <p>Because a lack of customized organization options was a common weakness shared by all three competitors, I sought to make a tagging system that worked for all file types a key priority for Chroma to better streamline the users’ experience.</p>
       </section>
@@ -212,49 +213,50 @@
         <p>Keeping the target audience in mind, I knew that including an alternative method of organizing files – something that exists outside of the traditional folder-subfolder hierarchy – would be critical for differentiating our product.</p>
         <p>To address this need, I created user stories that allowed users to add and remove tags from individual files, which could be later be discovered through search.</p>
         <p>Stories for tag creation, the onboarding process, document and folder creation, search functions, file uploading, and account admin tasks were generated. The highest and medium priority tasks were then converted into user flows to show how the user can accomplish the primary tasks.</p>
-        <figure class="user-story-container">
-          <div>
-            <p style="light">As a returning user, I want to...</p>
-            <p style="light">As a returning user, I want to...</p>
-            <p style="light">As a returning user, I want to...</p>
-            <p style="light">As a returning user, I want to...</p>
-            <p style="light">As a returning user, I want to...</p>
-            <p style="light">As a returning user, I want to...</p>
-          </div>
-          <div>
-            <p>Give my document a tag or category</p>
-            <p>Change my document's tag or category</p>
-            <p>Remove my document's tag or category</p>
-            <p>Give my folder a tag or category</p>
-            <p>Change my folder's tag or category</p>
-            <p>Remove my folder's tag or category</p>
-          </div>
-          <div>
-            <p style="orange">High</p>
-            <p style="orange">High</p>
-            <p style="orange">High</p>
-            <p style="orange">High</p>
-            <p style="orange">High</p>
-            <p style="orange">High</p>
-          </div>
-        </figure>
+        <article class="user-story-container">
+          <ul>
+            <li style="light">As a returning user, I want to...</li>
+            <li style="light">As a returning user, I want to...</li>
+            <li style="light">As a returning user, I want to...</li>
+            <li style="light">As a returning user, I want to...</li>
+            <li style="light">As a returning user, I want to...</li>
+            <li style="light">As a returning user, I want to...</li>
+          </ul>
+          <ul>
+            <li>Give my document a tag or category</li>
+            <li>Change my document's tag or category</li>
+            <li>Remove my document's tag or category</li>
+            <li>Give my folder a tag or category</li>
+            <li>Change my folder's tag or category</li>
+            <li>Remove my folder's tag or category</li>
+          </ul>
+          <ul>
+            <li style="orange">High</li>
+            <li style="orange">High</li>
+            <li style="orange">High</li>
+            <li style="orange">High</li>
+            <li style="orange">High</li>
+            <li style="orange">High</li>
+          </ul>
+        </article>
         <img src="images/chroma-user-flows-tagging-1x.png" alt="flow chart of tagging process">
-        <div class="user-story-container">
-          <div>
-            <p style="light">As a returning user, I want to...</p>
-            <p style="light">As a returning user, I want to...</p>
-          </div>
-          <div>
-            <p>Search my library by file or folder name</p>
-            <p>Search my storage library by tag or category</p>
-          </div>
-          <div>
-            <p style="orange">High</p>
-            <p style="orange">High</p>
-          </div>
-          <img src="images/chroma-user-flows-search-1x.png" alt="flow chart of search process">
-          <a href="https://docs.google.com/spreadsheets/d/1ST9C4wj62EbPGAAeFXT-PHTbcoqotqIUv0JPYvQB9JU/edit?usp=sharing"><p class="link">View All User Stories</p></a>
-          <a href="https://whimsical.com/QY6SHryTTQscFR1KyCc5Ma"><p class="link">View All User Flows</p></a>
+        <article class="user-story-container">
+          <ul>
+            <li style="light">As a returning user, I want to...</li>
+            <li style="light">As a returning user, I want to...</li>
+          </ul>
+          <ul>
+            <li>Search my library by file or folder name</li>
+            <li>Search my storage library by tag or category</li>
+          </ul>
+          <ul>
+            <li style="orange">High</li>
+            <li style="orange">High</li>
+          </ul>
+        </article>
+        <img src="images/chroma-user-flows-search-1x.png" alt="flow chart of search process">
+        <a href="https://docs.google.com/spreadsheets/d/1ST9C4wj62EbPGAAeFXT-PHTbcoqotqIUv0JPYvQB9JU/edit?usp=sharing"><p class="link">View All User Stories</p></a>
+        <a href="https://whimsical.com/QY6SHryTTQscFR1KyCc5Ma"><p class="link">View All User Flows</p></a>
       </section>
       <section id="chroma-pt5">
         <h5>Part Five</h5>
@@ -265,45 +267,45 @@
         <p class="caption">Sketches of combination dashboard</p>
         <img src="images/wireframe-sketches1x.png" alt="pen sketches of app screens">
         <h5>Version 2</h5>
-        <div>
+        <figure>
           <p class="caption">Lo-fi wireframe of file list view</p>
           <img src="images/lofi-filelist.png" alt="greyscale wireframe of file navigation view">
-        </div>
-        <div>
+        </figure>
+        <figure>
           <p class="caption">Lo-fi wireframe of dashboard</p>
           <img src="images/lofi-dashboard.png" alt="greyscale wireframe of dashboard view">
-        </div>
+        </figure>
       </section>
       <section id="chroma-pt6">
         <h5>Part Six</h5>
         <h3>Bringing the Brand to Life</h3>
         <p>Before I could embark on prototyping, I needed to establish a brand identity.</p>
         <p>Since our target audience would be primarily creatives working with tech, and since our value proposition for this product is expanded organizational features using tags, I wanted to emphasize uniqueness and color. </p>
-        <div>
+        <figure>
           <p class="caption">Exploring colors and patterns with a moodboard</p>
           <img src="images/chroma-mood-board1x.png" alt="collage of brightly colored photos and patterns">
-        </div>
-        <div>
+        </figure>
+        <figure>
           <p class="caption">This led to a bright, saturated color palette</p>
           <img src="images/chroma-palette-1x.png" alt="eight color swatches with their hex codes">
-        </div>
+        </figure>
         <p>Karla and Palanquin were selected as title and body typefaces.</p>
-        <div>
-          <h2 class="karla-regular">Karla Regular</h1>
-          <h2 class="karla-bold">Karla Bold</h1>
-          <h2 class="palanquin-regular">Palanquin Regular</h1>
-        </div>
+        <figure>
+          <h2 class="karla-regular">Karla Regular</h2>
+          <h2 class="karla-bold">Karla Bold</h2>
+          <h2 class="palanquin-regular">Palanquin Regular</h2>
+        </figure>
         <p><strong>Why Chroma?</strong></p>
         <p>Chroma was chosen as the brand name, as it brings to mind pure, bright pigments — the stuff of artists and creatives everywhere.</p>
         <p>The logo was developed to be reminiscent of a compact disc reflecting a prism in the sunlight. While the CD is a largely obsolete memory storage device, it’s still recent enough to be familiar to our target audience of millenials and gen-X’ers.</p>
-        <div>
+        <figure>
           <p class="caption">Early Sketches</p>
           <img src="images/chroma-logo-sketches.jpg" alt="preliminary pen sketches of the chroma logo">
-        </div>
-        <div>
+        </figure>
+        <figure>
           <p class="caption">The finished logo mark</p>
           <img src="images/chroma-logo-study.jpg" alt="the chroma logo shown over light and dark backgrounds">
-        </div>
+        </figure>
       </section>
       <section>
         <h5>Part Seven</h5>
@@ -311,24 +313,24 @@
         <p>My low fidelity prototypes were linked together into a clickable prototype that illustrated the pathways for 4 user stories: creating an account, creating a new document, uploading a file, and assigning a tag to a file. Three users were tested in person using the desktop version of the app.</p>
         <p>In general, the participants found the Chroma app to be clear and intuitive to use, but the test also identified some elements which were confusing to users.  Based on this feedback, I had the knowledge to inform some major revisions as I created my first high fidelity prototypes.</p>
         <p>In my low fidelity wireframes, the file upload button was nested inside the “+” menu. But two users had difficulty finding this initially. It was moved to the left navigation bar. I also opted to include “drag to center” functionality in the dashboard “empty set” page, to give users another way to upload files quickly.</p>
-        <div>
+        <figure>
           <p class="caption">Users had difficulty finding the upload button in the first lo-fi prototype</p>
           <img src="images/lofi-hidden-upload-btn.png" alt="wireframe showing the upload button nested inside a menu">
-        </div>
-        <div>
+        </figure>
+        <figure>
           <p class="caption">How the upload functionality evolved in version 2</p>
           <img src="images/chroma-hifi-upload.png" alt="wireframe showing the upload button clearly marked on the left side">
-        </div>
+        </figure>
         <p>Two users also had trouble finding the “add a tag” button here in the left sidebar navigation of my wireframe, but all users intuitively moved to select or hover over the file name when first looking for it. Clearly this was a pattern I needed to include.</p>
         <p>In my first high fidelity prototype, I modified the file list view to show the “add a tag” and share button on hover, or when the file is selected in the mobile app.</p>
-        <div>
+        <figure>
           <p class="caption">“Add a tag” button hidden on the left. Important lesson: Just because a button exists doesn’t mean users will actually see it.</p>
           <img src="images/chroma-lofi-hidden-tag-btn.png" alt="wireframe showing the tag button clearly marked on the left side">
-        </div>
-        <div>
+        </figure>
+        <figure>
           <p class="caption">In version 2, the “add a tag” button appears when hovering over a file in the navigation panel.</p>
           <img src="images/chroma-hifi-tag-on-hoverstate.png" alt="screen showing the tag button appearing when hovering on a file">
-        </div>
+        </figure>
       </section>
       <section id="chroma-pt8">
         <h5>Part Eight</h5>
@@ -355,12 +357,12 @@
         <p class="caption">By version 3, the nagivation bar and tag styling had evolved significantly.</p>
         <img src="images/chroma-final-dashboard-view.png">
         <p>A lot of major changes were made to the mobile app as well. In the final version, adding a tag in mobile  is done through a slide-up drawer, as is common in modern mobile UI patterns. </p>
-        <div>
+        <figure>
           <img src="images/chroma-mobile-add-tag.png">
-        </div>
-        <div>
+        </figure>
+        <figure>
           <img src="images/chroma-mobile-tag-search.png">
-        </div>
+        </figure>
       </section>
       <section id="conclusion">
         <p>Overall, the development of the Chroma app was a really rewarding challenge. I was lucky enough to get some things working well in the first draft, like the homepage layout and onboarding process. I also found that creating a detailed style guide (and updating it as I went through revisions with my visual design) was an enormous help to me as I created each iteration of my high fidelity prototype.</p>
