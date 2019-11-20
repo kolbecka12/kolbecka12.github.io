@@ -2,6 +2,7 @@
 <html>
  <head>
    <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
    <title>Portfolio | Andie Kolbeck</title>
    <link rel="stylesheet" href="css/reset.css">
    <link rel="stylesheet" href="css/style.css">
@@ -12,7 +13,7 @@
    <div class="container">
      <header>
        <nav>
-         <img src="images/logo-1x.png" alt="andie kolbeck logo">
+         <a href="/"><img src="images/logo-1x.png" alt="andie kolbeck logo"></a>
          <ul>
           <li><a href="#work-section">Work</a></li>
           <li><a href="/about">About</a></li>
@@ -27,8 +28,8 @@
          <h2>Cloud Storage for Digital Creatives</h2>
          <h3>A responsive design for web and mobile. Cloud storage designed for digital creatives and teams.</h3>
          <img src="images/Chroma-mobile-flat-layout-wide-1x.jpg" alt="view of colorful app screens">
-         <button><a href="">View Desktop Prototype</a></button>
-         <button><a href="">View Mobile Prototype</a></button>
+         <a class="btn-dark" href="">View Desktop Prototype</a>
+         <a class="btn-light" href="">View Mobile Prototype</a>
        </section>
        <section id="chroma-roles">
          <h6>My Roles:</h6>
@@ -83,14 +84,14 @@
             <img src="images/chroma-chart3.png" alt="pie chart with two thirds darkened">
             <p><strong>67%</strong> accessed their cloud storage using a mobile app, while 100% used desktop</p>
           </figure>
-          <figure>
+          <div class ="user-research">
             <p><strong>Biggest pain points</strong></p>
             <ul>
                 <li>Confusing organization</li>
                 <li>Lack of custom organization options</li>
                 <li>Syncing doesn't work as expected</li>
             </ul>
-          </figure>
+          </div>
           <figure>
             <p><strong>Most frequently used features:</strong></p>
             <ul>

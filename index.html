@@ -2,6 +2,7 @@
 <html>
  <head>
    <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
    <title>Portfolio | Andie Kolbeck</title>
    <link rel="stylesheet" href="css/reset.css">
    <link rel="stylesheet" href="css/style.css">
@@ -13,7 +14,7 @@
      <!--Header Section-->
      <header>
          <nav>
-           <img src="images/logo-1x.png" alt="andie kolbeck logo">
+           <a href="/"><img src="images/logo-1x.png" alt="andie kolbeck logo"></a>
            <ul>
             <li><a href="#work-section">Work</a></li>
             <li><a href="/about">About</a></li>
@@ -30,22 +31,24 @@
             <h1 class="x-large">I'm Andie.</h1>
             <h2>A people-first UX designer based in Berlin.</h2>
             <h3>With one foot in the digital art world<br> and the other in human behavior,<br> I design friendly and inclusive digital experiences<br> grounded in the stories of the people they serve.</h3>
-            <button><a href="#work-section">See My Latest Work</a></button>
-            <button><a href="mailto:kolbecka@gmail.com">Contact Me</a></button>
+            <a class ="btn-light" href="#work-section">See My Latest Work</a>
+            <a class ="btn-dark" href="mailto:kolbecka@gmail.com">Contact Me</a>
           </article>
       </section>
       <!-- Case Study Section -->
-      <section class="case-study">
-          <image src="images/Chroma-mobile-flat-layout-1x.jpg" alt="colorful app screens">
+      <section class="case-study" id="work-section">
+          <img src="images/Chroma-mobile-flat-layout-1x.jpg" alt="colorful app screens">
           <article>
             <h6>Chroma</h6>
             <h2>Cloud Storage for Digital Creatives</h2>
-            <button class="category-tag">User Research</button>
-            <button class="category-tag">UX Design</button>
-            <button class="category-tag">Visual Design</button>
-            <button class="category-tag">Brand Identity</button>
+            <ul>
+              <li class="category-tag">User Research</li>
+              <li class="category-tag">UX Design</li>
+              <li class="category-tag">Visual Design</li>
+              <li class="category-tag">Brand Identity</li>
+            </ul>
             <p>A responsive design for web and mobile. Cloud storage designed for digital creatives and teams.</p>
-            <button><a href="/chroma-cloud-storage">View Case Study</a></button>
+            <a class="btn-light" href="/chroma-cloud-storage">View Case Study</a>
           </article>
       </section>
       <!-- Skills Section -->
