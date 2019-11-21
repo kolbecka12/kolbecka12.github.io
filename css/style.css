@@ -1,0 +1,259 @@
+/*------
+BODY COLORS
+
+rust orange #ED9A68
+standard grey / footer #7D7D7E
+charcoal #2A3636
+pale beige #FDF8F4
+rose quartz #FDF8F4
+lightest grey #E8E8E8
+
+HERO LINEAR GRADIENT
+
+background: linear-gradient(180deg, #ED9A68 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, rgba(42, 54, 54, 0.68) 0%, #2A3636 37.5%);
+
+TEXT COLORS
+
+primary text #000
+secondary text #2A3636
+tertiary text #565656
+---------*/
+
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: white;
+}
+
+
+/* Fonts */
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  font-family: Archivo;
+  font-style: normal;
+  font-weight: 300;
+}
+
+
+h1 {
+  font-size: 48px;
+  line-height: 167.23%;
+}
+
+
+h1.x-large {
+  font-size: 6rem;
+  line-height: 167.23%;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 3.6rem;
+  line-height: 140%;
+}
+
+h3 {
+  font-size: 2.4rem;
+  line-height: 135%;
+}
+
+h4, h5, h6, p {
+  font-family: Work Sans;
+  font-style: normal;
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 150%;
+}
+
+h5 {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 130%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h6 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 167.23%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+p {
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: 140%;
+}
+
+small {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5rem;
+  text-align: center;
+
+  /* pale beige */
+  color: #FDF8F4;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.footer-icon {
+  /* pale beige */
+  color: #FDF8F4;
+  font-size: 3rem;
+}
+
+.nav-link {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 167.23%;
+  text-transform: uppercase;
+}
+
+.light {
+  /* pale beige */
+  color: #FDF8F4;
+}
+
+.skill-icon {
+  color: #C86F3A;
+  font-size: 6.4rem;
+}
+
+
+
+/* Div Elements */
+
+nav {
+  display: inline-block;
+  width: 100%;
+}
+
+footer {
+  background-color: #2A3636;
+  text-align: center;
+}
+
+section {
+  padding: 8rem;
+  /* margin: 2rem; */
+}
+
+.btn-orange {
+  /* rust orange */
+  background-color: #ED9A68;
+  /* pale beige */
+  color: #FDF8F4;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 167.23%;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.btn-wire {
+  /* rust orange */
+  border: #ED9A68;
+  border-radius: 2px;
+  border-style: solid;
+  border-width: 1px;
+  /* rust orange */
+  color: #ED9A68;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 167.23%;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.category-tag {
+  /* rust orange */
+  background-color: #ED9A68;
+  display: inline-block;;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  padding: 1rem;
+  margin: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.container{
+  display: grid;
+}
+
+.gradient {
+  background: linear-gradient(180deg, #ED9A68 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, rgba(42, 54, 54, 0.68) 0%, #2A3636 37.5%);
+}
+
+.designer {
+  /* rust orange */
+  background-color: #ED9A68;
+  text-align: center;
+}
+
+.nav-links {
+  float: right;
+  margin: auto;
+}
+
+.skills {
+  /* float: left;
+  margin: 1%;
+  padding: 1%; */
+  /* text-align: center;
+  width: 47%; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.social {
+  display: inline-block;
+}
+
+/* Responsive for Tablets */
+@media screen and (min-width: 768px) {
+  .container {
+    width: 70rem;
+  }
+}
+
+/* Responsive for Desktop */
+@media screen and (min-width: 1000px) {
+  .container {
+    width: 98rem;
+  }
+  /* .skills {
+    width: 23%;
+  } */
+}
