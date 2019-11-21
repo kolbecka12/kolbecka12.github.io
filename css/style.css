@@ -196,7 +196,7 @@ section {
 .category-tag {
   /* rust orange */
   background-color: #ED9A68;
-  display: inline-block;;
+  display: inline-block;
   font-family: Work Sans;
   font-style: normal;
   font-weight: normal;
@@ -207,18 +207,32 @@ section {
   text-transform: uppercase;
 }
 
+.case-study {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .container{
   display: grid;
 }
 
-.gradient {
-  background: linear-gradient(180deg, #ED9A68 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, rgba(42, 54, 54, 0.68) 0%, #2A3636 37.5%);
+.content-box {
+  width: 90%;
+  /* padding: 10% */
 }
 
 .designer {
   /* rust orange */
   background-color: #ED9A68;
   text-align: center;
+}
+
+.gradient {
+  background: linear-gradient(180deg, #ED9A68 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, rgba(42, 54, 54, 0.68) 0%, #2A3636 37.5%);
+}
+
+.hero-left-btn {
+  margin-right: 2rem;
 }
 
 .nav-links {
@@ -243,17 +257,15 @@ section {
 
 /* Responsive for Tablets */
 @media screen and (min-width: 768px) {
-  .container {
+  .content-box {
     width: 70rem;
   }
 }
 
 /* Responsive for Desktop */
 @media screen and (min-width: 1000px) {
-  .container {
-    width: 98rem;
+  .content-box {
+    max-width: 1444px;
   }
-  /* .skills {
-    width: 23%;
-  } */
+
 }
