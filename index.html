@@ -15,19 +15,21 @@
      <!--Header Section-->
      <section class="gradient">
        <header>
-           <nav class="content-box">
+           <nav class="content-box nav-align">
              <a href="/"><img src="images/logo-1x.png" alt="andie kolbeck logo"></a>
              <ul class="nav-links">
               <li><a class="nav-link light" href="#work-section">Work</a></li>
               <li><a class="nav-link light" href="/about">About</a></li>
               <li><a class="nav-link light" href="/resume.pdf">Resume</a></li>
-              <li><a class="nav-link light" href="mailto:kolbecka@gmail.com">Contact</a></li>
+              <div class="contact">
+                <li><a class="nav-link light" href="mailto:kolbecka@gmail.com">Contact</a></li>
+              </div>
             </ul>
           </nav>
         </header>
       <main>
         <!-- Hero Section -->
-        <article>
+        <article class="content-box">
           <h2 class="light">Hello!</h2>
           <h1 class="x-large light">I'm Andie.</h1>
           <h2 class="light">A people-first UX designer based in Berlin.</h2>
@@ -37,12 +39,11 @@
         </article>
       </section>
       <!-- Case Study Section -->
-      <section class="case-study" id="work-section">
-          <img src="images/Chroma-mobile-flat-layout-1x.jpg" alt="colorful app screens">
+      <section class="case-study content-box" id="work-section">
           <article>
             <h6>Chroma</h6>
             <h2>Cloud Storage for Digital Creatives</h2>
-            <ul>
+            <ul class="category-tag-container">
               <li class="category-tag">User Research</li>
               <li class="category-tag">UX Design</li>
               <li class="category-tag">Visual Design</li>
@@ -51,46 +52,51 @@
             <p>A responsive design for web and mobile. Cloud storage designed for digital creatives and teams.</p>
             <a class="btn-wire" href="/chroma-cloud-storage">View Case Study</a>
           </article>
+          <img src="images/Chroma-mobile-flat-layout-1x.jpg" alt="colorful app screens">
       </section>
       <!-- Skills Section -->
       <section class="designer">
           <h2>Full Stack Designer</h2>
           <h4>I can take your project from wild idea to live code.</h4>
-          <article class="skills">
-            <i class="skill-icon la la-search"></i>
-            <h3>Research</h3>
-            <p>Define the problem, create a strategy, collect user research, and analyze the competitive marketplace</p>
-          </article>
-          <article class="skills">
-            <i class="skill-icon las la-sitemap"></i>
-            <h3>Information Architechture</h3>
-            <p>Create user stories and flows, outline content, build wireframes, perform usability tests</p>
-          </article>
-          <article class="skills">
-            <i class="skill-icon las la-palette"></i>
-              <h3>Design</h3>
-              <p>Create the visual direction, develop branding & style guides, build high fidelity mockups</p>
-          </article>
-          <article class="skills">
-            <i class="skill-icon las la-laptop-code"></i>
-            <h3>Develop</h3>
-            <p>Develop functional prototype with HTML/CSS/javascript, deploy into test environment for review and user testing</p>
-          </article>
+          <div class ="content-box">
+            <article class="skills">
+              <i class="skill-icon la la-search"></i>
+              <h3>Research</h3>
+              <p>Define the problem, create a strategy, collect user research, and analyze the competitive marketplace</p>
+            </article>
+            <article class="skills">
+              <i class="skill-icon las la-sitemap"></i>
+              <h3>Information Architechture</h3>
+              <p>Create user stories and flows, outline content, build wireframes, perform usability tests</p>
+            </article>
+            <article class="skills">
+              <i class="skill-icon las la-palette"></i>
+                <h3>Design</h3>
+                <p>Create the visual direction, develop branding & style guides, build high fidelity mockups</p>
+            </article>
+            <article class="skills">
+              <i class="skill-icon las la-laptop-code"></i>
+              <h3>Develop</h3>
+              <p>Develop functional prototype with HTML/CSS/javascript, deploy into test environment for review and user testing</p>
+            </article>
+          </div>
       </section>
 
    <!-- Footer Section -->
        <footer>
          <h2 class="light">Let’s Build Something Incredible.</h2>
          <p class="light">Get in touch and say hello! Like my work, or just want to grab a cup of coffee and talk UX? Let’s connect!</p>
-         <button><a class="btn-orange" href="mailto:kolbecka@gmail.com">Contact Me</a></button>
-         <ul class="social">
-           <li><a href="mailto:kolbecka@gmail.com"><i class="footer-icon la la-envelope"></i></a> </li>
-           <li><a href="https://www.linkedin.com/in/andiekolbeck/"><i class="footer-icon lab la-linkedin-in"></i></a></li>
-           <li><a href="https://github.com/kolbecka12"><i class="footer-icon lab la-dribbble"></i></a></li>
-           <li><a href="https://twitter.com/the___andiest"><i class="footer-icon la la-twitter"></i></a></li>
-           <li><a href="https://unsplash.io"><i class="footer-icon la la-camera"></i></a></li>
+         <div class="footer-btn">
+           <a class ="btn-orange footer-btn" href="mailto:kolbecka@gmail.com">Contact Me</a>
+         </div>
+         <ul class="social-container">
+           <li class="social-icons"><a href="mailto:kolbecka@gmail.com"><i class="footer-icon la la-envelope"></i></a> </li>
+           <li class="social-icons"><a href="https://www.linkedin.com/in/andiekolbeck/"><i class="footer-icon lab la-linkedin-in"></i></a></li>
+           <li class="social-icons"><a href="https://github.com/kolbecka12"><i class="footer-icon lab la-dribbble"></i></a></li>
+           <li class="social-icons"><a href="https://twitter.com/the___andiest"><i class="footer-icon la la-twitter"></i></a></li>
+           <li class="social-icons"><a href="https://unsplash.io"><i class="footer-icon la la-camera"></i></a></li>
          </ul>
-         <small>©2019 Andie Kolbeck | Designed & Developed by Andie Kolbeck</small>
+         <p class="copyright">©2019 Andie Kolbeck | Designed & Developed by Andie Kolbeck</p>
        </footer>
     </main>
    </div>
