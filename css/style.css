@@ -1,25 +1,3 @@
-/*------
-BODY COLORS
-
-rust orange #ED9A68
-standard grey / footer #7D7D7E
-charcoal #2A3636
-pale beige #FDF8F4
-rose quartz #FDF8F4
-lightest grey #E8E8E8
-
-HERO LINEAR GRADIENT
-
-background: linear-gradient(180deg, #ED9A68 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, rgba(42, 54, 54, 0.68) 0%, #2A3636 37.5%);
-
-TEXT COLORS
-
-primary text #000
-secondary text #2A3636
-tertiary text #565656
----------*/
-
-
 *, *:before, *:after {
   box-sizing: border-box;
 }
@@ -32,32 +10,27 @@ body {
   background-color: white;
 }
 
-/* ----------------------HERO BLOCK FORMATTING---------------------- */
-
-.hello {
-  line-height: 1rem;
-  margin: 9.6rem 0 2.4rem 0;
-}
-
-.hero-intro {
-  margin-bottom: 2.4rem;
-}
-
-.hero-statement {
-  font-size: 1.5rem;
-  margin-bottom: 4.8rem;
-}
-
-.x-large {
-  font-size: 3.6rem;
-  margin-top: 0;
-  /* text-transform: uppercase; */
-}
-
 
 /* ----------------------STYLESHEET TYPEFACES + FONT COLORS---------------------- */
 
-/* put all the hero elements together here */
+/*------
+BODY COLORS
+
+rust orange #ED9A68
+standard grey / footer #7D7D7E
+charcoal #2A3636
+pale beige #FDF8F4
+rose quartz #E9DAD1
+lightest grey #E8E8E8
+
+
+TEXT COLORS
+
+primary text #000
+secondary text #2A3636
+tertiary text #565656
+---------*/
+
 
 a {
   text-decoration: none;
@@ -69,27 +42,18 @@ h1, h2, h3 {
   font-weight: 300;
 }
 
-
-h1 {
-  font-size: 2.4rem;
-  line-height: 130%;
-}
-
-
 h2 {
   font-size: 2.0rem;
-  padding-bottom: 2.4rem;
+  /* padding-top: 1.2rem;
+  padding-bottom: 2.4rem; */
 }
-
 
 h3 {
   font-size: 2.4rem;
-  line-height: 135%;
+  /* line-height: 135%; */
 }
 
-
-
-h4, h5, h6, p {
+h4, h5, h6, p, li {
   font-family: Work Sans;
   font-style: normal;
 }
@@ -104,22 +68,28 @@ h5 {
   font weight: normal;
   font-size: 1.5rem;
   line-height: 140%;
-  text-align: center;
+  /* text-align: center; */
   text-transform: uppercase;
 }
 
 h6 {
-  font-weight: bold;
+  font-weight: normal;
   font-size: 1.5rem;
   line-height: 167.23%;
+  margin: 0;
   text-transform: uppercase;
 }
 
-p {
+li {
+  font-size: 1.5rem;
+  line-height: 140%;
+}
+
+p, .link {
   font-weight: normal;
   font-size: 1.5rem;
   line-height: 140%;
-  padding-bottom: 3.6rem;
+  /* padding-bottom: 3.6rem; */
 }
 
 ul {
@@ -128,31 +98,12 @@ ul {
   padding: 0;
 }
 
-.copyright {
-  display: block;
-  font-size: 1.5rem;
-  margin-top: 4rem;
-  text-align: center;
-
-  /* standard grey */
-  color: #FDF8F4;
-}
-
 .secondary-text {
-  /* secondary text */
   color: #2A3636;
 }
 
-.footer-icon {
-  /* pale beige */
-  color: #FDF8F4;
-  font-size: 3rem;
-}
-
-.nav-link {
-  font: normal 2.0rem "Work Sans";
-  line-height: 167.23%;
-  text-transform: uppercase;
+.tertiary-text {
+  color: #565656;
 }
 
 .light-text {
@@ -160,24 +111,28 @@ ul {
   color: #FDF8F4;
 }
 
-.skill-icon {
-  color: #C86F3A;
-  font-size: 6.4rem;
+
+
+/*----------------------HIGH LEVEL STRUCTURE---------------------- */
+
+.container {
+  display: grid;
 }
 
-
-
-/*----------------------STRUCTURE---------------------- */
-
-nav {
-  /* width: 100%; */
+.content-box-narrow {
+  margin: 0 auto;
+  width: 60%;
 }
 
-footer {
-  background-color: #7D7D7E;
-  padding-top: 9.6rem;
-  text-align: center;
+.content-box {
+  margin: 0 auto;
+  width: 90%;
 }
+
+/* hide on mobile */
+ .display-desktop {
+   display: none;
+ }
 
 section {
   padding: 4rem 0;
@@ -192,15 +147,21 @@ section {
 
 .btn {
   border-radius: 2px;
-  padding: 1px;
+  font-family: Work Sans;
+  font-style: normal;
   text-align: center;
   text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 167.23%;
+  padding: 12px 0 12px 0;
 }
 
 .orange {
   /* rust orange background, light font*/
   background-color: #ED9A68;
   color: #FDF8F4;
+  display: block;
 }
 
 .wire {
@@ -208,11 +169,141 @@ section {
   border: 1px solid #ED9A68;
   /* rust orange */
   color: #ED9A68;
+  display: block;
+}
+
+/*----------------------FOOTER----------------------*/
+
+.copyright {
+  display: block;
+  font-size: 1.5rem;
+  margin-top: 4rem;
+  text-align: center;
+
+  /* standard grey */
+  color: #FDF8F4;
+}
+
+footer {
+  background-color: #7D7D7E;
+  padding-top: 9.6rem;
+  text-align: center;
+}
+
+footer p {
+  padding-bottom: 3.6rem;
+}
+
+.footer-btn {
+  margin: 0 0 6.4rem 0;
+}
+
+.footer-icon {
+  /* pale beige */
+  color: #FDF8F4;
+  font-size: 3rem;
+}
+
+.social-container {
+  display: inline-flex;
+}
+
+.social-icons {
+  padding: 1rem;
 }
 
 
 
-/* affects all the li elements within the category-tag-container class */
+/* ----------------------INDEX.HTML PAGE---------------------- */
+
+/* ------NAV MENU------*/
+
+.contact-light {
+   /* pale beige  */
+  border: 1px solid #FDF8F4;
+}
+
+.contact-dark {
+   /* secondary text  */
+  border: 1px solid #2A3636;
+  margin-bottom: 1rem;
+}
+
+nav {
+  /* width: 100%; */
+}
+
+.nav-link {
+  font: normal 1.5rem "Work Sans";
+  line-height: 167.23%;
+  margin: 1.2rem;
+  text-transform: uppercase;
+}
+
+.nav-links {
+  display: inline-flex;
+  float: right;
+  margin-top: 1rem;
+}
+
+.nav-align img {
+  width: 15%;
+}
+
+/* ------HERO BLOCK------ */
+
+.gradient {
+  background: linear-gradient(180deg, #ED9A68 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, rgba(42, 54, 54, 0.68) 0%, #2A3636 37.5%);
+}
+
+.hello {
+  line-height: 1rem;
+  margin: 9.6rem 0 2.4rem 0;
+}
+
+.hero-intro {
+  font-size: 1.8rem;
+  margin-bottom: 2.4rem;
+}
+
+.hero-left-btn, .hero-right-btn {
+  display: block;
+  margin-bottom: 2rem;
+  /* margin-right: 2rem; */
+}
+
+.hero-statement {
+  font-size: 1.5rem;
+  margin-bottom: 4.8rem;
+}
+
+.x-large {
+  font-size: 3.6rem;
+  margin-top: 0;
+  /* text-transform: uppercase; */
+}
+
+
+/* ------CASE STUDY SECTION------ */
+
+.case-study {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.case-study .btn {
+  margin-bottom: 7.2rem;
+}
+
+.case-study h1 {
+  font-size: 2.4rem;
+  line-height: 130%;
+}
+
+.case-study-image img {
+  margin-top: 7.2rem;
+  width: 100%;
+}
 
 .category-tag-container li{
   /* rust orange */
@@ -229,35 +320,7 @@ section {
   padding: 0;
 }
 
-.case-study {
-  display: grid;
-  grid-template-columns: 1fr;
-}
-
-.contact-light {
-   /* pale beige  */
-  border: 1px solid #FDF8F4;
-}
-
-.contact-dark {
-   /* secondary text  */
-  border: 1px solid #2A3636;
-  margin-bottom: 1rem;
-}
-
-.content-box-narrow {
-  margin: 0 auto;
-  width: 60%;
-}
-
-.container {
-  display: grid;
-}
-
-.content-box {
-  margin: 0 auto;
-  width: 90%;
-}
+/* ------SKILLS SECTION------ */
 
 .designer {
   /* rust orange */
@@ -265,80 +328,345 @@ section {
   text-align: center;
 }
 
-/* hide on mobile */
- .display-desktop {
-   display: none;
- }
-
-
-.footer-btn {
-  margin: 0 0 6.4rem 0;
-}
-
-.gradient {
-  background: linear-gradient(180deg, #ED9A68 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, rgba(42, 54, 54, 0.68) 0%, #2A3636 37.5%);
-}
-
-.hero-left-btn, .hero-right-btn {
-  display: block;
-  margin-bottom: 2rem;
-
-
-  /* margin-right: 2rem; */
-}
-
-
-.nav-align {
-  /* display: flex;
-  flex-direction: row; */
-  /* flex-wrap: wrap; */
-  /* float: right; */
-}
-
-.nav-link {
-  margin: 1.8rem;
-}
-
-.nav-links {
-  display: inline-flex;
-  float: right;
-  margin-top: 2rem;
+.skill-icon {
+  color: #C86F3A;
+  font-size: 6.4rem;
 }
 
 .skills {
   float: left;
-  margin: 1%;
+  margin: 5%;
   padding: 1%;
   text-align: center;
-  width: 47%
+  width: 40%
 }
 
-.social-container {
-  display: inline-flex;
+.skills i {
+  padding-bottom: 2.0rem;
 }
 
-.social-icons {
-  padding: 1rem;
+/* ------TESTIMONIAL SECTION------ */
+
+.testimonial {
+  text-align: center;
 }
 
-
+.testimonial p {
+  padding-bottom: 2.4rem;
+}
 
 /* ----------------------PROJECT.HTML PAGE---------------------- */
+
+/* ------NAV MENU------*/
+
+.top-spacing {
+  padding: 4rem 0;
+}
+
+/* ------CASE STUDY TITLE SECTION------*/
 
 .case-study-hero {
   width: 100%;
 }
 
-.case-study-hero-btn {
-  margin: 4.8rem;
+.case-study-title img {
+  padding-bottom: 1.2rem;
+  width: 65%;
 }
 
-.case-study-title {
+#chroma-hero {
+  padding: 0;
+  margin-bottom: 4.8rem;
+}
+
+#chroma-hero img {
+  margin-bottom: 2.4rem;
+}
+
+.view-prototype {
+  margin-top: 1.8rem;
+}
+
+/* CHROMA ROLES */
+
+#chroma-roles h6 {
+/* tertiary text */
+  color: #565656;
+  margin-top: 2.4rem;
+}
+
+#chroma-roles p {
+  text-align: left;
+}
+
+/* CHROMA PROBLEM */
+
+#chroma-problem {
+  padding-bottom: 0;
+}
+
+#chroma-problem h2 {
+  padding: 1.2rem;
+}
+
+#chroma-problem img {
+    padding: 1.2rem;
+    width: 100%;
+}
+
+#chroma-problem p {
+  text-align: left;
+}
+
+/* CHROMA SOLUTION */
+
+#chroma-solution {
+  padding-top: 0;
+}
+
+#chroma-solution h2 {
+  padding: 1.2rem;
+}
+
+#chroma-solution p {
+  text-align: left;
+}
+
+/* DESIGN PROCESS */
+
+
+
+
+/* PT 1 - USER RESEARCH */
+
+#chroma-pt1 h6 {
+  /* tertiary text */
+  color: #565656;
   text-align: center;
+}
+
+#chroma-pt1 p {
+  margin-bottom: 4.8rem;
 }
 
 #chroma-user-research {
   padding: 4.8rem 0;
+}
+
+#chroma-user-research p, li {
+  text-align: center;
+}
+
+.research-list-title {
+  padding-top: 2.4rem;
+  text-align: center;
+}
+
+.user-research {
+  text-align: center;
+}
+
+/* PT 2 - COMPETITIVE RESEARCH */
+
+#chroma-pt2 h6 {
+  /* tertiary text */
+  color: #565656;
+  text-align: center;
+}
+
+#chroma-competitors {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+#chroma-competitors figure {
+  margin: 2rem;
+  text-align: center;
+}
+
+#chroma-competitors h5 {
+  line-height: auto;
+  margin-bottom: 0;
+}
+
+#chroma-competitors img{
+  width: 80%;
+  text-align: center;
+}
+
+#dropbox {
+  margin-top: 10px;
+}
+
+/* PT 3 - USER PROFILES */
+
+#chroma-pt3 h6 {
+  /* tertiary text */
+  color: #565656;
+  text-align: center;
+}
+
+.user-profile {
+  padding-bottom: 3.6rem;
+  text-align: center;
+}
+
+.user-profile h5 {
+  margin: 1.2rem;
+}
+
+.user-profile p {
+  margin: 2.4rem 0 2.4rem 0;
+}
+
+.user-profile img {
+  margin-top: 3.6rem;
+  width: 100%;
+}
+
+
+/* PT 4 - USER STORIES & FLOWS */
+
+#chroma-pt4 h6 {
+  /* tertiary text */
+  color: #565656;
+  text-align: center;
+}
+
+#chroma-pt4 img {
+  margin: 2.4rem 0 4.8rem 0;
+  width: 100%;
+}
+
+.link-container {
+  margin-bottom: 2.4rem;
+}
+
+/* PT 5 - SKETCHING TO WIREFRAMES */
+
+#chroma-pt5 h5 {
+  /* tertiary text */
+  color: #565656;
+  text-align: center;
+}
+
+#chroma-pt5 h6 {
+  /* tertiary text */
+  color: #565656;
+  text-align: center;
+}
+
+#chroma-pt5 img {
+  margin: 0 0 3.6rem 0;
+  width: 100%;
+}
+
+/* PT 6 - BRANDING + STYLE GUIDE */
+
+#chroma-pt6 h5 {
+  margin-top: 6.4rem;
+  text-align: center;
+}
+
+#chroma-pt6 h6 {
+  /* tertiary text */
+  color: #565656;
+  text-align: center;
+}
+
+#chroma-pt6 img {
+  margin: 0 0 3.6rem 0;
+  width: 100%;
+}
+
+.font-study {
+  /* pale beige */
+  background-color: #FDF8F4;
+  padding: 1.5rem 2.4rem 1.5rem 2.4rem;
+}
+
+/* PT 7 - USER TESTING TO HIFI PROTOTYPE */
+
+#chroma-pt7 h6 {
+  /* tertiary text */
+  color: #565656;
+  text-align: center;
+}
+
+#chroma-pt7 img {
+  margin: 0 0 3.6rem 0;
+  width: 100%;
+}
+
+/* PT 8 - PREF TESTING */
+
+#chroma-pt8 h6 {
+  /* tertiary text */
+  color: #565656;
+  text-align: center;
+}
+
+#chroma-pt8 img {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 1.8rem;
+  padding-top: 1.8rem;
+  width: 70%;
+}
+
+/* PT 9 -  ROUND 2 USER TESTING */
+
+#chroma-pt9 h6 {
+  /* tertiary text */
+  color: #565656;
+  text-align: center;
+}
+
+#chroma-pt9 img {
+  margin: 0 0 3.6rem 0;
+  width: 100%;
+}
+
+/* PT 10 - FINAL PROTOTYPE */
+
+#chroma-pt10 h6 {
+  /* tertiary text */
+  color: #565656;
+  text-align: center;
+}
+
+#chroma-pt10 img {
+  margin: 0 0 3.6rem 0;
+  width: 100%;
+}
+
+.mobile-screens {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* CONCLUSION */
+
+#conclusion img {
+  margin: 0 0 3.6rem 0;
+  width: 100%;
+}
+
+/* ------REPEATING STRUCTURE------*/
+.caption {
+  /* tertiary text */
+  color: #565656;
+  font-style: italic;
+  text-align: center;
+}
+
+.centered {
+  text-align: center;
+}
+
+.img-center {
+  text-align: center;
 }
 
 .light-section {
@@ -346,15 +674,90 @@ section {
   background-color: #FDF8F4;
 }
 
-.research-list-item {
-  line-height: 1rem;
-  padding-bottom: 0;
+.paragraph-end {
+  margin-bottom: 4.8rem;
 }
 
-.research-list-title {
-  padding-bottom: 2.4rem;
-  padding-top: 3.6rem;
+.section-title {
+  margin: 3.6rem;
+  text-align: center;
 }
+
+/*
+* These styles for text decoration. The demo will be work without it
+*/
+
+.link-special-desktop, .link-special-mobile{
+	color: #000000;
+  /* display: inline-flex; */
+  font-family: Work Sans;
+	font-size: 1.5rem;
+  font-style: normal;
+	font-weight: normal;
+  padding: 0 10px 5px 10px;
+  position: relative;
+  text-align: center;
+	text-decoration: none;
+  z-index: 1;
+
+}
+
+/*
+* These styles creates the underlining of link
+*/
+
+.link-special-mobile::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, #E9DAD1 25%, rgba(0, 0, 0, 0) 40%);
+
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  z-index: -1;
+}
+
+.link-special-desktop::before{
+	content: "";
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(to top, #E9DAD1 25%, rgba(0, 0, 0, 0) 40%);
+
+	position: absolute;
+	left: 0;
+	bottom: 2px;
+	z-index: -1;
+
+	will-change: width;
+	transform: rotate(-1deg);
+	transform-origin: left bottom
+}
+
+.link-special-desktop:hover::before{
+	width: 0;
+}
+
+/*
+* animation styles
+*/
+
+.link-special-desktop::before{
+	transition: width .1s ease-out;
+}
+
+.link-special-desktop:hover::before{
+	transition-duration: .15s;
+}
+
+
+.rose-section {
+  /* rose quartz */
+  background-color: #E9DAD1;
+}
+
+
+
 
 /* ----------------------MEDIA QUERIES---------------------- */
 
@@ -411,7 +814,6 @@ section {
 
  h2 {
    font-size: 3.6rem;
-   padding-bottom: 2.4rem;
  }
 
  .hello {
@@ -421,7 +823,7 @@ section {
 
  h3 {
    font-size: 2.4rem;
-   line-height: 135%;
+   /* line-height: 135%; */
  }
 
  .hero {
@@ -449,7 +851,7 @@ section {
  }
 
  h6 {
-   font-weight: bold;
+   font-weight: normal;
    font-size: 1.8rem;
    line-height: 167.23%;
    text-transform: uppercase;

@@ -36,64 +36,71 @@
           <h1 class="display-desktop hero-statement light-text">With one foot in the digital art world<br> and the other in human behavior,<br> I design friendly and inclusive digital experiences<br> grounded in the stories of the people they serve.</h1>
           <h1 class="display-mobile hero-statement light-text">I design friendly and inclusive digital experiences, grounded in the stories of the people they serve.</h1>
           <!-- header section should only be h1s bc of info heirarchy. fix this in media query, too -->
-          <a class ="btn orange hero-left-btn" href="#work-section"><h6>See My Latest Work</h6></a>
-          <a class ="btn wire hero-right-btn" href="mailto:kolbecka@gmail.com"><h6>Contact Me</h6></a>
+          <a class ="btn orange hero-left-btn" href="#work-section">See My Latest Work</a>
+          <a class ="btn wire hero-right-btn" href="mailto:kolbecka@gmail.com">Contact Me</a>
         </article>
       </section>
       <!-- Case Study Section -->
-      <section class="case-study content-box" id="work-section">
+      <section class="case-study-image">
+        <img src="images/Chroma-mobile-flat-layout-1x.jpg" alt="colorful app screens">
+      </section>
+      <section class="case-study content-box-narrow" id="work-section">
           <article>
             <h6>Chroma</h6>
-            <h2>Cloud Storage for Digital Creatives</h2>
-            <ul class="category-tag-container">
+            <h1>Cloud Storage for Digital Creatives</h1>
+            <ul class="category-tag-container display-desktop">
               <li>User Research</li>
               <li>UX Design</li>
               <li>Visual Design</li>
               <li>Brand Identity</li>
             </ul>
-            <p>A responsive design for web and mobile. Cloud storage designed for digital creatives and teams.</p>
-            <a class="btn wire" href="/chroma-cloud-storage"><h6>View Case Study</h6></a>
+            <p class="paragraph-end">A responsive design for web and mobile. Cloud storage designed for digital creatives and teams.</p>
+            <a class="btn wire" href="/chroma-cloud-storage">View Case Study</a>
           </article>
-          <img src="images/Chroma-mobile-flat-layout-1x.jpg" alt="colorful app screens">
       </section>
       <!-- Skills Section -->
-      <section class="designer">
+      <section class="designer light-text">
           <h2>Full Stack Designer</h2>
-          <h4>I can take your project from wild idea to live code.</h4>
+          <h4 class="display-desktop">I can take your project from wild idea to live code.</h4>
+          <p class="display-mobile">I can take your project<br> from wild idea to live code.</p>
           <div class ="content-box">
             <article class="skills">
               <i class="skill-icon la la-search"></i>
               <h3 class="display-desktop">Research</h3>
-              <h5 class="display-mobile">Research</h5>
+              <h6 class="display-mobile">Research</h6>
               <p>Define the problem, create a strategy, collect user research, and analyze the competitive marketplace</p>
             </article>
             <article class="skills">
               <i class="skill-icon las la-sitemap"></i>
               <h3 class="display-desktop">Information Architechture</h3>
-              <h5 class="display-mobile">Information Architechture</h5>
+              <h6 class="display-mobile">Information Architechture</h6>
               <p>Create user stories and flows, outline content, build wireframes, perform usability tests</p>
             </article>
             <article class="skills">
               <i class="skill-icon las la-palette"></i>
                 <h3 class="display-desktop">Design</h3>
-                <h5 class="display-mobile">Design</h5>
+                <h6 class="display-mobile">Design</h6>
                 <p>Create the visual direction, develop branding & style guides, build high fidelity mockups</p>
             </article>
             <article class="skills">
               <i class="skill-icon las la-laptop-code"></i>
               <h3 class="display-desktop">Develop</h3>
-              <h5 class="display-mobile">Develop</h5>
-              <p>Develop functional prototype with HTML/CSS/javascript, deploy into test environment for review and user testing</p>
+              <h6 class="display-mobile">Develop</h6>
+              <p>Develop functional prototype with HTML + CSS + javascript, deploy into test environment for review and user testing</p>
             </article>
           </div>
+      </section>
+      <section class="content-box testimonial">
+        <h2>Testimonial</h2>
+        <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."</p>
       </section>
 
    <!-- Footer Section -->
        <footer>
          <h2 class="light-text">Let’s Build Something Incredible.</h2>
-         <p class="light-text">Get in touch and say hello! Like my work, or just want to grab a cup of coffee and talk UX? Let’s connect!</p>
+         <p class="content-box light-text">Get in touch and say hello! Like my work, or just want to grab a cup of coffee and talk UX? Let’s connect!</p>
          <div class="footer-btn">
-           <a class ="btn orange" href="mailto:kolbecka@gmail.com"><h6>Contact Me</h6></a>
+           <a class ="btn orange content-box-narrow" href="mailto:kolbecka@gmail.com">Contact Me</a>
          </div>
          <ul class="social-container">
            <li class="social-icons"><a href="mailto:kolbecka@gmail.com"><i class="footer-icon la la-envelope"></i></a> </li>
@@ -102,7 +109,7 @@
            <li class="social-icons"><a href="https://twitter.com/the___andiest"><i class="footer-icon la la-twitter"></i></a></li>
            <li class="social-icons"><a href="https://unsplash.io"><i class="footer-icon la la-camera"></i></a></li>
          </ul>
-         <p class="copyright">©2019 Andie Kolbeck | Designed & Developed by Andie Kolbeck</p>
+         <p class="content-box copyright">©2019 Andie Kolbeck | Designed & Developed by Andie Kolbeck</p>
        </footer>
     </main>
    </div>
