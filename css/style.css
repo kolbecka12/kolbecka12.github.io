@@ -42,6 +42,7 @@ h1, h2, h3 {
   font-weight: 300;
 }
 
+
 h2 {
   font-size: 2.0rem;
   /* padding-top: 1.2rem;
@@ -122,6 +123,11 @@ ul {
 .content-box-narrow {
   margin: 0 auto;
   width: 60%;
+}
+
+.content-box-medium {
+  margin: 0 auto;
+  width: 75%;
 }
 
 .content-box {
@@ -227,10 +233,6 @@ footer p {
    /* secondary text  */
   border: 1px solid #2A3636;
   margin-bottom: 1rem;
-}
-
-nav {
-  /* width: 100%; */
 }
 
 .nav-link {
@@ -770,7 +772,101 @@ nav {
   background-color: #E9DAD1;
 }
 
+/* ----------------------ABOUT.HTML PAGE---------------------- */
 
+/* about me hero */
+
+#about-hero-container {
+  position: relative;
+}
+
+#about-nav {
+  position: absolute;
+  top: 30px;
+  width: 100%;
+}
+/*
+.nav-link {
+  font: normal 1.5rem "Work Sans";
+  line-height: 167.23%;
+  margin: 1.2rem;
+  text-transform: uppercase;
+} */
+
+#about-nav-links {
+  display: inline-flex;
+  float: right;
+  margin-top: 1rem;
+}
+/*
+.nav-align img {
+  width: 15%;
+} */
+
+
+#about-me-text {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  color: #FDF8F4;
+  transform: translate(-50%, -50%);
+}
+
+#about-me-text h1 {
+  font-size: 2.4rem;
+}
+
+#about-hero {
+  width: 100%;
+  z-index: 0;
+}
+
+.about-body h4 {
+  margin-top: 6.4rem;
+}
+
+.about-body li {
+  padding-bottom: 2.4rem;
+}
+
+#discovering-ux {
+  margin-top: 1.8rem;
+}
+
+#hobbies {
+  padding-bottom: 0;
+}
+
+.photo-gallery {
+  padding-top: 1rem;
+  text-align: center;
+  width: 100%;
+}
+
+.photo-gallery img {
+  display: inline-block;
+  padding-bottom: 1rem;
+  /* margin: 1%; */
+  width: 49.5%;
+}
+
+.left {
+  padding-right: .5rem;
+}
+
+.right {
+  padding-left: .5rem;
+}
+
+
+/* ------REPEATING STRUCTURE------*/
+
+.about {
+  line-height: 135%;
+  /* padding-left: 20%; */
+  padding: 3.6rem 0 3.6rem 20%;
+  width: 80%;
+}
 
 
 /* ----------------------MEDIA QUERIES---------------------- */
