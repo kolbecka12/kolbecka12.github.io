@@ -14,49 +14,52 @@
    <div class="container">
      <!--Header Section-->
      <section class="gradient">
-       <header>
-           <nav class="content-box nav-align">
-             <a href="/"><img src="images/logo-1x.png" alt="andie kolbeck logo"></a>
-             <ul class="nav-links">
-              <li><a class="nav-link light-text" href="#work-section">Work</a></li>
-              <li><a class="nav-link light-text" href="/about">About</a></li>
-              <!-- <li><a class="nav-link light-text" href="/resume.pdf">Resume</a></li> -->
-              <div class="contact-light">
-                <li><a class="nav-link light-text" href="mailto:kolbecka@gmail.com">Contact</a></li>
-              </div>
-            </ul>
-          </nav>
-        </header>
+      <header>
+      <nav class="content-box nav-align">
+      <a class="display-desktop" href="/"><img class="logo" src="images/logo-desktop.png" alt="andie kolbeck logo"></a>
+      <a class="display-mobile" href="/"><img class="logo" src="images/logo-1x.png" alt="andie kolbeck logo"></a>
+      <ul class="nav-links">
+        <li><a class="nav-link light-text" href="#work-section">Work</a></li>
+        <li><a class="nav-link light-text" href="/about">About</a></li>
+        <li><a class="display-desktop nav-link light-text" href="/resume.pdf">Resume</a></li>
+        <li><a class="contact-light nav-link light-text" href="mailto:kolbecka@gmail.com">Contact</a></li>
+      </ul>
+      </nav>
+      </header>
       <main>
         <!-- Hero Section -->
         <article class="content-box-narrow">
           <h1 class="hello light-text">Hello!</h1>
           <h1 class="x-large light-text">I'm Andie.</h1>
           <h1 class="light-text hero-intro">A people-first UX designer based in Berlin.</h1>
-          <h1 class="display-desktop hero-statement light-text">With one foot in the digital art world<br> and the other in human behavior,<br> I design friendly and inclusive digital experiences<br> grounded in the stories of the people they serve.</h1>
-          <h1 class="display-mobile hero-statement light-text">I design friendly and inclusive digital experiences, grounded in the stories of the people they serve.</h1>
+          <h2 class="display-desktop hero-statement light-text">With one foot in the digital art world<br> and the other in human behavior,<br> I design friendly and inclusive digital experiences<br> grounded in the stories of the people they serve.</h2>
+          <h2 class="display-mobile hero-statement light-text">I design friendly and inclusive digital experiences, grounded in the stories of the people they serve.</h2>
           <!-- header section should only be h1s bc of info heirarchy. fix this in media query, too -->
-          <a class ="btn orange hero-left-btn" href="#work-section">See My Latest Work</a>
-          <a class ="btn wire hero-right-btn" href="mailto:kolbecka@gmail.com">Contact Me</a>
+          <div class="hero-button-container">
+            <a class ="btn orange hero-left-btn" href="#work-section">See My Latest Work</a>
+            <a class ="btn wire hero-right-btn" href="mailto:kolbecka@gmail.com">Contact Me</a>
+        </div>
         </article>
       </section>
       <!-- Case Study Section -->
-      <section class="case-study-image">
-        <img src="images/Chroma-mobile-flat-layout-1x.jpg" alt="colorful app screens">
-      </section>
-      <section class="case-study content-box-narrow" id="work-section">
-          <article>
-            <h6>Chroma</h6>
-            <h1>Cloud Storage for Digital Creatives</h1>
-            <ul class="category-tag-container display-desktop">
-              <li>User Research</li>
-              <li>UX Design</li>
-              <li>Visual Design</li>
-              <li>Brand Identity</li>
-            </ul>
-            <p class="paragraph-end">A responsive design for web and mobile. Cloud storage designed for digital creatives and teams.</p>
-            <a class="btn wire" href="/chroma-cloud-storage">View Case Study</a>
-          </article>
+      <section class="case-study">
+        <div class="case-study-image">
+          <img src="images/Chroma-mobile-flat-layout-2x.jpg" alt="colorful app screens">
+        </div>
+        <article class="content-box-narrow" id="work-section">
+            <div>
+              <h6>Chroma</h6>
+              <h1>Cloud Storage for Digital Creatives</h1>
+              <ul class="category-tag-container display-desktop">
+                <li>User Research</li>
+                <li>UX Design</li>
+                <li>Visual Design</li>
+                <li>Brand Identity</li>
+              </ul>
+              <p class="paragraph-end" id ="paragraph-end-case-study-desktop">A responsive design for web and mobile. Cloud storage designed for digital creatives and teams.</p>
+              <a class="btn wire" href="/chroma-cloud-storage">View Case Study</a>
+            </div>
+        </article>
       </section>
       <!-- Skills Section -->
       <section class="designer light-text">
@@ -66,31 +69,27 @@
           <div class ="skills-content-box">
             <article class="skills">
               <i class="skill-icon la la-search"></i>
-              <h3 class="display-desktop">Research</h3>
-              <h6 class="display-mobile">Research</h6>
+              <h6>Research</h6>
               <p>Define the problem, create a strategy, collect user research, and analyze the competitive marketplace</p>
             </article>
             <article class="skills">
               <i class="skill-icon las la-sitemap"></i>
-              <h3 class="display-desktop">Information Architechture</h3>
-              <h6 class="display-mobile">Information Architechture</h6>
+              <h6>Information Architechture</h6>
               <p>Create user stories and flows, outline content, build wireframes, perform usability tests</p>
             </article>
             <article class="skills">
               <i class="skill-icon las la-palette"></i>
-                <h3 class="display-desktop">Design</h3>
-                <h6 class="display-mobile">Design</h6>
+                <h6>Design</h6>
                 <p>Create the visual direction, develop branding & style guides, build high fidelity mockups</p>
             </article>
             <article class="skills">
               <i class="skill-icon las la-laptop-code"></i>
-              <h3 class="display-desktop">Develop</h3>
-              <h6 class="display-mobile">Develop</h6>
+              <h6>Develop</h6>
               <p>Develop functional prototype with HTML + CSS + javascript, deploy into test environment for review and user testing</p>
             </article>
           </div>
       </section>
-      <section class="content-box testimonial">
+      <section class="content-box-narrow content-box-narrow-desktop testimonial">
         <h2>Testimonial</h2>
         <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."</p>
       </section>
