@@ -12,38 +12,47 @@
  <body>
    <!-- exterior edge of grids to follow -->
    <div class="container">
-     <header class="top-spacing">
+     <!-- <header class="top-spacing">
      <nav class="content-box nav-align">
        <a href="/"><img src="images/logo-1x.png" alt="andie kolbeck logo"></a>
        <ul class="nav-links">
         <li><a class="nav-link secondary-text" href="#work-section">Work</a></li>
         <li><a class="nav-link secondary-text" href="/about">About</a></li>
-        <!-- <li><a class="nav-link secondary-text" href="/resume.pdf">Resume</a></li> -->
+        <li><a class="nav-link secondary-text" href="/resume.pdf">Resume</a></li>
         <div class="contact-dark">
           <li><a class="nav-link secondary-text" href="mailto:kolbecka@gmail.com">Contact</a></li>
         </div>
       </ul>
     </nav>
+   </header> -->
+   <header class="top-spacing">
+     <nav class="content-box nav-align">
+       <a class="display-desktop" href="/"><img class="logo" src="images/logo-desktop.png" alt="andie kolbeck logo"></a>
+       <a class="display-mobile" href="/"><img class="logo" src="images/logo-1x.png" alt="andie kolbeck logo"></a>
+       <ul class="nav-links">
+         <li><a class="nav-link secondary-text" href="#work-section">Work</a></li>
+         <li><a class="nav-link secondary-text" href="/about">About</a></li>
+         <li><a class="display-desktop nav-link secondary-text" href="/resume.pdf">Resume</a></li>
+         <li><a class="contact-dark nav-link secondary-text" href="mailto:kolbecka@gmail.com">Contact</a></li>
+       </ul>
+     </nav>
    </header>
    <main>
        <section class="centered">
          <div class="content-box-narrow">
            <img src="images/chroma-logo-1x.png" alt="chroma cloud storage logo">
-           <h2>Cloud Storage <br>for Digital Creatives</h2>
-           <h3 class="display-desktop">A responsive design for web and mobile. Cloud storage designed for digital creatives and teams.</h3>
+           <h2 class="display-desktop">Cloud Storage for Digital Creatives</h2>
+           <h2 class ="display-mobile">Cloud Storage <br>for Digital Creatives</h2>
+           <h3 class="display-desktop">A responsive design for web and mobile.<br>Cloud storage designed for digital creatives and teams.</h3>
            <p class="display-mobile">A responsive design for web and mobile. Cloud storage designed for digital creatives and teams.</p>
-
-         <!-- use this file for larger screens -->
-         <!-- <img src="images/Chroma-mobile-flat-layout-wide-1x.jpg" alt="view of colorful app screens"> -->
         </div>
       </section>
       <section id="chroma-hero">
-         <img class="case-study-hero" src="images/Chroma-mobile-flat-layout-1x.jpg" alt="view of chroma cloud storage app screens">
-         <div class="content-box-narrow">
-           <a class="btn orange view-prototype" href="">View Desktop Prototype</a>
-         </div>
-         <div class="content-box-narrow">
-           <a class="btn wire view-prototype" href="">View Mobile Prototype</a>
+         <img class="case-study-hero display-mobile" src="images/Chroma-mobile-flat-layout-1x.jpg" alt="view of chroma cloud storage app screens">
+         <img class="case-study-hero display-desktop" src="images/Chroma-mobile-flat-layout-4x.jpg" alt="view of colorful app screens">
+         <div class="hero-button-container content-box-narrow centered">
+           <a class ="btn orange hero-left-btn" href="">View Desktop Prototype</a>
+           <a class ="btn wire hero-right-btn" href="">View Mobile Prototype</a>
          </div>
        </section>
        <section class="light-section" id="chroma-roles">
@@ -60,20 +69,25 @@
            <p>5 weeks</p>
          </article>
        </section>
-       <section id="chroma-problem">
-         <article class="content-box centered">
+       <section class="content-box" id="chroma-problem">
+         <article class="centered">
            <h2 class="section-title">The Problem</h2>
            <h4>Unconventional creatives are stuck with conventional tools.</h4>
            <p>The cloud storage marketplace is dominated by one-size-fits-all solutions that lack features which are critical to digital creatives.</p>
          </article>
-         <!-- <figure class="display-desktop">
+         <figure class="display-desktop">
            <img src="images/color-splash-1x.png" alt="annoyed lightbulb icon over splash of orange paint">
-         </figure> -->
+         </figure>
+         <article class="display-desktop centered">
+           <h2 class="section-title" >The Solution</h2>
+           <h4>Give the user more control.</h4>
+           <p>Chroma was developed to give designers, marketers, and social media managers a better way to organize their files: a customizable tagging system. With user-generated tags, files can be discovered more easily through search, and organization is no longer limited to the traditional file folder system.</p>
+         </article>
          <figure class="content-box centered">
            <img src="images/chroma-color-splash-1x.png" alt="chroma app displayed on mobile and desktop screens">
          </figure>
       </section>
-      <section id="chroma-solution">
+      <section class="display-mobile" id="chroma-solution">
         <article class="content-box centered">
           <h2 class="section-title" >The Solution</h2>
           <h4>Give the user more control.</h4>
@@ -93,36 +107,49 @@
           <p>I kicked off this project with a user survey, to get a sense of how digital creatives were using cloud storage now, as well as what they did and didn’t like about these services. 20 product designers, marketers, social media managers, and graphic artists participated.</p>
         </div>
         <article class="light-section" id="chroma-user-research">
-          <figure class="centered">
+          <div class="content-box" id="user-research-grid">
+          <figure class="centered item1">
             <img src="images/chroma-chart1.png" alt="bar graph with 3 and 4 as highest values">
+          </figure>
+          <figure class="item2">
             <p><strong>Most respondants</strong> used 3 to 4 different cloud storage services.</p>
           </figure>
-          <figure class="centered">
+          <figure class="centered item3">
             <img src="images/chroma-chart2.png" alt="bar graph showing results">
+          </figure>
+          <figure class="item4">
             <p><strong>All respondants</strong> used Google Drive, and most used Dropbox. A variety of other services were used less frequently.</p>
           </figure>
-          <figure class="centered">
+          <figure class="centered item5">
             <img src="images/chroma-chart3.png" alt="pie chart with two thirds darkened">
+          </figure>
+          <figure class-"item6">
             <p><strong>67%</strong> accessed their cloud storage using a mobile app, while 100% used desktop</p>
           </figure>
-          <div class="content-box">
-            <h4 class="research-list-title">Biggest pain points</h4>
-            <ul>
-                <li>Confusing organization</li>
-                <li>Lack of custom organization options</li>
-                <li>Syncing doesn't work as expected</li>
-            </ul>
-            <h4 class="research-list-title">Most frequently used features:</h4>
-            <ul>
-              <li>Storing content</li>
-              <li>Creating content (documents, notes, etc)</li>
-              <li>Organizing files</li>
-              <li>Collaboration</li>
-            </ul>
-            <h4 class="research-list-title">Rarely used features:</h4>
-            <ul>
-              <li><p class="research-list-item">Backing up devices</p></li>
-            </ul>
+          <!-- <div class="content-box"> -->
+            <div>
+              <h4 class="research-list-title">Biggest pain points</h4>
+              <ul class="item8">
+                  <li>Confusing organization</li>
+                  <li>Lack of custom organization options</li>
+                  <li>Syncing doesn't work as expected</li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="research-list-title">Most frequently used features:</h4>
+              <ul>
+                <li>Storing content</li>
+                <li>Creating content (documents, notes, etc)</li>
+                <li>Organizing files</li>
+                <li>Collaboration</li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="research-list-title">Rarely used features:</h4>
+              <ul>
+                <li><p class="research-list-item">Backing up devices</p></li>
+              </ul>
+            </div>
           </div>
         </article>
       </section>

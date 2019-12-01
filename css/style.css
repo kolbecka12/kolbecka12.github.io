@@ -233,7 +233,7 @@ footer p {
 .contact-dark {
    /* secondary text  */
   border: 1px solid #2A3636;
-  margin-bottom: 1rem;
+  padding: .5rem 1rem;
 }
 
 .logo {
@@ -971,6 +971,10 @@ footer p {
     padding-bottom: 3.6rem;
   }
 
+  li {
+    font-size: 1.8rem;
+  }
+
   /*----------------------HIGH LEVEL STRUCTURE---------------------- */
 
   .content-box {
@@ -1118,6 +1122,86 @@ footer p {
     align-items: center;
   }
 
+  /*----------------------PROJECT.HTML PAGE----------------------*/
 
+  .case-study-hero {
+    margin: 0 auto;
+    width: 85%;
+    /* max-width: 85%; */
+  }
+
+  #chroma-hero img {
+    margin-bottom: 6.4rem;
+  }
+
+  #chroma-hero .hero-button-container {
+      margin-bottom: 0;
+    }
+
+  #chroma-problem {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    margin: 0 auto;
+    /* width: 80%; */
+    align-items: center;
+  }
+
+  #chroma-problem h2 {
+    margin-left: 0;
+    padding-left: 0;
+    text-align: left;
+  }
+
+  #chroma-problem h4 {
+    margin: 0;
+    text-align: left;
+  }
+
+  #design-process {
+    margin: 6.4rem 0;
+    padding: 9.6rem 0 9.6rem 0;
+  }
+
+  #user-research-grid {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    margin: 0 auto;
+    /* width: 80%; */
+    /* align-items: stretch; */
+  }
+
+  .item1 {
+    align-self: stretch;
+    grid column: 1;
+    grid-row: 1;
+  }
+
+  .item2 {
+    grid column: 1;
+    grid-row: 2;
+  }
+
+  .item3 {
+    grid column: 2;
+    grid-row: 1;
+  }
+
+  .item4 {
+    grid column: 2;
+    grid-row: 2;
+  }
+
+  .item5 {
+    grid column: 3;
+    grid-row: 1;
+  }
+
+  .item6 {
+    grid column: 3;
+    grid-row: 2;
+  }
 
 }
