@@ -769,11 +769,11 @@ footer p {
   position: relative;
 }
 
-/* #about-nav {
+#about-nav {
   position: absolute;
-  top: 5%;
+  top: 0;
   width: 100%;
-} */
+}
 /*
 
 .nav-link {
@@ -787,6 +787,7 @@ footer p {
   display: inline-flex;
   float: right;
   margin-top: 1rem;
+  z-index: 1;
 }
 
 #about-me-text {
@@ -802,6 +803,7 @@ footer p {
 }
 
 #about-hero {
+  top: 200px;
   width: 100%;
   z-index: 0;
 }
@@ -905,12 +907,90 @@ footer p {
     width: 35%;
   }
 
+  .narrow-tablet {
+    width: 50%;
+  }
+
+  .user1 {
+    grid column: 1;
+    grid-row: 1;
+    display: flex;
+  }
+
+  .user2 {
+    grid column: 1;
+    grid-row: 2;
+  }
+
+  .user3 {
+    grid column: 2;
+    grid-row: 1;
+    display: flex;
+  }
+
+  .user4 {
+    grid column: 2;
+    grid-row: 2;
+  }
+
+  .user5 {
+    grid column: 3;
+    grid-row: 1;
+  }
+
+  .user6 {
+    grid column: 3;
+    grid-row: 2;
+  }
+
+  /* PT 3 - USER PROFILES */
+
+    #user-profiles {
+      display: grid;
+      grid-gap: 2rem;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto;
+      margin: 0 auto;
+    }
+
+    .user-profile p {
+      margin-bottom: 1.8rem;
+    }
+
+    .user-profile li {
+      margin-bottom: 2.4rem;
+    }
+
+    #chroma-pt3 {
+      margin-bottom: 6.4rem;
+      padding-top: 6.4rem;
+    }
+
+    #chroma-pt3 .link-container {
+      margin: 6.4rem;
+    }
+
+    /* PT 4 - USER STORIES & FLOWS */
+
+
+    #chroma-pt4 img {
+      padding: 4.8rem 0;
+      margin: 0 auto;
+    }
+
+    #chroma-pt4 .link-container {
+      margin: 6.4rem;
+    }
+
 }
 
 /* Responsive for Desktop */
 @media screen and (min-width: 1000px) {
 
   /* ----------------------STYLESHEET TYPEFACES + FONT COLORS---------------------- */
+
+
+
 
   h1 {
     font-size: 4.8rem;
@@ -991,6 +1071,10 @@ footer p {
 
    .display-mobile {
      display: none;
+   }
+
+   .narrow-tablet {
+     width: inherit;
    }
 
    #work-section {
@@ -1160,97 +1244,94 @@ footer p {
     padding-bottom: 6.4rem;
   }
 
-  #user-research-grid {
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    margin: 0 auto;
-    /* width: 80%; */
-    /* align-items: stretch; */
-  }
+  /* PT 1: USER RESEARCH */
 
-  .item1 {
-    /* align-self: stretch; */
-    grid column: 1;
-    grid-row: 1;
-    display: flex;
-    /* align-items: baseline; */
-  }
-/*
-  .item1 img {
-    width: 268px;
-    height: 110px;
-  } */
+    #user-research-grid {
+      display: grid;
+      grid-gap: 1rem;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto;
+      margin: 0 auto;
+      /* width: 80%; */
+      /* align-items: stretch; */
+    }
 
-  .item2 {
-    grid column: 1;
-    grid-row: 2;
-  }
 
-  .item3 {
-    grid column: 2;
-    grid-row: 1;
-    display: flex;
-  }
 
-  .item4 {
-    grid column: 2;
-    grid-row: 2;
-  }
+    .item1 {
+      grid column: 1;
+      grid-row: 1;
+      display: flex;
+    }
 
-  .item5 {
-    grid column: 3;
-    grid-row: 1;
-  }
+    .item2 {
+      grid column: 1;
+      grid-row: 2;
+    }
 
-  .item6 {
-    grid column: 3;
-    grid-row: 2;
-  }
+    .item3 {
+      grid column: 2;
+      grid-row: 1;
+      display: flex;
+    }
 
-  .item7 {
-    grid-column: 1;
-    grid-row: 3;
-    /* display: flex; */
-    align-items: baseline;
-  }
+    .item4 {
+      grid column: 2;
+      grid-row: 2;
+    }
 
-  .item8 {
-    grid-column: 1;
-    grid-row: 4;
-    /* display: flex; */
-  }
+    .item5 {
+      grid column: 3;
+      grid-row: 1;
+    }
 
-  .item9 {
-    grid-column: 2;
-    grid-row: 3;
-    display: flex;
-    align-items: center;
-    align-self: center;
+    .item6 {
+      grid column: 3;
+      grid-row: 2;
+    }
 
-  }
+    .item7 {
+      grid-column: 1;
+      grid-row: 3;
+      /* display: flex; */
+      align-items: baseline;
+    }
 
-  .item10 {
-    grid-column: 2;
-    grid-row: 4;
-    /* display: flex; */
-  }
+    .item8 {
+      grid-column: 1;
+      grid-row: 4;
+      /* display: flex; */
+    }
 
-  .item11{
-    grid-column: 3;
-    grid-row: 3;
-    /* display: flex; */
-    /* align-items: baseline; */
+    .item9 {
+      grid-column: 2;
+      grid-row: 3;
+      display: flex;
+      align-items: center;
+      align-self: center;
 
-  }
+    }
 
-  .item12 {
-    grid-column: 3;
-    grid-row: 4;
-    /* display: flex; */
-    align-items: top;
-  }
+    .item10 {
+      grid-column: 2;
+      grid-row: 4;
+      /* display: flex; */
+    }
+
+    .item11{
+      grid-column: 3;
+      grid-row: 3;
+      /* display: flex; */
+      /* align-items: baseline; */
+
+    }
+
+    .item12 {
+      grid-column: 3;
+      grid-row: 4;
+      /* display: flex; */
+      align-items: top;
+    }
 
   /*PT 2: COMPETITIVE ANALYSIS*/
 
@@ -1276,32 +1357,6 @@ footer p {
     text-align: left;
   }
 
-/* PT 3 - USER PROFILES */
-
-  #user-profiles {
-    display: grid;
-    grid-gap: 2rem;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    margin: 0 auto;
-  }
-
-  .user-profile p {
-    margin-bottom: 1.8rem;
-  }
-
-  .user-profile li {
-    margin-bottom: 2.4rem;
-  }
-
-  #chroma-pt3{
-    margin-bottom: 6.4rem;
-    padding-top: 6.4rem;
-  }
-
-  #chroma-pt3 .link-container {
-    margin: 6.4rem;
-  }
 
 
 /* PT 4 - USER STORIES & FLOWS */
@@ -1334,13 +1389,16 @@ footer p {
   }
 
   #chroma-pt4 img {
+    padding: 0;
     margin: 0 auto;
     width: 90%;
   }
 
+
   #chroma-pt4 .link-container {
-    margin: 6.4rem;
+    margin: 3.6rem;
   }
+
 
   /* PT 5 - SKETCHING & WIREFRAMES */
 
@@ -1410,6 +1468,10 @@ footer p {
     max-width: 1600px;
   }
 
+  .min-height {
+    min-height: 100px;
+  }
+
   /* PT 8 - PREF TESTING */
 
   #chroma-pt8 {
@@ -1439,8 +1501,8 @@ footer p {
   }
 
   #chroma-pt10 img {
-    margin: 0 auto;
-    width: 80%;
+    margin-bottom: 6.4rem;
+    padding: 0 10%;
   }
 
 /* SPECIAL LINKS */
@@ -1480,5 +1542,150 @@ footer p {
   .link-special:hover::before{
   	transition-duration: .15s;
   }
+
+  /*----------------------ABOUT.HTML PAGE----------------------*/
+
+  /* .container-80 {
+    margin: 0 auto;
+    width: 80%;
+  } */
+
+  .about {
+    color: #ED9A68;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 160%;
+    margin-top: 0;
+  }
+
+  .about-page-container {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    margin: 0 auto;
+  }
+
+  .about-page-container h2 {
+    text-align: left;
+    margin-left: 0;
+    margin-top: 9.6rem;
+  }
+
+  .about-text-container {
+    max-width: 500px;
+  }
+
+  #about-start-photo {
+    margin-top: 9.6rem;
+  }
+
+  #about-end-photo {
+    margin-bottom: 9.6rem;
+  }
+
+  #about-intro h5 {
+    text-align: inherit;
+  }
+
+  #about-hero-desktop {
+    background: #ED9A68;
+    min-height: 900px;
+  }
+
+  #about-me-text {
+    /* position: absolute; */
+    left: 0;
+    color: #FDF8F4;
+    top: 0;
+    text-align: left;
+    transform: translate(10%, 50%);
+    z-index: 1;
+  }
+
+  #about-me-text h1 {
+    font-size: 4.8rem;
+  }
+
+  #about-me-text h2 {
+    width: 50%;
+  }
+
+  #about-hero {
+    transform: translateX(100%);
+    width: 45%;
+    z-index: auto;
+  }
+
+  #about-me-link {
+    text-align: center;
+  }
+
+  #about-me-link h5 {
+    color: #FDF8F4;
+    margin-top: 10rem;
+    margin-bottom: 1.2rem;
+  }
+
+  #about-me-link i {
+    color: #FDF8F4;
+    font-size: 2.0rem;
+    padding-bottom: 0;
+    /* transform: translateX(50%); */
+  }
+
+  #about-text-container h2 {
+    margin-left: 0;
+    text-align: left;
+  }
+
+  #about-city {
+    margin-top: 9.6rem;
+  }
+
+  #essentials-container .section-title {
+    margin-left: 0;
+    margin-top: 9.6rem;
+    text-align: left;
+  }
+
+  #essentials-container .paragraph-end {
+    margin-bottom: 9.6rem;
+  }
+
+  #hobbies-desktop {
+    margin-bottom: 12.8rem;
+  }
+
+  #hobbies-photos {
+    /* position: absolute; */
+    display: grid;
+  }
+
+  #hobbies-photo-bottom {
+    margin-top: 13.4rem;
+  }
+
+  .left-align {
+    text-align: left;
+    width: 400px;
+  }
+
+  .paragraph-end-deeper {
+    padding-bottom: 0;
+  }
+
+  #photo-container {
+    /* background-color: red; */
+    display: grid;
+    grid-gap: 25.6rem;
+
+  }
+
+  .left-photo {
+    justify-self: start;
+  }
+
+  .right-photo {
+    justify-self: end;
+ }
 
 }
