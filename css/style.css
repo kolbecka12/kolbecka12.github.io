@@ -351,6 +351,7 @@ footer p {
 .skill-icon {
   color: #C86F3A;
   font-size: 6.4rem;
+  padding: 3.6rem 0 2.0rem 0;
 }
 
 .skills-content-box{
@@ -1177,6 +1178,10 @@ footer p {
 
   /* ------SKILLS SECTION------*/
 
+  .skill-icon {
+    padding: 0 0 2.0rem 0;
+  }
+
   .skills {
     padding: 0 4.8rem;
   }
@@ -1188,11 +1193,95 @@ footer p {
 
   .skills-content-box {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* grid-gap: 4.8rem; */
+    grid-template-columns: repeat(4, 25%);
     grid-template-rows: auto;
+    padding-top: 3.6rem;
     width: 80%;
-    align-items: center;
   }
+
+  .skills-content-box p {
+    padding: 1rem 1.8rem 1rem 1.8rem;
+  }
+
+  .skills-item1 {
+    align-items: center;
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .skills-item2 {
+    align-items: center;
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .skills-item3 {
+    align-self: baseline;
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .skills-item4 {
+    align-items: center;
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .skills-item5 {
+    align-items: center;
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .skills-item6 {
+    align-self: baseline;
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+  .skills-item7 {
+    align-items: center;
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  .skills-item8 {
+    align-items: center;
+    grid-column: 3;
+    grid-row: 2;
+  }
+
+  .skills-item9 {
+    align-self: baseline;
+    grid-column: 3;
+    grid-row: 3;
+  }
+
+  .skills-item10 {
+    align-items: center;
+    grid-column: 4;
+    grid-row: 1;
+  }
+
+  .skills-item11 {
+    grid-column: 4;
+    grid-row: 2;
+  }
+
+  .skills-item12 {
+    align-self: baseline;
+    grid-column: 4;
+    grid-row: 3;
+  }
+
+
+
+
+
+
+
+
 
   /*----------------------PROJECT.HTML PAGE----------------------*/
 
@@ -1261,7 +1350,7 @@ footer p {
     .item1 {
       grid column: 1;
       grid-row: 1;
-      display: flex;
+      align-self: flex-end;
     }
 
     .item2 {
@@ -1272,7 +1361,7 @@ footer p {
     .item3 {
       grid column: 2;
       grid-row: 1;
-      display: flex;
+      align-self: flex-end;
     }
 
     .item4 {
@@ -1283,6 +1372,7 @@ footer p {
     .item5 {
       grid column: 3;
       grid-row: 1;
+      align-self: flex-end;
     }
 
     .item6 {
@@ -1293,14 +1383,12 @@ footer p {
     .item7 {
       grid-column: 1;
       grid-row: 3;
-      /* display: flex; */
       align-items: baseline;
     }
 
     .item8 {
       grid-column: 1;
       grid-row: 4;
-      /* display: flex; */
     }
 
     .item9 {
@@ -1315,21 +1403,16 @@ footer p {
     .item10 {
       grid-column: 2;
       grid-row: 4;
-      /* display: flex; */
     }
 
     .item11{
       grid-column: 3;
       grid-row: 3;
-      /* display: flex; */
-      /* align-items: baseline; */
-
     }
 
     .item12 {
       grid-column: 3;
       grid-row: 4;
-      /* display: flex; */
       align-items: top;
     }
 
@@ -1361,15 +1444,20 @@ footer p {
 
 /* PT 4 - USER STORIES & FLOWS */
 
+  .outer-user-story-container {
+    background-color: #E9DAD1;
+  }
+
+
   .user-story-container {
     background-color: #E9DAD1;
-    width: 100%;
+    max-width: 1200px;
     display: grid;
     /* grid-gap: 2rem; */
     grid-template-columns: 40% 50% 10%;
-    padding: 8%;
-    margin: 7.2rem 0;
-  }
+    padding: 4.8rem;
+    margin: 0 auto;
+}
 
   .user-story-container li {
     line-height: 150%;
@@ -1389,7 +1477,7 @@ footer p {
   }
 
   #chroma-pt4 img {
-    padding: 0;
+    padding: 6.4rem 0;
     margin: 0 auto;
     width: 90%;
   }
@@ -1649,6 +1737,16 @@ footer p {
 
   #essentials-container .paragraph-end {
     margin-bottom: 9.6rem;
+  }
+
+  .emoji {
+    text-align: center;
+    margin-bottom: 1.2rem;
+  }
+
+  .hobbies {
+    padding-bottom: 3.6rem;
+    text-align: left;
   }
 
   #hobbies-desktop {
