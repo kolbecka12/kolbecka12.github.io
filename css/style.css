@@ -1607,6 +1607,11 @@ footer p {
     padding: 0 10%;
   }
 
+.mobile-screens {
+  margin: 0 auto;
+  width: 80%;
+}
+
 /* SPECIAL LINKS */
 
   .link-special {
@@ -1799,5 +1804,13 @@ footer p {
   .right-photo {
     justify-self: end;
  }
+
+}
+
+/* Responsive for Tablets */
+@media screen and (min-width: 1270px) {
+  #about-me-link i {
+    padding-bottom: 2%;
+  }
 
 }
