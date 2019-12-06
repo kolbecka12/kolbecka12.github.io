@@ -240,6 +240,11 @@ footer p {
   width: 15%;
 }
 
+.nav-content-box {
+  margin: 0 auto;
+  width: 90%;
+}
+
 .nav-link {
   font: normal 1.5rem "Work Sans";
   line-height: 167.23%;
@@ -1101,6 +1106,15 @@ footer p {
 
   /* ------NAV MENU------*/
 
+  .nav-content-box {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .nav-content-box img {
+    max-width: 100px;
+  }
+
   .nav-link {
     font-size: 2.0rem;
   }
@@ -1729,13 +1743,13 @@ footer p {
     margin-top: 9.6rem;
   }
 
-  #essentials-container .section-title {
+  #more-about-me .section-title {
     margin-left: 0;
     margin-top: 9.6rem;
     text-align: left;
   }
 
-  #essentials-container .paragraph-end {
+  #more-about-me .paragraph-end {
     margin-bottom: 9.6rem;
   }
 
