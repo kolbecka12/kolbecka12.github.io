@@ -178,6 +178,14 @@ section {
   display: block;
 }
 
+.light-wire {
+  /* beige border, beige font */
+  border: 1px solid #FDF8F4;
+  /* beige */
+  color: #FDF8F4;
+  display: block;
+}
+
 /*----------------------FOOTER----------------------*/
 
 .copyright {
@@ -269,6 +277,12 @@ footer p {
 
 /* ------HERO BLOCK------ */
 
+.background-swirl {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
 .gradient {
   background: linear-gradient(180deg, #ED9A68 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, rgba(42, 54, 54, 0.68) 0%, #2A3636 37.5%);
 }
@@ -283,10 +297,15 @@ footer p {
   margin-bottom: 2.4rem;
 }
 
-.hero-left-btn, .hero-right-btn {
+.hero-left-btn {
   display: block;
   margin-bottom: 2rem;
   /* margin-right: 2rem; */
+}
+
+.hero-right-btn {
+  display: block;
+  margin-bottom: 9.6rem;
 }
 
 .hero-statement {
@@ -861,11 +880,103 @@ footer p {
   width: 80%;
 }
 
+/* ----------------------CONTACT.HTML PAGE---------------------- */
+
+.contact-btn {
+  border: 3px solid #ED9A68;
+}
+
+.contact-container {
+  padding: 0 2.4rem;
+  margin: 2.4rem 1.2rem 4.8rem 1.2rem;
+  /* background: #FDF8F4; */
+  border-radius: 4px;
+}
+
+.contact-container h3 {
+  text-align: center;
+}
+
+.contact-container p {
+  line-height: auto;
+  margin: 0;
+}
+
+.contact-container .btn {
+  margin-top: 1.2rem;
+  padding: 1rem;
+  width: 100%;
+}
+
+#contact-footer {
+  background: #E8E8E8;
+  padding-top: 2.4rem;
+}
+
+#contact-footer .copyright {
+  color: grey;
+}
+
+#contact-footer i {
+  color: grey;
+}
+
+.contact-link {
+  color: #ED9A68;
+  font-weight: bold;
+}
+
+.contact-parent {
+  padding: 3.6rem;
+}
+
+input[type=text] {
+  background-image: none;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.2rem;
+}
+
+input[type=text],input[type=email] textarea {
+    width: 100%;
+    padding: 1.2rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 1.2rem;;
+    margin-bottom: 1.8rem;
+}
+
+
+#message-box {
+  /* display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap; */
+  /* overflow: visible; */
+  height: 260px;
+  width: 100%;
+  padding: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 1.2rem;;
+  margin-bottom: 1.8rem;
+  /* resize: vertical; */
+
+}
+
 
 /* ----------------------MEDIA QUERIES---------------------- */
 
 /* FYI -- could use @import separate stylesheet for the media queries so it isnt all clumped at the bottom  */
 
+/* Responsive for Extra-Small Phones */
+@media screen and (max-width: 350px) {
+  .nav-link {
+    margin: .5rem;
+  }
+}
 
 /* Responsive for Tablets */
 @media screen and (min-width: 768px) {
@@ -1121,6 +1232,10 @@ footer p {
 
   /* ------HERO BLOCK------*/
 
+  .background-swirl {
+    min-height: 1000px;
+  }
+
   .hello {
     font-size: 3.6rem;
     line-height: 1rem;
@@ -1167,6 +1282,7 @@ footer p {
   /* ------CASE STUDY SECTION------*/
 
   .case-study {
+    background-color: white;
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 12.8rem;
@@ -1805,9 +1921,24 @@ footer p {
     justify-self: end;
  }
 
+ /*----------------------CONTACT.HTML PAGE----------------------*/
+
+ .contact-me-text {
+   width: 70%;
+   margin: 0 auto;
+ }
+
+ input[type=text] {
+   font-size: 1.8rem;
+ }
+
+.contact-container .btn {
+  width: 30%;
 }
 
-/* Responsive for Tablets */
+}
+
+/* Responsive for Wide Screens */
 @media screen and (min-width: 1270px) {
   #about-me-link i {
     padding-bottom: 2%;
