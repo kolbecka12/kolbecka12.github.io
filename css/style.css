@@ -926,6 +926,10 @@ footer p {
   font-weight: bold;
 }
 
+.contact-parent {
+  padding: 3.6rem;
+}
+
 input[type=text] {
   background-image: none;
   font-family: Work Sans;
@@ -949,9 +953,16 @@ input[type=text],input[type=email] textarea {
   /* display: flex;
   align-items: flex-start;
   flex-wrap: wrap; */
-  overflow: visible;
+  /* overflow: visible; */
   height: 260px;
-  resize: vertical;
+  width: 100%;
+  padding: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 1.2rem;;
+  margin-bottom: 1.8rem;
+  /* resize: vertical; */
 
 }
 
@@ -1913,7 +1924,7 @@ input[type=text],input[type=email] textarea {
  /*----------------------CONTACT.HTML PAGE----------------------*/
 
  .contact-me-text {
-   max-width: 450px;
+   width: 70%;
    margin: 0 auto;
  }
 
