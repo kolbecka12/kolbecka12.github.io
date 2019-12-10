@@ -921,6 +921,13 @@ footer p {
   color: grey;
 }
 
+.contact-me-text {
+  padding-top: 1.2rem;
+  margin: 0 auto;
+  text-align: left;
+  width: 80%;
+}
+
 .contact-link {
   color: #ED9A68;
   font-weight: bold;
@@ -932,6 +939,13 @@ footer p {
 
 input[type=text] {
   background-image: none;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.2rem;
+}
+
+textarea {
   font-family: Work Sans;
   font-style: normal;
   font-weight: normal;
@@ -963,6 +977,11 @@ input[type=text],input[type=email] textarea {
   margin-top: 1.2rem;;
   margin-bottom: 1.8rem;
   /* resize: vertical; */
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
 
 }
 
@@ -1098,6 +1117,36 @@ input[type=text],input[type=email] textarea {
     #chroma-pt4 .link-container {
       margin: 6.4rem;
     }
+
+    /* CONTACT PAGE */
+    .contact-me-text {
+      margin: 0 auto;
+      padding-top: 1rem;
+      text-align: left;
+      width: 50%;
+    }
+
+    .contact-me-top {
+      padding-top: 2rem;
+    }
+
+    input[type=text] {
+      font-size: 1.5rem;
+    }
+
+    .contact-container {
+      margin: 0 auto;
+      padding-bottom: 9.6rem;
+      width: 60%;
+    }
+
+   .contact-container .btn {
+     width: 100%;
+   }
+
+     #message-box {
+       font-size: 1.5rem;
+     }
 
 }
 
@@ -1924,8 +1973,14 @@ input[type=text],input[type=email] textarea {
  /*----------------------CONTACT.HTML PAGE----------------------*/
 
  .contact-me-text {
-   width: 70%;
    margin: 0 auto;
+   padding-top: 1rem;
+   text-align: left;
+   width: 50%;
+ }
+
+ .contact-me-top {
+   padding-top: 2rem;
  }
 
  input[type=text] {
@@ -1933,8 +1988,13 @@ input[type=text],input[type=email] textarea {
  }
 
 .contact-container .btn {
-  width: 30%;
+  width: 50%;
 }
+
+  #message-box {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+  }
 
 }
 
