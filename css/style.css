@@ -245,7 +245,7 @@ footer p {
 }
 
 .logo {
-  width: 15%;
+  width: 12%;
 }
 
 .nav-content-box {
@@ -499,6 +499,10 @@ footer p {
   text-align: center;
 }
 
+.item1 {
+  margin: 0 auto;
+}
+
 .research-list-title {
   padding-top: 2.4rem;
   text-align: center;
@@ -520,6 +524,7 @@ footer p {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
+  margin: 3.6rem 0;
 }
 
 #chroma-competitors figure {
@@ -528,18 +533,66 @@ footer p {
 }
 
 #chroma-competitors h5 {
-  line-height: auto;
   margin-bottom: 0;
 }
 
 #chroma-competitors img{
-  width: 80%;
+  /* width: 80%; */
   text-align: center;
 }
 
-#dropbox {
-  margin-top: 10px;
+.comp1 {
+  align-items: center;
+  grid-column: 1;
+  grid-row: 1;
+  margin: 0 auto;
+  width: 65%;
 }
+
+.comp2 {
+  align-items: center;
+  grid-column: 1;
+  grid-row: 2;
+  text-align: center;
+}
+
+.comp3 {
+  align-items: center;
+  grid-column: 2;
+  grid-row: 1;
+  margin: 0 auto;
+  width: 65%;
+
+}
+
+.comp4 {
+  align-items: center;
+  grid-column: 2;
+  grid-row: 2;
+  text-align: center;
+}
+
+.comp5 {
+  align-items: center;
+  grid-column: 3;
+  grid-row: 1;
+  margin: 0 auto;
+  width: 65%;
+
+}
+
+.comp6 {
+  align-self: center;
+  grid-column: 3;
+  grid-row: 2;
+  text-align: center;
+
+}
+
+#dropbox {
+  margin-top: 6px;
+}
+
 
 /* PT 3 - USER PROFILES */
 
@@ -1008,7 +1061,7 @@ input[type=text],input[type=email] textarea {
     /* ------NAV BAR------*/
 
   .logo {
-    width: 8%;
+    width: 7%;
   }
 
 
@@ -1272,7 +1325,7 @@ input[type=text],input[type=email] textarea {
   }
 
   .nav-content-box img {
-    max-width: 100px;
+    max-width: 60px;
   }
 
   .nav-link {
@@ -1530,6 +1583,11 @@ input[type=text],input[type=email] textarea {
       grid column: 1;
       grid-row: 1;
       align-self: flex-end;
+      width: inherit;
+    }
+
+    .top-graph {
+      width: 100%;
     }
 
     .item2 {
@@ -1602,12 +1660,17 @@ input[type=text],input[type=email] textarea {
   }
 
   #chroma-competitors {
-    /* grid-gap: 1rem; */
+    display: grid;
+    grid-gap: 1rem;
   }
 
   #chroma-competitors h5 {
     padding-top: 1.2rem;
     padding-bottom: 3.6rem;
+  }
+
+  #dropbox {
+    padding-top: 6px;
   }
 
   #chroma-competitors img {
