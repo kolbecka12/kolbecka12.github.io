@@ -245,7 +245,7 @@ footer p {
 }
 
 .logo {
-  width: 12%;
+  width: 10%;
 }
 
 .nav-content-box {
@@ -603,6 +603,11 @@ footer p {
   /* tertiary text */
   color: #565656;
   text-align: center;
+}
+
+#chroma-pt3 .motivations {
+  color: black;
+  font-weight: bold;
 }
 
 .user-profile {
