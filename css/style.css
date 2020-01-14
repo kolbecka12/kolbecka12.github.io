@@ -1119,6 +1119,14 @@ input[type=text],input[type=email] textarea {
     width: 50%;
   }
 
+/* PT 1 INTRO */
+
+.solution-text {
+  padding-left: 5rem;
+}
+
+/* PT 2 USER STORIES */
+
   .user1 {
     grid column: 1;
     grid-row: 1;
