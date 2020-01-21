@@ -166,8 +166,22 @@ section {
 .orange {
   /* rust orange background, light font*/
   background-color: #ED9A68;
-  color: #FDF8F4;
+  color: #FFF;
   display: block;
+}
+
+.orange:hover {
+  box-shadow: 8px 8px #E9DAD1;
+  transition: .3s;
+}
+
+.orange:active {
+  background-color: #DF8C5A;
+  box-shadow: 8px 8px #CEBCB1;
+}
+
+.orange:focus {
+  text-decoration: underline;
 }
 
 .wire {
@@ -178,12 +192,55 @@ section {
   display: block;
 }
 
+.wire:hover {
+  box-shadow: 8px 8px #E9DAD1;
+  transition: .3s;
+}
+
+.wire:active {
+  border: 1px solid #DF8C5A;
+  box-shadow: 8px 8px #CEBCB1;
+  color: #DF8C5A;
+}
+
+.wire:focus {
+  text-decoration: underline;
+}
+
 .light-wire {
   /* beige border, beige font */
   border: 1px solid #FDF8F4;
   /* beige */
   color: #FDF8F4;
   display: block;
+}
+
+.light-wire:hover {
+  box-shadow: 8px 8px #E9DAD1;
+  transition: .3s;
+}
+
+.light-wire:active {
+  background-color: rgba(125, 125, 126, .5);
+  box-shadow: 8px 8px #ECDBCE;
+}
+
+a#contact-btn-nav:hover i {
+  width: 15px;
+  opacity: 1;
+  transform: translateX(50px);
+}
+
+#envelope-hover {
+  /* width: 15px; */
+  /* height: 10px; */
+  position: absolute;
+  transform: translateX(60px);
+  opacity: 0;
+  -webkit-transition: all .25s cubic-bezier(.14, .59, 1, 1.01);
+  transition: all .15s cubic-bezier(.14, .59, 1, 1.01);
+  /* margin: 0; */
+  /* padding: 0 5px; */
 }
 
 /*----------------------FOOTER----------------------*/
@@ -242,6 +299,7 @@ footer p {
    /* secondary text  */
   border: 1px solid #2A3636;
   padding: .5rem 1rem;
+  width: 300px;
 }
 
 .logo {
