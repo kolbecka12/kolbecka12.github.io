@@ -21,10 +21,10 @@
          <nav class="nav-content-box nav-align">
            <a class="display-mobile" href="/"><img class="logo" src="../images/logo-1x.png" alt="andie kolbeck logo"></a>
            <ul class="nav-links">
-             <li><a class="nav-link secondary-text" href="/chroma">Work</a></li>
-             <li><a class="nav-link secondary-text" href="/about">About</a></li>
-             <li><a class="nav-link secondary-text" href="https://drive.google.com/file/d/1N2wUwdfXDsAVBsgFGUcpU5jY8dGEnp2m/view?usp=sharing">Resume</a></li>
-             <li><a class="contact-dark nav-link secondary-text" href="/contact">Contact</a></li>
+             <li><a class="nav-link-dark" href="/#work-section">Work</a></li>
+             <li><a class="nav-link-dark" href="/about">About</a></li>
+             <li><a class="nav-link-dark" href="https://drive.google.com/file/d/1N2wUwdfXDsAVBsgFGUcpU5jY8dGEnp2m/view?usp=sharing">Resume</a></li>
+             <li><a class="nav-link-contact-dark" href="/contact">Contact</a></li>
            </ul>
          </nav>
        </header>
@@ -127,10 +127,10 @@
          <nav class="nav-content-box nav-align">
            <a href="/"><img class="logo" src="../images/logo-desktop.png" alt="andie kolbeck logo"></a>
            <ul class="nav-links">
-             <li><a class="nav-link secondary-text" href="/chroma">Work</a></li>
-             <li><a class="nav-link secondary-text" href="/about">About</a></li>
-             <li><a class="nav-link secondary-text" href="https://drive.google.com/file/d/1RkEKpQ3ga1MT1AZ3Yu10s92kWQogb7lq/view?usp=sharing">Resume</a></li>
-             <li><a class="contact-dark nav-link secondary-text" href="/contact">Contact</a></li>
+             <li><a class="nav-link-dark" href="/#work-section">Work</a></li>
+             <li><a class="nav-link-dark" id="active-nav" href="/about">About</a></li>
+             <li><a class="nav-link-dark" href="https://drive.google.com/file/d/1RkEKpQ3ga1MT1AZ3Yu10s92kWQogb7lq/view?usp=sharing">Resume</a></li>
+             <li><a class="nav-link-contact-dark" href="/contact">Contact</a></li>
            </ul>
          </nav>
        </header>
@@ -141,7 +141,9 @@
        <img id="about-hero" src="../images/about-photo.jpg" alt="photo of blond woman wearing leather jacket">
        <div id= "about-me-link">
          <a href="#more-about-me"><h5>About Me</h5></a>
-         <i class="las la-angle-double-down"></i>
+         <div id="bounce-arrow">
+           <a href="#more-about-me"><i class="las la-angle-double-down"></i></a>
+         </div>
        </div>
      </div>
       <body>
@@ -167,7 +169,17 @@
               <h4>Following a Creative Path</h4>
               <p>Photography led me quite naturally to the marketing field, where I learned how to use imagery, color, and storytelling to evoke a positive emotional response in our customers. Working on a small team gave me the opportunity to further develop my graphic design skills, and within months I was designing all the web and print collateral for our brand.</p>
               <p class="paragraph-end-deeper">While I honed my marketing and design skills, my continued curiosity about science led me to pursue a MS in nutrition. I loved studying biology and learned a lot about the psychology of behavior change, but I kept getting pulled back to design – I was spending all my spare time re-designing my nutrition blog!</p>
-              <p class="about">What I didn’t know then, was that these diverse experiences in marketing, photography, anthropology, and behavior change were giving me the foundations to becoming an empathetic, people-first designer.</p>
+              </div>
+            </div>
+          </div>
+          <div class="quote-section">
+            <div class="about-page-container">
+              <i class="las la-quote-left"></i>
+              <blockquote>What I didn’t know then, was that these diverse experiences in marketing, photography, anthropology, and behavior change were giving me the foundations to becoming an empathetic, people-first designer.</blockquote>
+              <i class="las la-quote-right"></i>
+            </div>
+          </div>
+
               <h4 id="discovering-ux">Discovering UX</h4>
               <p>Shortly after graduating, I found my way back to marketing and graphic design – this time with a non-profit organization. Our website badly needed a refresh, but hiring a web designer wasn’t in the budget, so I took on the project myself. As soon as I started learning about code and designing for the web I was completely obsessed. I started learning everything I could about HTML/CSS and typography, but I knew there must be a more methodical way to design things that were not only beautiful, but effective.</p>
               <p class="paragraph-end-deeper">How could my design decisions influence people to make a donation, sign up for one of our programs, or join our email list? These questions led me to discover the field of UX, which I quickly realized was the perfect marriage of my creative and scientific interests. I signed up for an immersive UX Design apprenticeship program, and never looked back.</p>
@@ -175,8 +187,14 @@
               <p>As a UX designer, I’ve finally discovered a way to let both my artistic and analytical sides thrive.</p>
               <h4>Bringing it Full Circle</h4>
               <p>Looking back, it’s clear that all my passions and experiences have played a role in my becoming a designer. From learning how to influence habit change (nutrition), to studying culture and human behavior (anthropology), and discovering how layout, imagery, and color can keep customers coming back (marketing + graphic design), my experiences have given me the skills to excel in human-centered design.</p>
-              <p class="paragraph-end">My experiences in marketing and graphic design within the public and private sectors have shown me how positive design can change lives and create devoted customers – while bad design can at best lead to a waste of resources, and at worst, perpetuate systemic societal inequalities. I believe that being a designer carries a great responsibility, and I’m driven to use my knowledge and expertise to design products that help build a healthier, happier, more connected world.</p>
-            </div>
+
+        <div class="quote-section">
+          <div class="about-page-container">
+            <i class="las la-quote-left"></i>
+            <blockquote class="paragraph-end">My experiences in marketing and graphic design within the public and private sectors have shown me how positive design can change lives and create devoted customers – while bad design can at best lead to a waste of resources, and at worst, perpetuate systemic societal inequalities. I believe that being a designer carries a great responsibility, and I’m driven to use my knowledge and expertise to design products that help build a healthier, happier, more connected world.</p>
+            <i class="las la-quote-right"></i>
+          </div>
+        </div>
             <div id="photo-container">
               <img class="right-photo" id="about-start-photo" src="../images/about-anemone.jpg" alt="purple sea anemone">
               <img class="left-photo" src="../images/about-laguna.jpg" alt="woman standing near a lagoon">
@@ -216,11 +234,11 @@
          <a class ="btn orange content-box-narrow" href="/contact">Contact Me</a>
        </div>
        <ul class="social-container">
-         <li class="social-icons"><a href="mailto:kolbecka@gmail.com"><i class="footer-icon la la-envelope"></i></a> </li>
-         <li class="social-icons"><a href="https://www.linkedin.com/in/andiekolbeck/"><i class="footer-icon lab la-linkedin-in"></i></a></li>
+         <li class="social-icons"><a class="footer-icon" href="mailto:kolbecka@gmail.com"><i class="footer-icon la la-envelope"></i></a> </li>
+         <li class="social-icons"><a class="footer-icon" href="https://www.linkedin.com/in/andiekolbeck/"><i class="footer-icon lab la-linkedin-in"></i></a></li>
          <!-- <li class="social-icons"><a href="https://github.com/kolbecka12"><i class="footer-icon lab la-dribbble"></i></a></li> -->
          <!-- <li class="social-icons"><a href="https://twitter.com/the___andiest"><i class="footer-icon la la-twitter"></i></a></li> -->
-         <li class="social-icons"><a href="https://unsplash.com/@kolbecka"><i class="footer-icon la la-camera"></i></a></li>
+         <li class="social-icons"><a class="footer-icon" href="https://unsplash.com/@kolbecka"><i class="footer-icon la la-camera"></i></a></li>
        </ul>
        <p class="content-box copyright">©2019 Andie Kolbeck | Designed & Developed by Andie Kolbeck</p>
      </footer>

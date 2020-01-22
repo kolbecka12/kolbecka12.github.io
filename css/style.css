@@ -36,6 +36,14 @@ a {
   text-decoration: none;
 }
 
+blockquote {
+  color: #FFF;
+  font-size: 3.6rem;
+  hanging-punctuation: allow-end;
+  line-height: 130%;
+  margin: 2.4rem;
+}
+
 h1, h2, h3 {
   font-family: Archivo;
   font-style: normal;
@@ -54,7 +62,7 @@ h3 {
   /* line-height: 135%; */
 }
 
-h4, h5, h6, p, li {
+h4, h5, h6, p, li, blockquote {
   font-family: Work Sans;
   font-style: normal;
 }
@@ -181,6 +189,7 @@ section {
 }
 
 .orange:focus {
+  outline: none;
   text-decoration: underline;
 }
 
@@ -204,6 +213,7 @@ section {
 }
 
 .wire:focus {
+  outline: none;
   text-decoration: underline;
 }
 
@@ -223,6 +233,11 @@ section {
 .light-wire:active {
   background-color: rgba(125, 125, 126, .5);
   box-shadow: 8px 8px #ECDBCE;
+}
+
+.light-wire:focus {
+  outline: none;
+  text-decoration: underline;
 }
 
 a#contact-btn-nav:hover i {
@@ -275,6 +290,24 @@ footer p {
   font-size: 3rem;
 }
 
+.footer-icon:hover {
+  color: #E9DAD1;
+}
+
+.footer-icon:focus {
+  /* outline: none; */
+  outline: 1px dashed #E8E8E8;
+}
+
+.footer-icon-light:hover {
+  color: blue;
+}
+
+.footer-icon-light:focus {
+  outline: 1px dashed #2A3636;
+
+}
+
 .social-container {
   display: inline-flex;
 }
@@ -285,15 +318,21 @@ footer p {
 
 
 
+
 /* ----------------------INDEX.HTML PAGE---------------------- */
 
 /* ------NAV MENU------*/
+
+#active-nav {
+  font-weight: bold;
+}
 
 .contact-light {
    /* pale beige  */
   border: 1px solid #FDF8F4;
   padding: .5rem 1rem;
 }
+
 
 .contact-dark {
    /* secondary text  */
@@ -311,11 +350,87 @@ footer p {
   width: 90%;
 }
 
-.nav-link {
+.nav-link-dark {
+  color: #2A3636;
   font: normal 1.5rem "Work Sans";
+  font-size: 1.8rem;
   line-height: 167.23%;
   margin: 1.2rem;
   text-transform: uppercase;
+}
+
+.nav-link-dark:hover {
+  color: #7D7D7E;
+}
+
+.nav-link-dark:focus {
+  outline: none;
+  text-decoration: underline;
+}
+
+.nav-link-contact-dark {
+  /* border properties */
+ border: 1px solid #2A3636;
+ padding: .5rem 1rem;
+ width: 300px;
+ /* button properties */
+ color: #2A3636;
+ font: normal 1.5rem "Work Sans";
+ font-size: 1.8rem;
+ line-height: 167.23%;
+ margin: 1.2rem;
+ text-transform: uppercase;
+}
+
+.nav-link-contact-dark:hover {
+  border: 1px solid #7D7D7E;
+  color: #7D7D7E;
+}
+
+.nav-link-contact-dark:focus {
+  outline: none;
+  text-decoration: underline;
+}
+
+.nav-link-light {
+  color: #FDF8F4;
+  font: normal 1.5rem "Work Sans";
+  font-size: 1.8rem;
+  line-height: 167.23%;
+  margin: 1.2rem;
+  text-transform: uppercase;
+}
+
+.nav-link-light:hover {
+  color: #E9DAD1;
+}
+
+.nav-link-light:focus {
+  outline: none;
+  text-decoration: underline;
+}
+
+.nav-link-contact-light {
+  /* border properties  */
+  border: 1px solid #FDF8F4;
+  padding: .5rem 1rem;
+  /* button properties */
+  color: #FDF8F4;
+  font: normal 1.5rem "Work Sans";
+  font-size: 1.8rem;
+  line-height: 167.23%;
+  margin: 1.2rem;
+  text-transform: uppercase;
+}
+
+.nav-link-contact-light:hover {
+  border: 1px solid #E9DAD1;
+  color: #E9DAD1;
+}
+
+.nav-link-contact-light:focus {
+  outline: none;
+  text-decoration: underline;
 }
 
 .nav-links {
@@ -425,6 +540,11 @@ footer p {
   padding: 0;
 }
 
+.featured-work {
+  margin: 3.6rem;
+  text-align: center;
+}
+
 /* ------SKILLS SECTION------ */
 
 .designer {
@@ -458,7 +578,7 @@ footer p {
   padding-bottom: 2.4rem;
 }
 
-/* ----------------------PROJECT.HTML PAGE---------------------- */
+/* ----------------------CHROMA PAGE---------------------- */
 
 /* ------NAV MENU------*/
 
@@ -537,7 +657,11 @@ footer p {
 
 /* DESIGN PROCESS */
 
-
+#design-process p{
+  font-size: 2.8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+}
 
 
 /* PT 1 - USER RESEARCH */
@@ -832,6 +956,34 @@ footer p {
   width: 100%;
 }
 
+#return-link {
+  text-align: center;
+  outline: none;
+}
+
+#return-link h5:hover {
+  font-weight: bold;
+}
+
+#return-link h5:focus {
+  outline: 1px dashed #E8E8E8;
+  outline: none;
+}
+
+#return-link h5 {
+  color: #2A3636;
+  margin-top: 2.4rem;
+  margin-bottom: 1.2rem;
+}
+
+#return-link i {
+  color: #2A3636;
+  font-size: 2.0rem;
+  margin-top: 3.6rem;
+  padding-bottom: 0;
+  /* transform: translateX(50%); */
+}
+
 /* ------REPEATING STRUCTURE------*/
 .caption {
   /* tertiary text */
@@ -897,7 +1049,10 @@ footer p {
   z-index: -1;
 }
 
-
+.link-special:focus {
+  outline: none;
+  text-decoration: underline;
+}
 
 
 .rose-section {
@@ -908,6 +1063,37 @@ footer p {
 /* ----------------------ABOUT.HTML PAGE---------------------- */
 
 /* about me hero */
+
+#bounce-arrow {
+    z-index: 1;
+    animation-timing-function: ease;
+    transition-duration: 5s;
+    -moz-animation: jump 5s infinite;
+    -webkit-animation: jump 5s infinite;
+    animation: jump 5s infinite;
+    transition: ease-in-out;
+  }
+
+  @keyframes jump {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0px);
+    }
+    30% {
+      transform: translateY(7px);
+    }
+    60% {
+      transform: translateY(7px);
+    }
+  }
+
+  #bounce-arrow a:hover {
+    font-weight: bold;
+  }
+
+  #bounce-arrow a:focus {
+    outline: 1px dashed #E8E8E8;
+  }
+
 
 #about-hero-container {
   position: relative;
@@ -963,6 +1149,10 @@ footer p {
 /* #discovering-ux {
   margin-top: 1.8rem;
 } */
+
+.hero {
+  background-color: pink;
+}
 
 #hobbies {
   padding-bottom: 0;
@@ -1060,8 +1250,22 @@ footer p {
 
 .contact-link {
   color: #ED9A68;
-  font-weight: bold;
 }
+
+.contact-link:hover {
+  color: #DF8C5A;
+}
+
+.contact-link:active {
+  color: #DF8C5A;
+}
+
+.contact-link:focus {
+  color: #DF8C5A;
+  outline: none;
+  text-decoration: underline;
+}
+
 
 .contact-parent {
   padding: 3.6rem;
@@ -1472,7 +1676,7 @@ input[type=text],input[type=email] textarea {
     background-color: white;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 12.8rem;
+    padding: 4.8rem 12.8rem 12.8rem 12.8rem;
     align-items: center;
   }
 
@@ -1646,6 +1850,12 @@ input[type=text],input[type=email] textarea {
   #design-process {
     margin: 6.4rem 0;
     padding: 9.6rem 0 9.6rem 0;
+  }
+
+  #design-process p{
+    font-size: 3.6rem;
+    padding-top: 6rem;
+    padding-bottom: 0;
   }
 
 /* PT 1: USER RESEARCH */
@@ -1974,13 +2184,6 @@ input[type=text],input[type=email] textarea {
     width: 80%;
   } */
 
-  .about {
-    color: #ED9A68;
-    font-size: 2.4rem;
-    font-weight: bold;
-    line-height: 160%;
-    margin-top: 0;
-  }
 
   .about-page-container {
     display: grid;
@@ -2045,6 +2248,16 @@ input[type=text],input[type=email] textarea {
 
   #about-me-link {
     text-align: center;
+    outline: none;
+  }
+
+  #about-me-link h5:hover {
+    font-weight: bold;
+  }
+
+  #about-me-link h5:focus {
+    outline: 1px dashed #E8E8E8;
+    outline: none;
   }
 
   #about-me-link h5 {
@@ -2118,6 +2331,15 @@ input[type=text],input[type=email] textarea {
     display: grid;
     grid-gap: 25.6rem;
 
+  }
+
+  .quote-section {
+    background-color: #ED9A68;
+  }
+
+  .quote-section i{
+    color: #FFF;
+    font-size: 8rem;
   }
 
   .left-photo {

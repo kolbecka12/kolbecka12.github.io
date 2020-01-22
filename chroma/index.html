@@ -20,19 +20,16 @@
        <a class="display-desktop" href="/"><img class="logo" src="../images/logo-desktop.png" alt="andie kolbeck logo"></a>
        <a class="display-mobile" href="/"><img class="logo" src="../images/logo-1x.png" alt="andie kolbeck logo"></a>
        <ul class="nav-links">
-         <li><a class="nav-link secondary-text" href="/chroma">Work</a></li>
-         <li><a class="nav-link secondary-text" href="/about">About</a></li>
-         <li><a class="nav-link secondary-text" href="https://drive.google.com/file/d/1N2wUwdfXDsAVBsgFGUcpU5jY8dGEnp2m/view?usp=sharing">Resume</a></li>
-         <!-- <li><a class="contact-dark nav-link secondary-text" href="/contact">Contact</a></li> -->
-         <li><a id="contact-btn-nav" class="contact-dark nav-link secondary-text" href="/contact">Contact<i class="envelope la la-envelope" id="envelope-hover"></i></a></li>
-
-
+         <li><a class="nav-link-dark" href="/#work-section">Work</a></li>
+         <li><a class="nav-link-dark" href="/about">About</a></li>
+         <li><a class="nav-link-dark" href="https://drive.google.com/file/d/1N2wUwdfXDsAVBsgFGUcpU5jY8dGEnp2m/view?usp=sharing">Resume</a></li>
+         <li><a class="nav-link-contact-dark" href="/contact">Contact</a></li>
        </ul>
      </nav>
    </header>
    <main>
        <section class="centered">
-         <div class="content-box-narrow">
+         <div class="content-box-narrow" id="chroma-top">
            <img src="../images/chroma-logo-1x.png" alt="chroma cloud storage logo">
            <h2 class="display-desktop">Cloud Storage for Digital Creatives</h2>
            <h2 class ="display-mobile">Cloud Storage <br>for Digital Creatives</h2>
@@ -90,7 +87,8 @@
       <section class="rose-section" id="design-process">
         <article class="content-box">
           <h2 class="section-title">The Design Process</h2>
-          <p>The challenge with this project was to imagine how cloud storage could better serve groups with specific needs. Rather than create a solution that worked well enough for everybody, I set out to build a product that worked amazingly for a key demographic of users.</p>
+          <p>The challenge with this project was to imagine how cloud storage could better serve groups with specific needs.</p>
+          <p>Rather than create a solution that worked well enough for everybody, I set out to build a product that worked amazingly for a key demographic of users.</p>
         </article>
       </section>
       <section id="chroma-pt1">
@@ -192,6 +190,9 @@
         <p><strong>Dropbox</strong> suffers from this same limitation of folders and sub-folders, and also comes with a slow and clunky desktop navigation interface.</p>
         <p><strong>Notion</strong> does have a tagging feature, allowing you a unique way to search for files you’ve created on the platform. But Notion doesn’t extend this option to other file types, such as images.</p>
         <p>Because a lack of customized organization options was a common weakness shared by all three competitors, I sought to make a tagging system that worked for all file types a key priority for Chroma to better streamline the users’ experience.</p>
+        <div class="centered link-container">
+          <a class="link-special" href="https://docs.google.com/document/d/1P9r-364ArBQNf7Obn5-xMzPGPX6scCEX0h3Emy-Ywyo/edit?usp=sharing">View Full Competitive Analysis</a>
+        </div>
       </section>
       <section class="light-section" id="chroma-pt3">
         <article class="content-box content-box-narrow-desktop">
@@ -514,6 +515,12 @@
               <a class="link-special display-mobile" href="https://invis.io/VMTTBZHXPHJ#/382774728_Homepage">View Desktop Prototype</a>
             </div>
         </article>
+        <div id="return-link">
+          <div id="bounce-arrow">
+            <a href="#chroma-top"><i class="las la-angle-double-up"></i></a>
+          </div>
+          <a href="#chroma-top"><h5>Return to Top</h5></a>
+        </div>
       </section>
      </main>
      <footer>
@@ -523,11 +530,11 @@
          <a class ="btn orange content-box-narrow" href="/contact">Contact Me</a>
        </div>
        <ul class="social-container">
-         <li class="social-icons"><a href="mailto:kolbecka@gmail.com"><i class="footer-icon la la-envelope"></i></a></li>
-         <li class="social-icons"><a href="https://www.linkedin.com/in/andiekolbeck/"><i class="footer-icon lab la-linkedin-in"></i></a></li>
+         <li class="social-icons"><a class="footer-icon" href="mailto:kolbecka@gmail.com"><i class="footer-icon la la-envelope"></i></a></li>
+         <li class="social-icons"><a class="footer-icon" href="https://www.linkedin.com/in/andiekolbeck/"><i class="footer-icon lab la-linkedin-in"></i></a></li>
          <!-- <li class="social-icons"><a href="https://github.com/kolbecka12"><i class="footer-icon lab la-dribbble"></i></a></li> -->
          <!-- <li class="social-icons"><a href="https://twitter.com/the___andiest"><i class="footer-icon la la-twitter"></i></a></li> -->
-         <li class="social-icons"><a href="https://unsplash.com/@kolbecka"><i class="footer-icon la la-camera"></i></a></li>
+         <li class="social-icons"><a class="footer-icon" href="https://unsplash.com/@kolbecka"><i class="footer-icon la la-camera"></i></a></li>
        </ul>
        <p class="content-box copyright">©2019 Andie Kolbeck | Designed & Developed by Andie Kolbeck</p>
      </footer>
