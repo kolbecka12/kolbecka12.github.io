@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+*:focus {
+  outline: none;
+}
+
 html {
   font-size: 10px;
 }
@@ -31,10 +35,21 @@ secondary text #2A3636
 tertiary text #565656
 ---------*/
 
+#home-header-pink {
+  background-color: pink;
+}
 
 a {
   text-decoration: none;
 }
+
+a:focus {
+  text-decoration: underline;
+}
+
+/* btn:focus {
+  text-decoration: underline;
+} */
 
 blockquote {
   color: #FFF;
@@ -183,14 +198,14 @@ section {
   transition: .3s;
 }
 
+.orange:focus {
+  box-shadow: 8px 8px #E9DAD1;
+  transition: .3s;
+}
+
 .orange:active {
   background-color: #DF8C5A;
   box-shadow: 8px 8px #CEBCB1;
-}
-
-.orange:focus {
-  outline: none;
-  text-decoration: underline;
 }
 
 .wire {
@@ -206,16 +221,17 @@ section {
   transition: .3s;
 }
 
+.wire:focus {
+  box-shadow: 8px 8px #E9DAD1;
+  transition: .3s;
+}
+
 .wire:active {
   border: 1px solid #DF8C5A;
   box-shadow: 8px 8px #CEBCB1;
   color: #DF8C5A;
 }
 
-.wire:focus {
-  outline: none;
-  text-decoration: underline;
-}
 
 .light-wire {
   /* beige border, beige font */
@@ -230,33 +246,16 @@ section {
   transition: .3s;
 }
 
+.light-wire:focus {
+  box-shadow: 8px 8px #E9DAD1;
+  transition: .3s;
+}
+
 .light-wire:active {
   background-color: rgba(125, 125, 126, .5);
   box-shadow: 8px 8px #ECDBCE;
 }
 
-.light-wire:focus {
-  outline: none;
-  text-decoration: underline;
-}
-
-a#contact-btn-nav:hover i {
-  width: 15px;
-  opacity: 1;
-  transform: translateX(50px);
-}
-
-#envelope-hover {
-  /* width: 15px; */
-  /* height: 10px; */
-  position: absolute;
-  transform: translateX(60px);
-  opacity: 0;
-  -webkit-transition: all .25s cubic-bezier(.14, .59, 1, 1.01);
-  transition: all .15s cubic-bezier(.14, .59, 1, 1.01);
-  /* margin: 0; */
-  /* padding: 0 5px; */
-}
 
 /*----------------------FOOTER----------------------*/
 
@@ -295,8 +294,11 @@ footer p {
 }
 
 .footer-icon:focus {
-  /* outline: none; */
-  outline: 1px dashed #E8E8E8;
+  color: #E9DAD1;
+}
+
+.footer-icon:focus {
+  outline: 2px dashed #E8E8E8;
 }
 
 .footer-icon-light:hover {
@@ -304,8 +306,7 @@ footer p {
 }
 
 .footer-icon-light:focus {
-  outline: 1px dashed #2A3636;
-
+  color: blue;
 }
 
 .social-container {
@@ -353,9 +354,9 @@ footer p {
 .nav-link-dark {
   color: #2A3636;
   font: normal 1.5rem "Work Sans";
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   line-height: 167.23%;
-  margin: 1.2rem;
+  margin: .8rem;
   text-transform: uppercase;
 }
 
@@ -364,8 +365,7 @@ footer p {
 }
 
 .nav-link-dark:focus {
-  outline: none;
-  text-decoration: underline;
+  color: #7D7D7E;
 }
 
 .nav-link-contact-dark {
@@ -388,16 +388,16 @@ footer p {
 }
 
 .nav-link-contact-dark:focus {
-  outline: none;
-  text-decoration: underline;
+  border: 1px solid #7D7D7E;
+  color: #7D7D7E;
 }
 
 .nav-link-light {
   color: #FDF8F4;
   font: normal 1.5rem "Work Sans";
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   line-height: 167.23%;
-  margin: 1.2rem;
+  margin: .8rem;
   text-transform: uppercase;
 }
 
@@ -406,8 +406,7 @@ footer p {
 }
 
 .nav-link-light:focus {
-  outline: none;
-  text-decoration: underline;
+  color: #E9DAD1;
 }
 
 .nav-link-contact-light {
@@ -429,8 +428,8 @@ footer p {
 }
 
 .nav-link-contact-light:focus {
-  outline: none;
-  text-decoration: underline;
+  border: 1px solid #E9DAD1;
+  color: #E9DAD1;
 }
 
 .nav-links {
@@ -438,6 +437,39 @@ footer p {
   position: absolute;
   top: 50%;
   right: 0;
+}
+
+#nav-icon-active {
+  border: 2px solid black;
+  border-radius: 20px;
+  font-size: 1.8rem;
+  padding: .6rem;
+  margin: .6rem;
+}
+
+
+#nav-icon-dark {
+  border: 1px solid black;
+  border-radius: 20px;
+  font-size: 1.8rem;
+  padding: .6rem;
+  margin: .6rem;
+}
+
+#nav-icon-light {
+  border: 1px solid white;
+  border-radius: 20px;
+  font-size: 1.8rem;
+  padding: .6rem;
+  margin: .6rem;
+}
+
+.nav-icon-dark:hover {
+  color: #7D7D7E;
+}
+
+.nav-icon-dark:focus {
+  color: #7D7D7E;
 }
 
 .nav-links li {
@@ -663,6 +695,11 @@ footer p {
   padding-bottom: 0;
 }
 
+#design-title {
+  color: #998478;
+  padding-bottom: 1.2rem;
+}
+
 
 /* PT 1 - USER RESEARCH */
 
@@ -680,17 +717,12 @@ footer p {
   padding: 4.8rem 0;
 }
 
-#chroma-user-research p, li {
+#chroma-user-research h4, p, li {
   text-align: center;
 }
 
 .item1 {
   margin: 0 auto;
-}
-
-.research-list-title {
-  padding-top: 2.4rem;
-  text-align: center;
 }
 
 .user-research {
@@ -705,11 +737,15 @@ footer p {
   text-align: center;
 }
 
+#chroma-pt2 {
+  padding: 0;
+}
+
 #chroma-competitors {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
-  margin: 3.6rem 0;
+  margin: 3.6rem 0 0 0;
 }
 
 #chroma-competitors figure {
@@ -778,6 +814,26 @@ footer p {
   margin-top: 6px;
 }
 
+#comp-comparison {
+  padding: 2.4rem 0 0 0;
+}
+
+#comp-comparison img {
+    padding: 1.2rem;
+    width: 100%;
+}
+
+#comp-comparison p {
+  text-align: left;
+}
+
+#comp-conclusion {
+  padding-top: 0;
+}
+
+#comp-link {
+  padding-top: 3.6rem;
+}
 
 /* PT 3 - USER PROFILES */
 
@@ -966,9 +1022,9 @@ footer p {
 }
 
 #return-link h5:focus {
-  outline: 1px dashed #E8E8E8;
-  outline: none;
+  font-weight: bold;
 }
+
 
 #return-link h5 {
   color: #2A3636;
@@ -1014,10 +1070,6 @@ footer p {
   text-align: center;
 }
 
-/*
-* These styles for text decoration. The demo will be work without it
-*/
-
 .link-special {
 	color: #000000;
   /* display: inline-flex; */
@@ -1030,12 +1082,7 @@ footer p {
   text-align: center;
 	text-decoration: none;
   z-index: 1;
-
 }
-
-/*
-* These styles creates the underlining of link
-*/
 
 .link-special::before {
   content: "";
@@ -1050,10 +1097,8 @@ footer p {
 }
 
 .link-special:focus {
-  outline: none;
   text-decoration: underline;
 }
-
 
 .rose-section {
   /* rose quartz */
@@ -1089,9 +1134,8 @@ footer p {
   #bounce-arrow a:hover {
     font-weight: bold;
   }
-
   #bounce-arrow a:focus {
-    outline: 1px dashed #E8E8E8;
+    font-weight: bold;
   }
 
 
@@ -1256,16 +1300,13 @@ footer p {
   color: #DF8C5A;
 }
 
+.contact-link:focus {
+  color: #DF8C5A;
+}
+
 .contact-link:active {
   color: #DF8C5A;
 }
-
-.contact-link:focus {
-  color: #DF8C5A;
-  outline: none;
-  text-decoration: underline;
-}
-
 
 .contact-parent {
   padding: 3.6rem;
@@ -1326,8 +1367,24 @@ input[type=text],input[type=email] textarea {
 
 /* Responsive for Extra-Small Phones */
 @media screen and (max-width: 350px) {
-  .nav-link {
+  .nav-link-dark {
     margin: .5rem;
+  }
+
+  .nav-link-light {
+    margin: .5rem;
+  }
+
+  .nav-link-dark {
+    margin: .5rem;
+  }
+
+  #nav-icon-dark {
+    margin: .2rem;
+  }
+
+  #nav-icon-light {
+    margin: .2rem;
   }
 }
 
@@ -1345,6 +1402,13 @@ input[type=text],input[type=email] textarea {
     width: 7%;
   }
 
+  .nav-link-dark {
+    margin: 1rem;
+  }
+
+  .nav-link-light {
+    margin: 1rem;
+  }
 
     /* ------SKILLS SECTION------*/
 
@@ -1597,6 +1661,7 @@ input[type=text],input[type=email] textarea {
     padding: 1rem 2rem;
   }
 
+
   /*----------------------FOOTER----------------------*/
 
     .footer-btn .content-box-narrow {
@@ -1619,6 +1684,14 @@ input[type=text],input[type=email] textarea {
 
   .nav-link {
     font-size: 2.0rem;
+  }
+
+  .nav-link-dark {
+    font-size: 1.8rem;
+  }
+
+  .nav-link-light{
+    font-size: 1.8rem;
   }
 
   /* ------HERO BLOCK------*/
@@ -1849,13 +1922,16 @@ input[type=text],input[type=email] textarea {
 
   #design-process {
     margin: 6.4rem 0;
-    padding: 9.6rem 0 9.6rem 0;
+    padding: 7.2rem 0 7.2rem 0;
   }
 
   #design-process p{
     font-size: 3.6rem;
-    padding-top: 6rem;
     padding-bottom: 0;
+  }
+
+  #design-title {
+    padding-bottom: 3.6rem;
   }
 
 /* PT 1: USER RESEARCH */
@@ -1864,7 +1940,16 @@ input[type=text],input[type=email] textarea {
     padding-bottom: 6.4rem;
   }
 
+  #chroma-user-research h4, p, li {
+    text-align: left;
+  }
+
+
   /* PT 1: USER RESEARCH */
+
+    #chroma-pt1 p {
+      margin: 3.6rem 0 0 0;
+    }
 
     #user-research-grid {
       display: grid;
@@ -1872,6 +1957,7 @@ input[type=text],input[type=email] textarea {
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: auto;
       margin: 0 auto;
+      padding-bottom: 3.6rem;
       /* width: 80%; */
       /* align-items: stretch; */
     }
@@ -1959,13 +2045,16 @@ input[type=text],input[type=email] textarea {
   }
 
   #chroma-competitors {
-    display: grid;
-    grid-gap: 1rem;
+    display: none;
   }
 
-  #chroma-competitors h5 {
+  /* #chroma-competitors h5 {
     padding-top: 1.2rem;
     padding-bottom: 3.6rem;
+  } */
+
+  #chroma-pt2 {
+    padding: inherit;
   }
 
   #dropbox {
@@ -1981,7 +2070,46 @@ input[type=text],input[type=email] textarea {
     text-align: left;
   }
 
+  #comp-comparison {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    margin: 0 auto;
+    /* width: 40%; */
+    align-items: center;
+  }
 
+  #comp-comparison {
+    padding-bottom: 0;
+    padding-top: inherit;
+  }
+
+
+  #comp-comparison img {
+      border: 1px solid #f7f7f7;
+      padding: 1.2rem;
+      margin: 2.4rem 0 2.4rem 0;
+      width: 100%;
+  }
+
+  #comp-comparison p {
+    text-align: left;
+  }
+
+  #comp-comparison h2 {
+    margin-left: 0;
+    padding-left: 0;
+    text-align: left;
+  }
+
+  #comp-comparison h4 {
+    margin: 0;
+    text-align: left;
+  }
+
+  #comp-link {
+    padding-top: inherit;
+  }
 
 /* PT 4 - USER STORIES & FLOWS */
 
@@ -2256,9 +2384,13 @@ input[type=text],input[type=email] textarea {
   }
 
   #about-me-link h5:focus {
+    font-weight: bold;
+  }
+
+  /* #about-me-link h5:focus {
     outline: 1px dashed #E8E8E8;
     outline: none;
-  }
+  } */
 
   #about-me-link h5 {
     color: #FDF8F4;
