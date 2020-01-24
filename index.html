@@ -14,11 +14,9 @@
  </head>
  <body>
    <!-- exterior edge of grids to follow -->
-   <div class="container">
+   <div class="container top-background">
      <!--Header Section-->
-      <!-- <img class="background-swirl display-mobile" src="images/background-swirl-mobile.jpg" alt="paint swirl in orange and black"> -->
-      <!-- <img class="background-swirl display-desktop" src="images/background-swirl-4x.jpg" alt="paint swirl in orange and black"> -->
-      <header id="home-header-pink">
+      <header>
         <nav class="nav-content-box nav-align top-spacing">
           <a class="display-desktop" href="/"><img class="logo" src="images/logo-desktop-white.png" alt="andie kolbeck logo"></a>
           <a class="display-mobile" href="/"><img class="logo" src="images/logo-white-1x.png" alt="andie kolbeck logo"></a>
@@ -33,21 +31,34 @@
       </header>
       <main>
         <!-- Hero Section -->
-        <div class="hero">
-        <article class="content-box-narrow">
-          <h1 class="hello light-text">Hello!</h1>
-          <h1 class="x-large light-text">I'm Andie.</h1>
-          <h1 class="light-text hero-intro">A people-first UX designer from the San Francisco Bay Area.</h1>
-          <h2 class="display-desktop hero-statement light-text">With one foot in the digital art world and the other in human behavior, I design friendly and inclusive digital experiences grounded in the stories of the people they serve.</h2>
-          <h2 class="display-mobile hero-statement light-text">I design friendly and inclusive digital experiences, grounded in the stories of the people they serve.</h2>
-          <div class="hero-button-container">
-            <a class ="btn orange hero-left-btn" href="#work-section">See My Latest Work</a>
-            <a class ="btn light-wire hero-right-btn" href="/contact">Contact Me</a>
-          </div>
+        <article class="content-box" id="hero-grid">
+          <section>
+            <figure class="display-mobile" id="illustration">
+              <img src="/images/botanical-illustration.png" alt="illustration of forest floor with mushrooms and ferns">
+            </figure>
+            <h1 class="hello light-text">Hello!</h1>
+            <h1 class="x-large light-text">I'm Andie.</h1>
+            <h1 class="light-text hero-intro">A people-first UX designer from the San Francisco Bay Area.</h1>
+            <h2 class="display-desktop hero-statement light-text">With one foot in the digital art world and the other in human behavior, I design friendly and inclusive digital experiences grounded in the stories of the people they serve.</h2>
+            <h2 class="display-mobile hero-statement light-text">I design friendly and inclusive digital experiences, grounded in the stories of the people they serve.</h2>
+            <!-- <a class ="btn orange hero-left-btn" href="#work-section">See My Latest Work</a> -->
+            </section>
+            <figure class="display-desktop" id="illustration">
+              <img src="/images/botanical-illustration.png" alt="illustration of forest floor with mushrooms and ferns">
+            </figure>
         </article>
+        <div id= "see-work-link">
+          <a href="#work-section"><h5>See My Latest Work</h5></a>
+          <div class="display-desktop" id="bounce-arrow">
+            <a href="#work-section"><i class="las la-angle-double-down"></i></a>
+          </div>
+          <a class="display-mobile" href="#work-section"><i class="las la-angle-double-down"></i></a>
+        </div>
       </div>
+    </div>
       <!-- Case Study Section -->
-      <section id="work-section">
+
+      <section>
         <h2 class="featured-work">Featured Work</h2>
       <section class="case-study">
 

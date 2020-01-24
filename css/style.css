@@ -35,17 +35,14 @@ secondary text #2A3636
 tertiary text #565656
 ---------*/
 
-#home-header-pink {
-  background-color: pink;
-}
 
 a {
   text-decoration: none;
 }
-
+/*
 a:focus {
   text-decoration: underline;
-}
+} */
 
 /* btn:focus {
   text-decoration: underline;
@@ -495,7 +492,11 @@ footer p {
 .hello {
   font-weight: 700;
   line-height: 1rem;
-  margin: 9.6rem 0 2.4rem 0;
+}
+
+#hero-grid section {
+  padding-bottom: 1rem;
+  padding-top: 0;
 }
 
 .hero-intro {
@@ -520,10 +521,43 @@ footer p {
   margin-bottom: 4.8rem;
 }
 
+
+#illustration figure {
+  margin: 0;
+}
+
+#illustration img {
+  width: 100%;
+}
+
+#see-work-link {
+  color: #E9DAD1;
+  margin-bottom: 3.6rem;
+  text-align: center;
+}
+
+#see-work-link h5 {
+  color: #FDF8F4;
+  /* margin-top: 10rem; */
+  margin-bottom: 1.2rem;
+}
+
+#see-work-link i {
+  color: #E9DAD1;
+  font-size: 2.0rem;
+  padding-bottom: 0;
+  /* transform: translateX(50%); */
+}
+
+.top-background {
+  background: #7D7D7E;
+}
+
 .x-large {
-  font-size: 3.6rem;
+  font-size: 4.8rem;
   font-weight: 700;
   margin-top: 0;
+  margin-bottom: 2rem;
   /* text-transform: uppercase; */
 }
 
@@ -573,9 +607,11 @@ footer p {
 }
 
 .featured-work {
+  font-size: 2.4rem;
   margin: 3.6rem;
   text-align: center;
 }
+
 
 /* ------SKILLS SECTION------ */
 
@@ -1190,14 +1226,6 @@ footer p {
   padding-bottom: 2.4rem;
 }
 
-/* #discovering-ux {
-  margin-top: 1.8rem;
-} */
-
-.hero {
-  background-color: pink;
-}
-
 #hobbies {
   padding-bottom: 0;
 }
@@ -1649,9 +1677,6 @@ input[type=text],input[type=email] textarea {
      width: inherit;
    }
 
-   #work-section {
-     /* position: absolute; */
-   }
 
   /*----------------------BUTTONS----------------------*/
 
@@ -1696,28 +1721,33 @@ input[type=text],input[type=email] textarea {
 
   /* ------HERO BLOCK------*/
 
-  .background-swirl {
-    min-height: 1000px;
-  }
+
 
   .hello {
-    font-size: 3.6rem;
-    line-height: 1rem;
-    margin: 12.8rem 0 6.4rem 0;
+    font-size: 2.4rem;
+    /* margin: 12.8rem 0 6.4rem 0; */
   }
 
-  .hero {
-    padding-bottom: 4.8rem;
+  #hero-grid {
+    display: grid;
+    grid-template-columns: 4fr 5fr;
+    padding: 4.8rem 12.8rem 0 12.8rem;
+    align-items: center;
+  }
+
+  #hero-grid figure {
+    margin: 0;
+  }
+
+  #hero-grid section {
+    padding-top: inherit;
+    padding-bottom: 0;
   }
 
   .hero-intro {
-    font-size: 3.6rem;
+    font-size: 2.4rem;
     line-height: 135%;
-    margin-bottom: 4.8rem;
-  }
-
-  .hero-button-container {
-    margin-bottom: 9.6rem;
+    margin-bottom: 3.6rem;
   }
 
   .hero-left-btn {
@@ -1731,15 +1761,34 @@ input[type=text],input[type=email] textarea {
   }
 
   .hero-statement {
-    font-size: 2.4rem;
+    font-size: 1.8rem;
     line-height: 135%;
-    margin-bottom: 6.4rem;
+    margin: 2.4rem 0 4.8rem 0;
+  }
+
+  #illustration {
+    padding: 0;
+    /* float: right; */
+    max-width: 1024px;
+  }
+
+  #illustration img {
+    transform: translateX(15%);
+    width: 100%;
+  }
+
+  #see-work-link h5:hover {
+    font-weight: bold;
+  }
+
+  #see-work-link h5:focus {
+    font-weight: bold;
   }
 
   .x-large {
-    font-size: 6rem;
+    font-size: 4.8rem;
     line-height: 7rem;
-    margin: 0 0 4.8rem 0;
+    margin: 0 0 2.4rem 0;
     /* text-transform: uppercase; */
   }
 
@@ -1757,14 +1806,15 @@ input[type=text],input[type=email] textarea {
      padding-left: 1rem;
    }
 
-   .case-study img, {
+   .case-study img {
+     padding: 0;
      float: right;
      max-width: 1024px;
    }
 
-  .case-study-image {
-    padding: 0;
-  }
+   .featured-work {
+     font-size: 3.2rem;
+   }
 
   #paragraph-end-case-study-desktop {
     margin-bottom: 0;
