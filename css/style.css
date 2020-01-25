@@ -755,10 +755,7 @@ footer p {
 
 #chroma-user-research {
   padding: 4.8rem 0;
-}
-
-#chroma-user-research h4, p, li {
-  text-align: center;
+  /* text-align: center; */
 }
 
 .item1 {
@@ -1183,6 +1180,10 @@ footer p {
   position: relative;
 }
 
+#about-hero-container p {
+  text-align: left;
+}
+
 #about-nav {
   position: absolute;
   top: 0;
@@ -1230,6 +1231,10 @@ footer p {
   padding-bottom: 2.4rem;
 }
 
+.about-body p {
+  text-align: left;
+}
+
 #hobbies {
   padding-bottom: 0;
 }
@@ -1244,14 +1249,14 @@ footer p {
   margin: 0;
 }
 
-/* #large-leaf {
+#large-leaf-mobile {
   position: absolute;
   left: -26px;
   right: 0;
   top: 323px;
   transform: rotate(-55deg);
   width: 60%;
-} */
+}
 
 
 .photo-gallery {
@@ -1594,6 +1599,15 @@ input[type=text],input[type=email] textarea {
 
      #message-box {
        font-size: 1.5rem;
+     }
+
+     /* ABOUT PAGE */
+
+     #large-leaf-mobile {
+       left: -55px;
+       right: 0;
+       top: 650px;
+       width: 60%;
      }
 
 }
@@ -2379,16 +2393,22 @@ input[type=text],input[type=email] textarea {
     width: 80%;
   } */
 
-  .about-end {
+  #about-end {
     margin-top: 7.2rem;
     padding-bottom: 7.2rem;
+  }
+
+  #about-start {
+    margin-bottom: 7.2rem;
+    margin-top: 0;
   }
 
   .about-page-container {
     display: grid;
     grid-template-columns: 60% 40%;
-    margin: 0 auto;
     align-items: center;
+    margin: 7.2rem 0;
+    padding: 2.4rem 0;
   }
 
   .about-page-container h2 {
@@ -2407,6 +2427,8 @@ input[type=text],input[type=email] textarea {
     grid-template-columns: 40% 60%;
     margin: 0 auto;
     align-items: center;
+    margin: 9.6rem 0;
+
   }
 
   .about-page-container-alt h2 {
@@ -2427,7 +2449,7 @@ input[type=text],input[type=email] textarea {
 
   .about-text-container-alt {
     max-width: 500px;
-    margin-left: 10%;
+    margin-left: 20%;
   }
 
   #about-intro h5 {
@@ -2538,7 +2560,7 @@ input[type=text],input[type=email] textarea {
 
   .quote-section {
     background-color: #ED9A68;
-    margin: 4.8rem 0;
+    margin: 6.4rem 0;
     padding: 6.4rem;
   }
 
