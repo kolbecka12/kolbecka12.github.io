@@ -51,7 +51,6 @@ a:focus {
 blockquote {
   color: #FFF;
   font-size: 3.6rem;
-  hanging-punctuation: allow-end;
   line-height: 130%;
   margin: 2.4rem;
 }
@@ -358,11 +357,11 @@ footer p {
 }
 
 .nav-link-dark:hover {
-  color: #7D7D7E;
+  color: #3B5252;
 }
 
 .nav-link-dark:focus {
-  color: #7D7D7E;
+  color: #3B5252;
 }
 
 .nav-link-contact-dark {
@@ -528,6 +527,11 @@ footer p {
 
 #illustration img {
   width: 100%;
+}
+
+.mobile-hero {
+  margin: 0 auto;
+  width: 90%;
 }
 
 #see-work-link {
@@ -1240,6 +1244,16 @@ footer p {
   margin: 0;
 }
 
+/* #large-leaf {
+  position: absolute;
+  left: -26px;
+  right: 0;
+  top: 323px;
+  transform: rotate(-55deg);
+  width: 60%;
+} */
+
+
 .photo-gallery {
   padding-top: 1rem;
   text-align: center;
@@ -1729,10 +1743,13 @@ input[type=text],input[type=email] textarea {
   }
 
   #hero-grid {
+    align-items: center;
     display: grid;
     grid-template-columns: 4fr 5fr;
+    margin: 0 auto;
+    max-width: 1400px;
     padding: 4.8rem 12.8rem 0 12.8rem;
-    align-items: center;
+    width: 90%;
   }
 
   #hero-grid figure {
@@ -1792,7 +1809,7 @@ input[type=text],input[type=email] textarea {
     /* text-transform: uppercase; */
   }
 
-  /* ------CASE STUDY SECTION------*/
+  /* ------CASE STUDY SECTION---- --*/
 
   .case-study {
     background-color: white;
@@ -2362,11 +2379,16 @@ input[type=text],input[type=email] textarea {
     width: 80%;
   } */
 
+  .about-end {
+    margin-top: 7.2rem;
+    padding-bottom: 7.2rem;
+  }
 
   .about-page-container {
     display: grid;
-    grid-template-columns: 65% 35%;
+    grid-template-columns: 60% 40%;
     margin: 0 auto;
+    align-items: center;
   }
 
   .about-page-container h2 {
@@ -2377,18 +2399,35 @@ input[type=text],input[type=email] textarea {
 
   .about-page-container img {
     border: 1px solid #f7f7f7;
+    width: 100%;
+  }
+
+  .about-page-container-alt {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  .about-page-container-alt h2 {
+    text-align: left;
+    margin-left: 0;
+    margin-top: 9.6rem;
+  }
+
+  .about-page-container-alt img {
+    border: 1px solid #f7f7f7;
+    width: 100%;
   }
 
   .about-text-container {
     max-width: 500px;
+    margin-right: 10%;
   }
 
-  #about-start-photo {
-    margin-top: 9.6rem;
-  }
-
-  #about-end-photo {
-    margin-bottom: 9.6rem;
+  .about-text-container-alt {
+    max-width: 500px;
+    margin-left: 10%;
   }
 
   #about-intro h5 {
@@ -2397,11 +2436,10 @@ input[type=text],input[type=email] textarea {
 
   #about-hero-desktop {
     background: #ED9A68;
-    min-height: 900px;
+    /* min-height: 800px; */
   }
 
   #about-me-text {
-    /* position: absolute; */
     left: 0;
     color: #FDF8F4;
     top: 0;
@@ -2425,6 +2463,7 @@ input[type=text],input[type=email] textarea {
   }
 
   #about-me-link {
+    padding-bottom: 3.6rem;
     text-align: center;
     outline: none;
   }
@@ -2460,9 +2499,6 @@ input[type=text],input[type=email] textarea {
     text-align: left;
   }
 
-  #about-city {
-    margin-top: 9.6rem;
-  }
 
   #more-about-me .section-title {
     margin-left: 0;
@@ -2475,28 +2511,13 @@ input[type=text],input[type=email] textarea {
   }
 
   .emoji {
-    text-align: center;
+    /* text-align: center; */
     margin-bottom: 1.2rem;
   }
 
   .hobbies {
     padding-bottom: 3.6rem;
     text-align: left;
-  }
-
-  #hobbies-desktop {
-    margin-bottom: 12.8rem;
-  }
-
-  #hobbies-photos {
-    /* position: absolute; */
-    display: grid;
-  }
-
-  #hobbies-photo-bottom {
-    margin-top: 13.4rem;
-    transform: translate(25%, 10%);
-
   }
 
   .left-align {
@@ -2517,12 +2538,33 @@ input[type=text],input[type=email] textarea {
 
   .quote-section {
     background-color: #ED9A68;
+    margin: 4.8rem 0;
+    padding: 6.4rem;
   }
 
   .quote-section i{
     color: #FFF;
     font-size: 8rem;
   }
+
+  #large-leaf {
+    /* left: 0; */
+    right: 0;
+    position: absolute;
+    top: 30%;
+    transform: none;
+    width: 31%;
+    z-index: 5;
+  }
+
+  #small-leaf {
+    left: 6%;
+    position: absolute;
+    top: 90%;
+    width: 12%;
+    z-index: 5;
+  }
+
 
   .left-photo {
     justify-self: start;
@@ -2561,9 +2603,12 @@ input[type=text],input[type=email] textarea {
 }
 
 /* Responsive for Wide Screens */
-@media screen and (min-width: 1270px) {
+/* @media screen and (min-width: 1150px) {
   #about-me-link i {
-    padding-bottom: 2%;
+    padding-bottom: 3%;
   }
+  #about-hero-desktop {
+    min-height: 900px;
+  } */
 
 }
