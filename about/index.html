@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
  <head>
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <title>Portfolio | Andie Kolbeck</title>
    <link rel="stylesheet" type="text/css" href="../css/style.css">
    <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
    <!-- favicon -->
    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
    <!-- fonts -->
@@ -96,30 +97,20 @@
     <div class="about-body light-section" id= "hobbies">
       <article class="content-box">
       <h2 id="hobbies-title-mobile">When I'm Not Designing, You Can Probably Find Me...</h2>
-      <ul>
-        <li class="emoji"><i class="em em-mushroom" aria-role="presentation" aria-label="MUSHROOM"></i>  <i class="em em-snow_capped_mountain" aria-role="presentation" aria-label=""></i>
-        <li class="hobbies">Hiking through a nearby forest, foraging for mushrooms and cataloging native plants with iNaturalist</li>
-        <li class="emoji"><i class="em em-carrot" aria-role="presentation" aria-label="CARROT"></i>  <i class="em em-female-cook" aria-role="presentation" aria-label=""></i>
-        <li class="hobbies">Cooking up a feast with some farmers’ market produce</li>
-        <li class="emoji"><i class="em em-cat2" aria-role="presentation" aria-label="CAT"></i>  <i class="em em-herb" aria-role="presentation" aria-label="HERB"></i>
-        <li class="hobbies">Tending to my two cats + eleventy-billion houseplants</li>
-        <li class="emoji"><i class="em em-camera_with_flash" aria-role="presentation" aria-label="CAMERA WITH FLASH"></i>  <i class="em em-city_sunset" aria-role="presentation" aria-label="CITYSCAPE AT DUSK"></i>
-        <li class="hobbies" id="hobbies-end-mobile">Exploring the city with my camera during the golden hour before sunset</li>
-      </ul>
-    </article>
+        <ul>
+          <li class="emoji"><i class="em em-mushroom" aria-role="presentation" aria-label="MUSHROOM"></i>  <i class="em em-snow_capped_mountain" aria-role="presentation" aria-label=""></i></li>
+          <li class="hobbies">Hiking through a nearby forest, foraging for mushrooms and cataloging native plants with iNaturalist</li>
+          <li class="emoji"><i class="em em-carrot" aria-role="presentation" aria-label="CARROT"></i>  <i class="em em-female-cook" aria-role="presentation" aria-label=""></i></li>
+          <li class="hobbies">Cooking up a feast with some farmers’ market produce</li>
+          <li class="emoji"><i class="em em-cat2" aria-role="presentation" aria-label="CAT"></i>  <i class="em em-herb" aria-role="presentation" aria-label="HERB"></i></li>
+          <li class="hobbies">Tending to my two cats + eleventy-billion houseplants</li>
+          <li class="emoji"><i class="em em-camera_with_flash" aria-role="presentation" aria-label="CAMERA WITH FLASH"></i>  <i class="em em-city_sunset" aria-role="presentation" aria-label="CITYSCAPE AT DUSK"></i></li>
+          <li class="hobbies" id="hobbies-end-mobile">Exploring the city with my camera during the golden hour before sunset</li>
+        </ul>
+      </article>
+    </div>
   </div>
-    <!-- <article class="photo-gallery">
-      <img class="display-mobile left" src="../images/about-city.jpg" alt="city buildings in black and white">
-      <img class="display-mobile right" src="../images/about-anemone.jpg" alt="purple sea anemone">
-      <img class="display-mobile left" src="../images/about-laguna.jpg" alt="woman standing near a lagoon">
-      <img class="display-mobile right" src="../images/about-photographer.jpg" alt="woman pointing a camera">
-      <img class="display-mobile left" src="../images/about-jellyfish.png" alt="close up photo of a jellyfish">
-      <img class="display-mobile right" src="../images/about-pylons.jpg" alt="electrical pylons snaking through the desert">
-      <img class="display-mobile left" src="../images/about-lights.jpg" alt="vintage chandalier in a dark room">
-      <img class="display-mobile right" src="../images/about-zuul.jpg" alt="fluffy housecat posing in a bush">
-    </article> -->
-  </div>
-
+</body>
 
 
 
@@ -130,21 +121,21 @@
          <nav class="nav-content-box nav-align">
            <a href="/"><img class="logo" id="about-desktop-logo" src="../images/logo-desktop.png" alt="andie kolbeck logo"></a>
            <ul class="nav-links">
-             <li><a class="nav-link-dark" href="/#work-section">Work</a></li>
-             <li><a class="nav-link-dark" id="active-nav" href="/about">About</a></li>
-             <li><a class="nav-link-dark" href="https://drive.google.com/file/d/1RkEKpQ3ga1MT1AZ3Yu10s92kWQogb7lq/view?usp=sharing">Resume</a></li>
-             <li><a class="nav-link-contact-dark" href="/contact">Contact</a></li>
+             <li><a class="nav-link-about" href="/#work-section">Work</a></li>
+             <li><a class="nav-link-about" id="active-nav" href="/about">About</a></li>
+             <li><a class="nav-link-about" href="https://drive.google.com/file/d/1RkEKpQ3ga1MT1AZ3Yu10s92kWQogb7lq/view?usp=sharing">Resume</a></li>
+             <li><a id="about-contact" href="/contact">Contact</a></li>
            </ul>
          </nav>
        </header>
        <section id="about-me-text">
-         <h1>Hello! I'm Andie Kolbeck</h1>
-         <h2>Designer. Traveler. Storyteller. Photographer. Collaborator.</h2>
+         <h1 class="animated fadeIn">Hello! I'm Andie Kolbeck</h1>
+         <h2 class="animated fadeIn">Designer. Traveler. Storyteller. Photographer. Collaborator.</h2>
        </section>
-       <img id="about-hero" src="../images/about-photo.jpg" alt="photo of blond woman wearing leather jacket">
+       <img class="animated fadeIn" id="about-hero" src="../images/about-photo.jpg" alt="photo of blond woman wearing leather jacket">
        <!-- <img id="small-leaf" src="../images/bottom-leaflet.png" alt="small blue leaflet"> -->
-       <img id="large-leaf" src="../images/leaf-branch.png" alt="long blue leaf branch">
-       <div id= "about-me-link">
+       <img class="animated fadeInDown" id="large-leaf" src="../images/leaf-branch.png" alt="long blue leaf branch">
+       <div class="animated fadeIn" id= "about-me-link">
          <a href="#more-about-me"><h5>About Me</h5></a>
          <div id="bounce-arrow">
            <a href="#more-about-me"><i class="las la-angle-double-down"></i></a>
@@ -154,7 +145,7 @@
       <body>
         <div class="light-section">
           <div class="content-box-narrow">
-            <div class="about-page-container" id="about-start">
+            <div class="about-page-container animated fadeIn" id="about-start">
                 <div class="about-text-container" id="more-about-me">
                     <h2 class="section-title">The Essentials</h2>
                     <p>I’m a human-centered product designer drawing my skills and experience from a background in marketing, graphic design, and human behavior.</p>
@@ -215,13 +206,13 @@
               <div class="about-text-container">
                   <h2 class="section-title">When I'm Not Designing, You Can Probably Find Me...</h2>
                   <ul>
-                    <li class="emoji"><i class="em em-mushroom" aria-role="presentation" aria-label="MUSHROOM"></i>  <i class="em em-snow_capped_mountain" aria-role="presentation" aria-label=""></i>
+                    <li class="emoji"><i class="em em-mushroom" aria-role="presentation" aria-label="MUSHROOM"></i>  <i class="em em-snow_capped_mountain" aria-role="presentation" aria-label=""></i></li>
                     <li class="hobbies">Hiking through a nearby forest, foraging for mushrooms and cataloging native plants with iNaturalist</li>
-                    <li class="emoji"><i class="em em-carrot" aria-role="presentation" aria-label="CARROT"></i>  <i class="em em-female-cook" aria-role="presentation" aria-label=""></i>
+                    <li class="emoji"><i class="em em-carrot" aria-role="presentation" aria-label="CARROT"></i>  <i class="em em-female-cook" aria-role="presentation" aria-label=""></i></li>
                     <li class="hobbies">Cooking up a feast with some farmers’ market produce</li>
-                    <li class="emoji"><i class="em em-cat2" aria-role="presentation" aria-label="CAT"></i>  <i class="em em-herb" aria-role="presentation" aria-label="HERB"></i>
+                    <li class="emoji"><i class="em em-cat2" aria-role="presentation" aria-label="CAT"></i>  <i class="em em-herb" aria-role="presentation" aria-label="HERB"></i></li>
                     <li class="hobbies">Tending to my two cats + eleventy-billion houseplants</li>
-                    <li class="emoji"><i class="em em-camera_with_flash" aria-role="presentation" aria-label="CAMERA WITH FLASH"></i>  <i class="em em-city_sunset" aria-role="presentation" aria-label="CITYSCAPE AT DUSK"></i>
+                    <li class="emoji"><i class="em em-camera_with_flash" aria-role="presentation" aria-label="CAMERA WITH FLASH"></i>  <i class="em em-city_sunset" aria-role="presentation" aria-label="CITYSCAPE AT DUSK"></i></li>
                     <li class="hobbies">Exploring the city with my camera during the golden hour before sunset</li>
                   </ul>
               </div>
@@ -237,11 +228,11 @@
          <a class ="btn orange content-box-narrow" href="/contact">Contact Me</a>
        </div>
        <ul class="social-container">
-         <li class="social-icons"><a class="footer-icon" href="mailto:kolbecka@gmail.com" target="_blank"><i class="footer-icon la la-envelope"></i></a> </li>
-         <li class="social-icons"><a class="footer-icon" href="https://www.linkedin.com/in/andiekolbeck/" target="_blank"><i class="footer-icon lab la-linkedin-in"></i></a></li>
+         <li class="social-icons"><a href="mailto:kolbecka@gmail.com" target="_blank"><i class="footer-icon la la-envelope"></i></a> </li>
+         <li class="social-icons"><a href="https://www.linkedin.com/in/andiekolbeck/" target="_blank"><i class="footer-icon lab la-linkedin-in"></i></a></li>
          <!-- <li class="social-icons"><a href="https://github.com/kolbecka12"><i class="footer-icon lab la-dribbble"></i></a></li> -->
          <!-- <li class="social-icons"><a href="https://twitter.com/the___andiest"><i class="footer-icon la la-twitter"></i></a></li> -->
-         <li class="social-icons"><a class="footer-icon" href="https://unsplash.com/@kolbecka" target="_blank"><i class="footer-icon la la-camera"></i></a></li>
+         <li class="social-icons"><a href="https://unsplash.com/@kolbecka" target="_blank"><i class="footer-icon la la-camera"></i></a></li>
        </ul>
        <p class="content-box copyright">©2019 Andie Kolbeck | Designed & Developed by Andie Kolbeck</p>
      </footer>
