@@ -286,19 +286,15 @@ footer p {
 }
 
 .footer-icon:hover {
-  color: #E9DAD1;
+  color: #2A3636;
 }
 
 .footer-icon:focus {
-  color: #E9DAD1;
-}
-
-.footer-icon:focus {
-  outline: 2px dashed #E8E8E8;
+  color: #2A3636;
 }
 
 .footer-icon-light:hover {
-  color: blue;
+  color: green;
 }
 
 .footer-icon-light:focus {
@@ -340,6 +336,10 @@ footer p {
 
 .logo {
   width: 10%;
+}
+
+.logo:hover {
+  border: 3px solid #7D7D7E;
 }
 
 .nav-content-box {
@@ -398,11 +398,11 @@ footer p {
 }
 
 .nav-link-light:hover {
-  color: #E9DAD1;
+  color: #2A3636;
 }
 
 .nav-link-light:focus {
-  color: #E9DAD1;
+  color: #2A3636;
 }
 
 .nav-link-contact-light {
@@ -419,13 +419,13 @@ footer p {
 }
 
 .nav-link-contact-light:hover {
-  border: 1px solid #E9DAD1;
-  color: #E9DAD1;
+  border: 1px solid #2A3636;
+  color: #2A3636;
 }
 
 .nav-link-contact-light:focus {
-  border: 1px solid #E9DAD1;
-  color: #E9DAD1;
+  border: 1px solid #2A3636;
+  color: #2A3636;
 }
 
 .nav-links {
@@ -458,6 +458,16 @@ footer p {
   font-size: 1.8rem;
   padding: .6rem;
   margin: .6rem;
+}
+
+#nav-icon-light:hover {
+  border: 1px solid #2A3636;
+  color #2A3636;
+}
+
+#nav-icon-light:focus {
+  border: 1px solid #2A3636;
+  color #2A3636;
 }
 
 .nav-icon-dark:hover {
@@ -1812,11 +1822,11 @@ input[type=text],input[type=email] textarea {
   }
 
   #see-work-link h5:hover {
-    font-weight: bold;
+    color: #2A3636;
   }
 
   #see-work-link h5:focus {
-    font-weight: bold;
+    color: #2A3636;
   }
 
   .x-large {
