@@ -18,7 +18,7 @@ body {
 /* ----------------------STYLESHEET TYPEFACES + FONT COLORS---------------------- */
 
 /*------
-BODY COLORS
+BODY COLORSx
 
 rust orange #ED9A68
 standard grey / footer #7D7D7E
@@ -339,7 +339,11 @@ footer p {
 }
 
 .logo:hover {
-  border: 3px solid #7D7D7E;
+  border: 2px solid #7D7D7E;
+}
+
+.logo:focus {
+  border: 2px solid #7D7D7E;
 }
 
 .nav-content-box {
@@ -1738,6 +1742,14 @@ input[type=text],input[type=email] textarea {
   /*----------------------INDEX.HTML PAGE----------------------*/
 
   /* ------NAV MENU------*/
+
+  #about-desktop-logo:hover {
+    border: 2px solid #ED9A68;
+  }
+
+  #about-desktop-logo:focus {
+    border: 2px solid #ED9A68;
+  }
 
   .nav-content-box {
     max-width: 80%;
