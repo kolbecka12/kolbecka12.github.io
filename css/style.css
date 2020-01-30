@@ -391,7 +391,7 @@ footer p {
 }
 
 .logo:hover {
-  border: 2px solid #7D7D7E;
+  border: 2px solid transparent;
 }
 
 
@@ -741,6 +741,11 @@ footer p {
   margin-bottom: 4.8rem;
 }
 
+#chroma-top img {
+  max-width: 70%;
+}
+
+
 .view-prototype {
   margin-top: 1.8rem;
 }
@@ -829,6 +834,11 @@ footer p {
 
 .user-research {
   text-align: center;
+}
+
+#user-stats {
+  margin: 5.8rem;
+  width: inherit;
 }
 
 /* PT 2 - COMPETITIVE RESEARCH */
@@ -938,6 +948,10 @@ footer p {
 }
 
 /* PT 3 - USER PROFILES */
+
+.extra-padding {
+  padding: 2.4rem 0;
+}
 
 #chroma-pt3 h6 {
   /* tertiary text */
@@ -1488,7 +1502,7 @@ input[type=text],input[type=email] textarea {
     #work-section {
       animation-duration: 1s;
       animation-delay: 4.5s;
-      padding: 4rem 0 0 0; 
+      padding: 4rem 0 0 0;
     }
 
     /* ------SKILLS SECTION------*/
@@ -1568,6 +1582,10 @@ input[type=text],input[type=email] textarea {
 
   /* PT 3 - USER PROFILES */
 
+  .extra-padding {
+    padding-bottom: 0;
+  }
+
     #user-profiles {
       display: grid;
       grid-gap: 2rem;
@@ -1591,6 +1609,11 @@ input[type=text],input[type=email] textarea {
 
     #chroma-pt3 .link-container {
       margin: 6.4rem;
+    }
+
+    #user-stats {
+      margin: 0 auto;
+      width: 60%;
     }
 
     /* PT 4 - USER STORIES & FLOWS */
@@ -1721,11 +1744,6 @@ input[type=text],input[type=email] textarea {
     width: 80%;
   }
 
-  .content-box-narrow-desktop {
-    margin: 0 auto;
-    width: 60%;
-  }
-
   /* hide on desktop */
   .display-desktop {
     display: inherit;
@@ -1817,7 +1835,7 @@ input[type=text],input[type=email] textarea {
 
   #hero-grid section {
     margin: 0;
-    padding-top: inherit;
+    padding-top: 10%;
     padding-bottom: 0;
   }
 
@@ -1851,7 +1869,7 @@ input[type=text],input[type=email] textarea {
     animation-delay: 1s;
     animation-duration: 4s;
     padding: 0;
-    max-width: 1024px;
+    max-width: 550px;
   }
 
   #illustration img {
@@ -1875,7 +1893,6 @@ input[type=text],input[type=email] textarea {
     animation-delay: 1.3s;
     animation-duration: 4s;
 
-    /* animation: 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both; */
   }
 
   /* ------CASE STUDY SECTION---- --*/
@@ -2012,12 +2029,6 @@ input[type=text],input[type=email] textarea {
 
 
 
-
-
-
-
-
-
   /*----------------------PROJECT.HTML PAGE----------------------*/
 
 /* HERO BLOCK */
@@ -2030,7 +2041,8 @@ input[type=text],input[type=email] textarea {
   #chroma-top img {
     animation-duration: 3s;
     animation-delay: .2s;
-  }
+    max-width: 100%;
+   }
 
    #chroma-top h2 {
      animation-duration: 2s;
@@ -2106,23 +2118,20 @@ input[type=text],input[type=email] textarea {
     text-align: left;
   }
 
+  #chroma-pt1 p {
+    margin: 3.6rem 0 0 0;
+  }
 
-  /* PT 1: USER RESEARCH */
-
-    #chroma-pt1 p {
-      margin: 3.6rem 0 0 0;
-    }
-
-    #user-research-grid {
-      display: grid;
-      grid-gap: 1rem;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: auto;
-      margin: 0 auto;
-      padding-bottom: 3.6rem;
-      /* width: 80%; */
-      /* align-items: stretch; */
-    }
+  #user-research-grid {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    margin: 0 auto;
+    padding-bottom: 3.6rem;
+    /* width: 80%; */
+    /* align-items: stretch; */
+  }
 
 
 
@@ -2198,6 +2207,11 @@ input[type=text],input[type=email] textarea {
       grid-column: 3;
       grid-row: 4;
       align-items: top;
+    }
+
+    #user-stats {
+      margin: 0 auto;
+      width: 60%;
     }
 
   /*PT 2: COMPETITIVE ANALYSIS*/
@@ -2760,12 +2774,26 @@ input[type=text],input[type=email] textarea {
 }
 
 /* Responsive for Wide Screens */
-/* @media screen and (min-width: 1150px) {
-  #about-me-link i {
-    padding-bottom: 3%;
+@media screen and (min-width: 1650px) {
+  .hello {
+    font-size: 4.8rem;
+    margin-bottom: 1.2rem;
   }
-  #about-hero-desktop {
-    min-height: 900px;
-  } */
+  .x-large {
+    font-size: 9.6rem;
+    line-height: 12.8rem;
+  }
+  .hero-intro {
+    font-size: 3.6rem;
+    margin-bottom: 4.8rem;
+  }
+
+  .hero-statement {
+    font-size: 2.4rem;
+  }
+
+  #illustration {
+    max-width: 1024px;
+  }
 
 }
