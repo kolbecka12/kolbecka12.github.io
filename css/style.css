@@ -1488,6 +1488,7 @@ input[type=text],input[type=email] textarea {
     #work-section {
       animation-duration: 1s;
       animation-delay: 4.5s;
+      padding: 4rem 0 0 0; 
     }
 
     /* ------SKILLS SECTION------*/
