@@ -574,11 +574,10 @@ footer p {
   animation: 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
   font-weight: normal;
   font-size: 1.5rem;
-  margin-bottom: 4.8rem;
+  margin: 1.8rem 0 4.8rem 0;
 }
 
-
-#illustration figure {
+#illustration {
   margin: 0;
 }
 
@@ -683,13 +682,12 @@ footer p {
 /* ------SKILLS SECTION------ */
 
 .designer {
-  /* rust orange */
-  background-color: #ED9A68;
+  background-color: #546467;
   text-align: center;
 }
 
 .skill-icon {
-  color: #C86F3A;
+  color: #C4C4C4;
   font-size: 6.4rem;
   padding: 3.6rem 0 2.0rem 0;
 }
@@ -1816,15 +1814,15 @@ input[type=text],input[type=email] textarea {
   .hello {
     font-size: 2.4rem;
     animation-delay: .5s;
-    /* margin: 12.8rem 0 6.4rem 0; */
+    margin: 3rem 0;
   }
 
   #hero-grid {
     align-items: center;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1.5fr;
     margin: 0 auto;
-    max-width: 1400px;
+    /* max-width: 1400px; */
     padding: 2% 0;
     max-width: 80%;
   }
@@ -1869,11 +1867,11 @@ input[type=text],input[type=email] textarea {
     animation-delay: 1s;
     animation-duration: 4s;
     padding: 0;
-    max-width: 550px;
+    /* max-width: 550px; */
   }
 
   #illustration img {
-    transform: translateX(15%);
+    /* transform: translateX(15%); */
     width: 100%;
   }
 
@@ -1888,8 +1886,8 @@ input[type=text],input[type=email] textarea {
 
   .x-large {
     font-size: 4.8rem;
-    line-height: 7rem;
-    margin: 0 0 2.4rem 0;
+    /* line-height: 7rem; */
+    margin: 0 0 0 0;
     animation-delay: 1.3s;
     animation-duration: 4s;
 
@@ -2774,26 +2772,122 @@ input[type=text],input[type=email] textarea {
 }
 
 /* Responsive for Wide Screens */
+
+@media screen and (min-width: 1140px) {
+  #hero-grid {
+    grid-template-columns: 1fr 1.75fr;
+    width: 80%;
+  }
+  .hero-intro {
+      max-width: 325px;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  #hero-grid {
+    grid-template-columns: 1fr 1.75fr;
+  }
+  .hero-statement {
+      max-width: 328px;
+  }
+  #illustration img {
+    transform: translate(20px, 20px);
+  }
+  .nav-content-box {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  #hero-grid {
+    width: 70%;
+  }
+  #illustration img {
+    transform: translate(30px, 30px);
+  }
+  .nav-content-box {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  #illustration img {
+    transform: translate(70px, 30px);
+  }
+}
+
 @media screen and (min-width: 1650px) {
+  #hero-grid {
+    grid-template-columns: 1.1fr 2fr;
+    width: 80%;
+  }
+
   .hello {
     font-size: 4.8rem;
     margin-bottom: 1.2rem;
   }
+
+  .nav-content-box {
+    width: 80%;
+  }
+
   .x-large {
     font-size: 9.6rem;
-    line-height: 12.8rem;
+    padding: 4.8rem 0 1.8rem 0;
   }
+
   .hero-intro {
     font-size: 3.6rem;
     margin-bottom: 4.8rem;
+    max-width: 420px;
   }
 
   .hero-statement {
     font-size: 2.4rem;
+    max-width: 500px;
   }
 
-  #illustration {
-    max-width: 1024px;
+  #illustration img {
+    transform: translate(110px, 50px);
   }
 
+  .mobile-hero {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  #hero-grid {
+    grid-template-columns: 1fr 2.1fr;
+  }
+  #illustration img {
+    transform: translate(135px, 50px);
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  #hero-grid {
+    grid-template-columns: 1fr 2fr;
+    width: 75%
+  }
+  #illustration img {
+    transform: translate(110px, 30px);
+  }
+  .nav-content-box {
+    width: 75%;
+  }
+}
+@media screen and (min-width: 2200px) {
+  .hero-intro {
+    font-size: 4.8rem;
+    margin-bottom: 4.8rem;
+    max-width: 650px;
+  }
+  #hero-grid {
+    grid-template-columns: 1.2fr 2fr;
+  }
+  .hero-statement {
+    font-size: 3.2rem;
+    max-width: 628px;
+  }
 }
