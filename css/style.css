@@ -445,7 +445,7 @@ footer p {
  font: normal 1.5rem "Work Sans";
  font-size: 1.8rem;
  line-height: 167.23%;
- margin: 1.2rem;
+ margin: 1rem;
  text-transform: uppercase;
 }
 
@@ -478,7 +478,7 @@ footer p {
   font: normal 1.5rem "Work Sans";
   font-size: 1.8rem;
   line-height: 167.23%;
-  margin: 1.2rem;
+  margin: 1rem;
   text-transform: uppercase;
 }
 
@@ -620,8 +620,8 @@ footer p {
 
 .top-background {
   /* background: #7D7D7E; */
-  background: rgb(55,68,70);
-  background: linear-gradient(321deg, rgba(55,68,70,1) 1%, rgba(125,125,126,1) 100%);
+  background: rgb(196,196,196);
+  background: linear-gradient(321deg, rgba(196,196,196,1) 1%, rgba(125,125,126,1) 100%);
 }
 
 .x-large {
@@ -2774,7 +2774,7 @@ input[type=text],input[type=email] textarea {
    font: normal 1.5rem "Work Sans";
    font-size: 1.8rem;
    line-height: 167.23%;
-   margin: 1.2rem;
+   margin: 1rem;
    text-transform: uppercase;
   }
 
