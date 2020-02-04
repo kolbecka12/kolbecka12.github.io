@@ -619,8 +619,8 @@ footer p {
 
 .top-background {
   /* background: #7D7D7E; */
-  background: rgb(196,196,196);
-  background: linear-gradient(321deg, rgba(196,196,196,1) 1%, rgba(125,125,126,1) 100%);
+  background: rgb(98,103,105);
+  background: linear-gradient(321deg, rgba(98,103,105,1) 1%, rgba(125,125,126,1) 100%);
 }
 
 .x-large {
@@ -2263,6 +2263,7 @@ input[type=text],input[type=email] textarea {
     .item12 {
       grid-column: 3;
       grid-row: 4;
+      align-items: top;
     }
 
     #user-stats {
