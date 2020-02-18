@@ -106,8 +106,8 @@ ul {
   padding: 0;
 }
 
-.highlight {
-  background-color: #80959A;
+.highlight-rose {
+  background-color: #E9DAD1;
 }
 
 .highlight-orange {
@@ -815,7 +815,7 @@ footer p {
 
 /* DESIGN PROCESS */
 
-#design-process p{
+#design-process-large {
   font-size: 2.8rem;
   padding-top: 0;
   padding-bottom: 0;
@@ -1210,6 +1210,7 @@ ol {
   /* tertiary text */
   color: #565656;
   font-style: italic;
+  padding-top: 3.6rem;
   text-align: center;
 }
 
@@ -1563,17 +1564,18 @@ input[type=text],input[type=email] textarea {
 }
 
 .persona-quote {
-  font-size: 2rem;
-  color: #565656;
+  font-size: 2.4rem;
+  color: #2A3636;
+  padding-bottom: 2.4rem;
 }
 
 .fill {
   width: 100%;
 }
 
-.grid-sf {
+#grid-user-flows {
   display: grid;
-  grid-template-columns: 4fr 6fr;
+  grid-template-columns: 5fr 6fr;
   grid-template-rows: auto;
   margin: 0 auto;
   align-items: center;
@@ -1622,6 +1624,36 @@ input[type=text],input[type=email] textarea {
 #gh-logo {
   margin: 3.2rem 0;
   width: 40%;
+}
+
+.rose-section {
+  /* rose quartz */
+  background-color: #E9DAD1;
+}
+
+.comp-header {
+  margin: 3.2rem 0 0 0;
+  padding-bottom: 1.2rem;
+}
+
+
+.pain-points {
+  margin-top: 4.8rem;
+}
+
+#sitemap {
+  padding-top: 7.2rem;
+}
+
+
+#user-flow {
+  transform: translateX(12%);
+}
+
+#flow-caption {
+  margin-top: 4.8rem;
+  transform: translateX(180px);
+  width: 70%;
 }
 
 /* ----------------------MEDIA QUERIES---------------------- */
@@ -1741,24 +1773,40 @@ input[type=text],input[type=email] textarea {
   }
 
   .user3 {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .user4 {
     grid-column: 2;
     grid-row: 1;
     display: flex;
   }
 
-  .user4 {
+  .user5 {
     grid-column: 2;
     grid-row: 2;
   }
 
-  .user5 {
-    grid-column: 3;
-    grid-row: 1;
+  .user6 {
+    grid-column: 2;
+    grid-row: 3;
   }
 
-  .user6 {
+  .user7 {
+    grid-column: 3;
+    grid-row: 1;
+    display: flex;
+  }
+
+  .user8 {
     grid-column: 3;
     grid-row: 2;
+  }
+
+  .user9 {
+    grid-column: 3;
+    grid-row: 3;
   }
 
   /* PT 3 - USER PROFILES */
@@ -1773,6 +1821,15 @@ input[type=text],input[type=email] textarea {
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: auto;
       margin: 0 auto;
+      padding-bottom: 6.4rem;
+    }
+
+    #user-profiles h5 {
+      color: #565656;
+    }
+
+    #user-profiles h6 {
+      text-align: center;
     }
 
     .user-profile p {
@@ -2280,7 +2337,7 @@ input[type=text],input[type=email] textarea {
     padding: 7.2rem 0 7.2rem 0;
   }
 
-  #design-process p{
+  #design-process-large {
     font-size: 3.6rem;
     padding-bottom: 0;
   }

@@ -103,7 +103,8 @@
       <section class="rose-section" id="design-process">
         <article class="content-box">
           <h2 class="section-title" id="design-title">The Design Process</h2>
-          <p>How could a mobile app support local farms, reduce carbon emissions, and improve our health? That’s the lofty goal of GoodHarvest, which was designed to make it easier for busy professionals to shift their eating habits towards more locally & sustainably grown fruits and vegetables.</p>
+          <p id="design-process-large">How could a mobile app support local farms, reduce carbon emissions, and improve our health?</p>
+          <p>That’s the lofty goal of GoodHarvest, which was designed to make it easier for busy professionals to shift their eating habits towards more locally & sustainably grown fruits and vegetables.</p>
           <p>Designing this app meant getting a thorough understanding of why our target users care about sustainability and eating local, and getting to understand what hurdles are keeping people from choosing these foods less often than they’d like.</p>
         </article>
       </section>
@@ -181,23 +182,22 @@
         </ul>
         <p>The survey results also indicated that the <strong>shopping and eating behaviors of my target users were very diverse.</strong> I realized that I needed to build this app with both seasoned foodies and people new to home cooking in mind.</p>
       </section>
+      <div class="light-section">
       <section class="content-box content-box-narrow-desktop">
         <h4 class="centered">Competitive Analysis</h4>
         <p>To better understand the marketplace, I explored the Google Play (Android) and Apple App Store looking for mobile apps that helps users identify local, seasonal produce and discover ways to cook these foods.</p>
-        <p>While there are a handful of apps designed to tackle this problem, the few that exist are limited in scope and suffer from major UI issues.</p>
-        <h5 class="centered">Investigating the Competition</h5>
-        <p>There are more than a dozen mobile apps created to help users get basic information about seasonal produce, however the vast majority are poorly designed and offer very little information beyond seasonality. Surprisingly, not one of these competitors integrated an in-app recipe finder with the seasonal produce guide.</p>
-        <p>I reviewed three different competing apps in the Android marketplace:</p>
+        <p>While there are more than a dozen mobile apps created to tackle this problem, the vast majority are poorly designed and offer very little information beyond seasonality. Surprisingly, not one of these competitors integrated an in-app recipe finder with the seasonal produce guide.</p>
+        <p>I reviewed the following three competing apps in the Android marketplace:</p>
       </section>
         <div class="grid">
           <img class="comp-screen justify-center" src="../images/comp-sfg.png">
           <div>
             <h6 class="bold-caps">Seasonal Food Guide</h6>
-            <p><strong>Pros:</strong></p>
+            <p class="comp-header"><strong>Pros:</strong></p>
             <ul class="bulleted-list">
               <li>Clear photos and names for in-season produce items</li>
             </ul>
-            <p><strong>Cons:</strong></p>
+            <p class="comp-header"><strong>Cons:</strong></p>
             <ul class="bulleted-list">
               <li>Cluttered and confusing UI</li>
               <li>Can’t search for produce items by name</li>
@@ -206,12 +206,12 @@
           </div>
           <div class="justify-end">
             <h6 class="bold-caps">Seasonal</h6>
-            <p><strong>Pros:</strong></p>
+            <p class="comp-header"><strong>Pros:</strong></p>
             <ul class="bulleted-list">
               <li>Clean, simple, and friendly UI</li>
               <li>Users can search for food items by name</li>
             </ul>
-            <p><strong>Cons:</strong></p>
+            <p class="comp-header"><strong>Cons:</strong></p>
             <ul class="bulleted-list">
               <li>Offers very little information about each produce item</li>
               <li>Internal app logic is often confusing</li>
@@ -222,11 +222,11 @@
           <img class="comp-screen justify-center" src="../images/comp-seasonal-fv.png">
           <div>
             <h6 class="bold-caps">Seasonal Food Fruits & Vegs</h6>
-            <p><strong>Pros:</strong></p>
+            <p class="comp-header"><strong>Pros:</strong></p>
             <ul class="bulleted-list">
               <li>Users can add items to favorites list</li>
             </ul>
-            <p><strong>Cons:</strong></p>
+            <p class="comp-header"><strong>Cons:</strong></p>
             <ul class="bulleted-list">
               <li>Poor UX and UI</li>
               <li>Obtrusive pop-up video ads</li>
@@ -239,14 +239,15 @@
         </div>
       <section class="content-box content-box-narrow-desktop">
         <h5 class="centered">Learning from the Competition</h5>
-        <p>By reviewing these competitors, I discovered some important things not to do, as well as some great features that I would want to include in my app.</p>
-        <p>While I had initially thought that categorizing foods into fruit and vegetable categories could help users find foods more easily, this creates an organizational problem: are tomatoes fruits or vegetables? What about zucchini?</p>
-        <p>The answer depends on your cultural background and familiarity with botany. For this reason, I decided that organizing foods alphabetically with a prominent search bar would be the best strategy.</p>
+        <p>Through my competitive analysis, I discovered several features I knew I'd want to include — as well as some problematic elements I could avoid.</p>
+        <p>For example, I had initially thought that categorizing foods into fruit and vegetable categories could help users find foods more easily. However, this pattern highlighted an organizational problem within one of the competing apps: <span class="highlight-rose">should tomatoes be categorized as a fruit or a vegetable? What about avocado?</span></p>
+        <p>Ultimately, the answer depends on your cultural background and familiarity with plant structure. For this reason, I decided that organizing foods alphabetically with a prominent search bar would be the best strategy.</p>
         <div class="centered link-container" id="comp-link">
           <a class="link-special" href="https://docs.google.com/document/d/1ZDuAfPqKxEDmcRKU6BQULlEXA-ubzWLKGLIdb8fkiqk/edit?usp=sharing" target="_blank">View Full Competitive Analysis</a>
         </div>
       </section>
-      <section class="content-box content-box-narrow-desktop">
+    </div>
+      <section class="content-box">
           <h2 class="section-title">User Personas</h2>
           <p>Now it was time to imagine the people that would someday use this app. I analyzed my survey data and noticed three general types of users in my pool:</p>
           <ol class="numbered-list">
@@ -261,81 +262,87 @@
           <div class="user-profile user1">
             <img src="../images/persona-4.png" alt="woman wearing red blazer">
           </div>
-          <article class="content-box user-profile user2">
+          <article class="content-box user2">
             <h5>Elaine Chen</h5>
             <h6>Engineer, 41</h6>
             <h6>Palo Alto, CA</h6>
             <p class="persona-quote">“I never know what to buy at the farmers’ market. Everything looks beautiful, but if I don’t have a plan for what I buy it’ll just rot in my fridge.”</p>
+          </article>
+          <article class="user3">
             <h6 class="motivations">Motivations:</h6>
             <ul>
-              <li class="extra-padding">• Wants to live a more sustainable lifestyle and eat a healthier diet</li>
+              <li class="extra-padding">Wants to eat a healthier, more sustainable diet</li>
             </ul>
-            <h6 class="motivations">Pain Points:</h6>
+            <h6 class="motivations pain-points">Pain Points:</h6>
             <ul>
               <li class="extra-padding">Planning menus around seasonal and local foods is time-consuming</li>
             </ul>
           </article>
-          <div class="user-profile user3">
+          <div class="user-profile user4">
             <img src="../images/persona-5.png" alt="woman holding camera">
           </div>
-          <article class="content-box user-profile user4">
+          <article class="content-box user5">
             <h5>Zoey Gutiérrez</h5>
             <h6>Student, 23</h6>
             <h6>San Francisco, CA</h6>
             <p class="persona-quote">“I try to eat as much seasonal, local food as I can afford, but planning my meals around this is really time-consuming.”</p>
+          </article>
+          <article class="user6">
             <h6 class="motivations">Motivations:</h6>
             <ul>
               <li class="extra-padding">Wants to live more sustainably while sticking to her budget</li>
             </ul>
-            <h6 class="motivations">Pain Points:</h6>
+            <h6 class="motivations pain-points">Pain Points:</h6>
             <ul>
               <li class="extra-padding">Needs a plan for large quantities of seasonal produce bought on sale</li>
             </ul>
           </article>
-          <div class="user-profile user5">
+          <div class="user-profile user7">
             <img src="../images/persona-6.png" alt="young man in white shirt">
           </div>
-          <article class="content-box user-profile user6">
+          <article class="content-box user8">
             <h5>Joan Rajah</h5>
             <h6>Retired, 64</h6>
             <h6>Brentwood, CA</h6>
             <p class="persona-quote">“It’s hard to find dishes with new foods my whole family will like – especially my picky grandson!”</p>
+          </article>
+          <article class="user9">
             <h6 class="motivations">Motivations:</h6>
             <ul>
               <li class="extra-padding">Wants to help her whole family eat healthier</li>
             </ul>
-            <h6 class="motivations">Pain Points:</h6>
+            <h6 class="motivations pain-points">Pain Points:</h6>
             <ul>
               <li class="extra-padding">Needs a way to quickly find information while shopping with a fussy toddler</li>
             </ul>
-
           </article>
         </div>
         <div class="centered link-container">
           <a class="link-special" href="https://drive.google.com/file/d/12JIcAX0dXcTw5wPnzZbYGcpcFx6vntJr/view?usp=sharing" target="_blank">View Complete User Profiles</a>
         </div>
       </section>
-      <section class="content-box content-box-narrow-desktop">
-          <h6 class="centered">Part Two</h6>
-          <h2 class="section-title">Information Architecture</h2>
-          <p>By this point in my project, I already had a lengthy list of potential user stories. I knew I needed to narrow things down, so I asked myself which would be the most crucial components for helping my three user personas complete two key goals:</p>
-          <ol class="numbered-list">
-            <li>Discover basic information about a new kind of produce they found at the grocery store or farmers’ market (what it tastes like, how to choose a good one, how long it’s in season, how it’s typically cooked)</li>
-            <li>Find a list of recipes  – curated for the users, based on their dietary preferences and cooking skill level – that include that produce item</li>
-          </ol>
-          <p>While there are a lot of factors at play affecting how much local, seasonal produce a person eats — from cost, to availability, to taste preferences – I had to hone in on just a couple key pieces in my MVP to prevent scope creep.</p>
-        </section>
-        <div class="grid-sf">
-          <div class="left-grid">
+      <div class="light-section">
+        <section class="content-box content-box-narrow-desktop">
+            <h6 class="centered">Part Two</h6>
+            <h2 class="section-title">Information Architecture</h2>
+            <p>By this point in my project, I already had a lengthy list of potential user stories. I knew I needed to narrow things down, so I asked myself which would be the most crucial components for helping my three user personas complete two key goals:</p>
+            <ol class="numbered-list">
+              <li>Discover basic information about a new kind of produce they found at the grocery store or farmers’ market (what it tastes like, how to choose a good one, how long it’s in season, how it’s typically cooked)</li>
+              <li>Find a list of recipes  – curated for the users, based on their dietary preferences and cooking skill level – that include that produce item</li>
+            </ol>
+            <p>While there are a lot of factors at play affecting how much local, seasonal produce a person eats — from cost, to availability, to taste preferences – I had to hone in on just a couple key pieces in my MVP to prevent scope creep.</p>
+          </section>
+        <div id="grid-user-flows">
+          <div class="left-grid justify-end">
               <h5 class="centered">Generating User Stories & Flows</h5>
-              <p>From here, I converted my highest priority user stories into detailed user flows.</p>
+              <p>From here, I narrowed down my user stories into a short list of the most high priority items. I then converted each of these into detailed user flows.</p>
               <div class="centered link-container">
                 <a class="link-special" href="https://docs.google.com/spreadsheets/d/1ZT2RoiGGc9w7KJFJxrzckOxd-W4wPnNjoTH0oNgsXy8/edit?usp=sharing" target="_blank">View Complete User Stories</a>
               </div>
               <div class="centered link-container">
                 <a class="link-special" href="https://whimsical.com/LAf8RVMXvNim4QM4WJ3AJE#VsSo8s35VAcSLc9rThQHXV" target="_blank">View Complete User Flows</a>
               </div>
-              <h5 class="centered">Creating a Sitemap</h5>
+              <h5 class="centered" id="sitemap">Creating a Sitemap</h5>
               <p>Using my user stories and user flows, I then created a full sitemap to help guide my wireframing and content writing.</p>
               <p>I researched common onboarding patterns and used these to inform the organization and structure of my pages — such as a first-time user splash screen, and simplified account / profile creation signup screen.</p>
               <div class="centered link-container">
@@ -343,10 +350,11 @@
               </div>
             </div>
             <div>
-              <img class="display-desktop fill" src="../images/seasonal-user-flow.png">
-              <p class="caption display-desktop">User flow for finding a list of recipes featuring a specific, in-season produce item</p>
+              <img class="display-desktop fill" id="user-flow" src="../images/seasonal-user-flow.png">
+              <p class="caption display-desktop" id="flow-caption">Partial user flow for finding a list of recipes featuring a specific, in-season produce item</p>
             </div>
           </div>
+      </div>
       <section class="content-box content-box-narrow-desktop">
         <h6 class="centered">Part Three</h6>
         <h2 class="section-title">Wireframing</h2>
@@ -358,12 +366,12 @@
         <p>Once my wireframes were complete, I created a prototype using InVision and completed a quick round of user testing with two users.</p>
         <p>This round of testing helped me discover a small problem with my “user preferences” page during signup: the “none” option under “enter your dietary preferences” was hiding at the bottom of the selection list. The majority of users would likely have no dietary preferences, which meant this button needed to be given greater visibility and precedence in my next iteration.</p>
         <div class="grid">
-          <img src="../images/gh-prefs-1.png" alt="pen sketches of app screens">
-          <img src="../images/gh-prefs-2.png" alt="pen sketches of app screens">
+          <img class="justify-center" src="../images/gh-prefs-1.png" alt="pen sketches of app screens">
+          <img class="justify-center" src="../images/gh-prefs-2.png" alt="pen sketches of app screens">
         </div>
         <p class="caption">Dietary preferences selection with the “none” option hidden at the bottom (left), and updated version with the “none” option in the top left.</p>
       </section>
-      <section>
+      <section class="light-section">
           <h6 class="centered">Part Three</h6>
           <h2 class="section-title">Branding & Style</h2>
           <!-- final onboarding screens in flat lay -->
