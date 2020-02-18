@@ -844,10 +844,6 @@ footer p {
   /* text-align: center; */
 }
 
-.item1 {
-  margin: 0 auto;
-}
-
 .user-research {
   text-align: center;
 }
@@ -1266,7 +1262,7 @@ ol {
 }
 
 
-.rose-section {
+.x-section {
   /* rose quartz */
   background-color: #E9DAD1;
 }
@@ -1504,6 +1500,7 @@ input[type=text],input[type=email] textarea {
 #case-study-nav {
   background: #2A3636;
   height: 10%;
+  padding: 2rem 0 2rem;
 }
 
 #case-study-nav ul {
@@ -1517,10 +1514,16 @@ input[type=text],input[type=email] textarea {
   padding: 0 1.8rem 0 1.8rem;
 }
 
+.bold-caps {
+  color: #000000;
+  font-weight: 700;
+  text-align: left;
+}
+
 .bulleted-list {
   list-style-type: circle;
   list-style-position: outside;
-  margin-left: 10%;
+  margin-left: 5%;
   width: 80%;
 }
 
@@ -1528,6 +1531,98 @@ input[type=text],input[type=email] textarea {
   margin-bottom: 1.8rem;
 }
 
+.numbered-list {
+  list-style-position: outside;
+  margin-left: 10%;
+  width: 80%;
+}
+
+.numbered-list li{
+  margin-bottom: 1.8rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  margin: 0 auto;
+  align-items: center;
+  max-width: 1400px;
+}
+
+.comp-screen {
+  width: 50%;
+}
+
+.justify-center {
+  justify-self: center;
+}
+
+.justify-end {
+  justify-self: end;
+}
+
+.persona-quote {
+  font-size: 2rem;
+  color: #565656;
+}
+
+.fill {
+  width: 100%;
+}
+
+.grid-sf {
+  display: grid;
+  grid-template-columns: 4fr 6fr;
+  grid-template-rows: auto;
+  margin: 0 auto;
+  align-items: center;
+  max-width: 1400px;
+  justify-self: center;
+  /* padding-left: 9.2rem; */
+}
+
+.left-grid {
+  align-self: baseline;
+  width: 80%;
+}
+
+.right-grid {
+  padding-left: 15%;
+  width: 80%;
+}
+
+.downsize {
+  width: 80%;
+}
+
+#style-gallery {
+  background: #E9DAD1;
+  padding: 3.6rem 0;
+}
+
+.grid-three {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  margin: 0 auto;
+  align-items: center;
+  max-width: 1400px;
+}
+
+.circle {
+  width: 3.7rem;
+  line-height: 180%;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 2rem;
+  background-color: #E9DAD1;
+}
+
+#gh-logo {
+  margin: 3.2rem 0;
+  width: 40%;
+}
 
 /* ----------------------MEDIA QUERIES---------------------- */
 
@@ -2200,9 +2295,6 @@ input[type=text],input[type=email] textarea {
     padding-bottom: 6.4rem;
   }
 
-  #chroma-user-research h4, p, li {
-    text-align: left;
-  }
 
   #chroma-pt1 p {
     margin: 3.6rem 0 0 0;
@@ -2210,7 +2302,7 @@ input[type=text],input[type=email] textarea {
 
   #user-research-grid {
     display: grid;
-    grid-gap: 1rem;
+    /* grid-gap: 1rem; */
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     margin: 0 auto;
@@ -2224,11 +2316,10 @@ input[type=text],input[type=email] textarea {
     .item1 {
       grid-column: 1;
       grid-row: 1;
-      align-self: flex-end;
-      width: inherit;
     }
 
-    .top-graph {
+    .circle-chart{
+      margin: 0 auto;
       width: 100%;
     }
 
