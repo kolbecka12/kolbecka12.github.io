@@ -35,15 +35,15 @@
            <img class="animated fadeIn" id="gh-logo" src="../images/gh-logo.png" alt="goodharvest logo">
            <h2 class="animated fadeInUp display-desktop">Making Seasonal Eating a Snap.</h2>
            <h2 class="display-mobile">Making Seasonal Eating a Snap.</h2>
-           <h3 class="animated fadeInUp display-desktop">Discover delicious, seasonal foods at your local market, and bring your produce from cart </br>to kitchen with recipes curated for your unique lifestyle</h3>
+           <h3 class="animated fadeInUp display-desktop">Discover delicious, seasonal foods at your local market, and bring your produce from cart to kitchen with recipes curated for your unique lifestyle</h3>
            <p class="display-mobile">Discover delicious, seasonal foods at your local market, and bring your produce from cart to kitchen with recipes curated for your unique lifestyle.</p>
         </div>
       </section>
       <section id="chroma-hero">
-         <img class="case-study-hero display-mobile" src="../images/Chroma-mobile-flat-layout-2x.jpg" alt="view of chroma cloud storage app screens">
-         <img class="animated fadeInUp case-study-hero display-desktop" src="../images/Chroma-mobile-flat-layout-4x.jpg" alt="view of colorful app screens">
+         <img class="case-study-hero display-mobile" src="../images/goodharvest-hero-flat-lay.png" alt="view of chroma cloud storage app screens">
+         <img class="animated fadeInUp case-study-hero display-desktop" src="../images/goodharvest-hero-flat-lay.png" alt="view of colorful app screens">
          <div class="animated fadeInUp hero-button-container content-box-narrow centered">
-           <a class ="btn orange" href="https://invis.io/VMTTBZHXPHJ#/382774728_Homepage" target="_blank">View Prototype</a>
+           <a class ="btn orange" href="https://invis.io/5CVLX3DA63M#/401286684_Welcome" target="_blank">View Prototype</a>
          </div>
        </section>
       <div id="case-study-nav">
@@ -63,16 +63,16 @@
            <p>Public awareness of the environmental and health benefits of eating more fresh, locally grown fruits and vegetables has been growing fast over the past decade. However, it can be tough to find the time to plan your meals around the foods that are currently in season where you live.</p>
          </article>
          <figure class="display-desktop">
-           <img src="../images/color-splash-1x.png" alt="annoyed lightbulb icon over splash of orange paint">
+           <img id="chroma-problem-img" src="../images/gh-problem.png" alt="annoyed lightbulb icon over splash of orange paint">
          </figure>
          <figure class="content-box centered">
-           <img src="../images/chroma-color-splash-2x.png" alt="chroma app displayed on mobile and desktop screens">
+           <img id="chroma-solution-img" src="../images/gh-solution.png" alt="chroma app displayed on mobile and desktop screens">
          </figure>
          <article class="display-desktop centered solution-text">
            <h2 class="section-title" >The Solution</h2>
            <h4>Use rigorous personalization to streamline shopping and menu planning.</h4>
-           <p>GoodHarvest is a mobile app for both busy foodies and people new to seasonal eating, to help them quickly plan a meal or make a shopping list based on what produce is in season in their area.</p>
-           <p>By helping users discover what foods are currently available in their region, and curating a selection of recipes based on those foods, GoodHarvest makes it easier to shop for and cook with fresh fruits and vegetables that were grown locally.</p>
+           <p class="no-padding">GoodHarvest is a mobile app for both busy foodies and people new to seasonal eating, to help them quickly plan a meal or make a shopping list based on what produce is in season in their area.</p>
+           <p class="no-padding">By helping users discover what foods are currently available in their region, and curating a selection of recipes based on those foods, GoodHarvest makes it easier to shop for and cook with fresh fruits and vegetables that were grown locally.</p>
            <p>No matter where you live, there is something delicious to discover in your local market — and GoodHarvest makes that a snap.</p>
          </article>
       </section>
@@ -101,18 +101,17 @@
       </section>
 
       <section class="rose-section" id="design-process">
-        <article class="content-box">
+        <article class="narrow-box">
           <h2 class="section-title" id="design-title">The Design Process</h2>
-          <p id="design-process-large">How could a mobile app support local farms, reduce carbon emissions, and improve our health?</p>
+          <p class="design-process-large">How could a mobile app support local farms, reduce carbon emissions, and improve our health?</p>
           <p>That’s the lofty goal of GoodHarvest, which was designed to make it easier for busy professionals to shift their eating habits towards more locally & sustainably grown fruits and vegetables.</p>
           <p>Designing this app meant getting a thorough understanding of why our target users care about sustainability and eating local, and getting to understand what hurdles are keeping people from choosing these foods less often than they’d like.</p>
         </article>
       </section>
-      <section id="chroma-pt1">
-        <div class="content-box content-box-narrow-desktop">
-          <h6>Part One</h6>
+      <section>
+        <div class="content-box content-box-narrow-desktop" id="gh-research-one">
+          <h6 class="centered">Part One</h6>
           <h2 class="section-title">Research & Discovery</h2>
-          <h4 class="centered">User Research</h4>
           <p>To get to know my target audience and clarify their needs, I created a user survey to understand what was stopping users from eating more seasonal, local produce — and what might help make this easier.</p>
           <p>I needed to answer the following questions:</p>
           <ul class="bulleted-list">
@@ -123,12 +122,28 @@
             <li>What would they find most helpful in a resource designed to help them discover seasonal, local foods in their area?</li>
             <li>What are the demographics of my target audience?</li>
           </ul>
-          <p>In total, the survey questions were completed by 38 respondents.
+          <!-- <p>In total, the survey questions were completed by 38 respondents. -->
         </div>
         <article class="light-section" id="chroma-user-research">
           <h4 class="centered">User Survey Results</h4>
+          <h5>Biggest Pain Points</h5>
+          <div class="grid gap survey-wide">
+            <p class="design-process-large">“What are the biggest factors stopping you from eating more seasonal foods than you are right now?”</h2>
+            <div class="survey-grid">
+              <p class="percent">45%</p>
+              <p class="survey-item">I don't know which foods are currently in season where I live.</p>
+              <p class="percent">45%</p>
+              <p class="survey-item">Planning a menu around local and seasonal foods is too time-consuming.</p>
+              <p class="percent">45%</p>
+              <p class="survey-item">I don’t know where to find seasonal & local foods in my area.</p>
+              <p class="percent">27%</p>
+              <p class="survey-item">It's too expensive.</p>
+              <p class="percent">18%</p>
+              <p class="survey-item">I don’t know how to cook many seasonal foods.</p>
+            </div>
+          </div>
           <h5>Cooking & Shopping Behaviors</h5>
-          <div class="content-box narrow-tablet" id="user-research-grid">
+          <div class="survey-wide" id="user-research-grid">
             <figure class="centered item1">
               <img class="circle-chart" src="../images/Survey-Chart-Menu-Plan.png" alt="circle chart showing that most surveyed were menu planners">
             </figure>
@@ -139,37 +154,34 @@
               <img class="circle-chart" src="../images/Survey-Chart-Cooking-Literacy.png" alt="circle graph showing a wide range of cooking literacy levels">
             </figure>
             <figure class="item4">
-              <p><strong>41%</strong> felt very comfortable cooking with fresh produce, by 25% were new to this.</p>
+              <p><strong>41%</strong> felt very comfortable cooking with fresh produce, but 25% were new to this.</p>
             </figure>
             <figure class="centered item5">
               <img class="circle-chart" src="../images/Survey-Chart-Cooking-Frequency.png" alt="circle chart showing a wide range of cooking frequencies">
             </figure>
             <figure class="item6">
-              <p><strong>41%%</strong> cooked with fresh produce most days of the week.</p>
+              <p><strong>41%</strong> cooked with fresh produce most days of the week.</p>
             </figure>
           </div>
-          <!-- <div class="content-box content-box-narrow-desktop">
-            <h5 class="centered">Most Important Features</h5>
+          <h5>Most Important Features</h5>
+          <div class="grid gap survey-wide">
             <div>
-              <h2>“Imagine while shopping you find a new fruit or vegetable you’ve never eaten before. </br>What information would make you want to try it?”</h2>
+              <p class="design-process-large">“Imagine while shopping you find a new fruit or vegetable you’ve never eaten before.</h2>
+              <p class="design-process-large">What information would make you want to try it?”</h2>
+              </div>
+            <div class="survey-grid">
+              <p class="percent">95%</p>
+              <p class="survey-item">Basic cooking information (e.g. “this food must be cooked” or “best enjoyed steamed, roasted, or sauteed”)</p>
+              <p class="percent">80%</p>
+              <p class="survey-item">A description of what the food item tastes like</p>
+              <p class="percent">70%</p>
+              <p class="survey-item">How to pick a good one (should it be soft, firm, bright green, etc?)</p>
+              <p class="percent">50%</p>
+              <p class="survey-item">Full recipes that include the food item</p>
+              <p class="percent">45%</p>
+              <p class="survey-item">Basic nutritional information for each produce item (e.g. “this food is very high in potassium”)</p>
+            </div>
           </div>
-          <div>
-            <div>
-              <p><strong>95%</strong></p>
-          </div>
-          <div>
-            <p>Basic cooking information (e.g. “this food must be cooked” or “best enjoyed steamed, roasted, or sauteed”)</p>
-          </div>
-          <div>
-            <p><strong>80%</strong></p>
-          </div>
-          <div>
-            <p>A description of what the food item might taste like</p>
-          </div>
-          <div>
-            <p><strong>70%</strong></p>
-          </div>
-          < -->
         </article>
       </section>
       <section class="content-box content-box-narrow-desktop">
@@ -371,29 +383,29 @@
         </div>
         <p class="caption">Dietary preferences selection with the “none” option hidden at the bottom (left), and updated version with the “none” option in the top left.</p>
       </section>
-      <section class="light-section">
-          <h6 class="centered">Part Three</h6>
+      <section class="light-section" id="section-four">
+          <h6 class="centered">Part Four</h6>
           <h2 class="section-title">Branding & Style</h2>
           <!-- final onboarding screens in flat lay -->
           <article class="content-box content-box-narrow-desktop">
-            <h6 class="centered">Brand Overview</h6>
-              <p>GoodHarvest leans on cheerful, bright imagery and a cool color palette to evoke vibrant flavors backed by a sense of ease. This app will make it easy to enjoy the harvest from your local farms, and the user experience of this app will be simple and intuitive as well.
+            <h6 class="centered">Overview</h6>
+              <p class="paragraph-end">GoodHarvest leans on cheerful, bright imagery and a cool color palette to evoke vibrant flavors backed by a sense of ease. This app will make it easy to enjoy the harvest from your local farms, and the user experience of this app will be simple and intuitive as well.</p>
           </article>
-          <div class="grid">
-            <div class="left-grid">
+          <div class="grid" id="brand-identity">
+            <div class="left-grid left-pad">
               <h6 class="centered">Crafting the Brand Identity</h6>
               <p>I kicked off the brand identity process by creating a mood board with inspirational colors, typefaces, and imagery. I then spent some time mind mapping words related to seasons, food, and eating. With some of my early brand name concepts in mind, I began sketching out different logo ideas. Once I had a few that I felt good about, I recreated them in Figma.</p>
               <p>These designs, as well as some brand name concepts, were preference tested a half dozen participants. I ultimately chose the brand name that won the poll (GoodHarvest), however I ultimately disagreed with the popular choice for the logo mark — I wound up choosing the one that I felt was strongest.</p>
             </div>
-            <div>
+            <div class="centered">
               <img class="downsize" src="../images/goodharvest-moodboard.png">
               <p class="caption">Exploring color and typography with a moodboard</p>
             </div>
           </div>
-          <div class="grid">
-            <div>
-              <img class="fill" src="../images/gh-logo-development.png">
-              <p class="caption">Early logo sketches, followed by the first digital draft and the final logo mark.</p>
+          <div class="grid" id="brand-logo">
+            <div class="centered">
+              <img class="downsize" src="../images/gh-logo-development.png">
+              <p class="caption">Early logo sketches, followed by the </br>first digital draft and the final logo mark.</p>
             </div>
             <div class="right-grid">
               <h5 class="centered">Developing the Logo</h5>
@@ -401,19 +413,19 @@
               <p>To make the logo feel more polished and finished, I rebuilt the logo on a grid using shapes (ellipsis, rectangles, etc) that I then refined with curves. This ultimately gave me a much more “finished” looking logo mark.</p>
             </div>
           </div>
-          <div class="grid">
-            <div class="left-grid">
+          <div class="grid" id="brand-style">
+            <div class="left-grid left-pad">
               <h6 class="centered">Creating a Style Guide</h6>
               <p>From here, I took these components and developed a complete style guide for the GoodHarvest brand, including logo usage guidelines, typography, a brand story, and a set of guidelines for icons and illustrations.</p>
               <p>Primary Colors in the GoodHarvest palette are fresh, vibrant greens evoking crisp spring asparagus or a creamy avocado.</p>
               <p>Secondary colors should supplement colors from the primary palette and should most often occur in secondary graphic elements such as buttons, backgrounds, and app alerts.</p>
           </div>
-            <div>
+            <div class="centered">
               <img class="downsize" src="../images/gh-palette.png">
               <p class="caption">Color palette for GoodHarvest.</p>
             </div>
           </div>
-          <div class="grid">
+          <div class="grid" id="brand-type">
             <div>
               <img class="fill" src="../images/gh-type-study.png">
               <p class="caption">Corben and Lato were selected as the GoodHarvest typefaces.</p>
@@ -423,12 +435,13 @@
               <p>Corben was selected as the display font. It’s curved, friendly shapes and ligatures complemented the friendly and organic style of GoodHarvest.</p>
               <p>Lato was chosen for small heading, body, and caption text because it looks beautiful and clear at all sizes. The semi-rounded details of the letters give Lato a feeling of warmth and friendliness, while it’s strong structure provides stability and legibility.</div>
             </div>
-          </div>
-          <div id="style-gallery">
+
+          <!-- <div id="style-gallery">
             <img class="fill" src="../images/gh-style-gallery.png">
-          </div>
-          <div class="display-desktop">
-            <a class="link-special" href="https://drive.google.com/file/d/13Jatena0E9VR_86AS_RMjoJ9HXNTaQ5e/view?usp=sharing" target="_blank">View Style Guide</a>
+          </div> -->
+            <div class="display-desktop centered">
+              <a class="link-special" href="https://drive.google.com/file/d/13Jatena0E9VR_86AS_RMjoJ9HXNTaQ5e/view?usp=sharing" target="_blank">View Style Guide</a>
+            </div>
           </div>
         </section>
         <section class="content-box content-box-narrow-desktop">
@@ -464,7 +477,7 @@
             </div>
           </div>
           <p>Based on this feedback, I used the brightest green color for active buttons in this section, and selected the “none” button by default.</p>
-          <h4 class="centered">User Testing the Prototype</h4>
+          <h4 class="centered" id="testing-prototype">User Testing the Prototype</h4>
           <p>To understand if users could complete the most critical user stories in my prototype, I conducted three usability tests to see if users could complete the following high priority tasks:</p>
           <ol class="numbered-list">
             <li>Signing up for a new account using email</li>
@@ -472,25 +485,25 @@
             <li>Find some recipes that use blueberries</li>
           </ol>
           <p>While all my testers were able to complete these tasks quickly and with ease, there were a number of UI components and organizational elements that testers found confusing.</p>
-          <h4 class="centered">Iterations from User Testing</h4>
+          <h4 class="centered" id="testing-iterations">Iterations from User Testing</h4>
           <!-- <div class="circle"></div> -->
-          <h4>Overhauling the Preferences Page</h4>
+          <h4 id="new-version-1">Overhauling the Preferences Page</h4>
           <p>Results from user testing indicated that several elements on this page were confusing. Users noted that “kid-friendly” wasn’t exactly a dietary preference, and the icons in the dietary preferences section made it more difficult to find the information than simple text. One user also pointed out that it was unlikely any user would ever intentionally select a preference for recipes that took a long time to cook.</p>
           <p>To reduce this cognitive overload, I removed the toggle from the food allergies section, converted the food icons into simple text within pills, and removed the confusing cooking time question altogether.</p>
-          <div class="grid">
+          <div class="grid centered versions-compare">
             <div class="justify-center">
               <img class="downsize" src="../images/gh-prefs-v2.png">
-              <p class="caption">Version 2</br>Complex preferences page, higher cognitive load</p>
+              <p class="caption">Version 2: Complex preferences page, higher cognitive load</p>
           </div>
           <div class="justify-center">
             <img class="downsize" src="../images/gh-prefs-v3.png">
-            <p class="caption">Version 3</br>Simplified preferences page, lower cognitive load</p>
+            <p class="caption">Version 3: Simplified preferences page, lower cognitive load</p>
           </div>
         </div>
-        <h4 class="centered">Breaking Up Content for Better Information Architecture</h4>
+        <h4 id="new-version-2">Breaking Up Content for Better Information Architecture</h4>
         <p>During user testing, multiple users failed to discover the recipes at the bottom of the food detail pages. Finding this important content required a lot of scrolling, which caused users to miss it.</p>
         <p>To solve this problem, I broke up this single long screen into two pages, accessed via tabs at the top for Food Info and Recipes. With this new layout, a shopper who’s making a meal plan before shopping could quickly jump to recipes featuring fresh spring asparagus, for example, rather than having to know that this content is available below the basic food info sections.</p>
-        <div class="grid">
+        <div class="grid centered versions-compare">
           <div class="justify-center">
             <img class="downsize" src="../images/gh-blueberry-v2.png">
             <p class="caption">In version 2, blueberry recipes were hidden below all this content.</p>
@@ -500,10 +513,10 @@
             <p class="caption">In version 3, it’s simple to tab between basic food info and recipes featuring that food.</p>
           </div>
         </div>
-        <h4 class="centered">Refining the Seasonality Wheel</h4>
+        <h4 id="new-version-3">Refining the Seasonality Wheel</h4>
         <p>In an app promoting seasonal produce, the “seasonality wheel” on the produce detail page — showing what months a food is in season — is one of the most important features. However, users weren’t clear where the current month sat on the wheel, and were confused as to how to interpret the season icons.</p>
         <p>To solve this problem, month names were added to this design to make this more clear for users.</p>
-        <div class="grid">
+        <div class="grid versions-compare">
           <div class="justify-center">
             <img class="fill" src="../images/gh-wheel-v2.png">
             <p class="caption">Users weren’t sure how to tell what months were represented here.</p>
@@ -513,10 +526,10 @@
             <p class="caption">Month names were added in version 3, along with a darker title for the current month.</p>
           </div>
         </div>
-        <h4 class="centered">Leveraging Established Patterns</h4>
+        <h4 id="new-version-4">Leveraging Established Patterns</h4>
         <p>When faced with the New This Month produce items at the top of the Discover and In Season Now pages, all of my testers intuitively tried to left swipe through the list of items. I had not envisioned this functionality — in fact, I’d designed this as three static items on the Discover page, and a progressive disclosure section on the In Season Now page.</p>
         <p>To better leverage existing UI patterns my users were already familiar with, I added the left swipe functionality to the Discover page. On the In Season Now page, I removed this section completely and added a “view new this month” checkbox to the top of the full list of currently in season produce items to allow the user to filter their results. Since all of the new items would have been duplicated within the list of all foods currently in season, this checkbox filtration method simplifies the page results and removes any instances of duplicative information.</p>
-        <div class="grid">
+        <div class="grid versions-compare">
           <div class="justify-center">
             <img class="fill" src="../images/gh-wheel-v2.png">
             <p class="caption">Users weren’t sure how to tell what months were represented here.</p>
@@ -527,45 +540,53 @@
           </div>
         </div>
       </section>
-      <section class="content-box content-box-narrow-desktop">
-        <h6 class="centered">Part Six</h6>
-        <h2 class="section-title">The Final Prototype</h2>
-        <p>After drafting over 100 screens, three A/B tests, two rounds of users tests, and two clickable prototypes, I'd finally created my final MVP.</p>
-        <div class="grid">
-          <img class="comp-screen justify-center" src="../images/comp-sfg.png">
+      <div class="light-section">
+        <section>
+          <h6 class="centered">Part Six</h6>
+          <h2 class="section-title">The Final Prototype</h2>
           <div>
-            <h4>Discover Something New and Delicious.</h4>
-            <p>Get stats on new and favorite produce items in seconds. Learn what a food tastes like, how to pick a good one, and whether it’s best enjoyed in a simple salad or tossed on the grill.</p>
+            <p class="content-box content-box-narrow-desktop"> After drafting over 100 screens, three A/B tests, two rounds of users tests, and two clickable prototypes, I'd finally created my final MVP.</p>
+            <div class="grid">
+              <img class="comp-screen final-screen justify-center" src="../images/blueberries-v3.png">
+              <div class="final-screen final-caption">
+                <h4>Discover Something New and Delicious.</h4>
+                <p>Get stats on new and favorite produce items in seconds. Learn what a food tastes like, how to pick a good one, and whether it’s best enjoyed in a simple salad or tossed on the grill.</p>
+              </div>
+              <div class="justify-end final-screen final-caption">
+                <h4>Find Out What’s Fresh in Seconds.</h4>
+                <p>With GoodHarvest, you can quickly discover what foods are currently in season in your area, allowing you to more easily plan your meals around local, sustainable produce.</p>
+              </div>
+              <img class="comp-screen final-screen justify-center" src="../images/in-season-now-v3.png">
+              <img class="comp-screen final-screen justify-center" src="../images/preferences-v3.png">
+              <div class="final-screen final-caption">
+                <h4>Get Curated Recipes for Your Unique Lifestyle</h4>
+                <p>GoodHarvest makes it easy for you to find recipes you’ll love using fresh, local, in-season produce.</p>
+                <p>By allowing users to select their dietary preferences, food allergies, and comfort level in the kitchen, they’ll never have to waste time sorting through dishes that don’t fit their palate or skill level.</p>
+              </div>
+            </div>
+            </div>
+            <div class="centered" id="end-prototype-btn">
+              <a class ="btn orange " href="https://invis.io/5CVLX3DA63M#/401286684_Welcome" target="_blank">View Prototype</a>
+            </div>
           </div>
-          <div class="justify-end">
-            <h4>Find Out What’s Fresh in Seconds.</h4>
-            <p>With GoodHarvest, you can quickly discover what foods are currently in season in your area, allowing you to more easily plan your meals around local, sustainable produce.</p>
+        </section>
+        <section class="content-box content-box-narrow-desktop">
+          <h6 class="centered">Conclusion</h6>
+          <h2 class="section-title" id="key-learnings">Key Learnings</h2>
+          <h4>Stay focused on your most critical user stories.</h4>
+          <p>As a food lover who’s worked in the nutrition and public health world for many years, I had endless ideas about how an app could help people improve their health by making it easier to eat more fresh produce. However, I discovered that with passion projects like this, it’s easy for scope creep to set in. Only by focusing on my most critical user stories, was I able to make a distinction between the “must haves” and the “nice to haves.”</p>
+          <h4>Watch how your users intuitively interact with a prototype.</h4>
+          <p>During the user testing process, I noticed my users trying to interact with different pages of my prototype in a way I hadn’t foreseen — for example, assuming a horizontal list of cards would have left-right scrolling. By paying close attention during testing, I was able to notice which UI elements could be improved upon by leveraging patterns that were already familiar to users.</p>
+          <h4>Craft your questions carefully.</h4>
+          <p>During the user surveys and testing phases of this project, it became very clear that how I asked questions had a major impact on the quality of my answers. For example, simply asking users which of several designs they preferred doesn’t tell you much. However, giving users the context of your app and asking which of several designs helps them understand the available information better will give you much more valuable information.</p>
+          <div id="return-link">
+            <div id="bounce-arrow">
+              <a href="#chroma-top"><i class="las la-angle-double-up"></i></a>
+            </div>
+            <a href="#chroma-top"><h5>Return to Top</h5></a>
           </div>
-          <img class="comp-screen justify-center" src="../images/comp-seasonal.png">
-          <img class="comp-screen justify-center" src="../images/comp-seasonal-fv.png">
-          <div>
-            <h4>Get Curated Recipes for Your Unique Lifestyle</h4>
-            <p>GoodHarvest makes it easy for you to find recipes you’ll love using fresh, local, in-season produce. By allowing users to select their dietary preferences, food allergies, and comfort in the kitchen, they’ll never have to waste time sorting through dishes that don’t fit their palate or skill level.</p>
-          </div>
-        </div>
-        <a class ="btn orange" href="https://invis.io/VMTTBZHXPHJ#/382774728_Homepage" target="_blank">View Prototype</a>
-      </section>
-      <section class="content-box content-box-narrow-desktop">
-        <h6 class="centered">Conclusion</h6>
-        <h2 class="section-title">Key Learnings</h2>
-        <h4>Stay focused on your most critical user stories.</h4>
-        <p>As a food lover who’s worked in the nutrition and public health world for many years, I had endless ideas about how an app could help people improve their health by making it easier to eat more fresh produce. However, I discovered that with passion projects like this, it’s easy for scope creep to set in. Only by focusing on my most critical user stories, was I able to make a distinction between the “must haves” and the “nice to haves.”</p>
-        <h4>Watch how your users intuitively interact with a prototype.</h4>
-        <p>During the user testing process, I noticed my users trying to interact with different pages of my prototype in a way I hadn’t foreseen — for example, assuming a horizontal list of cards would have left-right scrolling. By paying close attention during testing, I was able to notice which UI elements could be improved upon by leveraging patterns that were already familiar to users.</p>
-        <h4>Craft your questions carefully.</h4>
-        <p>During the user surveys and testing phases of this project, it became very clear that how I asked questions had a major impact on the quality of my answers. For example, simply asking users which of several designs they preferred doesn’t tell you much. However, giving users the context of your app and asking which of several designs helps them understand the available information better will give you much more valuable information.</p>
-        <div id="return-link">
-          <div id="bounce-arrow">
-            <a href="#chroma-top"><i class="las la-angle-double-up"></i></a>
-          </div>
-          <a href="#chroma-top"><h5>Return to Top</h5></a>
-        </div>
-      </section>
+        </section>
+
      </main>
      <footer>
        <h2 class="light-text">Let’s Build Something Incredible.</h2>
