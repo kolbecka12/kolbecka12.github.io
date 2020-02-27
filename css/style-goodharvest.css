@@ -224,7 +224,6 @@ ul {
   margin: 0 auto;
   width: 75%;
 }
-
 .content-box {
   margin: 0 auto;
   width: 90%;
@@ -234,6 +233,22 @@ ul {
  .display-desktop {
    display: none;
  }
+
+ header {
+   background: #ffffff;
+   overflow: hidden;
+   padding: 3.6rem 0 1rem 0;
+   margin-bottom: 10rem;
+   position: fixed; /* Set the navbar to fixed position */
+   top: 0; /* Position the navbar at the top of the page */
+   width: 100%; /* Full width */
+   z-index: 100;
+ }
+
+main {
+  margin-top: 30px; /* Add a top margin to avoid content overlay */
+  padding-top: 100px;
+}
 
 section {
   padding: 4rem 0;
@@ -260,19 +275,19 @@ section {
 
 .orange {
   /* rust orange background, light font*/
-  background-color: #ED9A68;
+  background-color: #2A3636;
   color: #FFF;
   display: block;
 }
 
 .orange:hover {
-  box-shadow: 8px 8px #E9DAD1;
+  box-shadow: 8px 8px #DDD;
   transition: .3s;
 }
 
 .orange:active {
-  background-color: #DF8C5A;
-  box-shadow: 8px 8px #CEBCB1;
+  background-color: #565656;
+  box-shadow: 8px 8px #DDD;
 }
 
 .wire {
@@ -733,9 +748,9 @@ footer p {
 
 /* ------NAV MENU------*/
 
-.top-spacing {
+/* .top-spacing {
   padding: 4rem 0;
-}
+} */
 
 /* ------CASE STUDY TITLE SECTION------*/
 
@@ -750,11 +765,11 @@ footer p {
 
 #chroma-hero {
   padding: 0;
-  margin-bottom: 4.8rem;
+  /* margin-bottom: 4.8rem; */
 }
 
 #chroma-hero img {
-  margin-bottom: 4.8rem;
+  /* margin-bottom: 4.8rem; */
 }
 
 #chroma-top img {
@@ -791,7 +806,9 @@ footer p {
 
 #chroma-problem-img {
     padding: 1.2rem;
-    width: 100%;
+    /* width: 100%; */
+    transform: translate(71px, 30px);
+    width: 130%;
 }
 
 #chroma-solution-img {
@@ -828,7 +845,7 @@ footer p {
 }
 
 #design-title {
-  color: #998478;
+  color: #565656;
   padding-bottom: 1.2rem;
 }
 
@@ -1229,8 +1246,8 @@ ol {
 }
 
 .light-section {
-  /* pale beige */
-  background-color: #FDF8F4;
+  /* pale grey */
+  background-color: #F9F9F9;
 }
 
 .paragraph-end {
@@ -1505,7 +1522,7 @@ input[type=text],input[type=email] textarea {
 /* ----------------------GOODHARVEST CASE STUDY PAGE---------------------- */
 
 #case-study-nav {
-  background: #dddddd;
+  background: #565656;
   height: 10%;
   padding: 2rem 0 2rem;
 }
@@ -1515,10 +1532,14 @@ input[type=text],input[type=email] textarea {
 }
 
 #case-study-nav li{
-  color: #565656;
+  color: #ffffff;
   display: inline-block;
   font-size: 1.5rem;
   padding: 0 1.8rem 0 1.8rem;
+}
+
+.case-study-nav li:hover {
+  font-weight: 700;
 }
 
 .bold-caps {
@@ -1652,7 +1673,7 @@ input[type=text],input[type=email] textarea {
 
 .rose-section {
   /* rose quartz */
-  background-color: #E9DAD1;
+  background-color: #DDDDDD;
 }
 
 .comp-header {
@@ -2441,7 +2462,6 @@ input[type=text],input[type=email] textarea {
 /* HERO BLOCK */
   .case-study-hero {
     margin: 0 auto;
-    width: 85%;
   }
 
   #chroma-top img {
@@ -2450,8 +2470,6 @@ input[type=text],input[type=email] textarea {
     width: 40%;
     margin: 1rem 0;
    }
-
-
 
    #chroma-top h2 {
      animation-duration: 2s;
@@ -2466,16 +2484,17 @@ input[type=text],input[type=email] textarea {
     width: 600px;
   }
 
-  #chroma-hero img {
-    animation-duration: 1s;
-    animation-delay: 1s;
-    margin-bottom: 6.4rem;
+  #chroma-hero .orange {
+    animation-duration: 2s;
+    animation-delay: 1.5s;
+    padding: 3.6rem 0;
+    margin-bottom: 0;
   }
 
-  #chroma-hero .hero-button-container {
-    animation-duration: 1s;
+  #chroma-hero img {
+    animation-duration: 2s;
     animation-delay: 1.5s;
-    margin-bottom: 0;
+    /* margin-bottom: 6.4rem; */
   }
 
     /* PROBLEM/SOLUTION BLOCK */
@@ -2514,7 +2533,8 @@ input[type=text],input[type=email] textarea {
 
   .design-process-large {
     font-size: 3.6rem;
-    padding-bottom: 0;
+    line-height: 130%;
+    padding-bottom: 1.8rem;
   }
 
   #design-title {
@@ -2754,6 +2774,15 @@ input[type=text],input[type=email] textarea {
 
   #chroma-pt4 .link-container {
     margin: 3.6rem;
+  }
+
+  #gh-flow {
+    background-image: url("../../images/gh-user-flows-parallax.png");
+    background-color: #E8E8E8;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
 

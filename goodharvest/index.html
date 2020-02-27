@@ -37,14 +37,14 @@
            <h2 class="display-mobile">Making Seasonal Eating a Snap.</h2>
            <h3 class="animated fadeInUp display-desktop">Discover delicious, seasonal foods at your local market, and bring your produce from cart to kitchen with recipes curated for your unique lifestyle</h3>
            <p class="display-mobile">Discover delicious, seasonal foods at your local market, and bring your produce from cart to kitchen with recipes curated for your unique lifestyle.</p>
+           <div class="animated fadeInUp hero-button-container content-box-narrow centered">
+             <a class ="btn orange" href="https://www.figma.com/proto/CPlbAt5zoNeJbhbJnVX72C/GoodHarvest-Hifi-v4?node-id=13%3A385&viewport=739%2C1607%2C0.5&scaling=scale-down" target="_blank">View Prototype</a>
+           </div>
         </div>
       </section>
       <section id="chroma-hero">
-         <img class="case-study-hero display-mobile" src="../images/goodharvest-hero-flat-lay.png" alt="view of chroma cloud storage app screens">
-         <img class="animated fadeInUp case-study-hero display-desktop" src="../images/goodharvest-hero-flat-lay.png" alt="view of colorful app screens">
-         <div class="animated fadeInUp hero-button-container content-box-narrow centered">
-           <a class ="btn orange" href="https://invis.io/5CVLX3DA63M#/401286684_Welcome" target="_blank">View Prototype</a>
-         </div>
+         <img class="case-study-hero display-mobile" src="../images/gh-hero-header.png" alt="view of chroma cloud storage app screens">
+         <img class="animated fadeInUp case-study-hero display-desktop" src="../images/gh-hero-header.png" alt="view of colorful app screens">
        </section>
       <div id="case-study-nav">
         <ul>
@@ -103,8 +103,8 @@
       <section class="rose-section" id="design-process">
         <article class="narrow-box">
           <h2 class="section-title" id="design-title">The Design Process</h2>
-          <p class="design-process-large">How could a mobile app support local farms, reduce carbon emissions, and improve our health?</p>
-          <p>That’s the lofty goal of GoodHarvest, which was designed to make it easier for busy professionals to shift their eating habits towards more locally & sustainably grown fruits and vegetables.</p>
+          <p class="design-process-large">Could a mobile app really support local farms, reduce carbon emissions, and make us healthier?</p>
+          <p>That’s the lofty goal of GoodHarvest, which was designed to make it easier for people to shift their eating habits towards more locally & sustainably grown fruits and vegetables.</p>
           <p>Designing this app meant getting a thorough understanding of why our target users care about sustainability and eating local, and getting to understand what hurdles are keeping people from choosing these foods less often than they’d like.</p>
         </article>
       </section>
@@ -197,55 +197,22 @@
       <div class="light-section">
       <section class="content-box content-box-narrow-desktop">
         <h4 class="centered">Competitive Analysis</h4>
-        <p>To better understand the marketplace, I explored the Google Play (Android) and Apple App Store looking for mobile apps that helps users identify local, seasonal produce and discover ways to cook these foods.</p>
+        <p>To better understand the marketplace, I explored the Google Play (Android) and Apple App Store looking for mobile apps that helps users identify local, seasonal produce and discover ways to cook these foods. I reviewed three apps: <strong>Seasonal Food Guide, Seasonal,</strong> and <strong>Seasonal Fruits & Veggies.</strong></p>
         <p>While there are more than a dozen mobile apps created to tackle this problem, the vast majority are poorly designed and offer very little information beyond seasonality. Surprisingly, not one of these competitors integrated an in-app recipe finder with the seasonal produce guide.</p>
-        <p>I reviewed the following three competing apps in the Android marketplace:</p>
       </section>
         <div class="grid">
-          <img class="comp-screen justify-center" src="../images/comp-sfg.png">
+          <img class="comp-screen justify-center" src="../images/gh-comp-analysis.png">
           <div>
-            <h6 class="bold-caps">Seasonal Food Guide</h6>
             <p class="comp-header"><strong>Pros:</strong></p>
             <ul class="bulleted-list">
-              <li>Clear photos and names for in-season produce items</li>
+              <li>Seasonality information</li>
+              <li>Can change location and date range</li>
             </ul>
             <p class="comp-header"><strong>Cons:</strong></p>
             <ul class="bulleted-list">
-              <li>Cluttered and confusing UI</li>
-              <li>Can’t search for produce items by name</li>
-              <li>Basic cooking information and recipe ideas only visible via external link</li>
-            </ul>
-          </div>
-          <div class="justify-end">
-            <h6 class="bold-caps">Seasonal</h6>
-            <p class="comp-header"><strong>Pros:</strong></p>
-            <ul class="bulleted-list">
-              <li>Clean, simple, and friendly UI</li>
-              <li>Users can search for food items by name</li>
-            </ul>
-            <p class="comp-header"><strong>Cons:</strong></p>
-            <ul class="bulleted-list">
-              <li>Offers very little information about each produce item</li>
-              <li>Internal app logic is often confusing</li>
-              <li>No cooking information or recipe ideas</li>
-            </ul>
-          </div>
-          <img class="comp-screen justify-center" src="../images/comp-seasonal.png">
-          <img class="comp-screen justify-center" src="../images/comp-seasonal-fv.png">
-          <div>
-            <h6 class="bold-caps">Seasonal Food Fruits & Vegs</h6>
-            <p class="comp-header"><strong>Pros:</strong></p>
-            <ul class="bulleted-list">
-              <li>Users can add items to favorites list</li>
-            </ul>
-            <p class="comp-header"><strong>Cons:</strong></p>
-            <ul class="bulleted-list">
-              <li>Poor UX and UI</li>
-              <li>Obtrusive pop-up video ads</li>
-              <li>Internal app logic is confusing</li>
-              <li>Can’t search for food items by name</li>
-              <li>Offers very little information about each produce item </li>
-              <li>No cooking information or recipe ideas</li>
+              <li>Lack of in-app recipe ideas</li>
+              <li>Confusing interfaces</li>
+              <li>Information organization problems</li>
             </ul>
           </div>
         </div>
@@ -344,8 +311,9 @@
             </ol>
             <p>While there are a lot of factors at play affecting how much local, seasonal produce a person eats — from cost, to availability, to taste preferences – I had to hone in on just a couple key pieces in my MVP to prevent scope creep.</p>
           </section>
-        <div id="grid-user-flows">
-          <div class="left-grid justify-end">
+          <div id="gh-flow"></div>
+          <section class="content-box content-box-narrow-desktop">
+            <div>
               <h5 class="centered">Generating User Stories & Flows</h5>
               <p>From here, I narrowed down my user stories into a short list of the most high priority items. I then converted each of these into detailed user flows.</p>
               <div class="centered link-container">
@@ -354,18 +322,19 @@
               <div class="centered link-container">
                 <a class="link-special" href="https://whimsical.com/LAf8RVMXvNim4QM4WJ3AJE#VsSo8s35VAcSLc9rThQHXV" target="_blank">View Complete User Flows</a>
               </div>
-              <h5 class="centered" id="sitemap">Creating a Sitemap</h5>
+              <!-- <h5 class="centered" id="sitemap">Creating a Sitemap</h5>
               <p>Using my user stories and user flows, I then created a full sitemap to help guide my wireframing and content writing.</p>
               <p>I researched common onboarding patterns and used these to inform the organization and structure of my pages — such as a first-time user splash screen, and simplified account / profile creation signup screen.</p>
               <div class="centered link-container">
                 <a class="link-special" href="https://drive.google.com/file/d/1qP83dqoRS7x7Ucvm5iqKW2oPGPHC7iFV/view?usp=sharing" target="_blank">View Complete Sitemap</a>
-              </div>
+              </div> -->
             </div>
-            <div>
+          </section>
+            <!-- <div>
               <img class="display-desktop fill" id="user-flow" src="../images/seasonal-user-flow.png">
               <p class="caption display-desktop" id="flow-caption">Partial user flow for finding a list of recipes featuring a specific, in-season produce item</p>
-            </div>
-          </div>
+            </div> -->
+
       </div>
       <section class="content-box content-box-narrow-desktop">
         <h6 class="centered">Part Three</h6>
@@ -566,7 +535,7 @@
             </div>
             </div>
             <div class="centered" id="end-prototype-btn">
-              <a class ="btn orange " href="https://invis.io/5CVLX3DA63M#/401286684_Welcome" target="_blank">View Prototype</a>
+              <a class ="btn orange " href="https://www.figma.com/proto/CPlbAt5zoNeJbhbJnVX72C/GoodHarvest-Hifi-v4?node-id=13%3A385&viewport=739%2C1607%2C0.5&scaling=scale-down" target="_blank">View Prototype</a>
             </div>
           </div>
         </section>

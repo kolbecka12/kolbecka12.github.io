@@ -32,6 +32,7 @@ tertiary text #565656
 ---------*/
 
 
+
 a {
   text-decoration: none;
 }
@@ -618,9 +619,31 @@ footer p {
 }
 
 .top-background {
-  /* background: #7D7D7E; */
-  background: rgb(98,103,105);
+  /* background: rgb(98,103,105);
   background: linear-gradient(321deg, rgba(98,103,105,1) 1%, rgba(125,125,126,1) 100%);
+ */
+  background: linear-gradient(28deg, #e6e6e6, #b6b6b6, #e9dad1);
+  background-size: 600% 600%;
+
+  -webkit-animation: AnimationName 9s ease infinite;
+  -moz-animation: AnimationName 9s ease infinite;
+  animation: AnimationName 9s ease infinite;
+
+  @-webkit-keyframes AnimationName {
+      0%{background-position:84% 0%}
+      50%{background-position:17% 100%}
+      100%{background-position:84% 0%}
+  }
+  @-moz-keyframes AnimationName {
+      0%{background-position:84% 0%}
+      50%{background-position:17% 100%}
+      100%{background-position:84% 0%}
+  }
+  @keyframes AnimationName {
+      0%{background-position:84% 0%}
+      50%{background-position:17% 100%}
+      100%{background-position:84% 0%}
+  }
 }
 
 .x-large {
