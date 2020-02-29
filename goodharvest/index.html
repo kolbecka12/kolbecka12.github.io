@@ -147,24 +147,37 @@
           <h5>Cooking & Shopping Behaviors</h5>
           <!-- <div class="survey-wide" id="user-research-grid"> -->
           <div class="survey-wide">
-            <figure class="centered circle-chart">
-              <canvas id="ghChart1" aria-label="Chart showing how many users menu plan before shopping" role="img"></canvas>
-            </figure>
-            <figure class="centered circle-chart">
-              <canvas id="ghChart2" aria-label="Chart showing how many users menu plan before shopping" role="img"></canvas>
-            </figure>
-            <figure class="centered circle-chart">
-              <canvas id="ghChart3" aria-label="Chart showing how many users menu plan before shopping" role="img"></canvas>
-            </figure>
-            <figure class="circle-caption">
-              <p><strong>50%</strong> always menu plan before shopping.</p>
-            </figure>
-            <figure class="circle-caption">
-              <p><strong>41%</strong> felt very comfortable cooking with fresh produce, but 25% were new to this.</p>
-            </figure>
-            <figure class="circle-caption">
-              <p><strong>41%</strong> cooked with fresh produce most days of the week.</p>
-            </figure>
+            <div class="circle-container">
+              <figure class="centered circle-chart">
+                <canvas id="ghChart1" aria-label="Chart showing how many users menu plan before shopping" role="img"></canvas>
+              </figure>
+            </div>
+            <div class="circle-container">
+              <figure class="centered circle-chart">
+                <canvas id="ghChart2" aria-label="Chart showing how many users menu plan before shopping" role="img"></canvas>
+              </figure>
+            </div>
+            <div class="circle-container">
+              <figure class="centered circle-chart">
+                <canvas id="ghChart3" aria-label="Chart showing how many users menu plan before shopping" role="img"></canvas>
+              </figure>
+            </div>
+
+            <div class="circle-container">
+              <figure class="circle-caption">
+                <p><strong>50%</strong> always menu plan before shopping, while 45% only do so occasionally.</p>
+              </figure>
+            </div>
+            <div class="circle-container">
+              <figure class="circle-caption">
+                <p><strong>41%</strong> felt very comfortable cooking with fresh produce, but 25% were new to this.</p>
+              </figure>
+            </div>
+            <div class= "circle-container">
+              <figure class="circle-caption">
+                <p><strong>41%</strong> cooked with fresh produce most days of the week.</p>
+              </figure>
+            </div>
           </div>
           <h5>Most Important Features</h5>
           <div class="grid gap survey-wide">
@@ -356,66 +369,29 @@
         <p class="caption">Dietary preferences selection with the “none” option hidden at the bottom (left), and updated version with the “none” option in the top left.</p>
       </section>
       <section class="light-section" id="section-four">
-          <h6 class="centered">Part Four</h6>
-          <h2 class="section-title">Branding & Style</h2>
-          <!-- final onboarding screens in flat lay -->
-          <article class="content-box content-box-narrow-desktop">
-            <h6 class="centered">Overview</h6>
-              <p class="paragraph-end">GoodHarvest leans on cheerful, bright imagery and a cool color palette to evoke vibrant flavors backed by a sense of ease. This app will make it easy to enjoy the harvest from your local farms, and the user experience of this app will be simple and intuitive as well.</p>
-          </article>
-          <div class="grid" id="brand-identity">
-            <div class="left-grid left-pad">
-              <h6 class="centered">Crafting the Brand Identity</h6>
-              <p>I kicked off the brand identity process by creating a mood board with inspirational colors, typefaces, and imagery. I then spent some time mind mapping words related to seasons, food, and eating. With some of my early brand name concepts in mind, I began sketching out different logo ideas. Once I had a few that I felt good about, I recreated them in Figma.</p>
-              <p>These designs, as well as some brand name concepts, were preference tested a half dozen participants. I ultimately chose the brand name that won the poll (GoodHarvest), however I ultimately disagreed with the popular choice for the logo mark — I wound up choosing the one that I felt was strongest.</p>
-            </div>
-            <div class="centered">
-              <img class="downsize" src="../images/goodharvest-moodboard.png">
-              <p class="caption">Exploring color and typography with a moodboard</p>
-            </div>
-          </div>
-          <div class="grid" id="brand-logo">
-            <div class="centered">
-              <img class="downsize" src="../images/gh-logo-development.png">
-              <p class="caption">Early logo sketches, followed by the </br>first digital draft and the final logo mark.</p>
-            </div>
-            <div class="right-grid">
-              <h5 class="centered">Developing the Logo</h5>
-              <p>The GoodHarvest logo began with a pen & paper sketch that I photographed, imported into Figma, and traced over using the pen tool. The first digital draft had an organic roughness that I liked, but I realized the rough edges would not scale well.</p>
-              <p>To make the logo feel more polished and finished, I rebuilt the logo on a grid using shapes (ellipsis, rectangles, etc) that I then refined with curves. This ultimately gave me a much more “finished” looking logo mark.</p>
-            </div>
-          </div>
-          <div class="grid" id="brand-style">
-            <div class="left-grid left-pad">
-              <h6 class="centered">Creating a Style Guide</h6>
-              <p>From here, I took these components and developed a complete style guide for the GoodHarvest brand, including logo usage guidelines, typography, a brand story, and a set of guidelines for icons and illustrations.</p>
-              <p>Primary Colors in the GoodHarvest palette are fresh, vibrant greens evoking crisp spring asparagus or a creamy avocado.</p>
-              <p>Secondary colors should supplement colors from the primary palette and should most often occur in secondary graphic elements such as buttons, backgrounds, and app alerts.</p>
-          </div>
-            <div class="centered">
-              <img class="downsize" src="../images/gh-palette.png">
-              <p class="caption">Color palette for GoodHarvest.</p>
-            </div>
-          </div>
-          <div class="grid" id="brand-type">
-            <div>
-              <img class="fill" src="../images/gh-type-study.png">
-              <p class="caption">Corben and Lato were selected as the GoodHarvest typefaces.</p>
-            </div>
-            <div class="right-grid">
-              <h5 class="centered">Typefaces</h5>
-              <p>Corben was selected as the display font. It’s curved, friendly shapes and ligatures complemented the friendly and organic style of GoodHarvest.</p>
-              <p>Lato was chosen for small heading, body, and caption text because it looks beautiful and clear at all sizes. The semi-rounded details of the letters give Lato a feeling of warmth and friendliness, while it’s strong structure provides stability and legibility.</div>
-            </div>
-
-          <!-- <div id="style-gallery">
-            <img class="fill" src="../images/gh-style-gallery.png">
-          </div> -->
-            <div class="display-desktop centered">
-              <a class="link-special" href="https://drive.google.com/file/d/13Jatena0E9VR_86AS_RMjoJ9HXNTaQ5e/view?usp=sharing" target="_blank">View Style Guide</a>
-            </div>
-          </div>
-        </section>
+        <h6 class="centered">Part Four</h6>
+        <h2 class="section-title">Branding & Style</h2>
+        <!-- final onboarding screens in flat lay -->
+        <article class="content-box content-box-narrow-desktop">
+          <p class="paragraph-end">I kicked off the branding process with an inspiration board to set the mood and tone of the Goodharvest brand and interface.</p>
+        </article>
+        <img id="gh-moodboard" src="../images/gh-moodboard-frames.png" alt="photo collage and color swatches">
+        <article class="content-box content-box-narrow-desktop" id="gh-logo-section">
+          <h6 class="centered">Developing the Logo</h6>
+          <p>Next, I spent some time mind mapping words related to seasons, food, and eating. With some of my early brand name concepts in mind, I began sketching out different logo ideas.</p>
+          <p>I ultimately landed on a basket of produce — a harvest — with an orbiting sun overhead to denote the seasons. The sun’s path takes the shape of the basket’s handle.</p>
+        </article>
+        <img id="gh-mindmap" src="../images/gh-mind-map.png" alt="early logo sketches and a mind map of brand name ideas">
+        <article class="content-box content-box-narrow-desktop">
+          <h6 class="centered">Creating a Style Guide</h6>
+          <p>I landed on a cheerful, bright color palette evoking creamy avocados and crisp leafy greens, implemented with a tonal scale. I used Corben as the display typeface, as it’s curved, friendly shapes and ligatures complemented the friendly and organic style of GoodHarvest.  Lato was used for small heading, body, and caption text because it looks beautiful and clear at all sizes.</p>
+          <p>I finalized the brand identity of GoodHarvest with a complete style guide, and crafted a set of basic UI elements that could be used in the final design phases of the GoodHarvest app.</p>
+        </article>
+        <img id="gh-styling" src="../images/gh-styling.png" alt="typography samples, color swatches, and UI elements">
+        <div class="display-desktop centered">
+          <a class="link-special" href="https://drive.google.com/file/d/13Jatena0E9VR_86AS_RMjoJ9HXNTaQ5e/view?usp=sharing" target="_blank">View Style Guide</a>
+        </div>
+      </section>
         <section class="content-box content-box-narrow-desktop">
           <h6 class="centered">Part Five</h6>
           <h2 class="section-title">Visual Design & Testing</h2>
@@ -462,46 +438,46 @@
           <h4 id="new-version-1">Overhauling the Preferences Page</h4>
           <p>Results from user testing indicated that several elements on this page were confusing. Users noted that “kid-friendly” wasn’t exactly a dietary preference, and the icons in the dietary preferences section made it more difficult to find the information than simple text. One user also pointed out that it was unlikely any user would ever intentionally select a preference for recipes that took a long time to cook.</p>
           <p>To reduce this cognitive overload, I removed the toggle from the food allergies section, converted the food icons into simple text within pills, and removed the confusing cooking time question altogether.</p>
-          <div class="grid centered versions-compare">
+          <div class="grid-compare centered versions-compare">
             <div class="justify-center">
-              <img class="downsize" src="../images/gh-prefs-v2.png">
+              <img class="shadow-offset" src="../images/gh-prefs-v2.png">
               <p class="caption">Version 2: Complex preferences page, higher cognitive load</p>
           </div>
           <div class="justify-center">
-            <img class="downsize" src="../images/gh-prefs-v3.png">
+            <img class="shadow-offset" src="../images/gh-prefs-v3.png">
             <p class="caption">Version 3: Simplified preferences page, lower cognitive load</p>
           </div>
         </div>
         <h4 id="new-version-2">Breaking Up Content for Better Information Architecture</h4>
         <p>During user testing, multiple users failed to discover the recipes at the bottom of the food detail pages. Finding this important content required a lot of scrolling, which caused users to miss it.</p>
         <p>To solve this problem, I broke up this single long screen into two pages, accessed via tabs at the top for Food Info and Recipes. With this new layout, a shopper who’s making a meal plan before shopping could quickly jump to recipes featuring fresh spring asparagus, for example, rather than having to know that this content is available below the basic food info sections.</p>
-        <div class="grid centered versions-compare">
+        <div class="grid-compare centered versions-compare">
           <div class="justify-center">
-            <img class="downsize" src="../images/gh-blueberry-v2.png">
+            <img class="shadow-offset" src="../images/gh-blueberry-v2.png">
             <p class="caption">In version 2, blueberry recipes were hidden below all this content.</p>
           </div>
           <div class="justify-center">
-            <img class="downsize" src="../images/gh-blueberry-v3.png">
+            <img class="shadow-offset" src="../images/gh-blueberry-v3.png">
             <p class="caption">In version 3, it’s simple to tab between basic food info and recipes featuring that food.</p>
           </div>
         </div>
         <h4 id="new-version-3">Refining the Seasonality Wheel</h4>
         <p>In an app promoting seasonal produce, the “seasonality wheel” on the produce detail page — showing what months a food is in season — is one of the most important features. However, users weren’t clear where the current month sat on the wheel, and were confused as to how to interpret the season icons.</p>
         <p>To solve this problem, month names were added to this design to make this more clear for users.</p>
-        <div class="grid versions-compare">
+        <div class="grid-compare versions-compare">
           <div class="justify-center">
-            <img class="fill" src="../images/gh-wheel-v2.png">
+            <img class="shadow-offset" src="../images/gh-wheel-v2.png">
             <p class="caption">Users weren’t sure how to tell what months were represented here.</p>
           </div>
           <div class="justify-center">
-            <img class="fill" src="../images/gh-wheel-v3.png">
+            <img class="shadow-offset" src="../images/gh-wheel-v3.png">
             <p class="caption">Month names were added in version 3, along with a darker title for the current month.</p>
           </div>
         </div>
         <h4 id="new-version-4">Leveraging Established Patterns</h4>
         <p>When faced with the New This Month produce items at the top of the Discover and In Season Now pages, all of my testers intuitively tried to left swipe through the list of items. I had not envisioned this functionality — in fact, I’d designed this as three static items on the Discover page, and a progressive disclosure section on the In Season Now page.</p>
         <p>To better leverage existing UI patterns my users were already familiar with, I added the left swipe functionality to the Discover page. On the In Season Now page, I removed this section completely and added a “view new this month” checkbox to the top of the full list of currently in season produce items to allow the user to filter their results. Since all of the new items would have been duplicated within the list of all foods currently in season, this checkbox filtration method simplifies the page results and removes any instances of duplicative information.</p>
-        <div class="grid versions-compare">
+        <div class="grid-compare versions-compare">
           <div class="justify-center">
             <img class="fill" src="../images/gh-wheel-v2.png">
             <p class="caption">Users weren’t sure how to tell what months were represented here.</p>
@@ -518,19 +494,19 @@
           <h2 class="section-title">The Final Prototype</h2>
           <div>
             <p class="content-box content-box-narrow-desktop"> After drafting over 100 screens, three A/B tests, two rounds of users tests, and two clickable prototypes, I'd finally created my final MVP.</p>
-            <div class="grid">
-              <img class="comp-screen final-screen justify-center" src="../images/blueberries-v3.png">
+            <div class="grid versions-compare">
+              <img class="final-screen justify-center" id="gh-display-1" src="../images/gh-display-1.png">
               <div class="final-screen final-caption">
                 <h4>Discover Something New and Delicious.</h4>
                 <p>Get stats on new and favorite produce items in seconds. Learn what a food tastes like, how to pick a good one, and whether it’s best enjoyed in a simple salad or tossed on the grill.</p>
               </div>
-              <div class="justify-end final-screen final-caption">
+              <div class="justify-end final-caption">
                 <h4>Find Out What’s Fresh in Seconds.</h4>
                 <p>With GoodHarvest, you can quickly discover what foods are currently in season in your area, allowing you to more easily plan your meals around local, sustainable produce.</p>
               </div>
-              <img class="comp-screen final-screen justify-center" src="../images/in-season-now-v3.png">
-              <img class="comp-screen final-screen justify-center" src="../images/preferences-v3.png">
-              <div class="final-screen final-caption">
+              <img class="justify-center" id="gh-display-2" src="../images/gh-display-2.png">
+              <img class="justify-center" id="gh-display-3" src="../images/gh-display-3.png">
+              <div class="final-caption">
                 <h4>Get Curated Recipes for Your Unique Lifestyle</h4>
                 <p>GoodHarvest makes it easy for you to find recipes you’ll love using fresh, local, in-season produce.</p>
                 <p>By allowing users to select their dietary preferences, food allergies, and comfort level in the kitchen, they’ll never have to waste time sorting through dishes that don’t fit their palate or skill level.</p>
@@ -542,6 +518,7 @@
             </div>
           </div>
         </section>
+        <img id="gh-final" src="../images/gh-hero-header-2.png">
         <section class="content-box content-box-narrow-desktop">
           <h6 class="centered">Conclusion</h6>
           <h2 class="section-title" id="key-learnings">Key Learnings</h2>

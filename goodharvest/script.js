@@ -24,9 +24,9 @@ window.onload = function(){
 
   });
 
-  let labels2 = ['Chart2', '25% Sometimes', '20% Rarely', '5% Never']; //Identifier 'labels1' has already been declared
-  let data2 = [50, 25, 20, 5];
-  let colors2 = ['#191919', '#31B67A', '#74CC3D', '#DDDDDD' ];
+  let labels2 = ['41% Very Comfortable', '32% Pretty Comfortable', '23% A Little Comfortable', '4% Total Beginner']; //Identifier 'labels1' has already been declared
+  let data2 = [41, 32, 23, 4];
+  let colors2 = ['#31B67A', '#474747', '#DDDDDD', '#135561'];
 
   let myChart2 = document.getElementById("ghChart2").getContext('2d');//VM9370 script.js:31 Uncaught TypeError: Cannot read property 'getContext' of null
 
@@ -50,9 +50,9 @@ window.onload = function(){
 
   });
 
-  let labels3 = ['Chart3', '25% Sometimes', '20% Rarely', '5% Never']; //Identifier 'labels1' has already been declared
-  let data3 = [50, 25, 20, 5];
-  let colors3 = ['#191919', '#31B67A', '#74CC3D', '#DDDDDD' ];
+  let labels3 = ['41% Most Days', '27% 1-2 Days Per Week', '22% 3-5 Days Per Week', '9% Rarely']; //Identifier 'labels1' has already been declared
+  let data3 = [41, 27, 22, 9];
+  let colors3 = ['#474747', '#DDDDDD', '#135561', '#74CC3D'];
 
   let myChart3 = document.getElementById("ghChart3").getContext('2d');//VM9370 script.js:31 Uncaught TypeError: Cannot read property 'getContext' of null
 
