@@ -238,6 +238,7 @@ ul {
 
  header {
    background: #ffffff;
+   border-bottom: 2px solid #f5f5f5;
    overflow: hidden;
    padding: 1.2rem 0 1.2rem 0;
    margin-bottom: 10rem;
@@ -275,40 +276,40 @@ section {
   padding: 12px 0 12px 0;
 }
 
-.orange {
+.black {
   /* rust orange background, light font*/
-  background-color: #ED9A68;
+  background-color: #2A3636;
   color: #FFF;
   display: block;
 }
 
-.orange:hover {
-  box-shadow: 8px 8px #E9DAD1;
+.black:hover {
+  box-shadow: 8px 8px #DDD;
   transition: .3s;
 }
 
-.orange:active {
-  background-color: #DF8C5A;
-  box-shadow: 8px 8px #CEBCB1;
+.black:active {
+  background-color: #565656;
+  box-shadow: 8px 8px #DDD;
 }
 
 .wire {
   /* rust orange border, rust orange font */
-  border: 1px solid #ED9A68;
+  border: 1px solid #2A3636;
   /* rust orange */
-  color: #ED9A68;
+  color: #2A3636;
   display: block;
 }
 
 .wire:hover {
-  box-shadow: 8px 8px #E9DAD1;
+  box-shadow: 8px 8px #DDD;
   transition: .3s;
 }
 
 .wire:active {
-  border: 1px solid #DF8C5A;
-  box-shadow: 8px 8px #CEBCB1;
-  color: #DF8C5A;
+  border: 1px solid #565656;
+  box-shadow: 8px 8px #DDD;
+  color: #565656;
 }
 
 
@@ -658,7 +659,7 @@ footer p {
 }
 
 #design-title {
-  color: #998478;
+  color: #565656;
   padding-bottom: 1.2rem;
 }
 
@@ -1017,7 +1018,7 @@ ol {
 
 /* CONCLUSION */
 
-#conclusion img {
+#final-image {
   margin: 0 0 3.6rem 0;
   width: 100%;
 }
@@ -1062,8 +1063,8 @@ ol {
 }
 
 .light-section {
-  /* pale beige */
-  background-color: #FDF8F4;
+  /* pale grey */
+  background-color: #f5f5f5;
 }
 
 .paragraph-end {
@@ -1102,9 +1103,9 @@ ol {
 }
 
 
-.rose-section {
-  /* rose quartz */
-  background-color: #E9DAD1;
+.grey-section {
+  /* medium grey */
+  background-color: #DDDDDD;
 }
 
 
@@ -1495,7 +1496,11 @@ ol {
     padding: 0 1.8rem 0 1.8rem;
   }
 
-  .case-study-nav li:hover {
+  #case-study-nav a {
+    color: inherit;
+  }
+
+  #case-study-nav li:hover {
     font-weight: 700;
   }
 

@@ -274,19 +274,19 @@ section {
   padding: 12px 0 12px 0;
 }
 
-.orange {
+.black {
   /* rust orange background, light font*/
   background-color: #2A3636;
   color: #FFF;
   display: block;
 }
 
-.orange:hover {
+.black:hover {
   box-shadow: 8px 8px #DDD;
   transition: .3s;
 }
 
-.orange:active {
+.black:active {
   background-color: #565656;
   box-shadow: 8px 8px #DDD;
 }
@@ -1331,7 +1331,11 @@ ol {
   padding: 0 1.8rem 0 1.8rem;
 }
 
-.case-study-nav li:hover {
+#case-study-nav a{
+color: inherit;
+}
+
+#case-study-nav li:hover {
   font-weight: 700;
 }
 
@@ -1435,7 +1439,7 @@ ol {
 }
 
 
-.rose-section {
+.grey-section {
   /* rose quartz */
   background-color: #DDDDDD;
 }
@@ -1474,7 +1478,7 @@ ol {
   width: 59%;
 }
 
-#gh-research-one {
+#gh-one-container {
   margin-bottom: 9.6rem;
 }
 
@@ -1488,7 +1492,7 @@ ol {
   padding-left: 15%;
 }
 
-#section-four {
+#gh-four {
   padding-bottom: 8rem;
   margin-bottom: 3.6rem;
 }

@@ -259,40 +259,40 @@ section {
   padding: 12px 0 12px 0;
 }
 
-.orange {
+.black {
   /* rust orange background, light font*/
-  background-color: #ED9A68;
+  background-color: #2A3636;
   color: #FFF;
   display: block;
 }
 
-.orange:hover {
-  box-shadow: 8px 8px #E9DAD1;
+.black:hover {
+  box-shadow: 8px 8px #DDD;
   transition: .3s;
 }
 
-.orange:active {
-  background-color: #DF8C5A;
-  box-shadow: 8px 8px #CEBCB1;
+.black:active {
+  background-color: #565656;
+  box-shadow: 8px 8px #DDD;
 }
 
 .wire {
   /* rust orange border, rust orange font */
-  border: 1px solid #ED9A68;
+  border: 1px solid #2A3636;
   /* rust orange */
-  color: #ED9A68;
+  color: #2A3636;
   display: block;
 }
 
 .wire:hover {
-  box-shadow: 8px 8px #E9DAD1;
+  box-shadow: 8px 8px #DDD;
   transition: .3s;
 }
 
 .wire:active {
-  border: 1px solid #DF8C5A;
-  box-shadow: 8px 8px #CEBCB1;
-  color: #DF8C5A;
+  border: 1px solid #565656;
+  box-shadow: 8px 8px #DDD;
+  color: #565656;
 }
 
 
@@ -774,8 +774,8 @@ footer p {
 }
 
 .light-section {
-  /* pale beige */
-  background-color: #FDF8F4;
+  /* pale grey */
+  background-color: #f5f5f5;
 }
 
 .paragraph-end {
@@ -1620,7 +1620,8 @@ input[type=text],input[type=email] textarea {
   }
 
   #about-hero-desktop {
-    background: #ED9A68;
+    /* background: linear-gradient(321deg, rgba(98,103,105,1) 1%, rgba(125,125,126,1) 100%); */
+    background :#514F4A;
     /* min-height: 800px; */
   }
 
@@ -1666,13 +1667,13 @@ input[type=text],input[type=email] textarea {
   }
 
   #about-me-link h5 {
-    color: #FDF8F4;
+    color: #ffffff;
     margin-top: 10rem;
     margin-bottom: 1.2rem;
   }
 
   #about-me-link i {
-    color: #FDF8F4;
+    color: #ffffff;
     font-size: 2.0rem;
     padding-bottom: 0;
     /* transform: translateX(50%); */
@@ -1710,7 +1711,7 @@ input[type=text],input[type=email] textarea {
   }
 
   .nav-link-about {
-   color: #2A3636;
+   color: #ffffff;
    font: normal 1.5rem "Work Sans";
    font-size: 1.8rem;
    line-height: 167.23%;
@@ -1724,11 +1725,11 @@ input[type=text],input[type=email] textarea {
 
   #about-contact {
     /* border properties */
-   border: 1px solid #2A3636;
+   border: 1px solid #ffffff;
    padding: .5rem 1rem;
    width: 300px;
    /* button properties */
-   color: #2A3636;
+   color: #ffffff;
    font: normal 1.5rem "Work Sans";
    font-size: 1.8rem;
    line-height: 167.23%;
@@ -1773,7 +1774,7 @@ input[type=text],input[type=email] textarea {
   }
 
   .quote-section {
-    background-color: #ED9A68;
+    background-color: #546467;
     margin: 6.4rem 0;
     padding: 6.4rem;
   }
