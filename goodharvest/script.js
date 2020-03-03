@@ -15,7 +15,7 @@ window.onload = function(){
     },
     options: {
       legend: {
-        position: 'left',
+        position: 'bottom',
         labels: {
           fontColor: 'black'
         }
@@ -41,7 +41,7 @@ window.onload = function(){
     },
     options: {
       legend: {
-        position: 'left',
+        position: 'bottom',
         labels: {
           fontColor: 'black'
         }
@@ -67,7 +67,7 @@ window.onload = function(){
     },
     options: {
       legend: {
-        position: 'left',
+        position: 'bottom',
         labels: {
           fontColor: 'black'
         }

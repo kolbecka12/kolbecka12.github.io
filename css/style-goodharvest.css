@@ -292,22 +292,20 @@ section {
 }
 
 .wire {
-  /* rust orange border, rust orange font */
-  border: 1px solid #ED9A68;
-  /* rust orange */
-  color: #ED9A68;
+  border: 1px solid #2A3636;
+  color: #2A3636;
   display: block;
 }
 
 .wire:hover {
-  box-shadow: 8px 8px #E9DAD1;
+  box-shadow: 8px 8px #DDD;
   transition: .3s;
 }
 
 .wire:active {
-  border: 1px solid #DF8C5A;
-  box-shadow: 8px 8px #CEBCB1;
-  color: #DF8C5A;
+  border: 1px solid #565656;
+  box-shadow: 8px 8px #DDD;
+  color: #565656;
 }
 
 
@@ -767,9 +765,12 @@ footer p {
 }
 
 #chroma-top img {
-  max-width: 70%;
+  max-width: 80%;
 }
 
+#chroma-top p {
+  padding: 1.2rem 0;
+}
 
 .view-prototype {
   margin-top: 1.8rem;
@@ -794,21 +795,18 @@ footer p {
   padding: 1.8rem 0 0 0;
 }
 
-#chroma-problem h2 {
+/* #chroma-problem h2 {
   padding: 1.2rem;
-}
+} */
 
 #chroma-problem-img {
-    padding: 1.2rem;
-    /* width: 100%; */
-    transform: translate(71px, 30px);
-    width: 130%;
+  width: 100%;
 }
 
 #chroma-solution-img {
-    padding: 1.2rem;
-    transform: translate(-122px, 30px);
-    width: 130%;
+  padding: 1.2rem;
+  transform: translate(-122px, 30px);
+  width: 130%;
 }
 
 #chroma-problem p {
@@ -863,6 +861,14 @@ footer p {
 
 #ghChart1 {
 
+}
+
+#research-list {
+  padding-bottom: 6.4rem;
+}
+
+.survey-title {
+  color: #565656;
 }
 
 .user-research {
@@ -1321,6 +1327,7 @@ ol {
 }
 
 #case-study-nav ul {
+  line-height: 300%;
   text-align: center;
 }
 
@@ -1348,7 +1355,7 @@ color: inherit;
 .bulleted-list {
   list-style-type: circle;
   list-style-position: outside;
-  margin-left: 5%;
+  margin: 0 auto;
   width: 80%;
 }
 
@@ -1364,15 +1371,6 @@ color: inherit;
 
 .numbered-list li{
   margin-bottom: 1.8rem;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-  margin: 0 auto;
-  align-items: center;
-  max-width: 1400px;
 }
 
 .grid-compare {
@@ -1475,7 +1473,7 @@ color: inherit;
 
 .narrow-box {
   margin: 0 auto;
-  width: 59%;
+  width: 90%;
 }
 
 #gh-one-container {
@@ -1652,7 +1650,12 @@ color: inherit;
   .nav-link-contrast {
     margin: 1rem;
   }
+  /* -----------HERO---------- */
 
+  #chroma-top img {
+    padding-bottom: 1.8rem;
+    width: 70%;
+   }
 
     /* ------FOOTER SECTION------*/
 
@@ -1666,14 +1669,27 @@ color: inherit;
     width: 50%;
   }
 
-/* PT 1 INTRO */
+/* INTRO */
 
 .solution-text {
-  padding: 6rem 0 0 5rem;
+  padding: 3.6rem 0 0 5rem;
+}
+
+#chroma-problem-figure {
+  text-align: center;
+}
+
+#chroma-problem-img {
+  width: 70%;
+}
+
+.narrow-box {
+  margin: 0 auto;
+  width: 59%;
 }
 
 
-/* PT 2 USER STORIES */
+/* PT 1 RESEARCH + DISCOVERY */
 
   .user1 {
     grid-column: 1;
@@ -1865,6 +1881,15 @@ color: inherit;
      display: none;
    }
 
+   .grid {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     grid-template-rows: auto;
+     margin: 0 auto;
+     align-items: center;
+     max-width: 1400px;
+   }
+
    .narrow-tablet {
      width: inherit;
    }
@@ -1885,8 +1910,6 @@ color: inherit;
       width: inherit;
     }
 
-
-  /*----------------------INDEX.HTML PAGE----------------------*/
 
   /* ------NAV MENU------*/
 
@@ -1944,10 +1967,6 @@ color: inherit;
     margin: 2.4rem 0 4.8rem 0;
   }
 
-
-  /*----------------------GoodHarvest.HTML PAGE----------------------*/
-
-/* HERO BLOCK */
   .case-study-hero {
     margin: 0 auto;
   }
@@ -1955,7 +1974,7 @@ color: inherit;
   #chroma-top img {
     animation-duration: 3s;
     animation-delay: .2s;
-    width: 40%;
+    max-width: 350px;
     margin: 1rem 0;
    }
 
@@ -1985,6 +2004,10 @@ color: inherit;
     /* margin-bottom: 6.4rem; */
   }
 
+  #top-button {
+    padding: 1.8rem 0;
+  }
+
     /* PROBLEM/SOLUTION BLOCK */
 
   #chroma-problem {
@@ -1999,9 +2022,16 @@ color: inherit;
   }
 
 
+  #chroma-problem-img {
+      padding: 1.2rem;
+      /* width: 100%; */
+      transform: translate(71px, 30px);
+      width: 130%;
+  }
+
   #chroma-problem h2 {
+    padding: 1.2rem 0 0 0;
     margin-left: 0;
-    padding-left: 0;
     text-align: left;
   }
 
@@ -2029,19 +2059,28 @@ color: inherit;
     padding-bottom: 3.6rem;
   }
 
+  .solution-text {
+    padding: 6rem 0 0 5rem;
+  }
+
 /* PT 1: RESEARCH & DISCOVERY */
+
+.bulleted-list {
+  margin-left: 5%;
+}
 
   #chroma-user-research {
     padding-bottom: 6.4rem;
   }
 
   #chroma-user-research h5{
-    padding: 6.4rem 0 2.4rem 0;
+    padding: 4.8rem 0 3.6rem 0;
   }
 
   #chroma-pt1 p {
     margin: 3.6rem 0 0 0;
   }
+
 
   #user-research-grid {
     display: grid;
@@ -2063,6 +2102,10 @@ color: inherit;
   .circle-container {
     display: inline-block;
     width: 33%;
+  }
+
+  #cooking-behaviors {
+    max-width: 1800px;
   }
 
     .circle-chart {
@@ -2235,7 +2278,7 @@ color: inherit;
   }
 
   .survey-wide {
-    max-width: 2200px;
+    width: 90%;
     margin: 0 auto;
   }
 

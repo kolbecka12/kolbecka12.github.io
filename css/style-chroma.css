@@ -294,9 +294,7 @@ section {
 }
 
 .wire {
-  /* rust orange border, rust orange font */
   border: 1px solid #2A3636;
-  /* rust orange */
   color: #2A3636;
   display: block;
 }
