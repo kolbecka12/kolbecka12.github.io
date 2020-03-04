@@ -47,7 +47,7 @@
          <img class="case-study-hero display-mobile" src="../images/gh-hero-header-mobile.png" alt="view of chroma cloud storage app screens">
          <img class="animated fadeInUp case-study-hero display-desktop" src="../images/gh-hero-header.png" alt="view of colorful app screens">
        </section>
-     <div id="case-study-nav">
+     <div class="animated fadeInUp" id="case-study-nav">
         <ul>
           <li><a href="#gh-one">Research</a></li>
           <li><a href="#gh-two">Information Architecture</a></li>
@@ -97,7 +97,7 @@
           <p>Designing this app meant getting a thorough understanding of why our target users care about sustainability and eating local, and getting to understand what hurdles are keeping people from choosing these foods less often than they’d like.</p>
         </article>
       </section>
-      <section id="gh-one">
+      <!-- <section id="gh-one">
         <div class="content-box content-box-narrow-desktop" id="#gh-one-container">
           <h6 class="centered tertiary-text">Part One</h6>
           <h2 class="section-title">Research & Discovery</h2>
@@ -144,43 +144,43 @@
             </div>
             <div class="circle-container">
               <figure class="centered circle-chart">
-                <canvas id="ghChart3" width="700" height="350" aria-label="Chart showing how many users menu plan before shopping" role="img"></canvas>
+                <canvas id="ghChart3" aria-label="Chart showing how many users menu plan before shopping" role="img"></canvas>
               </figure>
             </div>
             <div class="circle-container">
               <figure class="circle-legend">
-                <span id=#black-circle></span>
+                <span id=black-circle></span>
                 <p class="legend"><strong>50%</strong> Always</p>
-                <span id=#teal-circle></span>
+                <span id=teal-circle></span>
                 <p class="legend"><strong>25%</strong> Sometimes</p>
-                <span id=#lime-circle></span>
+                <span id=lime-circle></span>
                 <p class="legend"><strong>20%</strong> Rarely</p>
-                <span id=#grey-circle></span>
+                <span id=grey-circle></span>
                 <p class="legend"><strong>5%</strong> Never</p>
               </figure>
             </div>
             <div class="circle-container">
               <figure class="circle-legend">
-                <span id=#black-circle></span>
-                <p class="legend"><strong>50%</strong> Always</p>
-                <span id=#teal-circle></span>
-                <p class="legend"><strong>25%</strong> Sometimes</p>
-                <span id=#lime-circle></span>
-                <p class="legend"><strong>20%</strong> Rarely</p>
-                <span id=#grey-circle></span>
-                <p class="legend"><strong>5%</strong> Never</p>
+                <span id=teal-circle></span>
+                <p class="legend"><strong>41%</strong> Very Comfortable</p>
+                <span id=charcoal-circle></span>
+                <p class="legend"><strong>32%</strong> Pretty Comfortable</p>
+                <span id=grey-circle></span>
+                <p class="legend"><strong>23%</strong> A Little Comfortable</p>
+                <span id=blue-circle></span>
+                <p class="legend"><strong>4%</strong> Total Beginner</p>
               </figure>
             </div>
             <div class="circle-container">
               <figure class="circle-legend">
-                <span id=#black-circle></span>
-                <p class="legend"><strong>50%</strong> Always</p>
-                <span id=#teal-circle></span>
-                <p class="legend"><strong>25%</strong> Sometimes</p>
-                <span id=#lime-circle></span>
-                <p class="legend"><strong>20%</strong> Rarely</p>
-                <span id=#grey-circle></span>
-                <p class="legend"><strong>5%</strong> Never</p>
+                <span id=charcoal-circle></span>
+                <p class="legend"><strong>41%</strong> Most Days</p>
+                <span id=grey-circle></span>
+                <p class="legend"><strong>27%</strong> 1–2 Days Per Week</p>
+                <span id=blue-circle></span>
+                <p class="legend"><strong>22%</strong> 3–5 Days Per Week</p>
+                <span id=lime-circle></span>
+                <p class="legend"><strong>9%</strong> Rarely</p>
               </figure>
             </div>
             <div class="circle-container">
@@ -219,8 +219,8 @@
             </div>
           </div>
         </article>
-      </section>
-        <!-- <
+      </section> -->
+
       <section class="content-box content-box-narrow-desktop">
         <h4 class="centered">User Survey Analysis</h4>
         <p>This survey uncovered a list of user needs that could help shoppers eat more fresh, seasonal foods. These needs include:</p>
@@ -231,15 +231,15 @@
         </ul>
         <p>The survey results also indicated that the <strong>shopping and eating behaviors of my target users were very diverse.</strong> I realized that I needed to build this app with both seasoned foodies and people new to home cooking in mind.</p>
       </section>
-      <div class="light-section">
-      <section class="content-box content-box-narrow-desktop">
-        <h4 class="centered">Competitive Analysis</h4>
-        <p>To better understand the marketplace, I explored the Google Play (Android) and Apple App Store looking for mobile apps that helps users identify local, seasonal produce and discover ways to cook these foods. I reviewed three apps: <strong>Seasonal Food Guide, Seasonal,</strong> and <strong>Seasonal Fruits & Veggies.</strong></p>
-        <p>While there are more than a dozen mobile apps created to tackle this problem, the vast majority are poorly designed and offer very little information beyond seasonality. Surprisingly, not one of these competitors integrated an in-app recipe finder with the seasonal produce guide.</p>
-      </section>
-        <div class="grid">
+      <section class="light-section">
+        <div class="content-box content-box-narrow-desktop">
+          <h4 class="centered">Competitive Analysis</h4>
+          <p>To better understand the marketplace, I explored the Google Play (Android) and Apple App Store looking for mobile apps that helps users identify local, seasonal produce and discover ways to cook these foods. I reviewed three apps: <strong>Seasonal Food Guide, Seasonal,</strong> and <strong>Seasonal Fruits & Veggies.</strong></p>
+          <p>While there are more than a dozen mobile apps created to tackle this problem, the vast majority are poorly designed and offer very little information beyond seasonality. Surprisingly, not one of these competitors integrated an in-app recipe finder with the seasonal produce guide.</p>
+        </div>
+        <div class="grid versions-compare">
           <img class="comp-screen justify-center" src="../images/gh-comp-analysis.png">
-          <div>
+          <div id="comp-list">
             <p class="comp-header"><strong>Pros:</strong></p>
             <ul class="bulleted-list">
               <li>Seasonality information</li>
@@ -253,27 +253,26 @@
             </ul>
           </div>
         </div>
+      </section>
       <section class="content-box content-box-narrow-desktop">
         <h5 class="centered">Learning from the Competition</h5>
         <p>Through my competitive analysis, I discovered several features I knew I'd want to include — as well as some problematic elements I could avoid.</p>
-        <p>For example, I had initially thought that categorizing foods into fruit and vegetable categories could help users find foods more easily. However, this pattern highlighted an organizational problem within one of the competing apps: <span class="highlight-rose">should tomatoes be categorized as a fruit or a vegetable? What about avocado?</span></p>
+        <p>For example, I had initially thought that categorizing foods into fruit and vegetable categories could help users find foods more easily. However, this pattern highlighted an organizational problem within one of the competing apps: <span class="highlight-grey">should tomatoes be categorized as a fruit or a vegetable? What about avocado?</span></p>
         <p>Ultimately, the answer depends on your cultural background and familiarity with plant structure. For this reason, I decided that organizing foods alphabetically with a prominent search bar would be the best strategy.</p>
         <div class="centered link-container" id="comp-link">
           <a class="link-special" href="https://docs.google.com/document/d/1ZDuAfPqKxEDmcRKU6BQULlEXA-ubzWLKGLIdb8fkiqk/edit?usp=sharing" target="_blank">View Full Competitive Analysis</a>
         </div>
       </section>
-    </div>
       <section class="content-box">
-          <h4 class="centered">User Personas</h4>
-          <p>Now it was time to imagine the people that would someday use this app. I analyzed my survey data and noticed three general types of users in my pool:</p>
-          <ol class="numbered-list">
-            <li>Younger working students</li>
-            <li>Adults in their 30s and 40s, often with demanding schedules</li>
-            <li>Older adults who did the shopping and cooking for the household</li>
-          </ol>
-          <p>I completed phone interviews with one user from each group, to better understand their unique habits, routines, and needs around grocery shopping and cooking. This also gave me an opportunity to learn why eating more local and seasonal food mattered to these people.</p>
-          <p>By better understanding my users’ motivations, I could more effectively design a product that would help them reach their goals.</p>
-        </article>
+        <h4 class="centered">User Personas</h4>
+        <p>Now it was time to imagine the people that would someday use this app. I analyzed my survey data and noticed three general types of users in my pool:</p>
+        <ol class="numbered-list">
+          <li>Younger working students</li>
+          <li>Adults in their 30s and 40s, often with demanding schedules</li>
+          <li>Older adults who did the shopping and cooking for the household</li>
+        </ol>
+        <p>I completed phone interviews with one user from each group, to better understand their unique habits, routines, and needs around grocery shopping and cooking. This also gave me an opportunity to learn why eating more local and seasonal food mattered to these people.</p>
+        <p>By better understanding my users’ motivations, I could more effectively design a product that would help them reach their goals.</p>
         <div class="content-box" id="user-profiles">
           <div class="user-profile user1">
             <img src="../images/persona-4.png" alt="woman wearing red blazer">
@@ -333,52 +332,70 @@
             </ul>
           </article>
         </div>
-        <div class="centered link-container">
-          <a class="link-special" href="https://drive.google.com/file/d/12JIcAX0dXcTw5wPnzZbYGcpcFx6vntJr/view?usp=sharing" target="_blank">View Complete User Profiles</a>
-        </div>
-      </section>
-      <div class="light-section" id="gh-two">
-        <section class="content-box content-box-narrow-desktop">
-            <h6 class="centered tertiary-text">Part Two</h6>
-            <h2 class="section-title">Information Architecture</h2>
-            <p>By this point in my project, I already had a lengthy list of potential user stories. I knew I needed to narrow things down, so I asked myself which would be the most crucial components for helping my three user personas complete two key goals:</p>
-            <ol class="numbered-list">
-              <li>Discover basic information about a new kind of produce they found at the grocery store or farmers’ market (what it tastes like, how to choose a good one, how long it’s in season, how it’s typically cooked)</li>
-              <li>Find a list of recipes  – curated for the users, based on their dietary preferences and cooking skill level – that include that produce item</li>
-            </ol>
-            <p>While there are a lot of factors at play affecting how much local, seasonal produce a person eats — from cost, to availability, to taste preferences – I had to hone in on just a couple key pieces in my MVP to prevent scope creep.</p>
-          </section>
-          <div id="gh-flow"></div>
-          <section class="content-box content-box-narrow-desktop">
-            <div>
-              <h4 class="centered">Generating User Stories & Flows</h4>
-              <p>From here, I narrowed down my user stories into a short list of the most high priority items. I then converted each of these into detailed user flows.</p>
-              <div class="centered link-container">
-                <a class="link-special" href="https://docs.google.com/spreadsheets/d/1ZT2RoiGGc9w7KJFJxrzckOxd-W4wPnNjoTH0oNgsXy8/edit?usp=sharing" target="_blank">View Complete User Stories</a>
-              </div>
-              <div class="centered link-container">
-                <a class="link-special" href="https://whimsical.com/LAf8RVMXvNim4QM4WJ3AJE#VsSo8s35VAcSLc9rThQHXV" target="_blank">View Complete User Flows</a>
-              </div>
-
-            </div>
-          </section>
+      <div class="centered link-container" id="profile-link">
+        <a class="link-special" href="https://drive.google.com/file/d/12JIcAX0dXcTw5wPnzZbYGcpcFx6vntJr/view?usp=sharing" target="_blank">View Complete User Profiles</a>
       </div>
-      <section class="content-box content-box-narrow-desktop" id="gh-three">
-        <h6 class="centered tertiary-text">Part Three</h6>
-        <h2 class="section-title">Wireframing</h2>
-        <p>I began the wireframing process by researching common design patterns for different screens I knew I would need in my app (onboarding, account creation, recipe detail, etc). From here, I sketched out multiple iterations of each screen using pen and paper.</p>
-        <p>When I was happy with my basic sketches, I recreated the best iterations in Figma using simple greyscale shapes and a standard font.</p>
-      </section>
-        <img class="fill" src="../images/sketch-to-wireframe.png">
+    </section>
+    <div class="light-section" id="gh-two">
       <section class="content-box content-box-narrow-desktop">
-        <p>Once my wireframes were complete, I created a prototype using InVision and completed a quick round of user testing with two users.</p>
-        <p>This round of testing helped me discover a small problem with my “user preferences” page during signup: the “none” option under “enter your dietary preferences” was hiding at the bottom of the selection list. The majority of users would likely have no dietary preferences, which meant this button needed to be given greater visibility and precedence in my next iteration.</p>
-        <div class="grid">
-          <img class="justify-center" src="../images/gh-prefs-1.png" alt="pen sketches of app screens">
-          <img class="justify-center" src="../images/gh-prefs-2.png" alt="pen sketches of app screens">
-        </div>
-        <p class="caption">Dietary preferences selection with the “none” option hidden at the bottom (left), and updated version with the “none” option in the top left.</p>
-      </section>
+          <h6 class="centered tertiary-text">Part Two</h6>
+          <h2 class="section-title">Information Architecture</h2>
+          <p>By this point in my project, I already had a lengthy list of potential user stories. I knew I needed to narrow things down, so I asked myself which would be the most crucial components for helping my three user personas complete two key goals:</p>
+          <ol class="numbered-list">
+            <li>Discover basic information about a new kind of produce they found at the grocery store or farmers’ market (what it tastes like, how to choose a good one, how long it’s in season, how it’s typically cooked)</li>
+            <li>Find a list of recipes  – curated for the users, based on their dietary preferences and cooking skill level – that include that produce item</li>
+          </ol>
+          <p>While there are a lot of factors at play affecting how much local, seasonal produce a person eats — from cost, to availability, to taste preferences – I had to hone in on just a couple key pieces in my MVP to prevent scope creep.</p>
+          <h4 class="centered">Generating User Stories & Flows</h4>
+          <p>From here, I narrowed down my user stories into a short list of the most high priority items. I then converted each of these into detailed user flows.</p>
+          <div class="centered link-container">
+            <a class="link-special" href="https://docs.google.com/spreadsheets/d/1ZT2RoiGGc9w7KJFJxrzckOxd-W4wPnNjoTH0oNgsXy8/edit?usp=sharing" target="_blank">View Complete User Stories</a>
+          </div>
+          <div class="centered link-container">
+            <a class="link-special" href="https://whimsical.com/LAf8RVMXvNim4QM4WJ3AJE#VsSo8s35VAcSLc9rThQHXV" target="_blank">View Complete User Flows</a>
+          </div>
+        </section>
+        <div id="gh-flow"></div>
+        <!-- <div id="ia-grid">
+          <div id="ia-grid-left">
+            <h6 class="centered">As a returning user, I want to...</h6>
+            <div id="ia-inner-grid">
+              <div class="story-tag">
+                <p class="story-tag-text">High</p>
+              </div>
+              <p class="story-label">Learn what a food tastes like</p>
+              <div class="story-tag">
+                <p class="story-tag-text">High</p>
+              </div>
+              <p class="story-label">See what fruits and vegetables are currently in season in my area</p>
+              <div class="story-tag">
+                <p class="story-tag-text">High</p>
+              </div>
+              <p class="story-label">Enter my dietary preferences</p>
+            </div>
+          </div>
+          <div id="gh-flow"></div>
+        </div> -->
+
+    </div>
+    <section class="content-box content-box-narrow-desktop" id="gh-three">
+      <h6 class="centered tertiary-text">Part Three</h6>
+      <h2 class="section-title">Wireframing</h2>
+      <p>I began the wireframing process by researching common design patterns for different screens I knew I would need in my app (onboarding, account creation, recipe detail, etc). From here, I sketched out multiple iterations of each screen using pen and paper.</p>
+      <p>When I was happy with my basic sketches, I recreated the best iterations in Figma using simple greyscale shapes and a standard font.</p>
+    </section>
+      <img class="fill" src="../images/sketch-to-wireframe.png">
+    <section class="content-box content-box-narrow-desktop">
+      <p>Once my wireframes were complete, I created a prototype using InVision and completed a quick round of user testing with two users.</p>
+      <p>This round of testing helped me discover a small problem with my “user preferences” page during signup: the “none” option under “enter your dietary preferences” was hiding at the bottom of the selection list. The majority of users would likely have no dietary preferences, which meant this button needed to be given greater visibility and precedence in my next iteration.</p>
+      <div class="grid" id="wireframe-grid">
+        <img class="justify-center wireframe-comp" src="../images/gh-prefs-1.png" alt="greyscale wireframe">
+        <p class="caption display-mobile">Dietary preferences selection with the “none” option hidden at the bottom.</p>
+        <img class="justify-center wireframe-comp" src="../images/gh-prefs-2.png" alt="greyscale wireframe">
+        <p class="caption display-mobile">Updated version with the “none” option in the top left.</p>
+      </div>
+      <p class="caption display-desktop">Dietary preferences selection with the “none” option hidden at the bottom (left), and updated version with the “none” option in the top left.</p>
+    </section><!-- <
       <section class="light-section" id="gh-four">
         <h6 class="centered tertiary-text">Part Four</h6>
         <h2 class="section-title">Branding & Style</h2>

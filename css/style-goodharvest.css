@@ -106,8 +106,8 @@ ul {
   padding: 0;
 }
 
-.highlight-rose {
-  background-color: #E9DAD1;
+.highlight-grey {
+  background-color: #DDDDDD;
 }
 
 .highlight-orange {
@@ -272,6 +272,33 @@ section {
   font-size: 1.5rem;
   line-height: 167.23%;
   padding: 12px 0 12px 0;
+}
+
+.btn-secondary {
+  border-radius: 5rem;
+  border: 1px solid #2A3636;
+  color: #2A3636;
+  display: block;
+  font-family: Work Sans;
+  font-style: normal;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 167.23%;
+  padding: 1.2rem 1rem;
+}
+
+.btn-secondary:hover {
+  border: 1px solid #565656;
+  color: #565656;
+  transition: .3s;
+}
+
+.btn-secondary:active {
+  border: 1px solid #565656;
+  /* box-shadow: 8px 8px #DDD; */
+  color: #565656;
 }
 
 .black {
@@ -859,6 +886,14 @@ footer p {
   text-align: center;
  }
 
+
+ /* -----------circle charts ------------*/
+
+ .circle-container {
+   display: inline-block;
+   width: 100%;
+ }
+
  .circle-legend {
    display: grid;
    grid-template-columns: 1fr 4fr;
@@ -869,32 +904,58 @@ footer p {
  }
 
  #black-circle {
+   align-self: center;
+   justify-self: center;
    background: #191919;
    border-radius: 50%;
-   width: 1rem;
-   height: 1rem;
+   width: 1.2rem;
+   height: 1.2rem;
+ }
+
+ #blue-circle {
+   align-self: center;
+   justify-self: center;
+   background: #135561;
+   border-radius: 50%;
+   width: 1.2rem;
+   height: 1.2rem;
+ }
+
+ #charcoal-circle {
+   align-self: center;
+   justify-self: center;
+   background: #474747;
+   border-radius: 50%;
+   width: 1.2rem;
+   height: 1.2rem;
  }
 
 
  #grey-circle {
+   align-self: center;
+   justify-self: center;
    background: #DDDDDD;
    border-radius: 50%;
-   width: 20px;
-   height: 20px;
+   width: 1.2rem;
+   height: 1.2rem;
  }
 
  #lime-circle {
+   align-self: center;
+   justify-self: center;
    background: #74CC3D;
    border-radius: 50%;
-   width: 20px;
-   height: 20px;
+   width: 1.2rem;
+   height: 1.2rem;
  }
 
  #teal-circle {
+   align-self: center;
+   justify-self: center;
    background: #31B67A;
    border-radius: 50%;
-   width: 20px;
-   height: 20px;
+   width: 1.2rem;
+   height: 1.2rem;
  }
 
  .legend {
@@ -903,6 +964,19 @@ footer p {
    padding-bottom: 0;
    margin: 0;
  }
+/*
+ #ghChart1 {
+   display: inherit;
+ }
+
+ #ghChart2 {
+   display: inherit;
+ }
+
+ #ghChart3 {
+   display: ;
+ } */
+
 
  .design-process-large {
    font-size: 2.4rem;
@@ -913,9 +987,7 @@ footer p {
    width: 90%;
  }
 
-#ghChart1 {
 
-}
 
 .percent {
   font-size: 2.4rem;
@@ -1063,6 +1135,12 @@ footer p {
   padding-top: 3.6rem;
 }
 
+#comp-list {
+  margin: 0 auto;
+  padding: inherit;
+  width: 70%;
+}
+
 /* PT 3 - USER PROFILES */
 
 .extra-padding {
@@ -1080,13 +1158,35 @@ footer p {
   font-weight: bold;
 }
 
+#profile-link {
+  padding-top: 4.8rem;
+}
+
 .user-profile {
   padding-bottom: 3.6rem;
   text-align: center;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .user-profile h5 {
   margin: 1.2rem;
+}
+
+#user-profiles h5 {
+  text-align: center;
+}
+
+#user-profiles h6 {
+  text-align: center;
+}
+
+#user-profiles p{
+  text-align: center;
+}
+
+#user-profiles li{
+  text-align: center;
 }
 
 .user-profile p {
@@ -1099,7 +1199,7 @@ footer p {
 }
 
 
-/* PT 4 - USER STORIES & FLOWS */
+/* PT 4 - INFORMATION ARCHITECTURE */
 
 #chroma-pt4 h6 {
   /* tertiary text */
@@ -1112,8 +1212,57 @@ footer p {
   width: 100%;
 }
 
+#ia-inner-grid {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: auto;
+  padding-top: 3.6rem;
+}
+
 .link-container {
   margin-bottom: 2.4rem;
+}
+
+.story-tag {
+  width: 100px;
+  height: 40px;
+  position: relative;
+  background: red;
+  justify-self: center;
+}
+
+.story-tag:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 20px solid white;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+}
+
+.story-tag:before {
+  content: "";
+  position: absolute;
+  right: -20px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 20px solid red;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+}
+
+.story-tag-text {
+  color: white;
+  margin: 7px 19px 0 0;
+  text-align: right;
+}
+
+.story-label {
+  align-self: center;
 }
 
 /* PT 5 - SKETCHING TO WIREFRAMES */
@@ -1139,6 +1288,15 @@ footer p {
 #chroma-pt5 img {
   margin: 0 0 3.6rem 0;
   width: 100%;
+}
+
+.wireframe-comp {
+  margin: 0 auto;
+  text-align: center;
+}
+
+#wireframe-grid img {
+  width: 80%;
 }
 
 /* PT 6 - BRANDING + STYLE GUIDE */
@@ -1524,11 +1682,6 @@ color: inherit;
   padding-bottom: 1.2rem;
 }
 
-
-.pain-points {
-  margin-top: 4.8rem;
-}
-
 #sitemap {
   padding-top: 7.2rem;
 }
@@ -1767,8 +1920,34 @@ color: inherit;
 
 /* PT 1 RESEARCH + DISCOVERY */
 
+#comp-list {
+  padding: 0 12%;
+}
+
 .design-process-large {
   width: 70%;
+}
+
+#ia-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  margin: 0 auto;
+  align-items: center;
+  width: 100%
+}
+
+#ia-grid-left {
+  background: white;
+  height: 600px;
+}
+
+#ia-grid-padding {
+
+}
+
+.pain-points {
+  margin-top: 4.8rem;
 }
 
 .survey-grid {
@@ -1830,62 +2009,94 @@ color: inherit;
     grid-row: 3;
   }
 
-  /* PT 3 - USER PROFILES */
+  #user-profiles h5 {
+    text-align: left;
+  }
+
+  #user-profiles h6 {
+    text-align: left;
+  }
+
+  #user-profiles p{
+    text-align: left;
+  }
+
+  #user-profiles li{
+    text-align: left;
+  }
+
 
   .extra-padding {
     padding-bottom: 0;
   }
 
-    #user-profiles {
-      display: grid;
-      grid-gap: 2rem;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: auto;
-      margin: 0 auto;
-      padding-bottom: 6.4rem;
-    }
+  #user-profiles {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    margin: 0 auto;
+    padding-bottom: 6.4rem;
+  }
 
-    #user-profiles h5 {
-      color: #565656;
-    }
+  #user-profiles h5 {
+    color: #565656;
+    text-align: center;
+  }
 
-    #user-profiles h6 {
-      text-align: center;
-    }
+  #user-profiles h6 {
+    text-align: center;
+  }
 
-    .user-profile p {
-      margin-bottom: 1.8rem;
-    }
+  .user-profile p {
+    margin-bottom: 1.8rem;
+  }
 
-    .user-profile li {
-      margin-bottom: 2.4rem;
-    }
+  .user-profile li {
+    margin-bottom: 2.4rem;
+  }
 
-    #chroma-pt3 {
-      margin-bottom: 6.4rem;
-      padding-top: 6.4rem;
-    }
+  #chroma-pt3 {
+    margin-bottom: 6.4rem;
+    padding-top: 6.4rem;
+  }
 
-    #chroma-pt3 .link-container {
-      margin: 6.4rem;
-    }
+  #chroma-pt3 .link-container {
+    margin: 6.4rem;
+  }
 
-    #user-stats {
-      margin: 0 auto;
-      width: 60%;
-    }
+  #user-stats {
+    margin: 0 auto;
+    width: 60%;
+  }
 
-    /* PT 4 - USER STORIES & FLOWS */
+  /* PT 2 - INFORMATION ARCHETECTURE */
 
 
-    #chroma-pt4 img {
-      padding: 4.8rem 0;
-      margin: 0 auto;
-    }
+  #chroma-pt4 img {
+    padding: 4.8rem 0;
+    margin: 0 auto;
+  }
 
-    #chroma-pt4 .link-container {
-      margin: 6.4rem;
-    }
+  #chroma-pt4 .link-container {
+    margin: 6.4rem;
+  }
+
+/* PT 3 - WIREFRAMING */
+
+#wireframe-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  margin: 0 auto;
+  align-items: center;
+  max-width: 1400px;
+  grid-gap: 5%;
+}
+
+#wireframe-grid img {
+  width: 80%;
+}
 
 
 }
@@ -1994,6 +2205,11 @@ color: inherit;
     padding: 1rem 2rem;
   }
 
+  .btn-secondary {
+    display: inline-block;
+    font-size: 1.8rem;
+    padding: 1rem 2rem;
+  }
 
   /*----------------------FOOTER----------------------*/
 
@@ -2035,6 +2251,11 @@ color: inherit;
 
   .nav-link-light{
     font-size: 1.8rem;
+  }
+
+  #case-study-nav {
+    animation-duration: 2s;
+    animation-delay: 2s;
   }
 
   /* ------HERO BLOCK------*/
@@ -2096,6 +2317,8 @@ color: inherit;
   }
 
   #top-button {
+    animation-duration: 2s;
+    animation-delay: 1.2s;
     padding: 1.8rem 0;
   }
 
@@ -2174,6 +2397,7 @@ color: inherit;
   }
 
   .circle-caption {
+    margin: 0 auto;
     padding-top: 2.4rem;
     text-align: center;
     width: 70%;
@@ -2186,6 +2410,8 @@ color: inherit;
 
   .circle-chart {
     position: relative;
+    margin: 0;
+    padding-bottom: 2.4rem;
   }
 
   #cooking-behaviors {
@@ -2254,8 +2480,27 @@ color: inherit;
     padding-top: inherit;
   }
 
+  #comp-list {
+    margin: 0 0 8% 8%;
+    padding: inherit;
+    width: 90%;
+  }
+
+
   #dropbox {
     padding-top: 6px;
+  }
+
+  #ghChart1 {
+    display: block;
+  }
+
+  #ghChart2 {
+    display: block;
+  }
+
+  #ghChart3 {
+    display: block;
   }
 
   .outer-user-story-container {
@@ -2265,6 +2510,10 @@ color: inherit;
   .section-title {
     font-size: 2.4rem;
   }
+
+  .user-profile {
+    width: 100%;
+}
 
   #user-research-grid {
     display: grid;
@@ -2332,10 +2581,10 @@ color: inherit;
   #gh-flow {
     background-image: url("../../images/gh-user-flows-parallax.png");
     background-color: #E8E8E8;
-    height: 500px;
+    height: 600px;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: auto;
   }
 
 
@@ -2365,8 +2614,8 @@ color: inherit;
   }
 
   .survey-wide {
-    width: 90%;
     margin: 0 auto;
+    padding-bottom: 4.8rem;
   }
 
   .survey-item {
