@@ -384,10 +384,6 @@ footer p {
 }
 
 
-
-
-/* ----------------------INDEX.HTML PAGE---------------------- */
-
 /* ------NAV MENU------*/
 
 #active-nav {
@@ -859,12 +855,93 @@ footer p {
   /* text-align: center; */
 }
 
+#chroma-user-research h5{
+  text-align: center;
+ }
+
+ .circle-legend {
+   display: grid;
+   grid-template-columns: 1fr 4fr;
+   grid-template-rows: auto;
+   margin: 0 auto;
+   width: 40%;
+   /* align-items: center; */
+ }
+
+ #black-circle {
+   background: #191919;
+   border-radius: 50%;
+   width: 1rem;
+   height: 1rem;
+ }
+
+
+ #grey-circle {
+   background: #DDDDDD;
+   border-radius: 50%;
+   width: 20px;
+   height: 20px;
+ }
+
+ #lime-circle {
+   background: #74CC3D;
+   border-radius: 50%;
+   width: 20px;
+   height: 20px;
+ }
+
+ #teal-circle {
+   background: #31B67A;
+   border-radius: 50%;
+   width: 20px;
+   height: 20px;
+ }
+
+ .legend {
+   font-size: 1.2rem;
+   color: #565656;
+   padding-bottom: 0;
+   margin: 0;
+ }
+
+ .design-process-large {
+   font-size: 2.4rem;
+   line-height: 130%;
+   margin: 0 auto;
+   padding: 1.8rem;
+   text-align: center;
+   width: 90%;
+ }
+
 #ghChart1 {
 
 }
 
+.percent {
+  font-size: 2.4rem;
+  font-weight: 700;
+  padding: 0 2rem 0 0;
+  text-align: right;
+  align-self: start;
+}
+
 #research-list {
   padding-bottom: 6.4rem;
+}
+
+.survey-grid {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: auto;
+  margin: 0 auto;
+  align-items: start;
+  /* max-width: 1400px; */
+  justify-self: start;
+  width: 90%;
+}
+
+.survey-item {
+  align-self: center;
 }
 
 .survey-title {
@@ -1593,7 +1670,6 @@ color: inherit;
   padding: 1rem 1.9rem;
   width: 4rem;
   transform: translateX(-62px);
-
 }
 
 
@@ -1690,6 +1766,21 @@ color: inherit;
 
 
 /* PT 1 RESEARCH + DISCOVERY */
+
+.design-process-large {
+  width: 70%;
+}
+
+.survey-grid {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: auto;
+  margin: 0 auto;
+  align-items: start;
+  /* max-width: 1400px; */
+  justify-self: start;
+  width: 70%;
+}
 
   .user1 {
     grid-column: 1;
@@ -2053,6 +2144,7 @@ color: inherit;
     font-size: 3.6rem;
     line-height: 130%;
     padding-bottom: 1.8rem;
+    width: 90%;
   }
 
   #design-title {
@@ -2065,66 +2157,39 @@ color: inherit;
 
 /* PT 1: RESEARCH & DISCOVERY */
 
-.bulleted-list {
-  margin-left: 5%;
-}
+  .bulleted-list {
+    margin-left: 5%;
+  }
 
   #chroma-user-research {
     padding-bottom: 6.4rem;
   }
 
   #chroma-user-research h5{
-    padding: 4.8rem 0 3.6rem 0;
+    padding: 0rem 0 3.6rem 0;
   }
 
   #chroma-pt1 p {
     margin: 3.6rem 0 0 0;
   }
 
-
-  #user-research-grid {
-    display: grid;
-    /* grid-gap: 1rem; */
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    margin: 0 auto;
-    padding-bottom: 3.6rem;
-    grid-gap: 3.6rem;
-    /* width: 80%; */
-    /* align-items: stretch; */
+  .circle-caption {
+    padding-top: 2.4rem;
+    text-align: center;
+    width: 70%;
   }
-
-  #user-research-grid figure {
-    margin: 0 auto;
-  }
-
 
   .circle-container {
     display: inline-block;
     width: 33%;
   }
 
-  #cooking-behaviors {
-    max-width: 1800px;
+  .circle-chart {
+    position: relative;
   }
 
-    .circle-chart {
-      position: relative;
-    }
-
-    .circle-caption {
-      padding-top: 2.4rem;
-      text-align: center;
-      width: 70%;
-    }
-
-    #user-stats {
-      margin: 0 auto;
-      width: 60%;
-    }
-
-  .section-title {
-    font-size: 2.4rem;
+  #cooking-behaviors {
+    max-width: 1800px;
   }
 
   #chroma-competitors {
@@ -2138,10 +2203,6 @@ color: inherit;
 
   #chroma-pt2 {
     padding: inherit;
-  }
-
-  #dropbox {
-    padding-top: 6px;
   }
 
   #chroma-competitors img {
@@ -2166,7 +2227,6 @@ color: inherit;
     padding-bottom: 0;
     padding-top: inherit;
   }
-
 
   #comp-comparison img {
       border: 1px solid #f7f7f7;
@@ -2194,11 +2254,38 @@ color: inherit;
     padding-top: inherit;
   }
 
+  #dropbox {
+    padding-top: 6px;
+  }
 
   .outer-user-story-container {
     background-color: #E9DAD1;
   }
 
+  .section-title {
+    font-size: 2.4rem;
+  }
+
+  #user-research-grid {
+    display: grid;
+    /* grid-gap: 1rem; */
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    margin: 0 auto;
+    padding-bottom: 3.6rem;
+    grid-gap: 3.6rem;
+    /* width: 80%; */
+    /* align-items: stretch; */
+  }
+
+  #user-research-grid figure {
+    margin: 0 auto;
+  }
+
+  #user-stats {
+    margin: 0 auto;
+    width: 60%;
+  }
 
   .user-story-container {
     background-color: #E9DAD1;

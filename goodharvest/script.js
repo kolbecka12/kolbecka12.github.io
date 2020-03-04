@@ -14,8 +14,10 @@ window.onload = function(){
       }]
     },
     options: {
+      responsive: true,
       legend: {
-        position: 'bottom',
+        display: false,
+        position: 'left',
         labels: {
           fontColor: 'black'
         }
@@ -40,8 +42,10 @@ window.onload = function(){
       }]
     },
     options: {
+      responsive: true,
       legend: {
-        position: 'bottom',
+        display: false,
+        position: 'left',
         labels: {
           fontColor: 'black'
         }
@@ -66,8 +70,10 @@ window.onload = function(){
       }]
     },
     options: {
+      responsive: true,
       legend: {
-        position: 'bottom',
+        display: false,
+        position: 'left',
         labels: {
           fontColor: 'black'
         }
