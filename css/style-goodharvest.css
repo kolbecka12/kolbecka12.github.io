@@ -1508,32 +1508,6 @@ ol {
 
 /* ----------------------GOODHARVEST CASE STUDY PAGE---------------------- */
 
-#case-study-nav {
-  background: #565656;
-  height: 10%;
-  padding: 2rem 0 2rem;
-}
-
-#case-study-nav ul {
-  line-height: 300%;
-  text-align: center;
-}
-
-#case-study-nav li{
-  color: #ffffff;
-  display: inline-block;
-  font-size: 1.5rem;
-  padding: 0 1.8rem 0 1.8rem;
-}
-
-#case-study-nav a{
-color: inherit;
-}
-
-#case-study-nav li:hover {
-  font-weight: 700;
-}
-
 .bold-caps {
   color: #000000;
   font-weight: 700;
@@ -1753,6 +1727,7 @@ color: inherit;
 
     /* ------NAV BAR------*/
 
+
   .logo {
     width: 7%;
   }
@@ -1767,14 +1742,6 @@ color: inherit;
 
   .nav-link-contrast {
     margin: 1rem;
-  }
-
-  #case-study-nav {
-    animation-duration: 2s;
-    animation-delay: 2s;
-    position: sticky;
-    top: 72px;
-    z-index: 20;
   }
 
   /* -----------HERO---------- */
@@ -2242,7 +2209,34 @@ color: inherit;
   }
 
   #case-study-nav {
-    top: 83px;
+    animation-duration: 2s;
+    animation-delay: 1.6s;
+    background: #565656;
+    height: 10%;
+    padding: 1.3rem 1.4rem;
+    top: 79px;
+    position: sticky;
+    z-index: 101;
+  }
+
+  #case-study-nav ul {
+    line-height: 300%;
+    text-align: center;
+  }
+
+  #case-study-nav li{
+    color: #ffffff;
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: 0 1.8rem 0 1.8rem;
+  }
+
+  #case-study-nav a{
+  color: inherit;
+  }
+
+  #case-study-nav li:hover {
+    font-weight: 700;
   }
 
   /* ------HERO BLOCK------*/
@@ -2983,7 +2977,7 @@ color: inherit;
 
 @media screen and (min-width: 1250px) {
   #case-study-nav li {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     padding: 0 2.4rem 0 2.4rem;
   }
   .nav-content-box {

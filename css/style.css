@@ -727,7 +727,8 @@ footer p {
 /* ------SKILLS SECTION------ */
 
 .designer {
-  background-color: #546467;
+  background: rgb(98,103,105);
+  background: linear-gradient(321deg, rgba(98,103,105,1) 1%, rgba(125,125,126,1) 100%);
   text-align: center;
 }
 
@@ -749,19 +750,26 @@ footer p {
 /* ------TESTIMONIAL SECTION------ */
 
 #testimonial {
-  /* text-align: center; */
+  background-color: #f5f5f5;
+}
+
+#testimonial-container {
+  padding: 3.6rem 0;
 }
 
 #testimonial h6 {
   text-align: left;
 }
 
-#testimonial p {
+#statement {
+  font-style: italic;
+  line-height: 170%;
   padding-bottom: 2.4rem;
 }
 
 #mentor {
   font-size: 1.2rem;
+  font-style: normal;
   text-transform: capitalize;
 }
 
@@ -1520,6 +1528,13 @@ input[type=text],input[type=email] textarea {
     grid-row: 3;
   }
 
+
+/* TESTIMONIAL */
+
+#testimonial-container {
+  padding: 8rem 0;
+  max-width: 770px;
+}
 
 
 /* SPECIAL LINKS */

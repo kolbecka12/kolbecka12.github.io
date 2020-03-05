@@ -564,32 +564,6 @@ footer p {
 }
 
 
-#case-study-nav {
-  background: #565656;
-  height: 10%;
-  padding: 2rem 0 2rem;
-}
-
-#case-study-nav ul {
-  line-height: 300%;
-  text-align: center;
-}
-
-#case-study-nav li{
-  color: #ffffff;
-  display: inline-block;
-  font-size: 1.5rem;
-  padding: 0 1.8rem 0 1.8rem;
-}
-
-#case-study-nav a{
-color: inherit;
-}
-
-#case-study-nav li:hover {
-  font-weight: 700;
-}
-
 
 /* ----------------------CHROMA PAGE---------------------- */
 
@@ -693,7 +667,7 @@ color: inherit;
 #chroma-pt1 h6 {
   /* tertiary text */
   color: #565656;
-  text-align: center;
+  /* text-align: center; */
 }
 
 #chroma-pt1 p {
@@ -702,7 +676,10 @@ color: inherit;
 
 #chroma-user-research {
   padding: 4.8rem 0;
-  /* text-align: center; */
+}
+
+#chroma-user-research h4 {
+  padding-bottom: 3.6rem;
 }
 
 .item1 {
@@ -734,7 +711,8 @@ color: inherit;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
-  margin: 3.6rem 0 0 0;
+  margin: 0 auto;
+  width: 90%;
 }
 
 #chroma-competitors figure {
@@ -929,8 +907,7 @@ color: inherit;
 }
 
 .font-study {
-  /* pale beige */
-  background-color: #FDF8F4;
+  background-color: #FFFFFF;
   padding: 1.5rem 2.4rem 1.5rem 2.4rem;
 }
 
@@ -1040,10 +1017,14 @@ ol {
   grid-template-columns: 1fr 1fr;
 }
 
+#bottom-prototype-btns {
+  padding: 2.4rem 0;
+}
+
 /* CONCLUSION */
 
 #final-image {
-  margin: 0 0 3.6rem 0;
+  /* margin: 0 0 3.6rem 0; */
   width: 100%;
 }
 
@@ -1187,14 +1168,6 @@ ol {
     margin: 1rem;
   }
 
-  #case-study-nav {
-    animation-duration: 2s;
-    animation-delay: 2s;
-    position: sticky;
-    top: 72px;
-    z-index: 20;
-  }
-
     /* ------FOOTER------*/
 
   footer .content-box {
@@ -1213,6 +1186,15 @@ ol {
 }
 
 /* PT 2 USER STORIES */
+
+#chroma-competitors {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  margin: 0 auto;
+  width: 70%;
+  max-width: 900px;
+}
 
   .user1 {
     grid-column: 1;
@@ -1493,26 +1475,56 @@ ol {
   #chroma-top h3 {
     animation-duration: 2s;
     animation-delay: .8s;
+    padding-bottom: 2.4rem;
   }
+
+.hero-button-container {
+    animation-duration: 2s;
+    animation-delay: 1.2s;
+    margin-bottom: 0;
+  }
+
 
   #chroma-hero img {
-    animation-duration: 1s;
-    animation-delay: 1s;
+    animation-duration: 2s;
+    animation-delay: 1.6s;
     margin-bottom: 0;
   }
 
-  #chroma-hero .hero-button-container {
-    animation-duration: 1s;
-    animation-delay: 1.5s;
-    margin-bottom: 0;
-  }
 
   .hero-left-btn {
     margin-right: 2rem;
   }
 
   #case-study-nav {
-    top: 83px;
+    animation-duration: 2s;
+    animation-delay: 1.6s;
+    background: #565656;
+    height: 10%;
+    padding: 1.3rem 1.4rem;
+    top: 79px;
+    position: sticky;
+    z-index: 101;
+  }
+
+  #case-study-nav ul {
+    line-height: 300%;
+    text-align: center;
+  }
+
+  #case-study-nav li{
+    color: #ffffff;
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: 0 1.8rem 0 1.8rem;
+  }
+
+  #case-study-nav a{
+  color: inherit;
+  }
+
+  #case-study-nav li:hover {
+    font-weight: 700;
   }
 
 
@@ -1564,7 +1576,7 @@ ol {
     padding-bottom: 6.4rem;
   }
 
-  #chroma-user-research h4, p, li {
+  #chroma-user-research p, li {
     text-align: left;
   }
 
@@ -1670,15 +1682,6 @@ ol {
     font-size: 2.4rem;
   }
 
-  /* #chroma-competitors {
-    display: none;
-  } */
-
-  /* #chroma-competitors h5 {
-    padding-top: 1.2rem;
-    padding-bottom: 3.6rem;
-  } */
-
   #chroma-pt2 {
     padding: inherit;
   }
@@ -1688,7 +1691,7 @@ ol {
   }
 
   #chroma-competitors {
-    grid-gap: 3.6rem;
+    column-gap: 3.6rem;
   }
 
   #chroma-competitors img {
@@ -1742,19 +1745,39 @@ ol {
     text-align: left;
   }
 
+  .comp-detail {
+    max-width: 300px;
+  }
+
+  .comp-detail p {
+    padding: 0 0 0 1.2rem;
+  }
+
+  .comp-grid {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: auto;
+    padding-bottom: 3.6rem;
+  }
+
   #comp-link {
     padding-top: inherit;
   }
 
+ .plusminus p {
+   font-weight: bold;
+   text-align: center;
+ }
+
+
 /* PT 4 - USER STORIES & FLOWS */
 
   .outer-user-story-container {
-    background-color: #E9DAD1;
+    background-color: #DDDDDD;
   }
 
 
   .user-story-container {
-    background-color: #E9DAD1;
     max-width: 1200px;
     display: grid;
     /* grid-gap: 2rem; */
@@ -1766,6 +1789,7 @@ ol {
   .user-story-container li {
     line-height: 150%;
     text-align: left;
+    font-style: italic;
   }
 
   .returning-user {
@@ -1777,7 +1801,7 @@ ol {
   }
 
   .story-priority {
-    color: #C86F3A;
+    color: crimson;
   }
 
   #chroma-pt4 .caption {
@@ -1927,6 +1951,14 @@ ol {
     padding: 0 10%;
   }
 
+  #bottom-prototype-btns {
+    padding: 4.8rem 0;
+  }
+
+  #conclusion {
+    padding-top: 9.6rem;
+  }
+
 .mobile-screens {
   margin: 0 auto;
   width: 80%;
@@ -1976,7 +2008,7 @@ ol {
 
 @media screen and (min-width: 1250px) {
   #case-study-nav li {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     padding: 0 2.4rem 0 2.4rem;
   }
 
