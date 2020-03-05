@@ -1212,58 +1212,10 @@ footer p {
   width: 100%;
 }
 
-#ia-inner-grid {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  grid-template-rows: auto;
-  padding-top: 3.6rem;
-}
-
 .link-container {
   margin-bottom: 2.4rem;
 }
 
-.story-tag {
-  width: 100px;
-  height: 40px;
-  position: relative;
-  background: red;
-  justify-self: center;
-}
-
-.story-tag:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 0;
-  border-left: 20px solid white;
-  border-top: 20px solid transparent;
-  border-bottom: 20px solid transparent;
-}
-
-.story-tag:before {
-  content: "";
-  position: absolute;
-  right: -20px;
-  bottom: 0;
-  width: 0;
-  height: 0;
-  border-left: 20px solid red;
-  border-top: 20px solid transparent;
-  border-bottom: 20px solid transparent;
-}
-
-.story-tag-text {
-  color: white;
-  margin: 7px 19px 0 0;
-  text-align: right;
-}
-
-.story-label {
-  align-self: center;
-}
 
 /* PT 5 - SKETCHING TO WIREFRAMES */
 
@@ -1880,16 +1832,18 @@ color: inherit;
   grid-template-rows: auto;
   margin: 0 auto;
   align-items: center;
-  width: 100%
+  width: 98%;
+  padding-bottom: 3.6rem;
+  column-gap: 2.4rem;
 }
 
-#ia-grid-left {
-  background: white;
-  height: 600px;
+#ia-grid img {
+  width: 100%;
 }
 
-#ia-grid-padding {
 
+.flow-link {
+  padding-top: 4.8rem;
 }
 
 .pain-points {
@@ -2611,15 +2565,27 @@ color: inherit;
     margin: 3.6rem;
   }
 
-  #gh-flow {
-    background-image: url("../../images/gh-user-flows-parallax.png");
-    background-color: #E8E8E8;
+  /* #gh-flow {
+    background-image: url("../../images/gh-flows.png");
     height: 600px;
+    margin: 0 auto;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    width: 95%;
   }
 
+  #gh-top-stories {
+    background-image: url("../../images/gh-top-stories.png");
+    background-color: #E8E8E8;
+    height: 600px;
+    margin: 0 auto;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 95%;
+  } */
 
   #grid-user-flows {
     display: grid;
@@ -2665,6 +2631,10 @@ color: inherit;
 
   /* PT 2 - IA */
 
+
+ #ia-grid img {
+   width: 100%;
+ }
 
   /* PT 3 - SKETCHING & WIREFRAMES */
 
