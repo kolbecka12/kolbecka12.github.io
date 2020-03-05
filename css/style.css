@@ -748,12 +748,21 @@ footer p {
 
 /* ------TESTIMONIAL SECTION------ */
 
-.testimonial {
-  text-align: center;
+#testimonial {
+  /* text-align: center; */
 }
 
-.testimonial p {
+#testimonial h6 {
+  text-align: left;
+}
+
+#testimonial p {
   padding-bottom: 2.4rem;
+}
+
+#mentor {
+  font-size: 1.2rem;
+  text-transform: capitalize;
 }
 
 

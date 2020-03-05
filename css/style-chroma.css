@@ -564,6 +564,33 @@ footer p {
 }
 
 
+#case-study-nav {
+  background: #565656;
+  height: 10%;
+  padding: 2rem 0 2rem;
+}
+
+#case-study-nav ul {
+  line-height: 300%;
+  text-align: center;
+}
+
+#case-study-nav li{
+  color: #ffffff;
+  display: inline-block;
+  font-size: 1.5rem;
+  padding: 0 1.8rem 0 1.8rem;
+}
+
+#case-study-nav a{
+color: inherit;
+}
+
+#case-study-nav li:hover {
+  font-weight: 700;
+}
+
+
 /* ----------------------CHROMA PAGE---------------------- */
 
 /* ------NAV MENU------*/
@@ -579,7 +606,6 @@ footer p {
 }
 
 .case-study-title img {
-  padding-bottom: 1.2rem;
   width: 65%;
 }
 
@@ -1161,6 +1187,14 @@ ol {
     margin: 1rem;
   }
 
+  #case-study-nav {
+    animation-duration: 2s;
+    animation-delay: 2s;
+    position: sticky;
+    top: 72px;
+    z-index: 20;
+  }
+
     /* ------FOOTER------*/
 
   footer .content-box {
@@ -1478,29 +1512,9 @@ ol {
   }
 
   #case-study-nav {
-    background: #565656;
-    height: 10%;
-    padding: 2rem 0 2rem;
+    top: 83px;
   }
 
-  #case-study-nav ul {
-    text-align: center;
-  }
-
-  #case-study-nav li{
-    color: #ffffff;
-    display: inline-block;
-    font-size: 1.5rem;
-    padding: 0 1.8rem 0 1.8rem;
-  }
-
-  #case-study-nav a {
-    color: inherit;
-  }
-
-  #case-study-nav li:hover {
-    font-weight: 700;
-  }
 
     /* PROBLEM/SOLUTION BLOCK */
 
