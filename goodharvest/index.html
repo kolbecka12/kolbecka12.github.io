@@ -352,7 +352,7 @@
         <div id="ia-grid">
           <div>
             <div>
-              <img src="../images/gh-top-stories.png">
+              <img id="ia-top-stories" src="../images/gh-top-stories.png">
             </div>
             <div class="centered link-container flow-link">
               <a class="link-special" href="https://docs.google.com/spreadsheets/d/1ZT2RoiGGc9w7KJFJxrzckOxd-W4wPnNjoTH0oNgsXy8/edit?usp=sharing" target="_blank">View Complete User Stories</a>
@@ -360,7 +360,7 @@
           </div>
           <div>
             <div>
-              <img src="../images/gh-flows.png">
+              <img id="ia-flows" src="../images/gh-flows.png">
             </div>
             <div class="centered link-container flow-link">
               <a class="link-special" href="https://whimsical.com/LAf8RVMXvNim4QM4WJ3AJE#VsSo8s35VAcSLc9rThQHXV" target="_blank">View Complete User Flows</a>
@@ -416,7 +416,7 @@
       <h4 class="centered">Testing the Preferences Screen<h4>
       <p>While users can enjoy most of the features of GoodHarvest without creating an account, those who do complete this process can see a customized feed of recipes, filtered based on their cooking and dietary preferences. Since this is the key factor driving signups, I knew the preferences screen needed to work very intuitively.</p>
       <p>First, I asked users which active button design they preferred. The version on the right got 100% of the vote, out of 15 voters.</p>
-      <div class="grid wireframe-grid" id="first-test">
+      <div class="prototype-grid wireframe-grid" id="first-test">
         <img class="justify-center frame-comp" src="../images/gh-prefs-3.png" alt="greyscale wireframe">
         <p class="caption display-mobile paragraph-end">No votes for this style.</p>
         <img class="justify-center frame-comp" src="../images/gh-prefs-4.png" alt="greyscale wireframe">
@@ -453,7 +453,7 @@
       <h4 id="new-version-1"><span class="display-mobile">1. </span>Overhauling the Preferences Page</h4>
       <p>Results from user testing indicated that several elements on this page were confusing. Users noted that “kid-friendly” wasn’t exactly a dietary preference, and the icons in the dietary preferences section made it more difficult to find the information than simple text. One user also pointed out that it was unlikely any user would ever intentionally select a preference for recipes that took a long time to cook.</p>
       <p>To reduce this cognitive overload, I removed the toggle from the food allergies section, converted the food icons into simple text within pills, and removed the confusing cooking time question altogether.</p>
-    <div class="grid wireframe-grid" id="third-test">
+    <div class="prototype-grid wireframe-grid" id="third-test">
       <img class="shadow-offset justify-center frame-comp" src="../images/gh-prefs-v2.png" alt="greyscale wireframe">
       <p class="caption display-mobile paragraph-end">Version 2: Complex preferences page, higher cognitive load</p>
       <img class="shadow-offset justify-center frame-comp" src="../images/gh-prefs-v3.png" alt="greyscale wireframe">
@@ -463,7 +463,7 @@
     <h4 id="new-version-2"><span class="display-mobile">2. </span>Reworking the Information Architecture</h4>
     <p>During user testing, multiple users failed to discover the recipes at the bottom of the food detail pages. Finding this important content required a lot of scrolling, which caused users to miss it.</p>
     <p>To solve this problem, I broke up this single long screen into two pages, accessed via tabs at the top for Food Info and Recipes. With this new layout, a shopper who’s making a meal plan before shopping could quickly jump to recipes featuring fresh spring asparagus, for example, rather than having to know that this content is available below the basic food info sections.</p>
-    <div class="grid wireframe-grid" id="fourth-test">
+    <div class="prototype-grid wireframe-grid" id="fourth-test">
       <img class="shadow-offset justify-center frame-comp" src="../images/gh-blueberry-v2.png" alt="greyscale wireframe">
       <p class="caption display-mobile paragraph-end">In version 2, blueberry recipes were hidden below all this content.</p>
       <img class="shadow-offset justify-center frame-comp" src="../images/gh-blueberry-v3.png" alt="greyscale wireframe">
@@ -473,24 +473,23 @@
     <h4 id="new-version-3"><span class="display-mobile">3. </span>Refining the Seasonality Wheel</h4>
     <p>In an app promoting seasonal produce, the “seasonality wheel” on the produce detail page — showing what months a food is in season — is one of the most important features. However, users weren’t clear where the current month sat on the wheel, and were confused as to how to interpret the season icons.</p>
     <p>To solve this problem, month names were added to this design to make this more clear for users.</p>
-    <div class="grid wireframe-grid" id="fifth-test">
+    <div class="prototype-grid wireframe-grid" id="fifth-test">
       <img class="shadow-offset justify-center frame-comp" src="../images/gh-wheel-v2.png">
       <p class="caption display-mobile paragraph-end">Users weren’t sure how to tell what months were represented here.</p>
       <img class="shadow-offset justify-center frame-comp" src="../images/gh-wheel-v3.png">
       <p class="caption display-desktop paragraph-end">Month names were added in version 3, along with a darker title for the current month.</p>
       <p class="caption" id="test-three-two">Month names were added in version 3, along with a darker title for the current month.</p>
     </div>
-    <h4 id="new-version-4"><span class="display-mobile">4. </span>Leveraging Established Patterns</h4>
+    <!-- <h4 id="new-version-4"><span class="display-mobile">4. </span>Leveraging Established Patterns</h4>
     <p>When faced with the New This Month produce items at the top of the Discover and In Season Now pages, all of my testers intuitively tried to left swipe through the list of items. I had not envisioned this functionality — in fact, I’d designed this as three static items on the Discover page, and a progressive disclosure section on the In Season Now page.</p>
     <p>To better leverage existing UI patterns my users were already familiar with, I added the left swipe functionality to the Discover page. On the In Season Now page, I removed this section completely and added a “view new this month” checkbox to the top of the full list of currently in season produce items to allow the user to filter their results. Since all of the new items would have been duplicated within the list of all foods currently in season, this checkbox filtration method simplifies the page results and removes any instances of duplicative information.</p>
-    <div class="grid wireframe-grid" id="fifth-test">
+    <div class="prototype-grid wireframe-grid" id="fifth-test">
       <img class="shadow-offset justify-center frame-comp" src="../images/gh-wheel-v2.png">
       <p class="caption display-mobile paragraph-end">Users weren’t sure how to tell what months were represented here.</p>
       <img class="shadow-offset justify-center frame-comp" src="../images/gh-wheel-v3.png">
       <p class="caption display-desktop paragraph-end">Month names were added in version 3, along with a darker title for the current month.</p>
       <p class="caption" id="test-three-two">Month names were added in version 3, along with a darker title for the current month.</p>
-    </div>
-    </div>
+    </div> -->
   </section>
   <div class="light-section" id="gh-six">
     <section>
@@ -524,7 +523,8 @@
         </div>
       </section>
     </div>
-      <!-- <img id="gh-final" src="../images/gh-hero-header-2.png"> -->
+      <img class="display-desktop" id="gh-final" src="../images/gh-hero-header-2.png">
+      <img class="display-mobile" id="gh-final-mobile" src="../images/gh-square-display.png">
       <section class="content-box content-box-narrow-desktop" id="gh-conclusion">
         <h6 class="centered tertiary-text">Conclusion</h6>
         <h2 class="section-title" id="key-learnings">Key Learnings</h2>
