@@ -234,6 +234,10 @@ ul {
    display: none;
  }
 
+ .hide-mobile {
+   display:none;
+ }
+
  header {
    background: #ffffff;
    border-bottom: 2px solid #f5f5f5;
@@ -864,6 +868,13 @@ footer p {
   padding-bottom: 1.2rem;
 }
 
+#design-title-large {
+  font-size: 3.6rem;
+  line-height: 130%;
+  padding-bottom: 4.8rem;
+  width: 85%;
+}
+
 
 /* PT 1 - USER RESEARCH */
 
@@ -896,66 +907,82 @@ footer p {
 
  .circle-legend {
    display: grid;
-   grid-template-columns: 1fr 4fr;
+   grid-template-columns: 1fr 2fr;
    grid-template-rows: auto;
    margin: 0 auto;
-   width: 40%;
-   /* align-items: center; */
+   width: 100%;
+ }
+
+ .legend-container {
+   display: inline-block;
+   width: 100%;
+   margin: 2% 0;
  }
 
  #black-circle {
    align-self: center;
-   justify-self: center;
+   justify-self: right;
    background: #191919;
    border-radius: 50%;
    width: 1.2rem;
    height: 1.2rem;
+   margin-right: 1rem;
  }
 
  #blue-circle {
    align-self: center;
-   justify-self: center;
+   justify-self: right;
    background: #135561;
    border-radius: 50%;
    width: 1.2rem;
    height: 1.2rem;
+   margin-right: 1rem;
  }
 
  #charcoal-circle {
    align-self: center;
-   justify-self: center;
+   justify-self: right;
    background: #474747;
    border-radius: 50%;
    width: 1.2rem;
    height: 1.2rem;
+   margin-right: 1rem;
  }
 
 
  #grey-circle {
    align-self: center;
-   justify-self: center;
+   justify-self: right;
    background: #DDDDDD;
    border-radius: 50%;
    width: 1.2rem;
    height: 1.2rem;
+   margin-right: 1rem;
  }
 
  #lime-circle {
    align-self: center;
-   justify-self: center;
+   justify-self: right;
    background: #74CC3D;
    border-radius: 50%;
    width: 1.2rem;
    height: 1.2rem;
+   margin-right: 1rem;
+
  }
 
  #teal-circle {
    align-self: center;
-   justify-self: center;
+   justify-self: right;
    background: #31B67A;
    border-radius: 50%;
    width: 1.2rem;
    height: 1.2rem;
+   margin-right: 1rem;
+ }
+
+ .circle-caption {
+   padding-bottom: 3.6rem;
  }
 
  .legend {
@@ -964,6 +991,14 @@ footer p {
    padding-bottom: 0;
    margin: 0;
  }
+
+ .mobile-circle {
+   display: block;
+   margin: 0 auto;
+   width: 50%;
+ }
+
+
 /*
  #ghChart1 {
    display: inherit;
@@ -982,9 +1017,7 @@ footer p {
    font-size: 2.4rem;
    line-height: 130%;
    margin: 0 auto;
-   padding: 1.8rem;
-   text-align: center;
-   width: 90%;
+   padding-bottom: 3.6rem;
  }
 
 
@@ -1014,6 +1047,14 @@ footer p {
 
 .survey-item {
   align-self: center;
+}
+
+.survey-question-large {
+  font-size: 2.4rem;
+  line-height: 130%;
+  margin: 0 auto;
+  padding-bottom: 3.6rem;
+  width: 85%;
 }
 
 .survey-title {
@@ -1689,11 +1730,15 @@ ol {
   margin: 2.4rem 0;
 }
 
-.versions-compare {
+#versions-compare {
   column-gap: 9.6rem;
   row-gap: 4.8rem;
 }
 
+#final-compare {
+  padding-top: 3.6rem;
+  row-gap: 4.8rem;
+}
 
 #end-prototype-btn {
   padding: 2.4rem 0 1.2rem 0;
@@ -1742,6 +1787,10 @@ ol {
   .content-box-narrow-desktop {
     margin: 0 auto;
     width: 55%;
+  }
+
+  .hide-tablet {
+    display: none;
   }
 
     /* ------NAV BAR------*/
@@ -1804,13 +1853,64 @@ ol {
 
 /* PT 1 RESEARCH + DISCOVERY */
 
+.user1 {
+  grid-column: 1;
+  grid-row: 1;
+  display: flex;
+}
+
+.user2 {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.user3 {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.user4 {
+  grid-column: 2;
+  grid-row: 1;
+  display: flex;
+}
+
+.user5 {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.user6 {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.user7 {
+  grid-column: 3;
+  grid-row: 1;
+  display: flex;
+}
+
+.user8 {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.user9 {
+  grid-column: 3;
+  grid-row: 3;
+}
+
+
+
+
+
+
+
 #comp-list {
   padding: 0 12%;
 }
 
-.design-process-large {
-  width: 70%;
-}
 
 #ia-grid {
   display: grid;
@@ -1846,6 +1946,10 @@ ol {
   /* max-width: 1400px; */
   justify-self: start;
   width: 70%;
+}
+
+.survey-question-large {
+  width: 60%;
 }
 
   .user1 {
@@ -1919,7 +2023,7 @@ ol {
 
   #user-profiles {
     display: grid;
-    grid-gap: 2rem;
+    column-gap: 4.8rem;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     margin: 0 auto;
@@ -2001,6 +2105,11 @@ ol {
 
 /* PT 5 - VISUAL DESIGN & TESTING */
 
+
+#gh-four {
+  padding-bottom: 0;
+}
+
 .grid-three {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -2045,6 +2154,11 @@ ol {
 #gh-six img {
   display: block;
   width: 60%;
+}
+
+#last-button {
+  display: inline-block;
+  padding: 1.2rem 3.6rem;
 }
 
 }
@@ -2108,6 +2222,10 @@ ol {
 
   /*----------------------HIGH LEVEL STRUCTURE---------------------- */
 
+  .anchor {
+    padding-top: 10rem;
+  }
+
   .content-box {
     margin: 0 auto;
     max-width: 1000px;
@@ -2124,6 +2242,10 @@ ol {
 
   /* hide on desktop */
   .display-desktop {
+    display: inherit;
+  }
+
+  .hide-tablet {
     display: inherit;
   }
 
@@ -2336,13 +2458,20 @@ ol {
     margin-bottom: 6.4rem;
     padding: 7.2rem 0 7.2rem 0;
   }
+/*
+  #design-process p {
+    margin: 0 auto;
+    width: 55%;
+  } */
 
   .design-process-large {
     font-size: 3.6rem;
     line-height: 130%;
-    padding-bottom: 1.8rem;
-    width: 90%;
+    padding-bottom: 4.8rem;
+    /* text-align: center; */
+    max-width: 1000px;
   }
+
 
   #design-title {
     padding-bottom: 3.6rem;
@@ -2350,6 +2479,14 @@ ol {
 
   .solution-text {
     padding: 6rem 0 0 5rem;
+  }
+
+  .survey-question-large {
+    font-size: 3.6rem;
+    line-height: 130%;
+    padding: 0 0 4.8rem 4.8rem;
+    max-width: 1000px;
+    width: 90%;
   }
 
 /* PT 1: RESEARCH & DISCOVERY */
@@ -2375,17 +2512,24 @@ ol {
     padding-top: 2.4rem;
     text-align: center;
     width: 70%;
+    /* height: 300px; */
   }
 
   .circle-container {
     display: inline-block;
     width: 33%;
+    vertical-align: top;
+
   }
 
   .circle-chart {
     position: relative;
     margin: 0;
     padding-bottom: 2.4rem;
+  }
+
+  .circle-legend {
+    padding-bottom: 0;
   }
 
   #cooking-behaviors {
@@ -2475,6 +2619,16 @@ ol {
 
   #ghChart3 {
     display: block;
+  }
+
+  .legend {
+    font-size: 1.2rem;
+  }
+
+  .legend-container {
+    display: inline-block;
+    width: 33%;
+    margin: 2% 0;
   }
 
   .outer-user-story-container {
@@ -2680,6 +2834,10 @@ ol {
   #gh-logo-section {
       padding: 8rem 0 3.6rem 0;
       text-align: center;
+  }
+
+  #gh-logo-section p{
+    text-align: left;
   }
 
   #gh-moodboard {
@@ -2913,12 +3071,13 @@ ol {
 
 #end-prototype-btn {
   margin: 0 auto;
+  padding: 4.8rem 0;
 }
 
 .final-caption {
+  margin: 0;
   width: 80%;
 }
-
 
 
 #gh-final {

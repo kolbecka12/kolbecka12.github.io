@@ -1406,6 +1406,14 @@ input[type=text],input[type=email] textarea {
     align-items: center;
   }
 
+  #case-study-gh {
+    padding-bottom: 8rem;
+  }
+
+  #case-study-chroma {
+
+  }
+
    .case-study article {
      padding-left: 1rem;
    }

@@ -90,14 +90,14 @@
       </article>
     </section>
       <section class="grey-section" id="design-process">
-        <article class="narrow-box">
+        <article class="content-box content-box-narrow-desktop">
           <h2 class="section-title" id="design-title">The Design Process</h2>
           <p class="design-process-large">Could a mobile app really support local farms, reduce carbon emissions, and make us healthier?</p>
           <p>That’s the lofty goal of GoodHarvest, which was designed to make it easier for people to shift their eating habits towards more locally & sustainably grown fruits and vegetables.</p>
           <p>Designing this app meant getting a thorough understanding of why our target users care about sustainability and eating local, and getting to understand what hurdles are keeping people from choosing these foods less often than they’d like.</p>
         </article>
       </section>
-      <section id="gh-one">
+      <section  class="anchor" id="gh-one">
         <div class="content-box content-box-narrow-desktop" id="#gh-one-container">
           <h6 class="centered tertiary-text">Part One</h6>
           <h2 class="section-title">Research & Discovery</h2>
@@ -112,11 +112,11 @@
             <li>What are the demographics of my target audience?</li>
           </ul>
         </div>
-        <!-- <article class="light-section" id="chroma-user-research">
+        <article class="light-section" id="chroma-user-research">
           <h4 class="centered">User Survey Results</h4>
           <h5 class="survey-title">Biggest Pain Points</h5>
           <div class="grid gap survey-wide">
-            <p class="design-process-large">“What are the biggest factors stopping you from eating more seasonal foods than you are right now?”</h2>
+            <p class="survey-question-large">“What are the biggest factors stopping you from eating more seasonal foods than you are right now?”</h2>
             <div class="survey-grid">
               <p class="percent">45%</p>
               <p class="survey-item">I don't know which foods are currently in season where I live.</p>
@@ -130,8 +130,66 @@
               <p class="survey-item">I don’t know how to cook many seasonal foods.</p>
             </div>
           </div>
-          <h5 class="survey-title">Cooking & Shopping Behaviors</h5>
-          <div class="survey-wide" id="cooking-behaviors">
+          <h5 class="survey-title hide-tablet ">Cooking & Shopping Behaviors</h5>
+          <div class="display-mobile hide-tablet survey wide">
+            <img class="mobile-circle" src="../images/circlegroup1.png">
+            <div class="circle-container legend-container">
+              <figure class="circle-legend">
+                <span id=black-circle></span>
+                <p class="legend"><strong>50%</strong> Always</p>
+                <span id=teal-circle></span>
+                <p class="legend"><strong>25%</strong> Sometimes</p>
+                <span id=lime-circle></span>
+                <p class="legend"><strong>20%</strong> Rarely</p>
+                <span id=grey-circle></span>
+                <p class="legend"><strong>5%</strong> Never</p>
+              </figure>
+            </div>
+            <div class="circle-container">
+              <figure class="circle-caption">
+                <p><strong>50%</strong> always menu plan before shopping, while 45% only do so occasionally.</p>
+              </figure>
+            </div>
+            <img class="mobile-circle" src="../images/circlegroup2.png">
+            <div class="circle-container legend-container">
+              <figure class="circle-legend">
+                <span id=teal-circle></span>
+                <p class="legend"><strong>41%</strong> Very Comfortable</p>
+                <span id=charcoal-circle></span>
+                <p class="legend"><strong>32%</strong> Pretty Comfortable</p>
+                <span id=grey-circle></span>
+                <p class="legend"><strong>23%</strong> A Little Comfortable</p>
+                <span id=blue-circle></span>
+                <p class="legend"><strong>4%</strong> Total Beginner</p>
+              </figure>
+            </div>
+            <div class="circle-container">
+              <figure class="circle-caption">
+                <p><strong>41%</strong> felt very comfortable cooking with fresh produce, but 25% were new to this.</p>
+              </figure>
+            </div>
+            <img class="mobile-circle" src="../images/circlegroup3.png">
+            <div class="circle-container legend-container">
+              <figure class="circle-legend">
+                <span id=charcoal-circle></span>
+                <p class="legend"><strong>41%</strong> Most Days</p>
+                <span id=grey-circle></span>
+                <p class="legend"><strong>27%</strong> 1–2 Days Per Week</p>
+                <span id=blue-circle></span>
+                <p class="legend"><strong>22%</strong> 3–5 Days Per Week</p>
+                <span id=lime-circle></span>
+                <p class="legend"><strong>9%</strong> Rarely</p>
+              </figure>
+            </div>
+            <div class= "circle-container">
+              <figure class="circle-caption">
+                <p><strong>41%</strong> cooked with fresh produce most days of the week, but a significant number only did so a few days per week.</p>
+              </figure>
+            </div>
+
+          </div>
+
+          <div class="display-desktop hide-tablet survey-wide" id="cooking-behaviors">
             <div class="circle-container">
               <figure class="centered circle-chart">
                 <canvas id="ghChart1" width="700" height="350" aria-label="Chart showing how many users menu plan before shopping" role="img"></canvas>
@@ -147,7 +205,7 @@
                 <canvas id="ghChart3" aria-label="Chart showing how many users menu plan before shopping" role="img"></canvas>
               </figure>
             </div>
-            <div class="circle-container">
+            <div class="legend-container">
               <figure class="circle-legend">
                 <span id=black-circle></span>
                 <p class="legend"><strong>50%</strong> Always</p>
@@ -159,7 +217,7 @@
                 <p class="legend"><strong>5%</strong> Never</p>
               </figure>
             </div>
-            <div class="circle-container">
+            <div class="legend-container">
               <figure class="circle-legend">
                 <span id=teal-circle></span>
                 <p class="legend"><strong>41%</strong> Very Comfortable</p>
@@ -171,7 +229,7 @@
                 <p class="legend"><strong>4%</strong> Total Beginner</p>
               </figure>
             </div>
-            <div class="circle-container">
+            <div class="legend-container">
               <figure class="circle-legend">
                 <span id=charcoal-circle></span>
                 <p class="legend"><strong>41%</strong> Most Days</p>
@@ -195,15 +253,17 @@
             </div>
             <div class= "circle-container">
               <figure class="circle-caption">
-                <p><strong>41%</strong> cooked with fresh produce most days of the week.</p>
+                <p><strong>41%</strong> cooked with fresh produce most days of the week, but many only did so a few days per week.</p>
               </figure>
             </div>
           </div>
+
+
           <h5 class="survey-title">Most Important Features</h5>
           <div class="grid gap survey-wide">
             <div>
-              <p class="design-process-large">“Imagine while shopping you find a new fruit or vegetable you’ve never eaten before.</h2>
-              <p class="design-process-large">What information would make you want to try it?”</h2>
+              <p class="survey-question-large">“Imagine while shopping you find a new fruit or vegetable you’ve never eaten before.</h2>
+              <p class="survey-question-large">What information would make you want to try it?”</h2>
               </div>
             <div class="survey-grid">
               <p class="percent">95%</p>
@@ -218,7 +278,7 @@
               <p class="survey-item">Basic nutritional information for each produce item (e.g. “this food is very high in potassium”)</p>
             </div>
           </div>
-        </article> -->
+        </article>
       </section>
 
       <section class="content-box content-box-narrow-desktop">
@@ -237,7 +297,7 @@
           <p>To better understand the marketplace, I explored the Google Play (Android) and Apple App Store looking for mobile apps that helps users identify local, seasonal produce and discover ways to cook these foods. I reviewed three apps: <strong>Seasonal Food Guide, Seasonal,</strong> and <strong>Seasonal Fruits & Veggies.</strong></p>
           <p>While there are more than a dozen mobile apps created to tackle this problem, the vast majority are poorly designed and offer very little information beyond seasonality. Surprisingly, not one of these competitors integrated an in-app recipe finder with the seasonal produce guide.</p>
         </div>
-        <div class="grid versions-compare">
+        <div class="grid" id="versions-compare">
           <img class="comp-screen justify-center" src="../images/gh-comp-analysis.png">
           <div id="comp-list">
             <p class="comp-header"><strong>Pros:</strong></p>
@@ -263,7 +323,7 @@
           <a class="link-special" href="https://docs.google.com/document/d/1ZDuAfPqKxEDmcRKU6BQULlEXA-ubzWLKGLIdb8fkiqk/edit?usp=sharing" target="_blank">View Full Competitive Analysis</a>
         </div>
       </section>
-      <section class="content-box">
+      <section class="content-box content-box-narrow-desktop">
         <h4 class="centered">User Personas</h4>
         <p>Now it was time to imagine the people that would someday use this app. I analyzed my survey data and noticed three general types of users in my pool:</p>
         <ol class="numbered-list">
@@ -273,70 +333,71 @@
         </ol>
         <p>I completed phone interviews with one user from each group, to better understand their unique habits, routines, and needs around grocery shopping and cooking. This also gave me an opportunity to learn why eating more local and seasonal food mattered to these people.</p>
         <p>By better understanding my users’ motivations, I could more effectively design a product that would help them reach their goals.</p>
-        <div class="content-box" id="user-profiles">
-          <div class="user-profile user1">
-            <img src="../images/persona-4.png" alt="woman wearing red blazer">
-          </div>
-          <article class="content-box user2">
-            <h5>Elaine Chen</h5>
-            <h6>Engineer, 41</h6>
-            <h6>Palo Alto, CA</h6>
-            <p class="persona-quote">“I never know what to buy at the farmers’ market. Everything looks beautiful, but if I don’t have a plan for what I buy it’ll just rot in my fridge.”</p>
-          </article>
-          <article class="user3">
-            <h6 class="motivations">Motivations:</h6>
-            <ul>
-              <li class="extra-padding">Wants to eat a healthier, more sustainable diet</li>
-            </ul>
-            <h6 class="motivations pain-points">Pain Points:</h6>
-            <ul>
-              <li class="extra-padding">Planning menus around seasonal and local foods is time-consuming</li>
-            </ul>
-          </article>
-          <div class="user-profile user4">
-            <img src="../images/persona-5.png" alt="woman holding camera">
-          </div>
-          <article class="content-box user5">
-            <h5>Zoey Gutiérrez</h5>
-            <h6>Student, 23</h6>
-            <h6>San Francisco, CA</h6>
-            <p class="persona-quote">“I try to eat as much seasonal, local food as I can afford, but planning my meals around this is really time-consuming.”</p>
-          </article>
-          <article class="user6">
-            <h6 class="motivations">Motivations:</h6>
-            <ul>
-              <li class="extra-padding">Wants to live more sustainably while sticking to her budget</li>
-            </ul>
-            <h6 class="motivations pain-points">Pain Points:</h6>
-            <ul>
-              <li class="extra-padding">Needs a plan for large quantities of seasonal produce bought on sale</li>
-            </ul>
-          </article>
-          <div class="user-profile user7">
-            <img src="../images/persona-6.png" alt="young man in white shirt">
-          </div>
-          <article class="content-box user8">
-            <h5>Joan Rajah</h5>
-            <h6>Retired, 64</h6>
-            <h6>Brentwood, CA</h6>
-            <p class="persona-quote">“It’s hard to find dishes with new foods my whole family will like – especially my picky grandson!”</p>
-          </article>
-          <article class="user9">
-            <h6 class="motivations">Motivations:</h6>
-            <ul>
-              <li class="extra-padding">Wants to help her whole family eat healthier</li>
-            </ul>
-            <h6 class="motivations pain-points">Pain Points:</h6>
-            <ul>
-              <li class="extra-padding">Needs a way to quickly find information while shopping with a fussy toddler</li>
-            </ul>
-          </article>
+      </section>
+      <div class="content-box" id="user-profiles">
+        <div class="user-profile user1">
+          <img src="../images/persona-4.png" alt="woman wearing red blazer">
         </div>
+        <article class="content-box user2">
+          <h5>Elaine Chen</h5>
+          <h6>Engineer, 41</h6>
+          <h6>Palo Alto, CA</h6>
+          <p class="persona-quote">“I never know what to buy at the farmers’ market. Everything looks beautiful, but if I don’t have a plan for what I buy it’ll just rot in my fridge.”</p>
+        </article>
+        <article class="user3">
+          <h6 class="motivations">Motivations:</h6>
+          <ul>
+            <li class="extra-padding">Wants to eat a healthier, more sustainable diet</li>
+          </ul>
+          <h6 class="motivations pain-points">Pain Points:</h6>
+          <ul>
+            <li class="extra-padding">Planning menus around seasonal and local foods is time-consuming</li>
+          </ul>
+        </article>
+        <div class="user-profile user4">
+          <img src="../images/persona-5.png" alt="woman holding camera">
+        </div>
+        <article class="content-box user5">
+          <h5>Zoey Gutiérrez</h5>
+          <h6>Student, 23</h6>
+          <h6>San Francisco, CA</h6>
+          <p class="persona-quote">“I try to eat as much seasonal, local food as I can afford, but planning my meals around this is really time-consuming.”</p>
+        </article>
+        <article class="user6">
+          <h6 class="motivations">Motivations:</h6>
+          <ul>
+            <li class="extra-padding">Wants to live more sustainably while sticking to her budget</li>
+          </ul>
+          <h6 class="motivations pain-points">Pain Points:</h6>
+          <ul>
+            <li class="extra-padding">Needs a plan for large quantities of seasonal produce bought on sale</li>
+          </ul>
+        </article>
+        <div class="user-profile user7">
+          <img src="../images/persona-6.png" alt="young man in white shirt">
+        </div>
+        <article class="content-box user8">
+          <h5>Joan Rajah</h5>
+          <h6>Retired, 64</h6>
+          <h6>Brentwood, CA</h6>
+          <p class="persona-quote">“It’s hard to find dishes with new foods my whole family will like – especially my picky grandson!”</p>
+        </article>
+        <article class="user9">
+          <h6 class="motivations">Motivations:</h6>
+          <ul>
+            <li class="extra-padding">Wants to help her whole family eat healthier</li>
+          </ul>
+          <h6 class="motivations pain-points">Pain Points:</h6>
+          <ul>
+            <li class="extra-padding">Needs a way to quickly find information while shopping with a fussy toddler</li>
+          </ul>
+        </article>
+      </div>
       <div class="centered link-container" id="profile-link">
         <a class="link-special" href="https://drive.google.com/file/d/12JIcAX0dXcTw5wPnzZbYGcpcFx6vntJr/view?usp=sharing" target="_blank">View Complete User Profiles</a>
       </div>
     </section>
-    <div class="light-section" id="gh-two">
+    <div class="anchor light-section" id="gh-two">
       <section class="content-box content-box-narrow-desktop">
           <h6 class="centered tertiary-text">Part Two</h6>
           <h2 class="section-title">Information Architecture</h2>
@@ -368,7 +429,7 @@
           </div>
         </div>
     </div>
-    <section class="content-box content-box-narrow-desktop" id="gh-three">
+    <section class="anchor content-box content-box-narrow-desktop" id="gh-three">
       <h6 class="centered tertiary-text">Part Three</h6>
       <h2 class="section-title">Wireframing</h2>
       <p>I began the wireframing process by researching common design patterns for different screens I knew I would need in my app (onboarding, account creation, recipe detail, etc). From here, I sketched out multiple iterations of each screen using pen and paper.</p>
@@ -386,11 +447,11 @@
       </div>
       <p class="caption display-desktop">Dietary preferences selection with the “none” option hidden at the bottom (left), and updated version with the “none” option in the top left.</p>
     </section>
-    <section class="light-section" id="gh-four">
+    <section class="anchor light-section" id="gh-four">
       <h6 class="centered tertiary-text">Part Four</h6>
       <h2 class="section-title">Branding & Style</h2>
       <article class="content-box content-box-narrow-desktop">
-        <p class="paragraph-end">I kicked off the branding process with an inspiration board to set the mood and tone of the Goodharvest brand and interface.</p>
+        <p>I kicked off the branding process with an inspiration board to set the mood and tone of the Goodharvest brand and interface.</p>
       </article>
       <img id="gh-moodboard" src="../images/gh-moodboard-frames.png" alt="photo collage and color swatches">
       <article class="content-box content-box-narrow-desktop" id="gh-logo-section">
@@ -409,7 +470,7 @@
       </article>
       <img id="gh-styling" src="../images/gh-styling.png" alt="typography samples, color swatches, and UI elements">
     </section>
-    <section class="content-box content-box-narrow-desktop" id="gh-five">
+    <section class="anchor content-box content-box-narrow-desktop" id="gh-five">
       <h6 class="centered tertiary-text">Part Five</h6>
       <h2 class="section-title">Visual Design & Testing</h2>
       <p>Now that I had the elements needed to create my first complete mockups, I began applying my styles to the wireframes to create a high-fidelity prototype.</p>
@@ -491,12 +552,12 @@
       <p class="caption" id="test-three-two">Month names were added in version 3, along with a darker title for the current month.</p>
     </div> -->
   </section>
-  <div class="light-section" id="gh-six">
+  <div class="anchor light-section" id="gh-six">
     <section>
       <h6 class="centered tertiary-text">Part Six</h6>
       <h2 class="section-title">The Final Prototype</h2>
         <p class="content-box content-box-narrow-desktop"> After drafting over 100 screens, three A/B tests, two rounds of users tests, and two clickable prototypes, I'd finally created my final MVP.</p>
-        <div class="grid versions-compare">
+        <div class="grid" id="final-compare">
           <img class="justify-center" id="gh-display-1" src="../images/gh-display-1.png">
           <div class="final-screen final-caption">
             <h4>Discover Something New and Delicious.</h4>
@@ -519,7 +580,7 @@
           </div>
         </div>
         <div class="centered" id="end-prototype-btn">
-          <a class ="btn black " href="https://www.figma.com/proto/CPlbAt5zoNeJbhbJnVX72C/GoodHarvest-Hifi-v4?node-id=13%3A385&viewport=739%2C1607%2C0.5&scaling=scale-down" target="_blank">View Prototype</a>
+          <a class ="btn black" id="last-button" href="https://www.figma.com/proto/CPlbAt5zoNeJbhbJnVX72C/GoodHarvest-Hifi-v4?node-id=13%3A385&viewport=739%2C1607%2C0.5&scaling=scale-down" target="_blank">View Prototype</a>
         </div>
       </section>
     </div>
