@@ -7,6 +7,8 @@
    <link rel="stylesheet" type="text/css" href="../css/style.css">
    <link rel="stylesheet" type="text/css" href="../css/normalize.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
    <!-- favicon -->
    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
    <!-- fonts -->
@@ -152,7 +154,7 @@
         </div>
       </div>
       <div class="content-box-narrow">
-        <div class="about-page-container">
+        <div class="about-page-container" data-aos="fade-up">
             <div class="about-text-container">
               <h2 class="section-title">Going a Bit Deeper</h2>
               <h4>Inspired by Nature, Captivated by Technology</h4>
@@ -161,7 +163,7 @@
             </div>
             <img src="../images/about-anemone.jpg" alt="purple sea anemone">
           </div>
-          <div class="about-page-container-alt">
+          <div class="about-page-container-alt" data-aos="fade-up">
             <img src="../images/about-forest.jpg" alt="looking up into canopy of foggy redwood forest">
             <div class="about-text-container-alt">
             <h4>Following a Creative Path</h4>
@@ -170,11 +172,11 @@
             </div>
           </div>
         </div>
-        <div class="quote-section">
+        <div class="quote-section" data-aos="fade-up">
           <blockquote>“What I didn’t know then, was that these diverse experiences in marketing, photography, anthropology, and behavior change were giving me the foundations to becoming an <span class="highlight">empathetic, people-first designer."</span></blockquote>
         </div>
         <div class="content-box-narrow">
-          <div class="about-page-container">
+          <div class="about-page-container" data-aos="fade-up">
               <div class="about-text-container">
                 <h4 id="discovering-ux">Discovering UX</h4>
                 <p>Shortly after graduating, I found my way back to marketing and graphic design. My employer’s website badly needed a refresh, but hiring a web designer wasn’t in the budget, so I took on the project myself. As soon as I started learning about code and designing for the web I was obsessed. I began learning everything I could about HTML, CSS, and typography. I was driven to understand  how to design things that were not only beautiful, but effective.</p>
@@ -183,11 +185,11 @@
               <img src="../images/about-pylons.jpg" alt="electrical pylons snaking through the desert">
             </div>
           </div>
-          <div class="quote-section">
+          <div class="quote-section" data-aos="fade-up">
             <blockquote>“I knew there must be a more methodical way to design things that were <span class="highlight">not only beautiful, but effective.</span> This question led me to the field of UX.”</blockquote>
           </div>
           <div class="content-box-narrow">
-            <div class="about-page-container-alt">
+            <div class="about-page-container-alt" data-aos="fade-up">
               <img src="../images/about-lights.jpg" alt="vintage chandalier in a dark room">
               <div class="about-text-container-alt">
                 <h4>Bringing it Full Circle</h4>
@@ -197,7 +199,7 @@
             </div>
           </div>
       <div class="light-section">
-        <div class="content-box-narrow" id="about-end">
+        <div class="content-box-narrow" id="about-end" data-aos="fade-up">
           <div class="about-page-container">
             <div class="about-text-container">
                 <h2 class="section-title">When I'm Not Designing, You Can Probably Find Me...</h2>
@@ -240,6 +242,12 @@
    gtag('js', new Date());
 
    gtag('config', 'UA-154123395-1');
+ </script>
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+ <script>
+ AOS.init({
+    duration: 1200,
+    })
  </script>
 </body>
 </html>

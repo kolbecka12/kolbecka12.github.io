@@ -7,7 +7,7 @@
    <link rel="stylesheet" type="text/css" href="css/style.css">
    <link rel="stylesheet" type="text/css" href="css/normalize.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-   <!-- <script src="scripts.js"></script>    -->
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
    <!-- favicon -->
    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
    <!-- fonts -->
@@ -24,7 +24,7 @@
           <ul class="nav-links">
             <li><a class="nav-link-light" href="/#work-section">Work</a></li>
             <li><a class="nav-link-light" href="/about">About</a></li>
-            <li><a class="nav-link-light" href="https://drive.google.com/file/d/1vc0HnHUEC6vmIRxIarEnL8wtNhvmY-mF/view?usp=sharing" target="_blank">Resume</a></li>
+            <li><a class="nav-link-light" href="https://drive.google.com/file/d/1vc0HnHUEC6vmIRxIarEnL8wtNhvmY-mF/view?usp=sharingt" target="_blank">Resume</a></li>
             <li><a class="display-desktop nav-link-contact-light" href="/contact">Contact</a></li>
             <li><a class="display-mobile" href="/contact"><i class="nav-link-light las la-envelope" id="nav-icon-light"></i></a></li>
           </ul>
@@ -59,7 +59,7 @@
     <section id="work-section">
       <h1 class="featured-work">Featured Work</h1>
     </section>
-    <section class="case-study" id="case-study-gh">
+    <section class="case-study" data-aos="fade-up" id="case-study-gh">
       <div class="case-study-image display-mobile">
         <img src="images/gh-hero-header-mobile.png" alt="colorful app screens">
       </div>
@@ -81,7 +81,7 @@
         <img src="images/gh-hero-header-mobile.png" alt="colorful app screens">
       </div>
     </section>
-    <section class="case-study" id="case-study-chroma">
+    <section class="case-study" id="case-study-chroma" data-aos="fade-up">
       <div class="case-study-image">
         <img src="images/Chroma-mobile-flat-layout-2x.jpg" alt="colorful app screens">
       </div>
@@ -101,7 +101,7 @@
       </article>
     </section>
     <!-- Skills Section -->
-    <section class="designer display-desktop light-text">
+    <section class="designer display-desktop light-text"  data-aos="fade-up">
         <h2>Full Stack Designer</h2>
         <h4 class="display-desktop" id="skills-description">I can take your project from wild idea to live code.</h4>
         <p class="display-mobile">I can take your project<br> from wild idea to live code.</p>
@@ -178,6 +178,12 @@
      gtag('js', new Date());
 
      gtag('config', 'UA-154123395-1');
+   </script>
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <script>
+   AOS.init({
+      duration: 1200,
+      })
    </script>
  </body>
 </html>
