@@ -57,6 +57,9 @@ h1, h2, h3 {
   font-weight: 300;
 }
 
+h1 {
+  font-size: 3.6rem;
+}
 
 h2 {
   font-size: 2.0rem;
@@ -69,9 +72,10 @@ h3 {
   /* line-height: 135%; */
 }
 
-h4, h5, h6, p, li, blockquote {
-  font-family: Lato, sans-serif;
+h4, h5, h6, p {
+  font-family: "Lato";
   font-style: normal;
+  letter-spacing: .06rem;
 }
 
 h4 {
@@ -263,8 +267,9 @@ section {
   font-style: normal;
   text-align: center;
   text-transform: uppercase;
-  font-weight: 900;
+  font-weight: 700;
   font-size: 1.5rem;
+  letter-spacing: 0.05rem;
   line-height: 167.23%;
   padding: 12px 0 12px 0;
 }
@@ -303,35 +308,33 @@ section {
 }
 
 .wire {
-  /* rust orange border, rust orange font */
-  border: 1px solid #2A3636;
-  /* rust orange */
+  border: 2px solid #2A3636;
   color: #2A3636;
   display: block;
 }
 
 .wire:hover {
-  box-shadow: 8px 8px #DDD;
+  box-shadow: 8px 8px #F5C049;
   transition: .3s;
 }
 
 .wire:active {
-  border: 1px solid #565656;
-  box-shadow: 8px 8px #DDD;
+  border: 2px solid #565656;
+  box-shadow: 8px 8px #F5C049;
   color: #565656;
 }
 
 
 .light-wire {
   /* beige border, beige font */
-  border: 1px solid #FDF8F4;
+  border: 1px solid #F9F9F9;
   /* beige */
-  color: #FDF8F4;
+  color: #F9F9F9;
   display: block;
 }
 
 .light-wire:hover {
-  box-shadow: 8px 8px #E9DAD1;
+  box-shadow: 8px 8px #F5C049;
   transition: .3s;
 }
 
@@ -354,18 +357,33 @@ section {
   color: #FDF8F4;
 }
 
+#footer-icon {
+  height: 1.2em;
+  vertical-align: top;
+  width: 1.2em;
+}
+
 footer {
-  background-color: #7D7D7E;
-  padding-top: 9.6rem;
+  background-color: #414344;
+  /* padding-top: 9.6rem; */
   text-align: center;
+}
+
+#footer-gear {
+  max-width: 30%;
+  padding: 4rem 0;
 }
 
 footer p {
   padding-bottom: 3.6rem;
 }
 
-.footer-btn {
-  margin: 0 0 6.4rem 0;
+#footer-btn-container {
+  margin: 1.2rem 0 6.4rem 0;
+}
+
+#footer-btn {
+  letter-spacing: .15rem;
 }
 
 .footer-icon {
@@ -706,8 +724,8 @@ footer p {
 }
 
 .case-study h1 {
-  font-size: 2.4rem;
-  line-height: 130%;
+  font-size: 3.6rem;
+  /* line-height: 130%; */
 }
 
 .case-study h2 {
@@ -733,6 +751,7 @@ footer p {
   color: #2A3636;
   display: inline-block;
   font: normal 1.2rem "Lato";
+  letter-spacing: .02rem;
   padding: .6rem 1rem;
   margin: 0 1rem 1rem 0;
   text-transform: uppercase;
@@ -743,43 +762,51 @@ footer p {
   /* padding: 0; */
 }
 
-.featured-work {
+#featured-work {
   font-size: 2.4rem;
   margin: 3.6rem;
   text-align: center;
 }
 
+.hex {
+  display: block;
+  margin: 0 auto;
+}
+
 .project-title {
   font-weight: 700;
-  font-size: 2.4rem;
+  margin-bottom: 0;
 }
 
 .project-brief {
   margin-top: 1.2rem;
+  padding-bottom: 1rem;
+}
+
+#recent-work {
+  margin: 1.2rem 0;
 }
 
 /* ------SKILLS SECTION------ */
 
-.designer {
-  background: rgb(98,103,105);
-  background: linear-gradient(321deg, rgba(98,103,105,1) 1%, rgba(125,125,126,1) 100%);
+#designer {
+  background-color: #414344;
+}
+
+#skills-container{
+  margin: 0 auto;
+  max-width: 806px;
+  width: 60%;
+}
+
+.skill-type {
+  padding-top: 3.2rem;
+}
+
+#skills-flex {
   text-align: center;
 }
 
-.skill-icon {
-  color: #C4C4C4;
-  font-size: 6.4rem;
-  padding: 3.6rem 0 2.0rem 0;
-}
-
-.skills-content-box{
-  margin: 0 auto;
-  width: 80%;
-}
-
-.skills i {
-  padding: 3.6rem 0 2.0rem 0;
-}
 
 /* ------TESTIMONIAL SECTION------ */
 
@@ -1197,14 +1224,6 @@ input[type=text],input[type=email] textarea {
     padding: 0 4.8rem;
   }
 
-  .skills-content-box {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    width: 90%;
-    align-items: center;
-  }
-
 
     /* ------TESTIMONIAL SECTION------*/
 
@@ -1219,12 +1238,21 @@ input[type=text],input[type=email] textarea {
 
   footer .content-box {
     /* margin: 0 auto; */
-    width: 35%;
+    /* width: 50%; */
   }
 
   .narrow-tablet {
     width: 50%;
   }
+
+  /* -----FOOTER------*/
+
+
+  #footer-gear {
+    max-width: 10%;
+    padding: 5rem 0 2rem 0;
+  }
+
 
    /* ABOUT PAGE */
 
@@ -1256,11 +1284,6 @@ input[type=text],input[type=email] textarea {
     /* line-height: 135%; */
   }
 
-  h4, h5, h6, p {
-    font-family: "Lato";
-    font-style: normal;
-    letter-spacing: .06rem;
-  }
 
   h4 {
     font-weight: bold;
@@ -1335,10 +1358,16 @@ input[type=text],input[type=email] textarea {
 
   /*----------------------FOOTER----------------------*/
 
-    .footer-btn .content-box-narrow {
+    #footer-btn-container .content-box-narrow {
       width: inherit;
     }
 
+
+    #footer-gear {
+      max-width: 300px;
+      padding: 7rem 0 2rem 0;
+      width: 10%;
+    }
 
   /*----------------------INDEX.HTML PAGE----------------------*/
 
@@ -1488,9 +1517,9 @@ input[type=text],input[type=email] textarea {
      max-width: 1024px;
    }
 
-   .featured-work {
+   /* #featured-work {
      font-size: 3.6rem;
-   }
+   } */
 
   #paragraph-end-case-study-desktop {
     margin-bottom: 0;
@@ -1503,103 +1532,33 @@ input[type=text],input[type=email] textarea {
     padding: 0 0 2.0rem 0;
   }
 
-  .skills {
-    padding: 0 4.8rem;
-  }
-
-  .skills h6 {
-    font-size: 2.4rem;
-    text-transform: inherit;
-  }
-
-  .skills-content-box {
-    display: grid;
-    /* grid-gap: 4.8rem; */
-    grid-template-columns: repeat(4, 25%);
-    grid-template-rows: auto;
-    padding-top: 3.6rem;
-    width: 80%;
-  }
-
-  .skills-content-box p {
-    padding: 1rem 1.8rem 1rem 1.8rem;
-  }
-
    #skills-description {
      font-weight: normal;
+     padding-top: 0;
    }
 
-  .skills-item1 {
-    align-items: center;
-    grid-column: 1;
-    grid-row: 1;
-  }
+   #skills-flex {
+     display: grid;
+     grid-gap: 0 3rem;
+     grid-template-columns: 1.5fr 2fr;
+     grid-template-rows: auto;
+     margin: 0 auto;
+     align-items: center;
+     justify-self: center;
+     text-align: left;
+     padding-top: 4rem;
+   }
 
-  .skills-item2 {
-    align-items: center;
-    grid-column: 1;
-    grid-row: 2;
-  }
+   .skill-description {
+     margin-top: 0.2rem;
+   }
 
-  .skills-item3 {
-    align-self: baseline;
-    grid-column: 1;
-    grid-row: 3;
-  }
-
-  .skills-item4 {
-    align-items: center;
-    grid-column: 2;
-    grid-row: 1;
-  }
-
-  .skills-item5 {
-    align-items: center;
-    grid-column: 2;
-    grid-row: 2;
-  }
-
-  .skills-item6 {
-    align-self: baseline;
-    grid-column: 2;
-    grid-row: 3;
-  }
-
-  .skills-item7 {
-    align-items: center;
-    grid-column: 3;
-    grid-row: 1;
-  }
-
-  .skills-item8 {
-    align-items: center;
-    grid-column: 3;
-    grid-row: 2;
-  }
-
-  .skills-item9 {
-    align-self: baseline;
-    grid-column: 3;
-    grid-row: 3;
-  }
-
-  .skills-item10 {
-    align-items: center;
-    grid-column: 4;
-    grid-row: 1;
-  }
-
-  .skills-item11 {
-    grid-column: 4;
-    grid-row: 2;
-  }
-
-  .skills-item12 {
-    align-self: baseline;
-    grid-column: 4;
-    grid-row: 3;
-  }
-
+   .skill-type {
+     align-self: start;
+     margin-top: 0;
+     padding-top: 0;
+     text-align: right;
+   }
 
 /* TESTIMONIAL */
 

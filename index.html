@@ -3,7 +3,7 @@
  <head>
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1">
-   <title>Portfolio | Andie Kolbeck</title>
+   <title>Andie Kolbeck | UX/UI</title>
    <link rel="stylesheet" type="text/css" href="css/style.css">
    <link rel="stylesheet" type="text/css" href="css/normalize.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
@@ -14,6 +14,7 @@
    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,400&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="https://use.typekit.net/swg8nfb.css">
    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.1.0/css/line-awesome.min.css">
+   <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
  </head>
  <body>
    <div class="container top-background">
@@ -40,8 +41,8 @@
       <article id="hero-container">
         <section id="hero-section">
           <!-- <h1 class="hello animated fadeInUp light-text">Hello!</h1> -->
-          <h1 class="animated fadeIn light-text display-desktop" id="hero-title"><span class="yellow">Hello.</span> I'm Andie Kolbeck, a UX/UI designer<br>from San Francisco.</h1>
-          <h1 class="animated fadeIn light-text display-mobile" id="hero-title"><span class="yellow">Hello.</span> I'm Andie Kolbeck, a UX/UI designer from San Francisco.</h1>
+          <h1 class="animated fadeIn light-text display-desktop" id="hero-title"><span class="yellow">Hello.</span> I'm Andie Kolbeck, a UX/UI designer<br>from the San Francisco Bay Area.</h1>
+          <h1 class="animated fadeIn light-text display-mobile" id="hero-title"><span class="yellow">Hello.</span> I'm Andie Kolbeck, a UX/UI designer from the San Francisco Bay Area.</h1>
           <h3 class="animated fadeIn light-text" id="hero-intro">I design creative, accessible, and scalable experiences, drawing on nearly a decade of experience in marketing and anthropology.</h3>
           <!-- <h4 class="animated fadeIn hero-statement light-text">I design friendly, inclusive, and beautiful user experiences, grounded in the stories of the people they serve.</h4> -->
           <!-- <h4 class="animated fadeIn display-mobile hero-statement light-text">I design friendly, inclusive, and beautiful user experiences, grounded in the stories of the people they serve.</h4> -->
@@ -58,7 +59,10 @@
     </div>
     <!-- Case Study Section -->
     <section id="work-section">
-      <h1 class="featured-work">Recent Work</h1>
+      <div id="featured-work">
+        <img class="hex" src="/images/hex-dark.svg">
+        <h1 id="recent-work">Recent Work</h1>
+      </div>
     </section>
     <section class="case-study" data-aos="fade-up" id="case-study-gh">
       <div class="case-study-image display-mobile">
@@ -66,8 +70,8 @@
       </div>
       <article class="content-box-narrow">
           <div>
-            <h6 class="project-title">GoodHarvest</h6>
-            <h2 class="project-brief">Making Seasonal Eating a Snap</h2>
+            <h1 class="project-title">goodharvest</h1>
+            <p class="project-brief">Making Seasonal Eating a Snap</p>
             <ul class="category-tag-container display-desktop">
               <li>User Research</li>
               <li>UX Design</li>
@@ -88,8 +92,8 @@
       </div>
       <article class="content-box-narrow">
           <div>
-            <h6 class="project-title">Chroma</h6>
-            <h2 class="project-brief">Cloud Storage for Digital Creatives</h2>
+            <h1 class="project-title">chroma</h1>
+            <p class="project-brief">Cloud Storage for Digital Creatives</p>
             <ul class="category-tag-container display-desktop">
               <li>User Research</li>
               <li>UX Design</li>
@@ -102,54 +106,27 @@
       </article>
     </section>
     <!-- Skills Section -->
-    <section class="designer display-desktop light-text"  data-aos="fade-up">
-        <h2>Full Stack Designer</h2>
-        <h4 class="display-desktop" id="skills-description">I can take your project from wild idea to live code.</h4>
-        <p class="display-mobile">I can take your project<br> from wild idea to live code.</p>
-        <article class="skills-content-box">
-            <i class="skill-icon la la-search skills-item1"></i>
-            <h6 class="skills-item2">Research</h6>
-            <p class="skills-item3">Define the problem, create a strategy, collect user research, and analyze the competitive marketplace</p>
-            <i class="skill-icon las la-sitemap skills-item4"></i>
-            <h6 class="skills-item5">Information Architecture</h6>
-            <p class="skills-item6">Create user stories and flows, outline content, build wireframes, perform usability tests</p>
-            <i class="skill-icon las la-palette skills-item7"></i>
-              <h6 class="skills-item8">Visual Design</h6>
-              <p class="skills-item9">Create the visual direction, develop branding & style guides, build high fidelity mockups</p>
-            <i class="skill-icon las la-laptop-code skills-item10"></i>
-            <h6 class="skills-item11">Develop</h6>
-            <p class="skills-item12">Develop functional prototype with HTML + CSS + javascript, deploy into test environment for review and user testing</p>
-        </article>
-    </section>
-    <section class="designer display-mobile light-text">
-        <h2>Full Stack Designer</h2>
-        <h4 class="display-desktop">I can take your project from wild idea to live code.</h4>
-        <p class="display-mobile">I can take your project<br> from wild idea to live code.</p>
-        <div class ="skills-content-box">
-          <article class="skills">
-            <i class="skill-icon la la-search skills-item1"></i>
-            <h6 class="skills-item2">Research</h6>
-            <p class="skills-item3">Define the problem, create a strategy, collect user research, and analyze the competitive marketplace</p>
-          </article>
-          <article class="skills">
-            <i class="skill-icon las la-sitemap skills-item4"></i>
-            <h6 class="skills-item5">Information Architecture</h6>
-            <p class="skills-item6">Create user stories and flows, outline content, build wireframes, perform usability tests</p>
-          </article>
-          <article class="skills">
-            <i class="skill-icon las la-palette skills-item7"></i>
-              <h6 class="skills-item8">Design</h6>
-              <p class="skills-item9">Create the visual direction, develop branding & style guides, build high fidelity mockups</p>
-          </article>
-          <article class="skills">
-            <i class="skill-icon las la-laptop-code skills-item10"></i>
-            <h6 class="skills-item11">Develop</h6>
-            <p class="skills-item12">Develop functional prototype with HTML + CSS + javascript, deploy into test environment for review and user testing</p>
-          </article>
+    <section id="designer" class="light-text"  data-aos="fade-up">
+        <img class="hex" src="/images/hex-yellow.svg">
+        <h2 class="centered">Full Stack Designer</h2>
+        <div id="skills-container">
+          <div id="skills-flex">
+            <h4 class="skill-type">Research</h4>
+            <p class="skill-description">Define the problem, get to know the users, and analyze the marketplace</p>
+            <h4 class="skill-type">Information Architecture</h4>
+            <p class="skill-description">Create a content map with maximum usability using user flows, wireframes, and heuristics</p>
+            <h4 class="skill-type">Visual Design</h4>
+            <p class="skill-description">Construct a visual identity, compelling brand imagery, and beautiful mockups</p>
+            <h4 class="skill-type">Development</h4>
+            <p class="skill-description">Build live demos & landing pages using CSS3 & Bootstrap</p>
+            <h4 class="skill-type">Collaboration</h4>
+            <p class="skill-description">Leveraging divergant thinking for creative ideation and better deliverables</p>
+          </div>
         </div>
     </section>
     <section id="testimonial">
       <div class="content-box-narrow content-box-narrow-desktop" id="testimonial-container">
+        <!-- <h2 class="centered">Words of Praise</h2> -->
         <p id="statement">“Andie is one of those rare UX students that seems to be good at anything. As her UX Design mentor at Thinkful, I have seen Andie grow to become a capable, confident & proactive designer. She is able to turn an abstract concept into seamless memorable experiences that captivate users and meets business requirements. She has mastered the whole UX process from research to design and prototyping. She is a real catch for anyone looking for a hard-working, fast learning designer."</p>
         <h6>Mike Dekker</h6>
         <p id="mentor">BLOC, San Francisco</p>
@@ -157,19 +134,19 @@
     </section>
  <!-- Footer Section -->
      <footer>
-       <h2 class="light-text">Let’s Build Something Incredible.</h2>
-       <p class="content-box light-text">Get in touch and say hello! Like my work, or just want to grab a cup of coffee and talk UX? Let’s connect!</p>
-       <div class="footer-btn">
-         <a class ="btn gold content-box-narrow" href="/contact">Contact Me</a>
+       <img id="footer-gear" src="/images/gear-yellow.svg">
+       <h2 class="light-text">Let’s build something <span class="yellow">together.</span></h2>
+       <p class="content-box light-text">I’m currently taking on new clients for freelance work.</br>Get in touch if you’d like to collaborate on fun or innovative products<i class="em em-v" id="footer-icon" aria-role="presentation" aria-label="VICTORY HAND"></i></p>
+       <div id="footer-btn-container">
+         <a class ="btn light-wire content-box-narrow" id="footer-btn" href="/contact">Contact</a>
        </div>
        <ul class="social-container">
-         <li class="social-icons"><a href="mailto:kolbecka@gmail.com" target="_blank"><i class="footer-icon la la-envelope"></i></a> </li>
-         <li class="social-icons"><a href="https://www.linkedin.com/in/andiekolbeck/" target="_blank"><i class="footer-icon lab la-linkedin-in"></i></a></li>
          <li class="social-icons"><a href="https://dribbble.com/kolbecka"><i class="footer-icon lab la-dribbble"></i></a></li>
+         <li class="social-icons"><a href="https://www.linkedin.com/in/andiekolbeck/" target="_blank"><i class="footer-icon lab la-linkedin-in"></i></a></li>
          <!-- <li class="social-icons"><a href="https://twitter.com/the___andiest"><i class="footer-icon la la-twitter"></i></a></li> -->
          <li class="social-icons"><a href="https://unsplash.com/@kolbecka" target="_blank"><i class="footer-icon la la-camera"></i></a></li>
        </ul>
-       <p class="content-box copyright">©2019 Andie Kolbeck | Designed & Developed by Andie Kolbeck</p>
+       <p class="content-box copyright">©2020 Andie Kolbeck | Designed & Developed by Andie Kolbeck</p>
      </footer>
    <!-- Global site tag (gtag.js) - Google Analytics -->
    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154123395-1"></script>
