@@ -9,29 +9,36 @@
    <!-- favicon -->
    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
    <!-- fonts -->
-   <link href="https://fonts.googleapis.com/css?family=Archivo:400,700%7CWork+Sans:400,700&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,400&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.1.0/css/line-awesome.min.css">
    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://use.typekit.net/swg8nfb.css">
+
  </head>
  <body>
-   <header class="top-spacing">
-     <nav class="nav-content-box nav-align">
-       <a class="display-desktop" href="/"><img class="logo" id="light-desktop-logo" src="../images/logo-desktop.png" alt="andie kolbeck logo"></a>
-       <a class="display-mobile" href="/"><img class="logo" src="../images/logo-1x.png" alt="andie kolbeck logo"></a>
-       <ul class="nav-links">
-         <li><a class="nav-link-contrast" href="/#work-section">Work</a></li>
-         <li><a class="nav-link-contrast" href="/about">About</a></li>
-         <li><a class="nav-link-contrast" href="https://drive.google.com/file/d/1BxA1tak__MXbmgVsDsG_dRSucpfSAzNl/view?usp=sharing" target="_blank">Resume</a></li>
-         <li><a class="display-desktop nav-link-contact-dark" id="active-nav" href="/contact">Contact</a></li>
-         <li><a class="display-mobile" href="/contact"><i class="nav-link-contrast las la-envelope" id="nav-icon-active"></i></a></li>
-       </ul>
-     </nav>
+   <header>
+     <div id="contact-header">
+       <nav class="nav-content-box nav-align">
+         <div id="logo-box">
+           <a href="/">
+             <img class="logo logo-block" src="/images/hex-logo.svg" alt="andie kolbeck logo">
+             <h3 class="logo-block" id="logo-name">Andie Kolbeck</h3>
+           </a>
+         </div>
+         <!-- <a class="display-mobile" href="/"><img class="logo" src="images/logo-white-1x.png" alt="andie kolbeck logo"></a> -->
+         <ul class="nav-links">
+           <li><a class="nav-link-light" href="/#work-section">Work</a></li>
+           <li><a class="nav-link-light" href="/about">About</a></li>
+           <li><a class="nav-link-light" href="https://drive.google.com/file/d/1j7Eyzws20njhyXx6ENvK2kWYzQ493dKM/view?usp=sharing" target="_blank">Resume</a></li>
+           <li><a class="nav-link-light" id="contact-yellow" href="/contact">Contact</a></li>
+           <!-- <li><a class="display-mobile" href="/contact"><img src="images/mail.svg" id="nav-icon-light"></img></a></li> -->
+         </ul>
+       </nav>
+     </div>
    </header>
    <div class="content-box">
-     <h2 class="centered"> Let's chat!</h2>
-     <p class="centered contact-me-text contact-me-top">Get in touch and say hello!</p>
-     <p class="centered contact-me-text">I'm always happy to talk about working together, new opportunities, or just catching up over coffee.</p>
-     <p class="centered contact-me-text">If you'd like to get in touch, just fill out the form or send me an <a class="contact-link" href="mailto:kolbecka@gmail.com">email</a>.</p>
+     <h2 class="centered"> Let's connect!</h2>
+     <p class="centered contact-me-text contact-me-top">Get in touch and say hello <i class="em em-wave" id="wave" aria-role="presentation" aria-label="WAVING HAND SIGN"></i></br> If you'd like to get in touch, just fill out the form below.</p>
        <div class="contact-container">
         <form
           action="https://formspree.io/mbjlzvqn"
@@ -40,19 +47,24 @@
           <input type="text" name="name" placeholder="Full name">
           <input type="text" name="_replyto" placeholder="Email address">
           <textarea type="text" id="message-box" textarea name="message" rows="5" cols="33" placeholder="Hey Andie, I'm interested in chatting about a role we have available..."></textarea>
-        <button class="btn black contact-btn" type="submit">Send Message</button>
+        <button class="btn wire" id="send-message" type="submit">Send Message</button>
         </form>
       </div>
     </div>
-    <footer id="contact-footer">
+    <footer>
+      <img id="footer-gear" src="/images/gear-yellow.svg">
+      <h2 class="light-text">Let’s build something <span class="yellow">together.</span></h2>
+      <p class="content-box light-text">I’m currently taking on new clients for freelance work.</br>Get in touch if you’d like to collaborate on fun or innovative products<i class="em em-v" id="footer-icon" aria-role="presentation" aria-label="VICTORY HAND"></i></p>
+      <div id="footer-btn-container">
+        <a class ="btn light-wire content-box-narrow" id="footer-btn" href="/contact">Contact</a>
+      </div>
       <ul class="social-container">
-        <li class="social-icons"><a href="mailto:kolbecka@gmail.com" target="_blank"><i class="footer-icon-contact la la-envelope"></i></a> </li>
-        <li class="social-icons"><a href="https://www.linkedin.com/in/andiekolbeck/" target="_blank"><i class="footer-icon-contact lab la-linkedin-in"></i></a></li>
         <li class="social-icons"><a href="https://dribbble.com/kolbecka"><i class="footer-icon lab la-dribbble"></i></a></li>
+        <li class="social-icons"><a href="https://www.linkedin.com/in/andiekolbeck/" target="_blank"><i class="footer-icon lab la-linkedin-in"></i></a></li>
         <!-- <li class="social-icons"><a href="https://twitter.com/the___andiest"><i class="footer-icon la la-twitter"></i></a></li> -->
-        <li class="social-icons"><a href="https://unsplash.com/@kolbecka" target="_blank"><i class="footer-icon-contact la la-camera"></i></a></li>
+        <li class="social-icons"><a href="https://unsplash.com/@kolbecka" target="_blank"><i class="footer-icon la la-camera"></i></a></li>
       </ul>
-      <p class="content-box copyright">©2019 Andie Kolbeck | Designed & Developed by Andie Kolbeck</p>
+      <p class="content-box copyright">©2020 Andie Kolbeck | Designed & Developed by Andie Kolbeck</p>
     </footer>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154123395-1"></script>

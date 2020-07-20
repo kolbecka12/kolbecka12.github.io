@@ -11,33 +11,61 @@
    <!-- favicon -->
    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
    <!-- fonts -->
-   <link href="https://fonts.googleapis.com/css?family=Archivo:400,700%7CWork+Sans:400,600%7CKarla:400,700%7CPalanquin&display=swap" rel="stylesheet">
+   <!-- <link href="https://fonts.googleapis.com/css?family=Archivo:400,700%7CWork+Sans:400,600%7CKarla:400,700%7CPalanquin&display=swap" rel="stylesheet"> -->
+   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,400&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://use.typekit.net/swg8nfb.css">
+   <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.1.0/css/line-awesome.min.css">
    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
    <script src="script.js"></script>
 </head>
  <body>
   <!-- <div class="container"> -->
-   <header class="top-spacing">
-     <nav class="nav-content-box nav-align">
-       <a class="display-desktop" href="/"><img class="logo" id="light-desktop-logo" src="../images/logo-desktop.png" alt="andie kolbeck logo"></a>
-       <a class="display-mobile" href="/"><img class="logo" src="../images/logo-1x.png" alt="andie kolbeck logo"></a>
-       <ul class="nav-links">
-         <li><a class="nav-link-contrast" href="/#work-section">Work</a></li>
-         <li><a class="nav-link-contrast" href="/about">About</a></li>
-         <li><a class="nav-link-contrast" href="https://drive.google.com/file/d/1BxA1tak__MXbmgVsDsG_dRSucpfSAzNl/view?usp=sharing" target="_blank">Resume</a></li>
-         <li><a class="display-desktop nav-link-contact-dark" href="/contact">Contact</a></li>
-         <li><a class="display-mobile" href="/contact"><i class="nav-link-contrast las la-envelope" id="nav-icon-dark"></i></a></li>
-       </ul>
-     </nav>
-   </header>
+  <!-- <header>
+    <div id="contact-header">
+      <nav class="nav-content-box nav-align">
+        <div id="logo-box">
+          <a href="/">
+            <img class="logo logo-block" src="/images/hex-logo.svg" alt="andie kolbeck logo">
+            <h3 class="logo-block" id="logo-name">Andie Kolbeck</h3>
+          </a>
+        </div>
+        <ul class="nav-links">
+          <li><a class="nav-link-light" href="/#work-section">Work</a></li>
+          <li><a class="nav-link-light" href="/about">About</a></li>
+          <li><a class="nav-link-light" href="https://drive.google.com/file/d/1j7Eyzws20njhyXx6ENvK2kWYzQ493dKM/view?usp=sharing" target="_blank">Resume</a></li>
+          <li><a class="nav-link-light" id="contact-light" href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header> -->
+<div class="container top-background" id="contact-header">
+  <header id="contact-header">
+    <nav class="nav-content-box nav-align">
+      <div id="logo-box">
+        <a href="/">
+          <img class="logo logo-block" src="/images/hex-logo.svg" alt="andie kolbeck logo">
+          <h3 class="logo-block" id="logo-name">Andie Kolbeck</h3>
+        </a>
+      </div>
+      <!-- <a class="display-mobile" href="/"><img class="logo" src="images/logo-white-1x.png" alt="andie kolbeck logo"></a> -->
+      <ul class="nav-links">
+        <li><a class="nav-link-light" href="/#work-section">Work</a></li>
+        <li><a class="nav-link-light" href="/about">About</a></li>
+        <li><a class="nav-link-light" href="https://drive.google.com/file/d/1j7Eyzws20njhyXx6ENvK2kWYzQ493dKM/view?usp=sharing" target="_blank">Resume</a></li>
+        <li><a class="nav-link-light" id="contact-light" href="/contact">Contact</a></li>
+        <!-- <li><a class="display-mobile" href="/contact"><img src="images/mail.svg" id="nav-icon-light"></img></a></li> -->
+      </ul>
+    </nav>
+  </header>
+</div>
    <main>
        <section class="centered">
          <div class="content-box-medium" id="chroma-top">
            <img class="animated fadeIn" id="gh-logo" src="../images/gh-logo.png" alt="goodharvest logo">
            <h2 class="animated fadeInUp display-desktop">Making Seasonal Eating a Snap.</h2>
            <h2 class="display-mobile">Making Seasonal Eating</br>a Snap.</h2>
-           <h3 class="animated fadeInUp display-desktop">Discover delicious, seasonal foods at your local market, and bring your produce from cart to kitchen with recipes curated for your unique lifestyle</h3>
+           <p class="animated fadeInUp display-desktop">Discover delicious, seasonal foods at your local market, and bring your produce from cart to kitchen with recipes curated for your unique lifestyle</p>
            <p class="display-mobile">Discover seasonal, local foods in your city with recipes curated for your unique lifestyle.</p>
            <div class="animated fadeInUp content-box-medium centered" id="top-button">
              <a class ="btn black" href="https://www.figma.com/proto/CPlbAt5zoNeJbhbJnVX72C/GoodHarvest-Hifi-v4?node-id=13%3A385&viewport=739%2C1607%2C0.5&scaling=scale-down" target="_blank">View Prototype</a>
@@ -46,9 +74,9 @@
       </section>
     <section id="chroma-hero">
          <img class="case-study-hero display-mobile" src="../images/gh-hero-header-mobile.png" alt="view of chroma cloud storage app screens">
-         <img class="animated fadeInUp case-study-hero display-desktop" src="../images/gh-hero-header.png" alt="view of colorful app screens">
+         <img class="case-study-hero display-desktop" src="../images/gh-hero-header.png" alt="view of colorful app screens">
        </section>
-     <div class="animated fadeInUp display-desktop" id="case-study-nav">
+     <div class="display-desktop" id="case-study-nav">
         <ul>
           <li><a href="#gh-one">Research</a></li>
           <li><a href="#gh-two">Information Architecture</a></li>
@@ -607,19 +635,19 @@
       </section>
      </main>
      <footer>
-       <h2 class="light-text">Let’s Build Something Incredible.</h2>
-       <p class="content-box light-text">Get in touch and say hello! Like my work, or just want to grab a cup of coffee and talk UX? Let’s connect!</p>
-       <div class="footer-btn">
-         <a class ="btn gold content-box-narrow" href="/contact">Contact Me</a>
+       <img id="footer-gear" src="/images/gear-yellow.svg">
+       <h2 class="light-text">Let’s build something <span class="yellow">together.</span></h2>
+       <p class="content-box light-text">I’m currently taking on new clients for freelance work.</br>Get in touch if you’d like to collaborate on fun or innovative products<i class="em em-v" id="footer-icon" aria-role="presentation" aria-label="VICTORY HAND"></i></p>
+       <div id="footer-btn-container">
+         <a class ="btn light-wire content-box-narrow" id="footer-btn" href="/contact">Contact</a>
        </div>
        <ul class="social-container">
-         <li class="social-icons"><a href="mailto:kolbecka@gmail.com" target="_blank"><i class="footer-icon la la-envelope"></i></a></li>
-         <li class="social-icons"><a href="https://www.linkedin.com/in/andiekolbeck/" target="_blank"><i class="footer-icon lab la-linkedin-in"></i></a></li>
          <li class="social-icons"><a href="https://dribbble.com/kolbecka"><i class="footer-icon lab la-dribbble"></i></a></li>
+         <li class="social-icons"><a href="https://www.linkedin.com/in/andiekolbeck/" target="_blank"><i class="footer-icon lab la-linkedin-in"></i></a></li>
          <!-- <li class="social-icons"><a href="https://twitter.com/the___andiest"><i class="footer-icon la la-twitter"></i></a></li> -->
          <li class="social-icons"><a href="https://unsplash.com/@kolbecka" target="_blank"><i class="footer-icon la la-camera"></i></a></li>
        </ul>
-       <p class="content-box copyright">©2019 Andie Kolbeck | Designed & Developed by Andie Kolbeck</p>
+       <p class="content-box copyright">©2020 Andie Kolbeck | Designed & Developed by Andie Kolbeck</p>
      </footer>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->

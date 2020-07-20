@@ -393,7 +393,7 @@ footer p {
 }
 
 .footer-icon:hover {
-  color: #2A3636;
+  color: #F5C049;
 }
 
 .footer-icon-contact {
@@ -402,7 +402,7 @@ footer p {
 }
 
 .footer-icon-contact:hover {
-  color: #2A3636;
+  color: #F5C049;
 }
 
 
@@ -986,6 +986,11 @@ footer p {
   width: 60%;
 }
 
+#more-about-container {
+  margin: 0 auto;
+  padding: 4rem 0;
+  width: 85%;
+}
 
 .photo-gallery {
   padding-top: 1rem;
@@ -1059,6 +1064,17 @@ footer p {
   color: grey;
 }
 
+#contact-header {
+  background: #414344;
+  padding: 4rem 0;
+  margin-bottom: 10rem;
+}
+
+/* #contact-top-spacing {
+  padding: 4rem 0;
+  margin-top: 0;
+} */
+
 /* #contact-footer i {
   color: grey;
 } */
@@ -1085,6 +1101,18 @@ footer p {
 .contact-parent {
   padding: 3.6rem;
 }
+
+#wave {
+  height: 1.2em;
+  vertical-align: top;
+  width: 1.2em;
+}
+
+#send-message {
+  display: block;
+  margin: 0 auto;
+}
+
 
 input[type=text] {
   background-image: none;
@@ -1178,6 +1206,14 @@ input[type=text],input[type=email] textarea {
     margin: 0 auto;
     width: 55%;
   }
+
+
+#contact-yellow {
+  border: 1px solid #F5C049;
+  padding: .5rem 1rem;
+  color: #F5C049;
+  margin: 1rem;
+}
 
     /* ------NAV BAR------*/
 
@@ -1360,7 +1396,7 @@ input[type=text],input[type=email] textarea {
 
   .btn {
     display: inline-block;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     padding: 1rem 2rem;
   }
 
@@ -1444,11 +1480,12 @@ input[type=text],input[type=email] textarea {
 
   #hero-intro {
     animation-duration: 4s;
-    animation-delay: 2s;
+    animation-delay: 1s;
     font-size: 2.4rem;
     line-height: 145%;
     margin-bottom: 3.6rem;
   }
+
 
   .hero-left-btn {
     display: inline-block;
@@ -1633,6 +1670,11 @@ input[type=text],input[type=email] textarea {
     grid-gap: 0 10rem;
   }
 
+  .about-intro-p {
+    animation-duration: 2s;
+    animation-delay: 1s;
+  }
+
   #about-start {
     animation-duration: 1s;
     animation-delay: 3.5s;
@@ -1768,6 +1810,7 @@ input[type=text],input[type=email] textarea {
     max-width: 80%;
     grid-gap: 0 10rem;
     row-gap: 15rem;
+    padding: inherit;
   }
 
   .left-align {
