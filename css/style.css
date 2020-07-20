@@ -365,7 +365,6 @@ section {
 
 footer {
   background-color: #414344;
-  /* padding-top: 9.6rem; */
   text-align: center;
 }
 
@@ -1208,12 +1207,12 @@ input[type=text],input[type=email] textarea {
   }
 
 
-#contact-yellow {
-  border: 1px solid #F5C049;
-  padding: .5rem 1rem;
-  color: #F5C049;
-  margin: 1rem;
-}
+  #contact-yellow {
+    border: 1px solid #F5C049;
+    padding: .5rem 1rem;
+    color: #F5C049;
+    margin: 1rem;
+  }
 
     /* ------NAV BAR------*/
 
@@ -1233,7 +1232,6 @@ input[type=text],input[type=email] textarea {
 
   #logo-box {
     display: inline-block;
-    /* text-align: center; */
   }
 
   .nav-link-dark {
@@ -1299,14 +1297,6 @@ input[type=text],input[type=email] textarea {
   }
 
 
-   /* ABOUT PAGE */
-
-   #large-leaf-mobile {
-     left: -55px;
-     right: 0;
-     top: 650px;
-     width: 60%;
-   }
 
 }
 
