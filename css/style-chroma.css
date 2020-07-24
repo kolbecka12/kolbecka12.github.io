@@ -67,7 +67,7 @@ h3 {
 h4, h5, h6, p, li, blockquote {
   font-family: "Lato";
   font-style: normal;
-  letter-spacing: .06rem;
+  letter-spacing: .01rem;
 }
 
 h4 {
@@ -1504,11 +1504,6 @@ ol {
     /* max-width: 85%; */
   }
 
-  #chroma-top img {
-    animation-duration: 3s;
-    animation-delay: .2s;
-    max-width: 100%;
-   }
 
    #chroma-top h2 {
      animation-duration: 2s;
@@ -1520,6 +1515,13 @@ ol {
     animation-delay: .8s;
     padding-bottom: 2.4rem;
   }
+
+  #chroma-top img {
+    animation-duration: 3s;
+    animation-delay: .2s;
+    max-width: 100%;
+   }
+
 
 .hero-button-container {
     animation-duration: 2s;
@@ -1570,6 +1572,10 @@ ol {
     font-weight: 700;
   }
 
+  #tagline {
+    font-size: 2.8rem;
+  }
+
 
     /* PROBLEM/SOLUTION BLOCK */
 
@@ -1605,7 +1611,7 @@ ol {
   }
 
   #design-process p{
-    font-size: 3.6rem;
+    font-size: 2.8rem;
     padding-bottom: 0;
   }
 
@@ -1721,9 +1727,6 @@ ol {
 
   /*PT 2: COMPETITIVE ANALYSIS*/
 
-  .section-title {
-    font-size: 2.4rem;
-  }
 
   #chroma-pt2 {
     padding: inherit;
