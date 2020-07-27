@@ -214,6 +214,11 @@ ul {
 
 /*----------------------HIGH LEVEL STRUCTURE---------------------- */
 
+.btn-container {
+  margin: 0 auto;
+  width: 80%;
+}
+
 .container {
   display: grid;
 }
@@ -839,8 +844,13 @@ footer p {
 
 #chroma-pt3 .motivations {
   color: black;
-  font-weight: bold;
+  font-weight: bold
 }
+
+#user-flow-btn {
+  padding-top: 2rem;
+}
+
 
 .user-profile {
   padding-bottom: 3.6rem;
@@ -1048,6 +1058,10 @@ ol {
   padding: 2.4rem 0;
 }
 
+#mobile-proto-btn {
+  margin-top: 2rem;
+}
+
 /* CONCLUSION */
 
 #final-image {
@@ -1107,33 +1121,6 @@ ol {
   margin: 3.6rem;
   text-align: center;
 }
-
-.link-special {
-	color: #000000;
-  /* display: inline-flex; */
-  font-family: Lato;
-	font-size: 1.5rem;
-  font-style: normal;
-	font-weight: normal;
-  padding: 0 10px 5px 10px;
-  position: relative;
-  text-align: center;
-	text-decoration: none;
-  z-index: 1;
-}
-
-.link-special::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(to top, #E9DAD1 25%, rgba(0, 0, 0, 0) 40%);
-
-  position: absolute;
-  left: 0;
-  bottom: 2px;
-  z-index: -1;
-}
-
 
 .grey-section {
   /* medium grey */
@@ -1406,6 +1393,10 @@ ol {
     padding-top: 10rem;
   }
 
+  .btn-container {
+    width: inherit;
+  }
+
   .content-box {
     margin: 0 auto;
     max-width: 1000px;
@@ -1542,8 +1533,6 @@ ol {
   }
 
   #case-study-nav {
-    animation-duration: 2s;
-    animation-delay: 1.6s;
     background: #565656;
     height: 10%;
     padding: 1.3rem 1.4rem;
@@ -1566,10 +1555,6 @@ ol {
 
   #case-study-nav a{
   color: inherit;
-  }
-
-  #case-study-nav li:hover {
-    font-weight: 700;
   }
 
   #tagline {
@@ -1998,41 +1983,34 @@ ol {
 
 /* SPECIAL LINKS */
 
-  .link-special {
-    font-size: 1.8rem;
-  }
+.link-special {
+  /* font-size: 2rem; */
+  color: #565656;
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px 5px;
+  position: relative;
+  z-index: 1;
 
-  .link-special::before{
-  	content: "";
-  	width: 100%;
-  	height: 100%;
-  	background-image: linear-gradient(to top, #E9DAD1 25%, rgba(0, 0, 0, 0) 40%);
+}
 
-  	position: absolute;
-  	left: 0;
-  	bottom: 2px;
-  	z-index: -1;
+.link-special:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #F5C049;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
 
-  	will-change: width;
-  	transform: rotate(-1deg);
-  	transform-origin: left bottom
-  }
-
-  .link-special:hover::before{
-  	width: 0;
-  }
-
-  /*
-  * animation styles
-  */
-
-  .link-special::before{
-  	transition: width .1s ease-out;
-  }
-
-  .link-special:hover::before{
-  	transition-duration: .15s;
-  }
+.link-special:hover:after {
+  width: 100%;
+  left: 0;
+}
 }
 
 /* Responsive for Wide Screens */
