@@ -128,6 +128,32 @@ ul {
 }
 
 
+/* ---------------------PADDING---------------------------- */
+.pt-5 {
+  padding-top: 5rem;
+}
+
+.pt-3 {
+  padding-top: 3rem;
+}
+
+.pb-5 {
+  padding-bottom: 5rem;
+}
+
+.pb-5 {
+  padding-bottom: 3rem;
+}
+
+.py-5 {
+  padding: 5rem 0;
+}
+
+.py-3 {
+  padding: 3rem 0;
+}
+
+
 /* ---------------------CSS ANIMATIONS---------------------------- */
 
 
@@ -903,6 +929,10 @@ footer p {
   text-align: center;
  }
 
+ #user-flows-mobile {
+   padding: 2rem 0
+ }
+
  #user-stories-mobile {
    padding: 2rem 0
  }
@@ -1349,6 +1379,16 @@ footer p {
 #gh-four img {
   padding-bottom: 3.6rem;
   width: 100%;
+}
+
+.moodboard {
+  padding-bottom: 5rem;
+}
+
+#palette {
+  margin: 0 auto;
+  padding: 4rem 0;
+  width: 90%;
 }
 
 #style-guide-link {
@@ -2060,36 +2100,6 @@ ol {
     width: 60%;
   }
 
-  /* PT 2 - INFORMATION ARCHETECTURE */
-
-
-  #emile-pt4 img {
-    padding: 4.8rem 0;
-    margin: 0 auto;
-  }
-
-  #emile-pt4 .link-container {
-    margin: 6.4rem;
-  }
-
-  #ia-top-stories {
-    padding-bottom: inherit;
-    width: inherit;
-  }
-
-  #ia-flows {
-    padding: inherit;
-    width: inherit;
-  }
-
-
-/* PT 3 - WIREFRAMING */
-
-
-  .wireframe-grid img {
-    display: block;
-    width: 80%;
-  }
 
 /* PT 4 - BRANDING */
 
@@ -2100,6 +2110,16 @@ ol {
 
 #style-guide-link {
   padding: 2.4rem 0;
+}
+
+.moodboard {
+  padding-bottom: 10rem;
+}
+
+#palette {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 4rem 0;
 }
 
 /* PT 5 - VISUAL DESIGN & TESTING */
@@ -2690,6 +2710,17 @@ ol {
     width: 60%;
   }
 
+  #user-flows-desktop {
+      width: 70%;
+      margin: 0 auto;
+      max-width: 923px;
+  }
+
+  #user-stories-desktop {
+      width: 70%;
+      margin: 0 auto;
+      max-width: 923px;
+  }
 
   .user-story-container {
     background-color: #E9DAD1;
@@ -2899,6 +2930,7 @@ ol {
   #logo-study {
     width: 60%;
   }
+
 
   #style-guide-link {
     padding: 0;
