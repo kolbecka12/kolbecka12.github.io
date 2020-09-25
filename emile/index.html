@@ -132,8 +132,8 @@
   <div class="content-box content-box-narrow-desktop">
     <p class="py-5">I also redesigned the user flows to better align with the requirements of the full-time school program.</p>
   </div>
-  <div class="light-section">
-    <img class="display-desktop py-5" id="user-flows-desktop" src="../images/emile-user-flow.png" data-aos="fade-up">
+  <div class="">
+    <img class="display-desktop" id="user-flows-desktop" src="../images/emile-user-flow.png" data-aos="fade-up">
     <img class="fill display-mobile" id="user-flows-mobile" src="../images/emile-user-flow.png" data-aos="fade-up">
   </div>
   <div class="content-box content-box-narrow-desktop centered link-container" id="profile-link">
@@ -158,7 +158,7 @@
     <img class="display-mobile fill py-3" src="../images/inter-type-mobile.png" alt="photo collage and color swatches" data-aos="fade-up">
   </div>
 </section>
-<section class="anchor" id="gh-two" data-aos="fade-up">
+<section class="anchor light-section" id="gh-three" data-aos="fade-up">
   <h6 class="centered tertiary-text">Part Three</h6>
   <h2 class="section-title">Iterating on the Wireframes and Hifi Mockups</h2>
   <div class="content-box content-box-narrow-desktop">
@@ -166,12 +166,88 @@
   </div>
   <img class="display-desktop fill"  src="../images/session-bldr-mockup.png" alt="photo collage and color swatches" data-aos="fade-up">
   <img class="display-mobile fill" src="../images/session-bldr-mockup-mobile.png" alt="photo collage and color swatches" data-aos="fade-up">
-
-
-
-
-
-
+  <div class="content-box content-box-narrow-desktop">
+    <h4 class="centered pt-5">Rethinking the Session Builder</h4>
+    <p>One of the most complex, yet central functions of the Emile app is the Session Builder. Tutors use this tool to assemble class sessions for individual students or groups made up of learning activities, mastery activities (such as in-class quizzes, where students demonstrate competence) and homework assignments.</p>
+    <p>Tutors plan out all of the activities for a specific class session <span class="italic">before</span> the class is held, using it as a road map for instruction.</p>
+    <p>After the class session, tutors return to the Session Builder to record how students performed in the mastery activities, as well as add or remove any activities that were or weren't covered due to available time.</p>
+    <p>When the Session Preview accurately depicts what was covered in a class session, the tutor can Publish the session. Only then is a record of the class session, the student's progress, and associated homework assignments or resources made available for the student and parent to see.</p>
+  </div>
+  <div class="prototype-grid wireframe-grid" data-aos="fade-up">
+    <img class="shadow-offset justify-center frame-comp" src="../images/old-session-bldr.png" alt="greyscale wireframe">
+    <p class="caption display-mobile paragraph-end">One of the low-fidelity mocks of the Session Builder I received at handoff.</p>
+    <img class="shadow-offset justify-center frame-comp" src="../images/old-session-bldr-edits.png" alt="greyscale wireframe">
+    <p class="caption display-desktop paragraph-end">One of the low-fidelity mocks of the Session Builder that I received at handoff.</p>
+    <p class="caption" id="test-three-two">It had a few problems.</p>
+  </div>
+  <div class="content-box content-box-narrow-desktop">
+    <p>One of the biggest issues with this layout is that users can intentionally or unintentionally exit the flow by clicking on any of these navigation elements.</p>
+    <p>The session-building progress typically involved 20 or more screens, and I knew we didn’t want users to navigate away from this flow unless properly warned. There are also so many elements on this screen that it’s difficult for the user to understand what they need to do next.</p>
+  </div>
+  <div class="prototype-grid wireframe-grid" data-aos="fade-up">
+    <img class="shadow-offset justify-center frame-comp" src="../images/mid-fi-session-bldr.png" alt="greyscale wireframe">
+    <p class="caption display-mobile paragraph-end">My first new iteration, after reworking the user flows and wireframes.</p>
+    <img class="shadow-offset justify-center frame-comp" src="../images/mid-fi-session-bldr-edits.png" alt="greyscale wireframe">
+    <p class="caption display-desktop paragraph-end">My first new iteration, after reworking the user flows and wireframes.</p>
+    <p class="caption" id="test-three-two">Still room for constructive feedback.</p>
+  </div>
+  <div class="content-box content-box-narrow-desktop">
+    <p>My new mid-fi mockups incorporated some pretty major changes.</p>
+    <p>In this new version of the Session Builder, all high-level navigation elements were hidden from the user, and next steps were clearly indicated with arrow buttons in the bottom navigation. Users also have clear options to save and exit the flow if they wish, leaving no question as to whether their progress will be saved.</p>
+    <p>I also added some simple icons to the class topic hierarchy levels here, as user interviews indicated that people were confused as to how classes, big ideas, and concepts related to one another. My intention was to show these as smaller and smaller elements of a whole.</p>
+    <p>When I ran this by the education team, which included some seasoned tutors, they asked if the session preview could show more detail about the different class elements, such as whether homework assignments had been graded yet.  I incorporated this feedback into the final iteration.</p>
+  </div>
+  <img id="final-session-bldr" src="../images/final-session-bldr.png">
+  <p class="caption">Screen from the final Session Builder flow</p>
+  <div class="content-box content-box-narrow-desktop">
+    <p>In the final MVP version of the Emile session builder, the session preview window on the right shows which learning, mastery, and homework activities have been added to an upcoming class session. Each section includes detail about which topics and activities will be covered in each category. Tutors have the ability to remove activities, or go back and add more at any point in the flow.</p>
+  </div>
+  <div class="content-box content-box-narrow-desktop centered link-container pb-5">
+    <a class="btn wire" href="https://whimsical.com/4E3wuYsAq7cJyZpGWyfSAq@3CRerdhrArcnNdoVd39WApej" target="_blank">View the Session Builder Prototype</a>
+  </div>
+</section>
+<section class="anchor" id="gh-four" data-aos="fade-up">
+  <h6 class="centered tertiary-text">Part Four</h6>
+  <h2 class="section-title">The Final Prototype</h2>
+  <div class="grid">
+    <img class="justify-center emile-final-demo" src="../images/emile-final-1.png" data-aos="fade-up">
+    <div class="justify-center final-caption" data-aos="fade-up">
+      <p>Detailed tracking of every class session helps tutors accurately monitor each student's progress.</p>
+    </div>
+    <div class="display-desktop justify-center final-caption" data-aos="fade-up">
+      <p>Parents can track their child's progress at a glance across class sessions and homework assignments.</p>
+    </div>
+    <img class="justify-center emile-final-demo" src="../images/emile-final-2.png" data-aos="fade-up">
+    <div class="display-mobile justify-center final-caption" data-aos="fade-up">
+      <p>Parents can track their child's progress at a glance across class sessions and homework assignments.</p>
+    </div>
+    <img class="justify-center emile-final-demo" src="../images/emile-final-3.png" data-aos="fade-up">
+    <div class="justify-center final-caption" data-aos="fade-up">
+      <p>Students can find classroom resources and upload homework assignments in one place.</p>
+    </div>
+    <div class="display-desktop justify-center final-caption" data-aos="fade-up">
+      <p>Every student achieves mastery based on their ability to articulate the concept, not just a quiz score.</p>
+    </div>
+    <img class="justify-center emile-final-demo" src="../images/emile-final-4.png" data-aos="fade-up">
+    <div class="display-mobile justify-center final-caption" data-aos="fade-up">
+      <p>Every student achieves mastery based on their ability to articulate the concept, not just a quiz score.</p>
+    </div>
+  </div>
+  <div class="content-box content-box-narrow-desktop centered link-container" id="profile-link">
+    <a class="btn wire" href="https://whimsical.com/4E3wuYsAq7cJyZpGWyfSAq@3CRerdhrArcnNdoVd39WApej" target="_blank">View Desktop Prototype</a>
+  </div>
+</section>
+<img class="display-desktop fill "  src="../images/emile-flat-lay.png" alt="photo collage and color swatches" data-aos="fade-up">
+<img class="display-mobile fill " src="../images/emile-flat-lay-mobile.png" alt="photo collage and color swatches" data-aos="fade-up">
+<section class="anchor" id="gh-five" data-aos="fade-up">
+  <h6 class="centered tertiary-text">Part Five</h6>
+  <h2 class="section-title pb-5">Key Takeaways</h2>
+  <div class="content-box content-box-narrow-desktop">
+    <h4 class="centered">Don't be afraid to start over when necessary.</h4>
+    <p>Had I tried to mold the new FT-school oriented MVP into the designs previously created by the old test-prep oriented MVP, the product would not be as intuitive, there would be more clicks required to find necessary content, and the structure would be quite different. By letting go of attachments to previous work, I could design a better product.</p>
+    <h4 class="centered pt-5">Consider whether all users need identical or similarly complex elements.</h4>
+    <p>The ultimate function of a dashboard is to make things easier for the user to find and see at a glance. But if there are only a few simple elements to navigate through, why do you need a dashboard at all? By getting rid of this interface on the student / parent view, it created a simpler and less cluttered user experience.</p>
+    <p>Emile was an incredibly exciting project to work on. Not only does Emile solve common problems faced by private tutors and parents, it's unique socratic teaching method helps students succeed in a remote-learning format. Learn more at <a href="https://www.hiemile.com">hiemile.com</a>.</p>
 </main>
 
 <footer>

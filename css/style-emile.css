@@ -44,6 +44,7 @@ blockquote {
   max-width: 1024px;
 }
 
+
 h1, h2, h3 {
   font-family: din-condensed, sans-serif;
   font-style: normal;
@@ -86,6 +87,10 @@ h6 {
   line-height: 167.23%;
   margin: 0;
   text-transform: uppercase;
+}
+
+.italic {
+  font-style: italic;
 }
 
 li {
@@ -1376,10 +1381,6 @@ footer p {
   padding: 1.5rem 2.4rem 1.5rem 2.4rem;
 }
 
-#gh-four img {
-  padding-bottom: 3.6rem;
-  width: 100%;
-}
 
 .moodboard {
   padding-bottom: 5rem;
@@ -1450,7 +1451,8 @@ ol {
   width: 70%;
 }
 
-/* PT 9 -  ROUND 2 USER TESTING */
+/* PT 3 -  WIREFRAMES TO HIFI MOCKS */
+
 
 #emile-pt9 .caption {
   margin: 0 0 3.6rem 0;
@@ -1467,18 +1469,21 @@ ol {
   width: 100%;
 }
 
+#final-session-bldr {
+  width: 90%;
+  margin: 0 auto;
+  display: block;
+  max-width: 1240px;
+  padding: 3rem 0 1rem 0;
+}
+
 /* PT 10 - FINAL PROTOTYPE */
 
-#gh-display-1 {
-  width: 85%;
-}
-
-#gh-display-2 {
+.emile-final-demo {
+  display: block;
+  margin: 0 auto;
+  padding: 5rem 0;
   width: 90%;
-}
-
-#gh-display-3 {
-  width: 110%;
 }
 
 
@@ -1546,11 +1551,12 @@ ol {
 
 /* ------REPEATING STRUCTURE------*/
 .caption {
-  /* tertiary text */
   color: #565656;
   font-style: italic;
-  /* padding-top: 3.6rem; */
+  width: 70%;
+  margin: 0 auto;
   text-align: center;
+  padding-top: 1rem;
 }
 
 .centered {
@@ -2103,10 +2109,6 @@ ol {
 
 /* PT 4 - BRANDING */
 
-#gh-four img {
-  padding: 3.6rem 0;
-  width: 100%;
-}
 
 #style-guide-link {
   padding: 2.4rem 0;
@@ -2922,10 +2924,6 @@ ol {
     padding-bottom: 2.4rem;
   }
 
-  #gh-four img {
-    padding: inherit;
-    width: 90%;
-  }
 
   #logo-study {
     width: 60%;
@@ -3103,6 +3101,10 @@ ol {
     transform: translateX(-62px);
   }
 
+  #final-session-bldr {
+    padding: 5rem 0 2rem 0;
+  }
+
 
   /* PT 6 - FINAL PROTOTYPE  */
 
@@ -3134,8 +3136,9 @@ ol {
 }
 
 .final-caption {
+  font-size: 1.8rem;
   margin: 0;
-  width: 80%;
+  width: 60%;
 }
 
 
