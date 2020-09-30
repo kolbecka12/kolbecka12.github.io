@@ -655,6 +655,10 @@ footer p {
 
 /* emile ROLES */
 
+#emile-roles {
+  margin: 4.8rem 0 0 0;
+}
+
 #emile-roles h6 {
 /* tertiary text */
   color: #565656;
@@ -702,6 +706,10 @@ footer p {
 }
 
 /* DESIGN PROCESS */
+
+#design-process {
+  margin: 0;
+}
 
 #design-process-large {
   font-size: 2.8rem;
@@ -1821,10 +1829,6 @@ ol {
     list-style-position: outside;
   }
 
-  #emile-roles {
-    margin-top: 4.8rem;
-  }
-
   #design-process {
     /* margin-bottom: 6.4rem; */
     padding-top: 7.2rem;
@@ -2149,6 +2153,10 @@ ol {
  }
 
   /* PT 3 - SKETCHING & WIREFRAMES */
+
+  #gh-three {
+    margin: 0;
+  }
 
   #emile-pt5 {
     padding-top: 6.4rem;
