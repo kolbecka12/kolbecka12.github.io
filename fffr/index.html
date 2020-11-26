@@ -21,6 +21,9 @@
    <link rel="stylesheet" href="https://use.typekit.net/swg8nfb.css">
    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.1.0/css/line-awesome.min.css">
+   <!-- scripts -->
+   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+   <script src="script.js"></script>
 </head>
 <body>
   <div class="container top-background" id="contact-header">
@@ -51,9 +54,9 @@
       <h2 class="display-mobile">Supporting Families & Farmers Through the Coronavirus Crisis.</h2>
       <p class="animated fadeInUp display-desktop">Connecting local farms to get fresh produce to the San Francisco Bay Area's most vulnerable households</p>
       <p class="display-mobile">Connecting local farms to get fresh produce to the San Francisco Bay Area's most vulnerable households</p>
-      <div class="animated fadeInUp content-box-medium centered" id="top-button">
+      <!-- <div class="animated fadeInUp content-box-medium centered" id="top-button">
         <a class ="btn wire" href="https://www.andiekolbeck.com/fffr/fffr-home" target="_blank">View Archived Site</a>
-      </div>
+      </div> -->
    </div>
  </section>
 <!-- <section id="fffr-hero"> -->
@@ -66,8 +69,8 @@
      <li><a href="#gh-two" class="link-special">Site Structure</a></li>
      <li><a href="#gh-three" class="link-special">Branding</a></li>
      <li><a href="#gh-four" class="link-special">Design & Iterate</a></li>
-     <li><a href="#gh-five" class="link-special">Launch</a></li>
-     <li><a href="#gh-five" class="link-special">Key Takeaways</a></li>
+     <!-- <li><a href="#gh-five" class="link-special">Launch</a></li> -->
+     <li><a href="#gh-six" class="link-special">Key Takeaways</a></li>
    </ul>
  </div>
  <section class="content-box" id="fffr-problem">
@@ -76,7 +79,7 @@
      <h4>The COVID-19 pandemic has led to an unprecedented number of Americans experiencing food insecurity.</h4>
      <p>Due to widespread unemployment and economic instability during the coronavirus pandemic, an estimated 1 in 5 U.S. households did not have enough to eat as of April 2020.</p>
      <p>While food banks were overloaded with requests, California farmers were forced to let food rot in the fields, as their primary customers — restaurants — were shuttered during the early days of the pandemic.</p>
-     <p>To support both food banks and struggling small farms, a coalition of non-profit organizations and small farms formed the Farm Fresh Food Relief (FFFR) Emergency Food Hub to distribute millions of pounds of unsold fruits and vegetables to the Bay Area's most vulnerable households.</p>
+     <p>To support both food banks and struggling small farms, a coalition of non-profit organizations and small farms formed the <strong>Farm Fresh Food Relief (FFFR) Emergency Food Hub</strong> to distribute millions of pounds of unsold fruits and vegetables to the Bay Area's most vulnerable households.</p>
      <p class="no-padding">While the program began with a distribution of 200 hundred boxes per week, a $2.6 million contract from the US Department of Agriculture allowed for a major expansion of the program. By  May, the program had funding to serve 86,000 families in seven counties over a 7-month period.</p>
    </article>
    <figure id="fffr-problem-figure" data-aos="fade-up">
@@ -126,16 +129,19 @@
      <p>In these conversations, I asked careful questions to get a strong sense of who this website was for, how this website could help solve communication problems and reduce costs, and when the second version needed to be complete. From here, I created a timeline for myself and jumped into the design process.</p>
    </article>
  </section>
- <section class="anchor" id="gh-one" data-aos="fade-up">
+ <section class="anchor" id="gh-one">
    <div class="content-box content-box-narrow-desktop">
-     <h6 class="centered tertiary-text">Part One</h6>
-     <h2 class="section-title">Understanding the Users</h2>
-     <h4 class="centered tertiary-text">Creating Proto Personas</h4>
-     <p>Having worked with food access non-profits for several years, I had a strong intuition for who the stakeholders would be on this project.</p>
-     <p>Using this knowledge, I drafted a series of proto-personas to guide the design process, as I knew that there likely wouldn't be time for comprehensive user surveys and interviews.</p>
-     <p>The project team leaders helped me brainstorm a list of potential needs and challenges faced by our stakeholders, which helped the group come to alignment on the critical requirements for the second phase of the FFFR site.</p>
-     <p>While proto-personas are no replacement for actual quantitative and qualitative data, they can be incredibly useful when time is in short supply.</p>
-     <p class="pb-5">This site was developed for three user groups with very different needs:</p>
+     <div data-aos="fade-up">
+       <h6 class="centered tertiary-text">Part One</h6>
+       <h2 class="section-title">Understanding the Users</h2>
+       <h4 class="centered tertiary-text">Creating Proto Personas</h4>
+     </div>
+     <div data-aos="fade-up">
+       <p>Having worked with food access non-profits for several years, I had a strong intuition for who the stakeholders would be on this project.</p>
+       <p>Using this knowledge, I drafted a series of proto-personas to guide the design process, as I knew that there likely wouldn't be time for comprehensive user surveys and interviews.</p>
+       <p>The project team leaders helped me brainstorm a list of potential needs and challenges faced by our stakeholders, which helped the group come to alignment on the critical requirements for the second phase of the FFFR site. While proto-personas are no replacement for actual quantitative and qualitative data, they can be incredibly useful when time is in short supply.</p>
+       <p class="pb-5">This site was developed for three user groups with very different needs:</p>
+     </div>
   </div>
   <div class="content-box" id="user-profiles" data-aos="fade-up">
     <div class="user-profile user1">
@@ -252,122 +258,76 @@
     <p>Shortly after the second version of the site had launched, I finally had an opportunity to complete a series of in-depth interviews and testing with several box recipients. In the following sections, you can see how different parts of the site evolved in response to feedback from user testing and other key stakeholders.</p>
   </div>
   <div class="content-box content-box-narrow-desktop" data-aos="fade-up">
-    <h4 class="centered tertiary-text">Improving Legibility</h4>
+    <h4 class="centered tertiary-text pt-5">Improving Legibility</h4>
     <p>Some of the biggest priorities of the collaborative were to highlight the importance of local farms in the Bay Area food system, explain how the program works in a simple way, and use lots of photos to illustrate the many partner organizations involved in the project.</p>
   </div>
   <div class="prototype-grid wireframe-grid" data-aos="fade-up">
-    <img class="shadow-offset justify-center frame-comp" src="../images/fffr-legibility1.png" alt="greyscale wireframe">
+    <img class="  justify-center frame-comp" src="../images/fffr-legibility1.png" alt="greyscale wireframe">
     <p class="caption display-mobile paragraph-end">The response to showing the wireframe on the left: photos behind all of these content blocks please!</p>
-    <img class="shadow-offset justify-center frame-comp" src="../images/fffr-legibility2.png" alt="greyscale wireframe">
+    <img class="  justify-center frame-comp" src="../images/fffr-legibility2.png" alt="greyscale wireframe">
     <p class="caption display-desktop paragraph-end">The response to showing the wireframe on the left: photos behind all of these content blocks please!</p>
     <p class="caption" id="test-three-two">However, user testing with actual box recipients showed that site visitors often had a difficult time reading the text overlaying the images.</p>
   </div>
-<img class="display-desktop fill py-10"  src="../images/fffr-homepage-final.png" alt="photo collage and color swatches" data-aos="fade-up">
-<img class="display-mobile fill" src="../images/session-bldr-mockup-mobile.png" alt="photo collage and color swatches" data-aos="fade-up">
-<div class="content-box content-box-narrow-desktop" data-aos="fade-up">
-  <p>In the third and final version of the home page, these content blocks were redesigned to lean on a simpler palette of grey tones, with text displaying below the image rather than on top of it.</p>
-</div>
-<div class="content-box content-box-narrow-desktop" data-aos="fade-up">
-  <h4 class="centered tertiary-text">Clarifying the Message</h4>
-  <p>User testing indicated that people didn't really understand what the program was about when first landing on the homepage. The best and most succinct explanation for the program was actually buried halfway down the About page, where few users were likely to scroll. So the homepage was redesigned with this copy rewritten for the hero, with a photo of a smiling family holding their FFFR box replacing the generic stock photo of fresh produce.</p>
-</div>
-<div class="prototype-grid wireframe-grid" data-aos="fade-up">
-  <img class="shadow-offset justify-center frame-comp" src="../images/fffr-clarify1.png" alt="greyscale wireframe">
-  <p class="caption display-mobile paragraph-end">The landing page doesn’t really explain what the program is — this information is buried in the About Us page.</p>
-  <img class="shadow-offset justify-center frame-comp" src="../images/fffr-clarify2.png" alt="greyscale wireframe">
-  <p class="caption display-desktop paragraph-end">The landing page doesn’t really explain the purpose of the program — it's buried in the About Us page.</p>
-  <p class="caption" id="test-three-two">Now it’s visible in the hero block of the landing page.</p>
-</div>
-<div class="content-box content-box-narrow-desktop">
-  <h4 data-aos="fade-up" class="centered tertiary-text">Creating Clear Pathways to Content</h4>
-  <p data-aos="fade-up">In testing sessions, users tended to completely miss the “resources” and recipes section of the site. When asked to assess the purpose of the site and what they could do there, most testers scrolled around the homepage, clicked on “about the program,” and conclude they had seen everything.</p>
-  <p data-aos="fade-up">Google analytics data painted a similar picture, and showed that the vast majority of users would land on the homepage, scroll around for about 1.5 minutes, click to the About Us page, and then leave after another minute or so.</p>
-</div>
-<img id="google-analytics" src="../images/fffr-google-analytics.png" data-aos="fade-up">
-
-
+  <img class="fill py-10"  src="../images/fffr-homepage-final.png" alt="photo collage and color swatches" data-aos="fade-up">
   <div class="content-box content-box-narrow-desktop" data-aos="fade-up">
-    <h4 class="centered pt-5">Rethinking the Session Builder</h4>
-    <p>One of the most complex, yet central functions of the fffr app is the Session Builder. Tutors use this tool to assemble class sessions for individual students or groups made up of learning activities, mastery activities (such as in-class quizzes, where students demonstrate competence), and homework assignments.</p>
-    <p>Tutors plan out all of the activities for a specific class session <span class="italic">before</span> the class begins, using it as a road map for instruction.</p>
-    <p>After the class session, tutors return to the Session Builder to record how students performed in the mastery activities and to finalize the list of activities that they taught in that session.</p>
-    <p>When the Session Preview reflects what happened in the class, the tutor can Publish the session. Only then is a record of the class session, the student's progress, and associated homework assignments or resources made available for the student and parent to see.</p>
+    <p>In the third and final version of the home page, these content blocks were redesigned to lean on a simpler palette of grey tones, with text displaying below the image rather than on top.</p>
   </div>
-
   <div class="content-box content-box-narrow-desktop" data-aos="fade-up">
-    <p>One of the primary issues with this layout is that users can intentionally or unintentionally exit the flow by clicking on any of these navigation elements.</p>
-    <p>The session-building progress typically involved 20 or more screens, and I knew we didn’t want users to navigate away from this flow unless they deliberately chose to do so. There are also so many elements on this screen that it’s difficult for the user to understand what they need to do next.</p>
+    <h4 class="centered tertiary-text pt-5">Clarifying the Message</h4>
+    <p>User testing indicated that people didn't really understand what the program was about when first landing on the homepage. The best and most succinct explanation for the program was actually buried halfway down the About page, where few users were likely to scroll. So the homepage was redesigned with this copy rewritten for the hero, with a photo of a smiling family holding their FFFR box replacing the generic stock photo of fresh produce.</p>
   </div>
   <div class="prototype-grid wireframe-grid" data-aos="fade-up">
-    <img class="shadow-offset justify-center frame-comp" src="../images/mid-fi-session-bldr.png" alt="greyscale wireframe">
-    <p class="caption display-mobile paragraph-end">My first new iteration, after reworking the user flows and wireframes.</p>
-    <img class="shadow-offset justify-center frame-comp" src="../images/mid-fi-session-bldr-edits.png" alt="greyscale wireframe">
-    <p class="caption display-desktop paragraph-end">My first new iteration, after reworking the user flows and wireframes.</p>
-    <p class="caption" id="test-three-two">Still room for constructive feedback.</p>
+    <img class="  justify-center frame-comp" src="../images/fffr-clarify1.png" alt="greyscale wireframe">
+    <p class="caption display-mobile paragraph-end">The landing page doesn’t really explain what the program is — this information is buried in the About Us page.</p>
+    <img class="  justify-center frame-comp" src="../images/fffr-clarify2.png" alt="greyscale wireframe">
+    <p class="caption display-desktop paragraph-end">The landing page doesn’t really explain the purpose of the program — it's buried in the About Us page.</p>
+    <p class="caption" id="test-three-two">Now it’s visible in the hero block of the landing page.</p>
   </div>
-  <div class="content-box content-box-narrow-desktop" data-aos="fade-up">
-    <p>My new mid-fi mockups included multiple significant changes.</p>
-    <p>In this new version of the Session Builder, all high-level navigation elements are hidden, and the next action is marked with arrow buttons in the bottom navigation. With the addition of clear Publish and Save and Exit buttons, users can now save their work and exit the flow whenever they like.</p>
-    <p>I also added some simple icons to the class topic hierarchy levels here, as user interviews indicated that people were confused as to how classes, big ideas, and concepts related to one another. The new icons show these as smaller and smaller elements of a whole.</p>
-    <p>When I ran this by the education team, which included some seasoned tutors, they asked if the session preview could show more detail about the different class elements, such as the grading status of homework assignments. I incorporated this feedback into the final iteration.</p>
+  <div class="content-box content-box-narrow-desktop">
+    <h4 data-aos="fade-up" class="centered tertiary-text pt-5">Creating Clear Pathways to Content</h4>
+    <p data-aos="fade-up">In testing sessions, users tended to completely miss the “resources” and recipes section of the site. When asked to assess the purpose of the site and what they could do there, most testers scrolled around the homepage, clicked on “about the program,” and conclude they had seen everything.</p>
+    <p data-aos="fade-up">Google analytics data painted a similar picture, and showed that the vast majority of users would land on the homepage, scroll around for about 1.5 minutes, click to the About Us page, and then leave after another minute or so.</p>
   </div>
-  <img id="final-session-bldr" src="../images/final-session-bldr.png" data-aos="fade-up">
-  <p class="caption" data-aos="fade-up">Screen from the final Session Builder flow</p>
-  <div class="content-box content-box-narrow-desktop" data-aos="fade-up">
-    <p>In the final MVP version of the fffr session builder, the session preview window on the right shows which learning, mastery, and homework activities have been added to an upcoming class session. Each section includes detail about which topics and activities will be covered in each category. Now, tutors can remove activities, or go back and add more at any point in the flow.</p>
+  <img class="centered" id="google-analytics" src="../images/fffr-analytics.png" data-aos="fade-up">
+  <p class="caption" id="analytics-caption" data-aos="fade-up">Users are clearly not finding the resources page — or don’t think it looks relevant to them.</p>
+  <div class="content-box content-box-narrow-desktop pt-5" data-aos="fade-up">
+    <p>In retrospect, this was a pretty clear consequence of not testing the site with box participants earlier in the process. Most planning meetings consisted of 6-10 representatives from partner farms and non-profits wanting to make sure that their organization was proudly shown on the homepage, leading to an experience that strongly emphasized the role of local farms in the program — while simultaneously de-emphasizing free resources for the box recipients.
   </div>
-  <div class="content-box content-box-narrow-desktop centered link-container pb-5" data-aos="fade-up">
-    <a class="btn wire" href="https://www.figma.com/proto/H12yuYLYeIhOw3STsFnWuc/fffr-Andie-s-Workspace?node-id=747%3A259&viewport=3412%2C17%2C0.5&scaling=min-zoom" target="_blank">View the Session Builder Prototype</a>
+  <div class="prototype-grid wireframe-grid" data-aos="fade-up">
+    <img class="justify-center frame-comp" src="../images/fffr-content1.png" alt="greyscale wireframe">
+    <p class="caption display-mobile paragraph-end">The majority of the homepage in version 2 talks about local farms. Healthy eating resources are scarcely mentioned.</p>
+    <img class="justify-center frame-comp" src="../images/fffr-content2.png" alt="greyscale wireframe">
+    <p class="caption display-desktop paragraph-end">The majority of the homepage in version 2 talks about local farms. Healthy eating resources are scarcely mentioned.</p>
+    <p class="caption" id="test-three-two">In version 3, farms and resources are given equal weight and the list of partner farms moves to the new Partner Farms page.</p>
   </div>
-</section>
-<section class="anchor" id="gh-four" data-aos="fade-up">
-  <h6 class="centered tertiary-text">Part Four</h6>
-  <h2 class="section-title">The Final Prototype</h2>
-  <div class="grid">
-    <img class="justify-center fffr-final-demo" src="../images/fffr-final-1.png" data-aos="fade-up">
-    <div class="justify-center final-caption" data-aos="fade-up">
-      <p>Detailed tracking of every class session helps tutors accurately monitor each student's progress.</p>
-    </div>
-    <div class="display-desktop justify-center final-caption" data-aos="fade-up">
-      <p>Parents can track their child's progress at a glance across class sessions and homework assignments.</p>
-    </div>
-    <img class="justify-center fffr-final-demo" src="../images/fffr-final-2.png" data-aos="fade-up">
-    <div class="display-mobile justify-center final-caption" data-aos="fade-up">
-      <p>Parents can track their child's progress at a glance across class sessions and homework assignments.</p>
-    </div>
-    <img class="justify-center fffr-final-demo" src="../images/fffr-final-3.png" data-aos="fade-up">
-    <div class="justify-center final-caption" data-aos="fade-up">
-      <p>Students can find classroom resources and upload homework assignments in one place.</p>
-    </div>
-    <div class="display-desktop justify-center final-caption" data-aos="fade-up">
-      <p>Every student achieves mastery based on their ability to articulate the concept, not just a quiz score.</p>
-    </div>
-    <img class="justify-center fffr-final-demo" src="../images/fffr-final-4.png" data-aos="fade-up">
-    <div class="display-mobile justify-center final-caption" data-aos="fade-up">
-      <p>Every student achieves mastery based on their ability to articulate the concept, not just a quiz score.</p>
-    </div>
-  </div>
-  <div class="content-box content-box-narrow-desktop centered link-container" id="profile-link" data-aos="fade-up">
-    <a class="btn wire" href="https://www.figma.com/proto/H12yuYLYeIhOw3STsFnWuc/fffr-Andie-s-Workspace?node-id=761%3A2256&viewport=3412%2C17%2C0.5&scaling=min-zoom" target="_blank">View Desktop Prototype</a>
+  <div class="content-box content-box-narrow-desktop pt-5" data-aos="fade-up">
+    <p>To resolve this, version three of farmfreshfoodrelief.org moves the majority of the farm content (blogs, interviews, lists of participating farms by county) to the "Farms" page. This content can be quickly reached from the Discover Our Partner Farms content block sitting directly below the fold on the homepage, which is followed by a Find Delicious Recipes content block linking to the Resource page.</p>
   </div>
 </section>
-<img class="display-desktop fill" data-aos="fade-up"  src="../images/fffr-flat-lay.png" alt="photo collage and color swatches" data-aos="fade-up">
-<img class="display-mobile fill " src="../images/fffr-flat-lay-mobile.png" alt="photo collage and color swatches" data-aos="fade-up">
-  <section class="anchor" id="gh-five">
-    <h6 class="centered tertiary-text" data-aos="fade-up">Part Five</h6>
+<!-- <section class="anchor" id="gh-five" data-aos="fade-up">
+  <h6 class="centered tertiary-text">Part Six</h6>
+  <h2 class="section-title">The Final Launch</h2>
+  <p class="centered display-desktop">Version 3 of the site was launched on July 23, 2020.</p>
+  <p class="centered display-mobile pb-5">Version 3 of the site was launched</br>on July 23, 2020.</p>
+  <div class="animated fadeInUp content-box-medium centered" id="top-button">
+    <a class ="btn wire" href="https://www.andiekolbeck.com/fffr/fffr-home" target="_blank">View Archived Site</a>
+  </div>
+</section> -->
+<img class="fill" data-aos="fade-up"  src="../images/fffr-final.png" alt="photo collage and color swatches" data-aos="fade-up">
+  <section class="anchor" id="gh-six">
+    <h6 class="centered tertiary-text" data-aos="fade-up">Part Seven</h6>
     <h2 class="section-title pb-5" data-aos="fade-up">Key Takeaways</h2>
-    <div class="content-box content-box-narrow-desktop" data-aos="fade-up">
-      <h4 class="centered">Don't be afraid to start over when necessary.</h4>
-      <p>Had I tried to mold the new MVP scope into the designs previously created for the old MVP concept, the product would not be as intuitive, there would be more clicks required to find necessary content, and the structure would be quite different. By letting go of attachments to previous work, I could design a better product.</p>
+    <img data-aos="fade-up" class="fffr-final-image" src="../images/fffr-final1.svg">
+    <div class="content-box content-box-narrow-desktop pb-10" data-aos="fade-up">
+      <h4 class="centered">The importance of being a user advocate.</h4>
+      <p data-aos="fade-up">One of the biggest challenges of this project was effectively balancing the needs of all the users. Farms and their fans + followers were themselves a user group — they wanted positive PR, to demonstrate to the local community that they were being proactive and a part of the solution, that they were a critical resources. Farms need to feel their story is being told, but it needs to be told in a way that both box recipients and potential funders would find valuable.</p>
+      <p data-aos="fade-up">In the planning meetings for this project, several experienced grant writers argued for the needs of funders, while farms were over-represented as a user group — sometimes as many as 12 representatives from various partner organizations were in each meeting!</p>
+      <p data-aos="fade-up">With no box recipients present, I worked hard to make sure that their needs and interests were heard in the conversation. By serving as the advocate for stakeholders that were not in the room, I was able to be a much better resource for arguably the most important users: vulnerable households struggling with food insecurity during the pandemic.</p>
     </div>
+    <img data-aos="fade-up" class="fffr-final-image" src="../images/fffr-final2.svg">
     <div class="content-box content-box-narrow-desktop" data-aos="fade-up">
-      <!-- <h4 class="centered pt-5">Consider whether all users need identical or similarly complex elements.</h4> -->
-      <!-- <p>The ultimate function of a dashboard is to make things easier for the user to find and see at a glance. But if there are only a few simple elements to navigate through, why do you need a dashboard at all? By getting rid of this interface on the student/parent view, it created a simpler and less cluttered user experience.</p> -->
-      <h4 class="centered pt-5">Dashboards should simplify, not complicate.</h4>
-      <p>The student overview, curriculum overview, and session overview pages contain a lot of dense information, which can quickly become overwhelming to users. Getting rid of unnecessary labels and extraneous information helped testers complete tasks more quickly.</p>
-      <p>While it was tempting to fit as much information as possible onto these screens, the ultimate purpose of a dashboard is to save users time and help them see the most critical data at a glance.</p>
-      <h4 class="centered pt-5">Final thoughts.</h4>
-      <p>fffr was an incredibly exciting project to work on. Not only does fffr solve common problems faced by private tutors and parents, it's unique Socratic teaching method helps students succeed in a remote-learning format. Learn more at <a href="https://www.hifffr.com">hifffr.com</a>.</p>
+      <h4 class="centered">A part of something big</h4>
+      <p data-aos="fade-up">Overall, I'm very proud of the project that my team developed in an incredibly short period of time. As of this writing, over 83,000 households in 9 Bay Area counties have received boxes of healthy, locally grown fruits and vegetables. While the rapid launch and iteration of farmfreshfoodrelief.org played a significant role in the marketing campaign and subsequent fundraising successes, I'm humbled by the hard work of all the partner farms, food pantries, non-profit staff, and volunteers who came together to support their community during a time of unprecedented crisis.</p>
     </div>
   </section>
 </main>

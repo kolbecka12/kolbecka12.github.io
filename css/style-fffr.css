@@ -691,7 +691,10 @@ footer p {
 
 
 #fffr-problem-img {
-  width: 100%;
+  display: block;
+  margin: 0 auto;
+  padding: 4rem 0;
+  width: 80%;
 }
 
 #fffr-solution-img {
@@ -969,6 +972,13 @@ footer p {
 
 /* PT 5 - SKETCHING TO WIREFRAMES */
 
+#google-analytics {
+    display: block;
+    margin: 0 auto;
+    padding: 3rem 0 1rem 0;
+    width: 100%;
+}
+
 #fffr-pt5 .caption {
   /* padding-bottom: 0; */
   margin-top: 0;
@@ -1191,14 +1201,6 @@ ol {
   padding-top: 3.6rem;
 }
 
-#gh-six img {
-  display: block;
-  margin: 0 auto;
-  max-width: 450px;
-  width: 90%;
-}
-
-
 #fffr-pt10 .caption {
   margin: 0 0 3.6rem 0;
 }
@@ -1221,9 +1223,17 @@ ol {
 
 /* CONCLUSION */
 
-#conclusion img {
-  margin: 0 0 3.6rem 0;
-  width: 100%;
+#gh-six {
+  margin: 0;
+  padding: 10rem 0 15rem 0;
+}
+
+.fffr-final-image {
+  display: block;
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 0 0 5rem 0;
+  width: 90%;
 }
 
 #return-link {
@@ -1250,6 +1260,7 @@ ol {
 }
 
 /* ------REPEATING STRUCTURE------*/
+
 .caption {
   color: #565656;
   font-style: italic;
@@ -1433,7 +1444,7 @@ ol {
 }
 
 #gh-four {
-  padding: 6rem 0 0 0;
+  padding: 6rem 0 6rem 0;
   margin: 0 0 0 0;
 }
 
@@ -1599,8 +1610,10 @@ ol {
 }
 
 #fffr-problem-img {
-  width: 70%;
+  padding: 7rem 0 5rem 0;
+  width: 50%;
 }
+
 
 .narrow-box {
   margin: 0 auto;
@@ -2089,11 +2102,15 @@ ol {
   }
 
 
+
   #fffr-problem-img {
-      padding: 1.2rem;
-      /* width: 100%; */
-      /* transform: translate(71px, 30px); */
+      padding-left: 25%;
       width: 100%;
+  }
+
+  #fffr-solution-img {
+    padding-right: 25%;
+    width: 100%;
   }
 
   #fffr-problem h2 {
@@ -2536,7 +2553,7 @@ ol {
   }
 
   #gh-four {
-    padding: 10rem 0 0 0;
+    padding: 10rem 0 10rem 0;
     margin: 10rem 0 0 0;
   }
 
@@ -2578,11 +2595,6 @@ ol {
 
   /* PT 5 - WIREFRAMES TO HIFI MOCKS */
 
-  #google-analytics {
-      width: 90%;
-      margin: 0 auto;
-      max-width: 1000px;
-  }
 
   #fffr-pt7 {
     padding-top: 6.4rem;
@@ -2730,9 +2742,6 @@ ol {
 
   /* PT 6 - FINAL PROTOTYPE  */
 
-  #gh-six img {
-    width: 100%;
-  }
 
   #fffr-pt10 {
     padding-top: 6.4rem;
@@ -2764,10 +2773,19 @@ ol {
 }
 
 
+#gh-six {
+  padding-top: 15rem;
+}
+
 #gh-final {
   width: 100%;
 }
 
+.fffr-final-image {
+  max-width: 1000px;
+  padding: 0 0 8rem 0;
+  width: 50%;
+}
 
 
 
